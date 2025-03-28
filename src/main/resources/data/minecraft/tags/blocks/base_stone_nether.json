@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"sophies_alloys:soul_stone"
+		"sophies_alloys:soul_stone",
+		"sophies_alloys:soul_cobblestone"
 	]
 }

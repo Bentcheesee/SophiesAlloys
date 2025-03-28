@@ -1,12 +1,12 @@
 {
 	"parent": "block/cube",
 	"textures": {
-		"bottom": "sophies_alloys:block/oreberry_sack_bottom",
 		"north": "sophies_alloys:block/oreberry_sack_side",
 		"east": "sophies_alloys:block/oreberry_sack_side",
 		"south": "sophies_alloys:block/oreberry_sack_side",
 		"west": "sophies_alloys:block/oreberry_sack_side_tied",
-		"top": "sophies_alloys:block/oreberry_sack_top",
+		"up": "sophies_alloys:block/oreberry_sack_top",
+		"down": "sophies_alloys:block/oreberry_sack_bottom",
 		"particle": "sophies_alloys:block/oreberry_sack_top"
 	}
 }

@@ -22,6 +22,10 @@
 		"sophies_alloys:oberite_block",
 		"sophies_alloys:lycalite_block",
 		"sophies_alloys:babulymn_block",
-		"sophies_alloys:meat_soul_ore"
+		"sophies_alloys:meat_soul_ore",
+		"sophies_alloys:raw_mithril_block",
+		"sophies_alloys:mithril_block",
+		"sophies_alloys:mithril_ore",
+		"sophies_alloys:mithril_deepslate_ore"
 	]
 }

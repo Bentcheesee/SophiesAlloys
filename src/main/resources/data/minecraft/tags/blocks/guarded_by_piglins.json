@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"#forge:ores/electrum"
+		"#forge:ores/electrum",
+		"#forge:ores/foxite"
 	]
 }
