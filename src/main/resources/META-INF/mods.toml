@@ -32,7 +32,7 @@ description='''A very poorly made mod'''
 	side="BOTH"
 [[dependencies.sophies_alloys]]
 	modId="create"
-	mandatory=false
+	mandatory=true
 	versionRange="1.19.2"
 	ordering="AFTER"
 	side="BOTH"
