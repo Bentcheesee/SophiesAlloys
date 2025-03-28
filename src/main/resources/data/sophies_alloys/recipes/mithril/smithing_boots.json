@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:mithril_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:mithril_upgradable/boots"
+	},
+	"result": {
+		"item": "sophies_alloys:mithril_boots"
+	}
+}

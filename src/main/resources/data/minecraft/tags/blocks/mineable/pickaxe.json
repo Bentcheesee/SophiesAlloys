@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"#sophies_alloys:all_soul_stones",
+		"#sophies_alloys:sophie_ores",
+		"#sophies_alloys:sophie_smelted_storage_blocks",
+		"#sophies_alloys:sophie_raw_storage_blocks",
+		"#sophies_alloys:compressed_slates",
+		"#sophies_alloys:mossy_deepslates",
+		"sophies_alloys:slate"
+	]
+}

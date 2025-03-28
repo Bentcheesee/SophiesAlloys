@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:sand"
+		},
+		{
+			"item": "sophies_alloys:rough_electrum_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:electrum_sheet"
+	}
+}

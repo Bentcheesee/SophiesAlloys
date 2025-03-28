@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "tungsten_upgrade",
+	"ingredients": [
+		{
+			"tag": "forge:plates/netherite"
+		},
+		{
+			"tag": "forge:plates/netherite"
+		},
+		{
+			"tag": "forge:ingots/tungsten"
+		},
+		{
+			"tag": "forge:ingots/tungsten"
+		},
+		{
+			"item": "sophies_alloys:advanced_template_upgrade"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:tungsten_upgrade"
+	}
+}

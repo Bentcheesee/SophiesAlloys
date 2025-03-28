@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "oberite_nugget",
+	"ingredients": [
+		{
+			"tag": "forge:nuggets/oberite"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:oberite_nugget",
+		"count": 1
+	}
+}

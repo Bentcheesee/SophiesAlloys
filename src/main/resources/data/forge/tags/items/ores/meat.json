@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:meat_ore",
+		"sophies_alloys:meat_soul_ore",
+		"sophies_alloys:meat_deepslate_ore",
+		"sophies_alloys:meat_nether_ore",
+		"sophies_alloys:meat_end_ore"
+	]
+}

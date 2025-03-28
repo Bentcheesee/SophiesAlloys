@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:tungsten_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:lago_tung_upgradable/hoes"
+	},
+	"result": {
+		"item": "sophies_alloys:tungsten_hoe"
+	}
+}

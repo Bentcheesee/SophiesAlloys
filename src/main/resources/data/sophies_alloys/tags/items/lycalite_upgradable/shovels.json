@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_shovel",
+		"sophies_alloys:steel_shovel",
+		{
+			"id": "alloyed:steel_shovel",
+			"required": false
+		}
+	]
+}

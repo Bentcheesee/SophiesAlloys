@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_chestplate",
+		"sophies_alloys:steel_chestplate",
+		{
+			"id": "alloyed:steel_chestplate",
+			"required": false
+		}
+	]
+}

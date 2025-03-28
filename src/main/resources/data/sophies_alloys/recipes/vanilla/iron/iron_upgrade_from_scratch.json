@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "iron_upgrade",
+	"ingredients": [
+		{
+			"tag": "minecraft:planks"
+		},
+		{
+			"tag": "forge:plates/iron"
+		},
+		{
+			"tag": "forge:plates/iron"
+		},
+		{
+			"item": "sophies_alloys:template_upgrade"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:iron_upgrade"
+	}
+}

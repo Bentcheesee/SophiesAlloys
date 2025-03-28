@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "sophies_alloys:block/slate/compressed_slate",
+    "side": "sophies_alloys:block/slate/compressed_slate",
+    "top": "sophies_alloys:block/slate/compressed_slate"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_boots",
+		"sophies_alloys:mithril_boots",
+		"sophies_alloys:lycalite_boots"
+	]
+}

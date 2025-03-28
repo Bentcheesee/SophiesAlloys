@@ -1,0 +1,8 @@
+{
+	"parent": "block/template_lantern",
+	"textures": {
+		"lantern": "sophies_alloys:block/silver/soul_lantern",
+		"particle": "sophies_alloys:block/silver/soul_lantern",
+		"chain": "sophies_alloys:block/silver/chain"
+	}
+}

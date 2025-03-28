@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:ores/crimson_coal",
+		"#forge:ores/electrum",
+		"#forge:ores/faunathyst",
+		"#forge:ores/foxite",
+		"#forge:ores/lagomite",
+		"#forge:ores/lead",
+		"#forge:ores/quingum",
+		"#forge:ores/silver",
+		"#forge:ores/tritonium",
+		"#forge:ores/tungsten",
+		"#forge:ores/mithril"
+	]
+}

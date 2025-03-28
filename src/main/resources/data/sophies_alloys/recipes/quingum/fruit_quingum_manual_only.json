@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_dust"
+		},
+		{
+			"item": "minecraft:honey_bottle"
+		},
+		{
+			"tag": "forge:fruit"
+		},
+		{
+			"tag": "sophies_alloys:moss_mush"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:quingum_mixture_fruit",
+		"count": 1
+	}
+}

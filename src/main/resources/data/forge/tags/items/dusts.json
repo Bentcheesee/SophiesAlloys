@@ -1,0 +1,33 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:dusts/amethyst",
+		"#forge:dusts/iron",
+		"#forge:dusts/coal",
+		"#forge:dusts/copper",
+		"#forge:dusts/crimson_coal",
+		"#forge:dusts/gold",
+		"#forge:dusts/lapis",
+		"#forge:dusts/quartz",
+		"#forge:dusts/emerald",
+		"#forge:dusts/diamond",
+		"#forge:dusts/silver",
+		"#forge:dusts/tungsten",
+		"#forge:dusts/electrum",
+		"#forge:dusts/lead",
+		"#forge:dusts/mithril",
+		"#forge:dusts/steel",
+		"#forge:dusts/foxite",
+		"#forge:dusts/tritonium",
+		"#forge:dusts/lagomite",
+		"#forge:dusts/faunathyst",
+		"#forge:dusts/quingum",
+		"#forge:dusts/oberite",
+		"#forge:dusts/lycalite",
+		"#forge:dusts/babulymn",
+		{
+			"id": "#forge:dusts/zinc",
+			"required": false
+		}
+	]
+}

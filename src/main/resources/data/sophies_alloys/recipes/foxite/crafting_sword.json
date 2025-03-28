@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"I": {
+		"tag": "forge:ingots/foxite"
+		},
+		"S": {
+		"item": "minecraft:stick"
+		}
+	},
+	"pattern": [
+		"I",
+		"I",
+		"S"
+	],
+	"result": {
+		"item": "sophies_alloys:foxite_sword"
+	}
+}

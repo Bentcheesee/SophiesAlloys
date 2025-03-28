@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/diamond"
+		},
+		{
+			"item": "sophies_alloys:rough_mithril_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:mithril_sheet"
+	}
+}

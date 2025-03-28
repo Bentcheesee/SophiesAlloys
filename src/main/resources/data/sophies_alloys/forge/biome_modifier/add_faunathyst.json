@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "minecraft:lush_caves",
+	"features": "sophies_alloys:faunathyst_placed",
+	"step": "underground_ores"
+}

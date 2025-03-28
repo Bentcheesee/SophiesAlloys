@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "sophies_alloys:block/no_fruit/no_fruit_sapling"
+	}
+}

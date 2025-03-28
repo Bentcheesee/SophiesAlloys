@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"hanging=false": {
+			"model": "sophies_alloys:block/gold_lantern"
+		},
+		"hanging=true": {
+			"model": "sophies_alloys:block/gold_lantern_hanging"
+		}
+	}
+}

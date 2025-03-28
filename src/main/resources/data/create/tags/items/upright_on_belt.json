@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:funky_thingamabob",
+		"sophies_alloys:abnormal_object",
+		{
+			"id": "sophies_alloys:unprocessed_thing",
+			"required": false
+		},
+		{
+			"id": "sophies_alloys:unprocessed_object",
+			"required": false
+		}
+	]
+}

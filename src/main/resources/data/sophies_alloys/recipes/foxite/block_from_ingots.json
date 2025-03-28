@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:foxite_ingot"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:foxite_block"
+	}
+}

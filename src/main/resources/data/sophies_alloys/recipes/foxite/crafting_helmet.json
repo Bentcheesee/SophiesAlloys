@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"I": {
+		"tag": "forge:ingots/foxite"
+		}
+	},
+	"pattern": [
+		"III",
+		"I I"
+	],
+	"result": {
+		"item": "sophies_alloys:foxite_helmet"
+	}
+}

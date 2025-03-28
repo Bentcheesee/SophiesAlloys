@@ -1,0 +1,140 @@
+{
+	"type": "minecraft:block",
+	"functions": [
+		{
+			"function": "minecraft:explosion_decay"
+		}
+	],
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"block": "sophies_alloys:oreberry_bush",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "3"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:oreberry_bush"
+				}
+			],
+			"functions": [
+				{
+					"add": false,
+					"count": {
+						"type": "minecraft:uniform",
+						"max": 3,
+						"min": 2
+					},
+					"function": "minecraft:set_count"
+				},
+				{
+					"enchantment": "minecraft:fortune",
+					"formula": "minecraft:uniform_bonus_count",
+					"function": "minecraft:apply_bonus",
+					"parameters": {
+						"bonusMultiplier": 1
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"block": "sophies_alloys:oreberry_bush",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "2"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:oreberry_bush"
+				}
+			],
+			"functions": [
+				{
+					"add": false,
+					"count": {
+						"type": "minecraft:uniform",
+						"max": 2,
+						"min": 1
+					},
+					"function": "minecraft:set_count"
+				},
+				{
+					"enchantment": "minecraft:fortune",
+					"formula": "minecraft:uniform_bonus_count",
+					"function": "minecraft:apply_bonus",
+					"parameters": {
+						"bonusMultiplier": 1
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"block": "sophies_alloys:oreberry_bush",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "1"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:oreberry_bush"
+				}
+			],
+			"functions": [
+				{
+					"add": false,
+					"count": {
+						"type": "minecraft:constant",
+						"value": 1
+					},
+					"function": "minecraft:set_count"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"block": "sophies_alloys:oreberry_bush",
+					"condition": "minecraft:block_state_property",
+					"properties": {
+						"age": "0"
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:oreberry_bush"
+				}
+			],
+			"functions": [
+				{
+					"add": false,
+					"count": {
+						"type": "minecraft:constant",
+						"value": 1
+					},
+					"function": "minecraft:set_count"
+				}
+			]
+		}
+	]
+}

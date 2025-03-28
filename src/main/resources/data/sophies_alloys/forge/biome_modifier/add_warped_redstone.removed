@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#sophies_alloys:is_corrupt",
+	"features": "sophies_alloys:warped_redstone_placed",
+	"step": "underground_ores"
+}

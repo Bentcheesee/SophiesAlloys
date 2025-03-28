@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 1.0,
+	"group": "oberite",
+	"ingredient": {
+		"tag": "forge:dusts/oberite"
+	},
+	"result": "sophies_alloys:oberite_ingot"
+}

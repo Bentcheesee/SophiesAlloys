@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "sophies_alloys:block/soul_stone/soul_cobblestone",
+    "side": "sophies_alloys:block/soul_stone/soul_cobblestone",
+    "top": "sophies_alloys:block/soul_stone/soul_cobblestone"
+  }
+}

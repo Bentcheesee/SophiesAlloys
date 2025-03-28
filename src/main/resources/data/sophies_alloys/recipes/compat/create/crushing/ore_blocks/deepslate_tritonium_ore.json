@@ -1,0 +1,32 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tritonium_deepslate_ore"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:crushed_tritonium",
+			"count": 2
+		},
+		{
+			"chance": 0.75,
+			"item": "sophies_alloys:crushed_tritonium"
+		},
+		{
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"item": "minecraft:cobbled_deepslate"
+		}
+	]
+}

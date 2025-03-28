@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:shards/faunathyst",
+		"#forge:shards/quingum",
+		"#forge:shards/diamond",
+		"#forge:shards/emerald",
+		"minecraft:amethyst_shard"
+	]
+}

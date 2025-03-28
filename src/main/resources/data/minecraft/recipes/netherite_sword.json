@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:netherite_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:netherite_upgradable/swords"
+	},
+	"result": {
+		"item": "minecraft:netherite_sword"
+	}
+}

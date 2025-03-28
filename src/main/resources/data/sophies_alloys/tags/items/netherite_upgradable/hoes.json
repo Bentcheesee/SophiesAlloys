@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_hoe",
+		"sophies_alloys:mithril_hoe",
+		"sophies_alloys:lycalite_hoe"
+	]
+}

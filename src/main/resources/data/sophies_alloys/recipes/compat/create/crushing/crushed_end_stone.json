@@ -1,0 +1,21 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:crushed_end_stone"
+		}
+	],
+	"processingTime": 250,
+	"results": [
+		{
+			"item": "sophies_alloys:end_stone_dust",
+			"count": 2
+		}
+	]
+}

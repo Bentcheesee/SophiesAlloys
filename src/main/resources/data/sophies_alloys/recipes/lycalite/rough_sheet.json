@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/lycalite"
+		},
+		{
+			"item": "sophies_alloys:foxite_nugget"
+		},
+		{
+			"item": "sophies_alloys:foxite_nugget"
+		},
+		{
+			"item": "sophies_alloys:foxite_nugget"
+		},
+		{
+			"item": "sophies_alloys:rough_lapis_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:rough_lycalite_sheet"
+	}
+}

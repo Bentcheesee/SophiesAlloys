@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "sophies_alloys:block/slate/compressed_slate"
+  }
+}

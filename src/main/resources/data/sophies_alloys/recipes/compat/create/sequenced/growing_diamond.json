@@ -1,0 +1,76 @@
+{
+	"type": "create:sequenced_assembly",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredient": {
+		"item": "sophies_alloys:growing_diamond"
+	},
+	"loops": 40,
+	"results": [
+		{
+			"item": "sophies_alloys:diamond_shard",
+			"count": 2
+		}
+	],
+	"sequence": [
+		{
+			"type": "create:pressing",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			]
+		},
+		{
+			"type": "create:pressing",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			]
+		},
+		{
+			"type": "create:pressing",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			]
+		},
+		{
+			"type": "create:pressing",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:growing_diamond"
+				}
+			]
+		}
+	],
+	"transitionalItem": {
+		"item": "sophies_alloys:growing_diamond"
+	}
+}

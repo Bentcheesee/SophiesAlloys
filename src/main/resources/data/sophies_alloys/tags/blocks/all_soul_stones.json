@@ -1,0 +1,23 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:soul_stone",
+		"sophies_alloys:soul_stone_slab",
+		"sophies_alloys:soul_stone_wall",
+		"sophies_alloys:soul_stone_stairs",
+		"sophies_alloys:soul_stone_bricks",
+		"sophies_alloys:soul_stone_brick_slab",
+		"sophies_alloys:soul_stone_brick_wall",
+		"sophies_alloys:soul_stone_brick_stairs",
+		"sophies_alloys:soul_stone_bricks_cracked",
+		"sophies_alloys:soul_stone_tiles",
+		"sophies_alloys:soul_stone_tile_slab",
+		"sophies_alloys:soul_stone_tile_wall",
+		"sophies_alloys:soul_stone_tile_stairs",
+		"sophies_alloys:soul_stone_tiles_cracked",
+		"sophies_alloys:soul_cobblestone",
+		"sophies_alloys:soul_cobblestone_slab",
+		"sophies_alloys:soul_cobblestone_wall",
+		"sophies_alloys:soul_cobblestone_stairs"
+	]
+}

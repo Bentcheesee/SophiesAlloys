@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:lagomite_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:lago_tung_upgradable/pickaxes"
+	},
+	"result": {
+		"item": "sophies_alloys:lagomite_pickaxe"
+	}
+}

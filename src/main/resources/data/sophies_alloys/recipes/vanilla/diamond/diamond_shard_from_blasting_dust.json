@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 1.0,
+	"group": "diamond_shard",
+	"ingredient": {
+		"tag": "forge:dusts/diamond"
+	},
+	"result": "sophies_alloys:diamond_shard"
+}

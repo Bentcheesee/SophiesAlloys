@@ -1,0 +1,47 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_lagomite_end_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:lagomite_end_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_lagomite_obsidian_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:lagomite_obsidian_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_the_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:lagomite/ingot_from_smelting_ore"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		}
+	},
+	"requirements": [
+		[
+			"has_the_recipe",
+			"has_lagomite_end_ore",
+			"has_lagomite_obsidian_ore"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"sophies_alloys:lagomite/ingot_from_smelting_ore"
+		]
+	}
+}

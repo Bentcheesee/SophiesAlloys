@@ -1,0 +1,44 @@
+{
+	"type": "create:mixing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"heatRequirement": "heated",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/foxite"
+		},
+		{
+			"tag": "forge:dusts/foxite"
+		},
+		{
+			"tag": "forge:dusts/electrum"
+		},
+		{
+			"tag": "forge:dusts/mithril"
+		},
+		{
+			"tag": "forge:dusts/mithril"
+		},
+		{
+			"tag": "forge:dusts/diamond"
+		},
+		[
+			{
+				"tag": "forge:dusts/faunathyst"
+			},
+			{
+				"tag": "forge:dusts/amethyst"
+			}
+		]
+	],
+	"results": [
+		{
+			"count": 3,
+			"item": "sophies_alloys:oberite_dust"
+		}
+	]
+}

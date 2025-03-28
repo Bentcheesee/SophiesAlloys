@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lycalite_nugget",
+	"ingredients": [
+		{
+			"tag": "forge:nuggets/lycalite"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:lycalite_nugget",
+		"count": 1
+	}
+}

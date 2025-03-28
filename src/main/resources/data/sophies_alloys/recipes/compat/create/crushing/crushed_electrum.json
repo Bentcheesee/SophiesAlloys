@@ -1,0 +1,29 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "forge:raw_materials/electrum"
+		}
+	],
+	"processingTime": 400,
+	"results": [
+		{
+			"item": "sophies_alloys:crushed_electrum"
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.5,
+			"item": "create:experience_nugget",
+			"count": 2
+		}
+	]
+}

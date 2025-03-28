@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:silver_block",
+		"sophies_alloys:electrum_block",
+		"sophies_alloys:foxite_block",
+		"sophies_alloys:tritonium_block",
+		"sophies_alloys:lagomite_block",
+		"sophies_alloys:lycalite_block",
+		"sophies_alloys:faunathyst_block",
+		"sophies_alloys:oberite_block",
+		"sophies_alloys:babulymn_block",
+		"sophies_alloys:tungsten_block"
+	]
+}

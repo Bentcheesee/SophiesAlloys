@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:lycalite_ingot"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:lycalite_nugget",
+		"count": 9
+	}
+}

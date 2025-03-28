@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_boots",
+		"sophies_alloys:steel_boots",
+		{
+			"id": "alloyed:steel_boots",
+			"required": false
+		}
+	]
+}

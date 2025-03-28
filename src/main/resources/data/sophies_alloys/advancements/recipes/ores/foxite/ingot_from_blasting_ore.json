@@ -1,0 +1,60 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_foxite_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:foxite_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_foxite_deepslate_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:foxite_deepslate_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_foxite_nether_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:foxite_nether_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_the_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:foxite/ingot_from_blasting_ore"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		}
+	},
+	"requirements": [
+		[
+			"has_the_recipe",
+			"has_foxite_ore",
+			"has_foxite_deepslate_ore",
+			"has_foxite_nether_ore"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"sophies_alloys:foxite/ingot_from_blasting_ore"
+		]
+	}
+}

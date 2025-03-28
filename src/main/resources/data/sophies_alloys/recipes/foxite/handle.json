@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"I": {
+		"tag": "forge:plates/foxite"
+		}
+	},
+	"pattern": [
+		"I",
+		"I"
+	],
+	"result": {
+		"item": "sophies_alloys:foxite_handle",
+		"count": 4
+	}
+}

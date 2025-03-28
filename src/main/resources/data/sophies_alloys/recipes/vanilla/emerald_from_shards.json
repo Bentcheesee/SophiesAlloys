@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "emerald_gem",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:emerald_shard"
+		}
+	},
+	"result": {
+		"item": "minecraft:emerald"
+	}
+}

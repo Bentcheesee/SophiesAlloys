@@ -1,0 +1,26 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "forge:storage_blocks/raw_silver"
+		}
+	],
+	"processingTime": 400,
+	"results": [
+		{
+			"count": 9,
+			"item": "create:crushed_raw_silver"
+		},
+		{
+			"chance": 0.5,
+			"count": 9,
+			"item": "create:experience_nugget"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "raw_foxite",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:raw_foxite_block"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:raw_foxite",
+		"count": 9
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 300,
+	"experience": 1.0,
+	"group": "meat",
+	"ingredient": [
+		{
+		"item": "sophies_alloys:unknown_raw_meat"
+		},
+		{
+		"item": "sophies_alloys:unknown_corrupt_meat"
+		}
+	],
+	"result": "sophies_alloys:unknown_cooked_meat"
+}

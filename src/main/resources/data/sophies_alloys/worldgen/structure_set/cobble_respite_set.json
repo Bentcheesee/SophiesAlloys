@@ -1,0 +1,14 @@
+{
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 232323,
+		"separation": 10,
+		"spacing": 24
+	},
+	"structures": [
+		{
+			"structure": "sophies_alloys:cobble_respite_structure",
+			"weight": 1
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:mithril_ore",
+		"sophies_alloys:mithril_basalt_ore",
+		"sophies_alloys:mithril_blackstone_ore",
+		"sophies_alloys:mithril_deepslate_ore",
+		"sophies_alloys:mithril_nether_ore"
+	]
+}

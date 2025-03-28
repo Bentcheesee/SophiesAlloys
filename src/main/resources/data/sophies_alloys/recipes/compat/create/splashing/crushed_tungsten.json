@@ -1,0 +1,25 @@
+{
+	"type": "create:splashing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:crushed_tungsten"
+		}
+	],
+	"results": [
+		{
+			"count": 9,
+			"item": "sophies_alloys:tungsten_nugget"
+		},
+		{
+			"count": 1,
+			"item": "sophies_alloys:oberite_nugget",
+			"chance": 0.5
+		}
+	]
+}

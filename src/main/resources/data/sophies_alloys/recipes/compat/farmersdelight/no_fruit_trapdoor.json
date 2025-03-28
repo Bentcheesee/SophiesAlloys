@@ -1,0 +1,23 @@
+{
+	"type": "farmersdelight:cutting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:no_fruit_trapdoor"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:no_fruit_planks"
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_dig"
+	}
+}

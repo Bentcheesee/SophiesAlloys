@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "sophies_alloys:block/no_fruit/no_fruit_sapling"
+  }
+}

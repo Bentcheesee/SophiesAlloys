@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "sophies_alloys:item/meat/unknown_corrupt_meat"
+	}
+}

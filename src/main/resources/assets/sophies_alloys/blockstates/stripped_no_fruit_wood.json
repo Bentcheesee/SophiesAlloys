@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sophies_alloys:block/no_fruit/stripped_no_fruit_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sophies_alloys:block/no_fruit/stripped_no_fruit_wood"
+    },
+    "axis=z": {
+      "model": "sophies_alloys:block/no_fruit/stripped_no_fruit_wood_horizontal",
+      "x": 90
+    }
+  }
+}

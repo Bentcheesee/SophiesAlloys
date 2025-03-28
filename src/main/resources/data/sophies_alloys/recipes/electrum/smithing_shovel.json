@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:electrum_upgrade"
+	},
+	"base": {
+		"item": "minecraft:golden_shovel"
+	},
+	"result": {
+		"item": "sophies_alloys:electrum_shovel"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "observer",
+	"key": {
+		"C": {
+		"tag": "minecraft:stone_crafting_materials"
+		},
+		"L": {
+		"item": "sophies_alloys:leaded_quartz"
+		},
+		"R": {
+		"item": "minecraft:redstone"
+		},
+		"I": {
+		"tag": "forge:ingots/lead"
+		}
+	},
+	"pattern": [
+		"CCI",
+		"R L",
+		"CCC"
+	],
+	"result": {
+		"item": "minecraft:observer",
+		"count": 1
+	}
+}

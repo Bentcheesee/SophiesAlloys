@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "sophies_alloys:block/soul_stone/soul_stone_bricks",
+    "side": "sophies_alloys:block/soul_stone/soul_stone_bricks",
+    "top": "sophies_alloys:block/soul_stone/soul_stone_bricks"
+  }
+}

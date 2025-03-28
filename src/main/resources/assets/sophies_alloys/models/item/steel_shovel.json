@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "sophies_alloys:item/steel/steel_shovel"
+	}
+}

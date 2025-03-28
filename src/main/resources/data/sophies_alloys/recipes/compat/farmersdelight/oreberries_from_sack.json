@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"group": "oreberry",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:oreberry_crate"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:oreberry_bush",
+		"count": 9
+	}
+}

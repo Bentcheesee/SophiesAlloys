@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks"
+		},
+		{
+			"item": "sophies_alloys:quingum_gem"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:quingum_dust"
+	}
+}

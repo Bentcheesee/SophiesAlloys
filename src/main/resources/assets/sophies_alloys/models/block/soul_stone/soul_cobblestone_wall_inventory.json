@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "sophies_alloys:block/soul_stone/soul_cobblestone"
+  }
+}

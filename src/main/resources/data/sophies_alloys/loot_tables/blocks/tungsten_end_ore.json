@@ -1,0 +1,51 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "sophies_alloys:tungsten_end_ore",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"enchantments": [
+											{
+												"enchantment": "minecraft:silk_touch",
+												"levels": {
+													"min": 1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "sophies_alloys:raw_tungsten",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"type": "minecraft:constant",
+										"value": 2
+									}
+								},
+								{
+									"function": "minecraft:explosion_decay"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

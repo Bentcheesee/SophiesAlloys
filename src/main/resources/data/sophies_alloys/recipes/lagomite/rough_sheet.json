@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/lagomite"
+		},
+		{
+			"item": "sophies_alloys:rough_diamond_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:rough_lagomite_sheet"
+	}
+}

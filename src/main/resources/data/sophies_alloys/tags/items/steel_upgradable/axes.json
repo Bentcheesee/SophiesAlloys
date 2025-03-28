@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:iron_axe",
+		"sophies_alloys:foxite_axe",
+		"sophies_alloys:lead_axe"
+	]
+}

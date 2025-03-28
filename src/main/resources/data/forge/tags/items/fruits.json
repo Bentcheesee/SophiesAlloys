@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:berries",
+		"minecraft:apple",
+		"minecraft:golden_apple",
+		"minecraft:chorus_fruit",
+		"minecraft:melon_slice"
+	]
+}

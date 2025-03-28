@@ -1,0 +1,18 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:ingots/babulymn",
+		"#forge:ingots/electrum",
+		"#forge:ingots/foxite",
+		"#forge:ingots/lagomite",
+		"#forge:ingots/lead",
+		"#forge:ingots/lycalite",
+		"#forge:ingots/mithril",
+		"#forge:ingots/mythril",
+		"#forge:ingots/oberite",
+		"#forge:ingots/silver",
+		"#forge:ingots/steel",
+		"#forge:ingots/tritonium",
+		"#forge:ingots/tungsten"
+	]
+}

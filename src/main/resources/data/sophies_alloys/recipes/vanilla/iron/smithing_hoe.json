@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:iron_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:iron_foxite_upgradable/hoes"
+	},
+	"result": {
+		"item": "minecraft:iron_hoe"
+	}
+}

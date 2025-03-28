@@ -1,0 +1,22 @@
+{
+	"type": "create:item_application",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "forge:stripped_logs"
+		},
+		{
+			"tag": "forge:ingots/lycalite"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:lycalite_casing"
+		}
+	]
+}

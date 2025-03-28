@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:faunathyst_gem"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:faunathyst_shard",
+		"count": 9
+	}
+}

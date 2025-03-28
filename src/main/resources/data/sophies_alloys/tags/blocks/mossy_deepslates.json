@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:mossy_deepslate_bricks",
+		"sophies_alloys:mossy_deepslate_brick_slab",
+		"sophies_alloys:mossy_deepslate_brick_wall",
+		"sophies_alloys:mossy_deepslate_brick_stairs",
+		"sophies_alloys:mossy_cobbled_deepslate",
+		"sophies_alloys:mossy_cobbled_deepslate_slab",
+		"sophies_alloys:mossy_cobbled_deepslate_wall",
+		"sophies_alloys:mossy_cobbled_deepslate_stairs"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:mossy_cobbled_deepslate"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:mossy_cobbled_deepslate_slab",
+		"count": 6
+	}
+}

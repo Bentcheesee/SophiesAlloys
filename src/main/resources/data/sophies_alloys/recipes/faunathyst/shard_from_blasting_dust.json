@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 1.0,
+	"group": "faunathyst",
+	"ingredient": {
+		"tag": "forge:dusts/faunathyst"
+	},
+	"result": "sophies_alloys:faunathyst_shard"
+}

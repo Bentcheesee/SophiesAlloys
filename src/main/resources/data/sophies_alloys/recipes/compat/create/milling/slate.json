@@ -1,0 +1,33 @@
+{
+	"type": "create:milling",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:slate"
+		}
+	],
+	"processingTime": 250,
+	"results": [
+		{
+			"chance": 0.2,
+			"item": "minecraft:coal"
+		},
+		{
+			"chance": 0.4,
+			"item": "minecraft:gravel"
+		},
+		{
+			"chance": 0.4,
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet",
+			"count": 2
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "electrum_upgrade",
+	"ingredients": [
+		{
+			"tag": "minecraft:planks"
+		},
+		{
+			"tag": "forge:plates/electrum"
+		},
+		{
+			"tag": "forge:plates/foxite"
+		},
+		{
+			"item": "sophies_alloys:template_upgrade"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:electrum_upgrade"
+	}
+}

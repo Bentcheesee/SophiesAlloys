@@ -1,0 +1,37 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:meat_soul_ore"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:unknown_raw_meat",
+			"count": 2
+		},
+		{
+			"item": "sophies_alloys:unknown_corrupt_meat",
+			"chance": 0.75
+		},
+		{
+			"item": "sophies_alloys:unknown_corrupt_meat",
+			"chance": 0.75
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"item": "sophies_alloys:soul_cobblestone"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "repeater",
+	"key": {
+		"C": [
+			{
+				"item": "minecraft:stone"
+			},
+			{
+				"item": "minecraft:deepslate"
+			},
+			{
+				"item": "sophies_alloys:soul_stone"
+			}
+		],
+		"R": {
+			"item": "minecraft:redstone_torch"
+		},
+		"F": {
+			"item": "sophies_alloys:funky_thingamabob"
+		}
+	},
+	"pattern": [
+		"RFR",
+		"CCC"
+	],
+	"result": {
+		"item": "minecraft:repeater",
+		"count": 2
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ll",
+		"ll"
+	],
+	"key": {
+		"l": {
+			"item": "sophies_alloys:stripped_no_fruit_log"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:stripped_no_fruit_wood",
+		"count": 3
+	}
+}

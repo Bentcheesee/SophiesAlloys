@@ -1,0 +1,28 @@
+{
+	"type": "create:splashing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "create:crushed_raw_silver"
+		}
+	],
+	"results": [
+		{
+			"count": 9,
+			"item": "sophies_alloys:silver_nugget"
+		},
+		{
+			"chance": 0.5,
+			"item": "minecraft:redstone"
+		},
+		{
+			"chance": 0.25,
+			"item": "sophies_alloys:electrum_nugget"
+		}
+	]
+}

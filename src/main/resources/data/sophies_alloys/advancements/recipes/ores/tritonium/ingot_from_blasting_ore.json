@@ -1,0 +1,47 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_tritonium_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:tritonium_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_tritonium_deepslate_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:tritonium_deepslate_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_the_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:tritonium/ingot_from_blasting_ore"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		}
+	},
+	"requirements": [
+		[
+			"has_the_recipe",
+			"has_tritonium_ore",
+			"has_tritonium_deepslate_ore"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"sophies_alloys:tritonium/ingot_from_blasting_ore"
+		]
+	}
+}

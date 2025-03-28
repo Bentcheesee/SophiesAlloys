@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:mithril_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:mithril_upgradable/leggings"
+	},
+	"result": {
+		"item": "sophies_alloys:mithril_leggings"
+	}
+}

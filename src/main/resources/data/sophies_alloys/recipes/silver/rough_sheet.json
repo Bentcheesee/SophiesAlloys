@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/silver"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:rough_silver_sheet"
+	}
+}

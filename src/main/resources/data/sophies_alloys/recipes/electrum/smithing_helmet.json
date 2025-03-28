@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:electrum_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:electrum_upgradable/helmets"
+	},
+	"result": {
+		"item": "sophies_alloys:electrum_helmet"
+	}
+}

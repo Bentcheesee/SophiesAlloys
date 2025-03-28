@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"I": {
+		"tag": "forge:plates/oberite"
+		}
+	},
+	"pattern": [
+		"I",
+		"I"
+	],
+	"result": {
+		"item": "sophies_alloys:oberite_handle",
+		"count": 4
+	}
+}

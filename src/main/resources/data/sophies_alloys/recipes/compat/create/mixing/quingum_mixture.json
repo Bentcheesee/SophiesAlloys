@@ -1,0 +1,32 @@
+{
+	"type": "create:mixing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"heatRequirement": "heated",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/quingum"
+		},
+		{
+			"tag": "forge:dusts/quingum"
+		},
+		{
+			"amount": 250,
+			"fluid": "create:potion",
+			"nbt": {
+				"Bottle": "REGULAR",
+				"Potion": "minecraft:awkward"
+			}
+		}
+	],
+	"results": [
+		{
+			"count": 2,
+			"item": "sophies_alloys:quingum_mixture"
+		}
+	]
+}

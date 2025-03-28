@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"hanging=false": {
+			"model": "sophies_alloys:block/silver_soul_lantern"
+		},
+		"hanging=true": {
+			"model": "sophies_alloys:block/silver_soul_lantern_hanging"
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_mithril_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:mithril_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_mithril_deepslate_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:mithril_deepslate_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_mithril_nether_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:mithril_nether_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_mithril_basalt_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:mithril_basalt_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_mithril_blackstone_ore": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:mithril_blackstone_ore"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_the_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:mithril/ingot_from_blasting_ore"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		}
+	},
+	"requirements": [
+		[
+			"has_the_recipe",
+			"has_mithril_ore",
+			"has_mithril_deepslate_ore",
+			"has_mithril_nether_ore",
+			"has_mithril_basalt_ore",
+			"has_mithril_blackstone_ore"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"sophies_alloys:mithril/ingot_from_blasting_ore"
+		]
+	}
+}

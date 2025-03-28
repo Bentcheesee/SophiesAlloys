@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "babulymn_ingot",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:babulymn_block"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:babulymn_ingot",
+		"count": 9
+	}
+}

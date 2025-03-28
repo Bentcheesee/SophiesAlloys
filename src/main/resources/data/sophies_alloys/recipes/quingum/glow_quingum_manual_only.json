@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_dust"
+		},
+		{
+			"item": "minecraft:honey_bottle"
+		},
+		{
+			"item": "minecraft:glow_berries"
+		},
+		{
+			"item": "glow_lichen"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:quingum_mixture_glowy",
+		"count": 1
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "upgrade_template",
+	"pattern": [
+		"sws",
+		"sls",
+		"sss"
+	],
+	"key": {
+		"s": [
+			{
+				"item": "minecraft:cobblestone"
+			},
+			{
+				"item": "minecraft:cobbled_deepslate"
+			}
+		],
+		"w": {
+			"tag": "minecraft:planks"
+		},
+		"l": {
+			"tag": "forge:plates/slate"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:template_upgrade",
+		"count": 2
+	}
+}

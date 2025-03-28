@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "sophies_alloys:item/crimson_coal/crimson_coal_dust"
+	}
+}

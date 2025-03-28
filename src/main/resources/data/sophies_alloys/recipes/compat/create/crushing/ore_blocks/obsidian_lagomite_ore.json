@@ -1,0 +1,32 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:lagomite_obsidian_ore"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:crushed_lagomite"
+		},
+		{
+			"item": "sophies_alloys:crushed_lagomite",
+			"chance": 0.5
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"item": "minecraft:end_stone"
+		}
+	]
+}

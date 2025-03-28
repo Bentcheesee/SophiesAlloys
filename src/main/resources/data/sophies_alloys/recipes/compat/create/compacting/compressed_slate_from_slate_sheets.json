@@ -1,0 +1,48 @@
+{
+	"type": "create:compacting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"amount": 100,
+			"fluid": "minecraft:lava",
+			"nbt": {}
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:compressed_slate"
+		}
+	]
+}

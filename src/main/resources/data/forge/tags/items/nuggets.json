@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:nuggets/babulymn",
+		"#forge:nuggets/diamond",
+		"#forge:nuggets/electrum",
+		"#forge:nuggets/emerald",
+		"#forge:nuggets/foxite",
+		"#forge:nuggets/lagomite",
+		"#forge:nuggets/lead",
+		"#forge:nuggets/lycalite",
+		"#forge:nuggets/mithril",
+		"#forge:nuggets/mythril",
+		"#forge:nuggets/netherite",
+		"#forge:nuggets/oberite",
+		"#forge:nuggets/silver",
+		"#forge:nuggets/steel",
+		"#forge:nuggets/tritonium",
+		"#forge:nuggets/tungsten"
+	]
+}

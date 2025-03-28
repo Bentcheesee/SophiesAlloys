@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 0.0,
+	"group": "lead_nugget",
+	"ingredient": [
+		{
+			"item": "sophies_alloys:lead_axe"
+		},
+		{
+			"item": "sophies_alloys:lead_pickaxe"
+		},
+		{
+			"item": "sophies_alloys:lead_shovel"
+		}
+	],
+	"result": "sophies_alloys:lead_nugget"
+}

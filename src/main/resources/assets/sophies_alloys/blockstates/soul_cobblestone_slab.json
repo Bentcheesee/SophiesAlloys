@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "sophies_alloys:block/soul_stone/soul_cobblestone_slab"
+		},
+		"type=double": {
+			"model": "sophies_alloys:block/soul_stone/soul_cobblestone"
+		},
+		"type=top": {
+			"model": "sophies_alloys:block/soul_stone/soul_cobblestone_slab_top"
+		}
+	}
+}

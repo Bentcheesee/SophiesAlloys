@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lagomite_upgrade",
+	"ingredients": [
+		{
+			"tag": "forge:plates/oberite"
+		},
+		{
+			"tag": "forge:plates/oberite"
+		},
+		{
+			"tag": "forge:ingots/lagomite"
+		},
+		{
+			"tag": "forge:ingots/lagomite"
+		},
+		{
+			"item": "sophies_alloys:advanced_template_upgrade"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:lagomite_upgrade"
+	}
+}

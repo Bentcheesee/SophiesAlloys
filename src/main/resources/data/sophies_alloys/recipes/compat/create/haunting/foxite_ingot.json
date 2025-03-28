@@ -1,0 +1,19 @@
+{
+	"type": "create:haunting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "minecraft:iron_ingot"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:foxite_ingot"
+		}
+	]
+}

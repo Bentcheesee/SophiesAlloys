@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/lever",
+	"textures": {
+		"particle": "sophies_alloys:block/soul_stone/soul_cobblestone",
+		"base": "sophies_alloys:block/soul_stone/soul_cobblestone"
+	}
+}

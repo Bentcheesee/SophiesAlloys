@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s  ",
+		"ss ",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:compressed_slate"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:slate_stairs",
+		"count": 4
+	}
+}

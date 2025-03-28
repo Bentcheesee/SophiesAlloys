@@ -1,0 +1,37 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:slate"
+		}
+	],
+	"processingTime": 300,
+	"results": [
+		{
+			"count": 2,
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"chance": 0.1,
+			"item": "minecraft:iron_nugget"
+		},
+		{
+			"chance": 0.1,
+			"item": "sophies_alloys:foxite_nugget"
+		},
+		{
+			"chance": 0.05,
+			"item": "sophies_alloys:foxite_nugget"
+		},
+		{
+			"chance": 0.05,
+			"item": "minecraft:quartz"
+		}
+	]
+}

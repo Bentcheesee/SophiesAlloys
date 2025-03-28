@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "steel_nugget",
+	"ingredients": [
+		{
+			"tag": "forge:nuggets/steel"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:steel_nugget",
+		"count": 1
+	}
+}

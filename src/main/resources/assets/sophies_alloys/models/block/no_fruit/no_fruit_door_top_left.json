@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "sophies_alloys:block/no_fruit/no_fruit_door_bottom",
+    "top": "sophies_alloys:block/no_fruit/no_fruit_door_top"
+  }
+}

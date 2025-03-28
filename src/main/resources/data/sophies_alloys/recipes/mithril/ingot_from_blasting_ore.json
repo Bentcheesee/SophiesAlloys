@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 1.0,
+	"group": "mithril",
+	"ingredient": {
+		"tag": "forge:ores/mithril"
+	},
+	"result": "sophies_alloys:mithril_ingot"
+}

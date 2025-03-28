@@ -1,0 +1,27 @@
+{
+	"type": "farmersdelight:cutting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:no_fruit_log"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:stripped_no_fruit_log"
+		},
+		{
+			"item": "farmersdelight:tree_bark"
+		}
+	],
+	"sound": "minecraft:item.axe.strip",
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_strip"
+	}
+}

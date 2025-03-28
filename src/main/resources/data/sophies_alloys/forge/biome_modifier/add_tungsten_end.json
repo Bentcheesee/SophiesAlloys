@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#minecraft:is_end",
+	"features": "sophies_alloys:tungsten_end_placed",
+	"step": "underground_ores"
+}

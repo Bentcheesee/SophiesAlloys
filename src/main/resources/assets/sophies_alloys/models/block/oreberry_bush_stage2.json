@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cross",
+	"textures": {
+		"cross": "sophies_alloys:block/oreberry_bush_stage2"
+	}
+}

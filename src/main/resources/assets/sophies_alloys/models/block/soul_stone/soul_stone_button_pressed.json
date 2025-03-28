@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/button_pressed",
+	"textures": {
+		"texture": "sophies_alloys:block/soul_stone/soul_stone"
+	}
+}

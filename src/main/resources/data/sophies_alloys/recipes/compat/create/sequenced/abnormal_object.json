@@ -1,0 +1,89 @@
+{
+	"type": "create:sequenced_assembly",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredient": {
+		"tag": "forge:plates/lycalite"
+	},
+	"loops": 2,
+	"results": [
+		{
+			"item": "sophies_alloys:abnormal_object"
+		}
+	],
+	"sequence": [
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				},
+				{
+					"item": "minecraft:redstone"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				}
+			]
+		},
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				},
+				{
+					"item": "sophies_alloys:nugget_conglomerate"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				}
+			]
+		},
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				},
+				[
+					{
+						"item": "sophies_alloys:soul_stone_lever"
+					},
+					{
+						"tag": "minecraft:stone_buttons"
+					}
+				]
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				}
+			]
+		},
+		{
+			"type": "create:pressing",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:unprocessed_object"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:unprocessed_object"
+				}
+			]
+		}
+	],
+	"transitionalItem": {
+		"item": "sophies_alloys:unprocessed_object"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "raw_lagomite",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:raw_lagomite_block"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:raw_lagomite",
+		"count": 9
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:lycalite_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:lycalite_upgradable/pickaxes"
+	},
+	"result": {
+		"item": "sophies_alloys:lycalite_pickaxe"
+	}
+}

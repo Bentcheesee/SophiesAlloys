@@ -1,0 +1,29 @@
+{
+	"type": "farmersdelight:cutting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"item": "minecraft:cobbled_deepslate"
+			},
+			{
+				"item": "minecraft:deepslate"
+			}
+		]
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:deepslate_chunk",
+			"count": 4
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}

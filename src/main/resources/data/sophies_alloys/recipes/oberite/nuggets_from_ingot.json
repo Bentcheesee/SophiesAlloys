@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:oberite_ingot"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:oberite_nugget",
+		"count": 9
+	}
+}

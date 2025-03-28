@@ -1,0 +1,33 @@
+{
+	"name": "cobble_respite_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "sophies_alloys:abandoned_deepslate_respite_back1"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "sophies_alloys:abandoned_deepslate_respite_back2"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "sophies_alloys:abandoned_deepslate_respite_back3"
+			}
+		}
+	]
+}

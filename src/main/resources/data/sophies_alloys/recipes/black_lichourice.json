@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:moss_mush"
+		},
+		{
+			"item": "minecraft:glow_lichen"
+		},
+		{
+			"item": "minecraft:sugar"
+		},
+		{
+			"item": "minecraft:honeycomb"
+		},
+		{
+			"item": "minecraft:ink_sac"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:black_lichuorice",
+		"count": 6
+	}
+}

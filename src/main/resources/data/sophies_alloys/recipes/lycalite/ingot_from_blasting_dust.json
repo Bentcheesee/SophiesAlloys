@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 1.0,
+	"group": "lycalite",
+	"ingredient": {
+		"tag": "forge:dusts/lycalite"
+	},
+	"result": "sophies_alloys:lycalite_ingot"
+}

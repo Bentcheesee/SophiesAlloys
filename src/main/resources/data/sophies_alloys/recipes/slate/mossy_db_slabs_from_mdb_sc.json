@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "sophies_alloys:full_mossy_deepslate_bricks"
+	},
+	"result": "sophies_alloys:mossy_deepslate_brick_slab",
+	"count": 2
+}

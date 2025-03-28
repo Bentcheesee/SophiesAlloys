@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "sophies_alloys:item/quingum/quingum_tester_overlay",
+		"layer1": "sophies_alloys:item/quingum/quingum_tester"
+	}
+}

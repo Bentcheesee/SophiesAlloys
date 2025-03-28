@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:no_fruit_planks"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:no_fruit_button"
+	}
+}

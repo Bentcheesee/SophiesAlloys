@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:foxite_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:iron_foxite_upgradable/leggings"
+	},
+	"result": {
+		"item": "sophies_alloys:foxite_leggings"
+	}
+}

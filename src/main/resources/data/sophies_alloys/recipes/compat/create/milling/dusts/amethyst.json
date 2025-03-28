@@ -1,0 +1,22 @@
+{
+	"type": "create:milling",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"tag": "forge:gems/amethyst"
+			}
+		]
+	],
+	"processingTime": 400,
+	"results": [
+		{
+			"item": "sophies_alloys:amethyst_dust"
+		}
+	]
+}

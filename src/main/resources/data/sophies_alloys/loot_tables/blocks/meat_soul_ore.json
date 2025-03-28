@@ -1,0 +1,64 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "sophies_alloys:meat_soul_ore",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"enchantments": [
+											{
+												"enchantment": "minecraft:silk_touch",
+												"levels": {
+													"min": 1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"type": "minecraft:item",
+									"name": "sophies_alloys:unknown_raw_meat",
+									"conditions": [
+										{
+											"condition": "minecraft:random_chance",
+											"chance": 0.85
+										}
+									]
+								},
+								{
+									"type": "minecraft:item",
+									"name": "sophies_alloys:unknown_corrupt_meat"
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:apply_bonus",
+									"enchantment": "minecraft:fortune",
+									"formula": "minecraft:ore_drops"
+								},
+								{
+									"function": "minecraft:explosion_decay"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

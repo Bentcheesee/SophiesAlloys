@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "sophies_alloys:block/no_fruit/no_fruit_trapdoor"
+  }
+}

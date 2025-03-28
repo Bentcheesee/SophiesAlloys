@@ -1,0 +1,32 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:raw_silver_block",
+		"sophies_alloys:silver_block",
+		"sophies_alloys:raw_tungsten_block",
+		"sophies_alloys:tungsten_block",
+		"sophies_alloys:raw_electrum_block",
+		"sophies_alloys:electrum_block",
+		"sophies_alloys:raw_lead_block",
+		"sophies_alloys:lead_block",
+		"sophies_alloys:mithril_block",
+		"sophies_alloys:steel_block",
+		"sophies_alloys:raw_foxite_block",
+		"sophies_alloys:foxite_block",
+		"sophies_alloys:raw_tritonium_block",
+		"sophies_alloys:tritonium_block",
+		"sophies_alloys:raw_lagomite_block",
+		"sophies_alloys:lagomite_block",
+		"sophies_alloys:faunathyst_block",
+		"sophies_alloys:quingum_block",
+		"sophies_alloys:oberite_block",
+		"sophies_alloys:lycalite_block",
+		"sophies_alloys:babulymn_block",
+		"sophies_alloys:crimson_coal_block",
+		{
+			"id": "sophies_alloys:warped_redstone_block",
+			"required": false
+		},
+		"sophies_alloys:meat_block"
+	]
+}

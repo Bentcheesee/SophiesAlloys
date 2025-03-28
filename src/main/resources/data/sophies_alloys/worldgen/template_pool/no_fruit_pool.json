@@ -1,0 +1,15 @@
+{
+	"name": "no_fruit_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "sophies_alloys:no_fruit_tree"
+			}
+		}
+	]
+}

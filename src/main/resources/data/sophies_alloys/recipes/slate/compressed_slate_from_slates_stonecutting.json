@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "sophies_alloys:slate/full_slates"
+	},
+	"result": "sophies_alloys:compressed_slate",
+	"count": 1
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "foxite_upgrade",
+	"ingredients": [
+		{
+			"tag": "minecraft:planks"
+		},
+		{
+			"tag": "forge:plates/foxite"
+		},
+		{
+			"tag": "forge:plates/foxite"
+		},
+		{
+			"item": "sophies_alloys:template_upgrade"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:foxite_upgrade"
+	}
+}

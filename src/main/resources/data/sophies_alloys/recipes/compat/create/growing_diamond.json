@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "forge:shards/diamond"
+		},
+		{
+			"item": "sophies_alloys:rough_lapis_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:growing_diamond"
+	}
+}

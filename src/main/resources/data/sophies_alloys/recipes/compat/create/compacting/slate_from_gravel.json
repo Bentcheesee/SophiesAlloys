@@ -1,0 +1,32 @@
+{
+	"type": "create:compacting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"heatRequirement": "heated",
+	"ingredients": [
+		{
+			"item": "minecraft:gravel"
+		},
+		{
+			"item": "minecraft:gravel"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:slate"
+		}
+	]
+}

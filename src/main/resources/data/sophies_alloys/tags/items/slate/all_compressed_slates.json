@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"#sophies_alloys:slate/full_slates",
+		"#sophies_alloys:slate/block_slates",
+		"#sophies_alloys:slate/slate_slabs"
+	]
+}

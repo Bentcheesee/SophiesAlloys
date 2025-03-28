@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"sss",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:slate_tiles"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:slate_tile_wall",
+		"count": 6
+	}
+}

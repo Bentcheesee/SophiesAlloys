@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "sophies_alloys:block/slate/slate_tile_slab"
+		},
+		"type=double": {
+			"model": "sophies_alloys:block/slate/slate_tiles"
+		},
+		"type=top": {
+			"model": "sophies_alloys:block/slate/slate_tile_slab_top"
+		}
+	}
+}

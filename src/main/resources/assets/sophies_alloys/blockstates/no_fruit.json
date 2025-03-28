@@ -1,0 +1,21 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "sophies_alloys:block/no_fruit/no_fruit"
+			},
+			{
+				"model": "sophies_alloys:block/no_fruit/no_fruit",
+				"y": 90
+			},
+			{
+				"model": "sophies_alloys:block/no_fruit/no_fruit",
+				"y": 180
+			},
+			{
+				"model": "sophies_alloys:block/no_fruit/no_fruit",
+				"y": 270
+			}
+		]
+	}
+}

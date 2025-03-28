@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_gem"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:quingum_shard",
+		"count": 9
+	}
+}

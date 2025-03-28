@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:diamond_pickaxe",
+		"sophies_alloys:mithril_pickaxe",
+		"sophies_alloys:lycalite_pickaxe"
+	]
+}

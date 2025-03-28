@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "sophies_alloys:block/slate/mossy_deepslate_brick_slab"
+		},
+		"type=double": {
+			"model": "sophies_alloys:block/slate/mossy_deepslate_bricks"
+		},
+		"type=top": {
+			"model": "sophies_alloys:block/slate/mossy_deepslate_brick_slab_top"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "sophies_alloys:block/soul_stone/soul_stone_tiles"
+  }
+}

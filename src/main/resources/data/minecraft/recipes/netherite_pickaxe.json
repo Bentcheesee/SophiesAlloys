@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:netherite_upgrade"
+	},
+	"base": {
+		"tag": "sophies_alloys:netherite_upgradable/pickaxes"
+	},
+	"result": {
+		"item": "minecraft:netherite_pickaxe"
+	}
+}

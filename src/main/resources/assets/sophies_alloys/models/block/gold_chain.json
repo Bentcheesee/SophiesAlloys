@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/chain",
+	"textures": {
+		"chain": "sophies_alloys:block/gold_chain"
+	}
+}

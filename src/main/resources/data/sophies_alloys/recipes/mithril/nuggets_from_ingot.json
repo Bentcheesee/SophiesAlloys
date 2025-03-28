@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:mithril_ingot"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:mithril_nugget",
+		"count": 9
+	}
+}

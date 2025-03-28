@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 0.7,
+	"group": "blackstone_chunk",
+	"ingredient": [
+		{
+			"item": "sophies_alloys:deepslate_chunk"
+		},
+		{
+			"item": "sophies_alloys:soul_chunk"
+		},
+		{
+			"item": "sophies_alloys:netherrack_chunk"
+		}
+	],
+	"result": "sophies_alloys:blackstone_chunk"
+}

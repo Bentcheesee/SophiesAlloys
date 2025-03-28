@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/oberite"
+		},
+		{
+			"item": "sophies_alloys:rough_lapis_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:rough_oberite_sheet"
+	}
+}

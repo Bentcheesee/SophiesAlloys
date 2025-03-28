@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "mithril_nugget",
+	"ingredients": [
+		{
+			"tag": "forge:nuggets/mithril"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:mithril_nugget",
+		"count": 1
+	}
+}

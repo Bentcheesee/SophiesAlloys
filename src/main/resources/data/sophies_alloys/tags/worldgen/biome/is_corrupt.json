@@ -1,0 +1,36 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "incendium:withered_forest",
+			"required": false
+		},
+		{
+			"id": "incendium:weeping_valley",
+			"required": false
+		},
+		{
+			"id": "incendium:inverted_forest",
+			"required": false
+		},
+		{
+			"id": "terralith:warped_mesa",
+			"required": false
+		},
+		{
+			"id": "#minecraft:is_end",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:withered_abyss",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:wasteland",
+			"required": false
+		},
+		"minecraft:soul_sand_valley",
+		"minecraft:warped_forest",
+		"minecraft:mushroom_fields"
+	]
+}

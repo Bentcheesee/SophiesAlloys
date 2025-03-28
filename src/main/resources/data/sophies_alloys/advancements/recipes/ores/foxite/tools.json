@@ -1,0 +1,66 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_foxite_ingot": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sophies_alloys:foxite_ingot"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_pickaxe_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:foxite/pickaxe"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		},
+		"has_axe_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:foxite/axe"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		},
+		"has_hoe_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:foxite/hoe"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		},
+		"has_shovel_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:foxite/shovel"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		},
+		"has_sword_recipe": {
+			"conditions": {
+				"recipe": "sophies_alloys:foxite/sword"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		}
+	},
+	"requirements": [
+		[
+			"has_pickaxe_recipe",
+			"has_axe_recipe",
+			"has_hoe_recipe",
+			"has_shovel_recipe",
+			"has_sword_recipe",
+			"has_foxite_ingot"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"sophies_alloys:foxite/pickaxe",
+			"sophies_alloys:foxite/axe",
+			"sophies_alloys:foxite/hoe",
+			"sophies_alloys:foxite/shovel",
+			"sophies_alloys:foxite/sword"
+		]
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:meat_end_ore"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:unknown_raw_meat",
+			"count": 3
+		},
+		{
+			"item": "sophies_alloys:unknown_raw_meat",
+			"chance": 0.75
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"item": "minecraft:end_stone"
+		}
+	]
+}

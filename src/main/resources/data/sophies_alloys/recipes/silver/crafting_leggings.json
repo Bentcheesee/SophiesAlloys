@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"I": {
+		"tag": "forge:ingots/silver"
+		}
+	},
+	"pattern": [
+		"III",
+		"I I",
+		"I I"
+	],
+	"result": {
+		"item": "sophies_alloys:silver_leggings"
+	}
+}

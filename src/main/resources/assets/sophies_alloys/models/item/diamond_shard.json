@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "sophies_alloys:item/diamond_shard"
+	}
+}

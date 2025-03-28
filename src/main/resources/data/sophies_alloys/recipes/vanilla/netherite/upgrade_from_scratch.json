@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "netherite_upgrade",
+	"ingredients": [
+		{
+			"tag": "forge:plates/oberite"
+		},
+		{
+			"tag": "forge:ingots/netherite"
+		},
+		{
+			"tag": "forge:ingots/netherite"
+		},
+		{
+			"item": "sophies_alloys:advanced_template_upgrade"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:netherite_upgrade"
+	}
+}

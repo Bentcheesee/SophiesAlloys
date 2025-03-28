@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:tungsten_nugget"
+	},
+	"base": {
+		"item": "minecraft:lantern"
+	},
+	"result": {
+		"item": "sophies_alloys:tungsten_lantern"
+	}
+}

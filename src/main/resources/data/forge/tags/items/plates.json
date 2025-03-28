@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:plates/babulymn",
+		"#forge:plates/electrum",
+		"#forge:plates/foxite",
+		"#forge:plates/iron",
+		"#forge:plates/lagomite",
+		"#forge:plates/lapis",
+		"#forge:plates/lycalite",
+		"#forge:plates/mithril",
+		"#forge:plates/netherite",
+		"#forge:plates/oberite",
+		"#forge:plates/silver",
+		"#forge:plates/slate",
+		"#forge:plates/steel",
+		"#forge:plates/tungsten"
+	]
+}

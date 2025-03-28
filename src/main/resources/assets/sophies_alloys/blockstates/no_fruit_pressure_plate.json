@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"powered=false": {
+			"model": "sophies_alloys:block/no_fruit/no_fruit_pressure_plate"
+		},
+		"powered=true": {
+			"model": "sophies_alloys:block/no_fruit/no_fruit_pressure_plate_down"
+		}
+	}
+}

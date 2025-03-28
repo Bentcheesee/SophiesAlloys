@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:sand"
+		},
+		{
+			"item": "sophies_alloys:rough_oberite_sheet"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:oberite_sheet"
+	}
+}

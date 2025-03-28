@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:silver_ingot",
+		"sophies_alloys:tungsten_ingot",
+		"sophies_alloys:electrum_ingot",
+		"sophies_alloys:steel_ingot",
+		"sophies_alloys:foxite_ingot",
+		"sophies_alloys:tritonium_ingot",
+		"sophies_alloys:lagomite_ingot"
+	]
+}
