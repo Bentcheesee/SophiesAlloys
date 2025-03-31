@@ -61,7 +61,7 @@ public class OtherBlocksInit {
 	            () -> new FlowerPotBlock(NO_FRUIT_SAPLING.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
 	    
 		public static final RegistryObject<NoFruitBlock> NO_FRUIT_BLOCK = register("no_fruit",
-				() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.SWEET_BERRY_BUSH)),
+				() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.1F).noCollission().sound(SoundType.SWEET_BERRY_BUSH)),
 				object -> () -> new ItemNameBlockItem(object.get(), GeneralItemInit.tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
 	    
 		public static final RegistryObject<RotatedPillarBlock> STRIPPED_NO_LOG = register("stripped_no_fruit_log",

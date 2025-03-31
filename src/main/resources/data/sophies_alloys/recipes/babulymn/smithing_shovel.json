@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:smithing",
 	"addition": {
-		"tag": "forge:ingots/babulymn"
+		"item": "sophies_alloys:babulymn_upgrade"
 	},
 	"base": {
 		"item": "sophies_alloys:lycalite_shovel"

@@ -2,6 +2,14 @@
 	"replace": false,
 	"values": [
 		"#forge:berries",
+		{
+			"id": "#forge:fruits/sweet",
+			"required": false
+		},
+		{
+			"id": "#forge:vegetables/tomato",
+			"required": false
+		},
 		"minecraft:apple",
 		"minecraft:chorus_fruit",
 		"minecraft:melon_slice"

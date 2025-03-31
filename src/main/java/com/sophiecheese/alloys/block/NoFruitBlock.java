@@ -2,6 +2,7 @@ package com.sophiecheese.alloys.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -30,6 +31,10 @@ public class NoFruitBlock extends Block{
 
 	   public VoxelShape getShape(BlockState p_54889_, BlockGetter p_54890_, BlockPos p_54891_, CollisionContext p_54892_) {
 	      return FRUIT;
+	   }
+
+	   public boolean canSurvive(BlockState p_152922_, LevelReader p_152923_, BlockPos p_152924_) {
+	      return !p_152923_.isEmptyBlock(p_152924_.below());
 	   }
 
 }
