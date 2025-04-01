@@ -2,7 +2,7 @@
 name: Feature request (compatibility)
 about: Suggest an idea for exterior mod support
 title: "[MOD SUPPORT]"
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---

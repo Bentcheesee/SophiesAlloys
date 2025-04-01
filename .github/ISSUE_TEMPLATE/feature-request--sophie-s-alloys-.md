@@ -2,7 +2,7 @@
 name: Feature request (Sophie's Alloys)
 about: Suggest an idea for out-of-the-box Sophie's Alloys
 title: "[FEATURE REQUEST]"
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---
