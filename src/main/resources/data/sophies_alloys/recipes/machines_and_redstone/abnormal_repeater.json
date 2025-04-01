@@ -2,6 +2,10 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"group": "repeater",
+	"pattern": [
+		"A R",
+		"CCC"
+	],
 	"key": {
 		"C": {
 			"item": "sophies_alloys:compressed_slate"
@@ -13,10 +17,6 @@
 			"item": "sophies_alloys:abnormal_object"
 		}
 	},
-	"pattern": [
-		"A R",
-		"CCC"
-	],
 	"result": {
 		"item": "minecraft:repeater",
 		"count": 4

@@ -2,6 +2,11 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"group": "observer",
+	"pattern": [
+		"CCC",
+		"APL",
+		"CCC"
+	],
 	"key": {
 		"C": {
 		"tag": "minecraft:stone_crafting_materials"
@@ -12,15 +17,10 @@
 		"A": {
 		"item": "sophies_alloys:abnormal_object"
 		},
-		"I": {
-		"tag": "forge:ingots/electrum"
+		"P": {
+		"tag": "forge:plates/electrum"
 		}
 	},
-	"pattern": [
-		"CCC",
-		"AIL",
-		"CCC"
-	],
 	"result": {
 		"item": "minecraft:observer",
 		"count": 4

@@ -69,7 +69,7 @@
 				},
 				{
 					"condition": "random_chance",
-					"chance": 0.45
+					"chance": 0.4
 				}
 			]
 		}

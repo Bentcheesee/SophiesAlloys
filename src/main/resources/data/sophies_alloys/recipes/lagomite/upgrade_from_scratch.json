@@ -9,10 +9,13 @@
 			"tag": "forge:plates/oberite"
 		},
 		{
-			"tag": "forge:ingots/lagomite"
+			"tag": "forge:plates/netherite"
 		},
 		{
-			"tag": "forge:ingots/lagomite"
+			"tag": "forge:plates/lagomite"
+		},
+		{
+			"tag": "forge:plates/lagomite"
 		},
 		{
 			"item": "sophies_alloys:advanced_template_upgrade"

@@ -2,6 +2,11 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"group": "observer",
+	"pattern": [
+		"CCC",
+		"FIL",
+		"CCC"
+	],
 	"key": {
 		"C": {
 		"tag": "minecraft:stone_crafting_materials"
@@ -16,11 +21,6 @@
 		"tag": "forge:ingots/lead"
 		}
 	},
-	"pattern": [
-		"CCC",
-		"FIL",
-		"CCC"
-	],
 	"result": {
 		"item": "minecraft:observer",
 		"count": 2

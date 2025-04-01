@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:babulymn_upgrade"
+	},
+	"base": {
+		"item": "sophies_alloys:lycalite_helmet"
+	},
+	"result": {
+		"item": "sophies_alloys:babulymn_helmet"
+	}
+}

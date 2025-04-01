@@ -1,15 +1,15 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
+	"pattern": [
+		"I I",
+		"I I"
+	],
 	"key": {
 		"I": {
 		"tag": "forge:ingots/electrum"
 		}
 	},
-	"pattern": [
-		"I I",
-		"I I"
-	],
 	"result": {
 		"item": "sophies_alloys:electrum_boots"
 	}

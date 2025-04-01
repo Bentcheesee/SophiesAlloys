@@ -3,7 +3,7 @@
 	"group": "electrum_upgrade",
 	"ingredients": [
 		{
-			"tag": "minecraft:planks"
+			"tag": "forge:plates/electrum"
 		},
 		{
 			"tag": "forge:plates/electrum"

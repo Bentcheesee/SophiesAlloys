@@ -5,9 +5,6 @@
 	"itemGroup.sophies_create_compat": "Sophie's Create Compatibilites",
 
 	"block.minecraft.lever": "Cobblestone Lever",
-	"block.minecraft.chain": "Lead Chain",
-	"block.minecraft.lantern": "Lead Lantern",
-	"block.minecraft.soul_lantern": "Lead Soul Lantern",
 	
 	//Dusts
 	"item.sophies_alloys.amethyst_dust": "Amethyst Dust",
@@ -312,6 +309,7 @@
 	"item.sophies_alloys.babulymn_shovel": "Babulymn Shovel",
 	
 	//Armours
+	"item.sophies_alloys.babulymn_helmet": "Babulymn Helmet",
 	"item.sophies_alloys.electrum_helmet": "Electrum Helmet",
 	"item.sophies_alloys.electrum_chestplate": "Electrum Chestplate",
 	"item.sophies_alloys.electrum_leggings": "Electrum Leggings",
@@ -433,6 +431,7 @@
 	
 	//Farmer's Compat
 	"item.sophies_alloys.oreberry_salad": "Oreberry Salad",
-	"block.sophies_alloys.oreberry_crate": "Oreberry Sack"
+	"block.sophies_alloys.oreberry_crate": "Oreberry Sack",
+	"block.sophies_alloys.no_fruit_crate": "No Fruit Crate"
 	
 }

@@ -1,6 +1,11 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
+	"pattern": [
+		"II",
+		" S",
+		" S"
+	],
 	"key": {
 		"I": {
 		"tag": "forge:ingots/electrum"
@@ -9,11 +14,6 @@
 		"item": "sophies_alloys:foxite_handle"
 		}
 	},
-	"pattern": [
-		"II",
-		" S",
-		" S"
-	],
 	"result": {
 		"item": "sophies_alloys:electrum_hoe"
 	}

@@ -25,9 +25,14 @@
 		{
 			"item": "sophies_alloys:nugget_hunk"
 		},
-		{
-			"item": "minecraft:honeycomb"
-		}
+		[
+			{
+				"item": "minecraft:honeycomb"
+			},
+			{
+				"item": "minecraft:honey_bottle"
+			}
+		]
 	],
 	"result": {
 		"item": "sophies_alloys:nugget_conglomerate"

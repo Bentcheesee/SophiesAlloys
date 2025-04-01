@@ -1,16 +1,16 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
-	"key": {
-		"I": {
-		"tag": "forge:ingots/electrum"
-		}
-	},
 	"pattern": [
 		"I I",
 		"III",
 		"III"
 	],
+	"key": {
+		"I": {
+		"tag": "forge:ingots/electrum"
+		}
+	},
 	"result": {
 		"item": "sophies_alloys:electrum_chestplate"
 	}

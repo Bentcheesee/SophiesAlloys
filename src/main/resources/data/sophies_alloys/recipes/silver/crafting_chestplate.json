@@ -1,16 +1,16 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
-	"key": {
-		"I": {
-		"tag": "forge:ingots/silver"
-		}
-	},
 	"pattern": [
 		"I I",
 		"III",
 		"III"
 	],
+	"key": {
+		"I": {
+		"tag": "forge:ingots/silver"
+		}
+	},
 	"result": {
 		"item": "sophies_alloys:silver_chestplate"
 	}

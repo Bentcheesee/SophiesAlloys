@@ -2,6 +2,10 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"group": "repeater",
+	"pattern": [
+		"RFR",
+		"CCC"
+	],
 	"key": {
 		"C": [
 			{
@@ -21,10 +25,6 @@
 			"item": "sophies_alloys:funky_thingamabob"
 		}
 	},
-	"pattern": [
-		"RFR",
-		"CCC"
-	],
 	"result": {
 		"item": "minecraft:repeater",
 		"count": 2

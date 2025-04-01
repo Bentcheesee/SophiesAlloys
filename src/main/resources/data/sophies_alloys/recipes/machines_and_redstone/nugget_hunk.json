@@ -27,9 +27,14 @@
 				"tag": "forge:nuggets/lead"
 			}
 		],
-		{
-			"item": "minecraft:honeycomb"
-		}
+		[
+			{
+				"item": "minecraft:honeycomb"
+			},
+			{
+				"item": "minecraft:honey_bottle"
+			}
+		]
 	],
 	"result": {
 		"item": "sophies_alloys:nugget_hunk"

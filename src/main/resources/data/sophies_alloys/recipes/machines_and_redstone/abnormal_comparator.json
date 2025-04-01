@@ -2,9 +2,14 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"group": "comparator",
+	"pattern": [
+		" R ",
+		"ALR",
+		"CCC"
+	],
 	"key": {
 		"C": {
-			"item": "sophies_alloys:compressed_slate"
+			"item": "sophies_alloys:slate_slab"
 		},
 		"R": {
 			"item": "minecraft:redstone_torch"
@@ -16,11 +21,6 @@
 			"item": "sophies_alloys:abnormal_object"
 		}
 	},
-	"pattern": [
-		" R ",
-		"ALR",
-		"CCC"
-	],
 	"result": {
 		"item": "minecraft:comparator",
 		"count": 4

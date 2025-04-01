@@ -21,6 +21,9 @@ public enum SophieArmorTier implements ArmorMaterial{
 		return Ingredient.of(GeneralItemInit.SILVER_PLATE.get());
 	}),
 	//CHAIN("chainmail", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F,
+	BABULYMN("babulymn", 16, new int[]{5, 0, 0, 0}, 20, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+		return Ingredient.of(GeneralItemInit.BABULYMN_PLATE.get());
+	}),
 	FOXITE("foxite", 16, new int[]{3, 5, 6, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.5F, 0.0F, () -> {
 		return Ingredient.of(GeneralItemInit.FOXITE_PLATE.get());
 	}),

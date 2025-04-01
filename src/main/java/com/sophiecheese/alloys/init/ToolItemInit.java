@@ -186,6 +186,8 @@ public class ToolItemInit {
 				() -> new ArmorItem(SophieArmorTier.TUNGSTEN, EquipmentSlot.FEET, tabAttributeTool().fireResistant()));
 		
 	// MISC
+		public static final RegistryObject<ArmorItem> BABULYMN_HELMET = ITEMS.register("babulymn_helmet", 
+				() -> new ArmorItem(SophieArmorTier.BABULYMN, EquipmentSlot.HEAD, tabAttributeTool()));
 		public static final RegistryObject<ShovelItem> BABULYMN_SHOVEL = ITEMS.register("babulymn_shovel", 
 				() -> new ShovelItem(SophieToolTier.BABULYMN, 1.5F, -3.0F, tabAttributeTool()));
 

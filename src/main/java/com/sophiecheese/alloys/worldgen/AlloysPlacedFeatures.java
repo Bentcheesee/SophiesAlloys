@@ -45,8 +45,8 @@ public class AlloysPlacedFeatures {
 	
 	public static final RegistryObject<PlacedFeature> TUNGSTEN_OVERWORLD = PLACED_FEATURES.register("tungsten_overworld_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.TUNGSTEN_OVERWORLD_ORE.getHolder().get(),
-					commonOrePlacement(2,
-							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.absolute(-40)))));
+					commonOrePlacement(3,
+							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.absolute(-30)))));
 	public static final RegistryObject<PlacedFeature> TUNGSTEN_END = PLACED_FEATURES.register("tungsten_end_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.TUNGSTEN_END_ORE.getHolder().get(),
 					commonOrePlacement(4,

@@ -112,7 +112,7 @@ public class AlloysConfiguredFeatures {
 					)));
 	//Tungsten
 	public static final RegistryObject<ConfiguredFeature<?, ?>> TUNGSTEN_OVERWORLD_ORE = CONFIGURED_FEATURES.register("tungsten_overworld_ore_cf",
-			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TUNGSTEN_ORES.get(),5,1F)));
+			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TUNGSTEN_ORES.get(),5,0.9F)));
 	public static final RegistryObject<ConfiguredFeature<?, ?>> TUNGSTEN_END_ORE = CONFIGURED_FEATURES.register("tungsten_end_ore_cf",
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_TUNGSTEN_ORES.get(),6)));
 	//Electrum
