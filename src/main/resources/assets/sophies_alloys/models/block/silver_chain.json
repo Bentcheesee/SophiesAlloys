@@ -1,6 +1,7 @@
 {
 	"parent": "minecraft:block/chain",
 	"textures": {
-		"chain": "sophies_alloys:block/silver/chain"
+		"chain": "sophies_alloys:block/silver/chain",
+		"particle": "sophies_alloys:block/silver/chain"
 	}
 }
