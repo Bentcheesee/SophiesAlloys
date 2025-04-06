@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/quingum/quingum_mixture"
+		"layer0": "sophies_alloys:item/quingum/oreberry_quingum_mixture"
 	}
 }

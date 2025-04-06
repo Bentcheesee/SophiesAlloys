@@ -14,19 +14,15 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod(value = "sophies_alloys")
 public class SophiesAlloys {
-
 	public static final String MOD_ID = "sophies_alloys";
-    public static final Logger LOGGER = LogUtils.getLogger();
-    
-    public SophiesAlloys()
-    {
-        CompatCheck.setupModCompatPreInit();
-        Registration.init();
-        ModSetup.setup();
-
-    }
-
-    public static ResourceLocation prefix(String name) {
-        return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
-    }
+	public static final Logger LOGGER = LogUtils.getLogger();
+	public SophiesAlloys()
+	{
+		CompatCheck.setupModCompatPreInit();
+		Registration.init();
+		ModSetup.setup();
+	}
+	public static ResourceLocation prefix(String name) {
+		return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
+	}
 }

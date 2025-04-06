@@ -47,75 +47,67 @@ public enum SophieArmorTier implements ArmorMaterial{
 	});
 	
 
-    //GOLD 0, 32, 12.0F, 0.0F, 22,
-    //ELECTRUM(1, 96, 10.5F, 1.0F, 27,
-    //LEAD(1, 214, 6.3F, 1.75F, 19,
-    //SILVER(2, 236, 6.5F, 2.0F, 17,
-    //FOXITE(2, 432, 5.4F, 1.5F, 18,
-    //IRON 2, 250, 6.0F, 2.0F, 14,
-    //STEEL(2, 774, 7.0F, 2.5F, 14,
-    //DIAMOND 3, 1561, 8.0F, 3.0F, 10,
-    //LYCALITE(3, 1144, 7.6F, 3.0F, 10,
-    //BABULYMN(4, 1101, 11.0F, 2.5F, 25,
-    //MITHRIL(4, 1530, 8.0F, 3.0F, 4,
-    //NETHERITE 4, 2031, 9.0F, 4.0F, 15,
-    //TUNGSTEN(5, 2600, 9.0F, 4.5F, 10,
-    //LAGOMITE(5, 1984, 10.5F, 4.0F, 9,
-        //level, dura, speed, damage, enchValue;
+//GOLD 0, 32, 12.0F, 0.0F, 22,
+//ELECTRUM(1, 96, 10.5F, 1.0F, 27,
+//LEAD(1, 214, 6.3F, 1.75F, 19,
+//SILVER(2, 236, 6.5F, 2.0F, 17,
+//FOXITE(2, 432, 5.4F, 1.5F, 18,
+//IRON 2, 250, 6.0F, 2.0F, 14,
+//STEEL(2, 774, 7.0F, 2.5F, 14,
+//DIAMOND 3, 1561, 8.0F, 3.0F, 10,
+//LYCALITE(3, 1144, 7.6F, 3.0F, 10,
+//BABULYMN(4, 1101, 11.0F, 2.5F, 25,
+//MITHRIL(4, 1530, 8.0F, 3.0F, 4,
+//NETHERITE 4, 2031, 9.0F, 4.0F, 15,
+//TUNGSTEN(5, 2600, 9.0F, 4.5F, 10,
+//LAGOMITE(5, 1984, 10.5F, 4.0F, 9,
+	//level, dura, speed, damage, enchValue;
 
-    // Base code for item tier
+// Base code for item tier because I'm lazy
+	private final String name;
+	private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
+	private final int durabilityMultiplier;
+	private final int[] slotProtections;
+	private final int enchantmentValue;
+	private final SoundEvent sound;
+	private final float toughness;
+	private final float knockbackResistance;
+	private final LazyLoadedValue<Ingredient> repairIngredient;
 
-	   private final String name;
-	   private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
-	   private final int durabilityMultiplier;
-	   private final int[] slotProtections;
-	   private final int enchantmentValue;
-	   private final SoundEvent sound;
-	   private final float toughness;
-	   private final float knockbackResistance;
-	   private final LazyLoadedValue<Ingredient> repairIngredient;
+	private SophieArmorTier(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
+		this.name = p_40474_;
+		this.durabilityMultiplier = p_40475_;
+		this.slotProtections = p_40476_;
+		this.enchantmentValue = p_40477_;
+		this.sound = p_40478_;
+		this.toughness = p_40479_;
+		this.knockbackResistance = p_40480_;
+		this.repairIngredient = new LazyLoadedValue<>(p_40481_);
+	}
 
-	   private SophieArmorTier(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
-	      this.name = p_40474_;
-	      this.durabilityMultiplier = p_40475_;
-	      this.slotProtections = p_40476_;
-	      this.enchantmentValue = p_40477_;
-	      this.sound = p_40478_;
-	      this.toughness = p_40479_;
-	      this.knockbackResistance = p_40480_;
-	      this.repairIngredient = new LazyLoadedValue<>(p_40481_);
-	   }
-
-	   public int getDurabilityForSlot(EquipmentSlot p_40484_) {
-	      return HEALTH_PER_SLOT[p_40484_.getIndex()] * this.durabilityMultiplier;
-	   }
-
-	   public int getDefenseForSlot(EquipmentSlot p_40487_) {
-	      return this.slotProtections[p_40487_.getIndex()];
-	   }
-
-	   public int getEnchantmentValue() {
-	      return this.enchantmentValue;
-	   }
-
-	   public SoundEvent getEquipSound() {
-	      return this.sound;
-	   }
-
-	   public Ingredient getRepairIngredient() {
-	      return this.repairIngredient.get();
-	   }
-
-	   public String getName() {
-	      return this.name;
-	   }
-
-	   public float getToughness() {
-	      return this.toughness;
-	   }
-
-	   public float getKnockbackResistance() {
-	      return this.knockbackResistance;
-	   }
+	public int getDurabilityForSlot(EquipmentSlot p_40484_) {
+		return HEALTH_PER_SLOT[p_40484_.getIndex()] * this.durabilityMultiplier;
+	}
+	public int getDefenseForSlot(EquipmentSlot p_40487_) {
+		return this.slotProtections[p_40487_.getIndex()];
+	}
+	public int getEnchantmentValue() {
+		return this.enchantmentValue;
+	}
+	public SoundEvent getEquipSound() {
+		return this.sound;
+	}
+	public Ingredient getRepairIngredient() {
+		return this.repairIngredient.get();
+	}
+	public String getName() {
+		return this.name;
+	}
+	public float getToughness() {
+		return this.toughness;
+	}
+	public float getKnockbackResistance() {
+		return this.knockbackResistance;
+	}
 
 }

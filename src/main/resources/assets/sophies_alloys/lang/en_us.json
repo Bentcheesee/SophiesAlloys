@@ -3,10 +3,8 @@
 	"itemGroup.sophies_food": "Sophie's Various Foods",
 	"itemGroup.sophies_tools": "Sophie's Tools and Armour",
 	"itemGroup.sophies_create_compat": "Sophie's Create Compatibilites",
-
-	"block.minecraft.lever": "Cobblestone Lever",
 	
-	//Dusts
+//Dusts
 	"item.sophies_alloys.amethyst_dust": "Amethyst Dust",
 	"item.sophies_alloys.copper_dust": "Copper Dust",
 	"item.sophies_alloys.coal_dust": "Coal Dust",
@@ -38,7 +36,7 @@
 	
 	"item.sophies_alloys.warped_redstone": "Warped Redstone",
 	
-	//Nuggets
+//Nuggets
 	"item.sophies_alloys.silver_nugget": "Silver Nugget",
 	"item.sophies_alloys.tungsten_nugget": "Tungsten Nugget",
 	"item.sophies_alloys.electrum_nugget": "Electrum Nugget",
@@ -56,7 +54,7 @@
 	"item.sophies_alloys.diamond_shard": "Diamond Shard",
 	"item.sophies_alloys.emerald_shard": "Emerald Shard",
 	
-	//Ingots
+//Ingots
 	"item.sophies_alloys.silver_ingot": "Silver Ingot",
 	"item.sophies_alloys.tungsten_ingot": "Tungsten Ingot",
 	"item.sophies_alloys.electrum_ingot": "Electrum Ingot",
@@ -73,7 +71,7 @@
 	"item.sophies_alloys.lagomite_scrap": "Lagomite Scrap",
 	"item.sophies_alloys.mithril_scrap": "Mithril Scrap",
 	
-	//Raw Ores n Gems
+//Raw Ores n Gems
 	"item.sophies_alloys.raw_silver": "Raw Silver",
 	"item.sophies_alloys.raw_tungsten": "Raw Tungsten",
 	"item.sophies_alloys.raw_electrum": "Raw Electrum",
@@ -87,7 +85,7 @@
 	"item.sophies_alloys.faunathyst_gem": "Faunathyst",
 	"item.sophies_alloys.quingum_gem": "Quingum Crystal",
 	
-	//Ore and Alloy Blocks
+//Ore and Alloy Blocks
 	"block.sophies_alloys.silver_block": "Silver Block",
 	"block.sophies_alloys.tungsten_block": "Tungsten Block",
 	"block.sophies_alloys.electrum_block": "Electrum Block",
@@ -105,7 +103,7 @@
 	"block.sophies_alloys.crimson_coal_block": "Crimson Coal Block",
 	"block.sophies_alloys.warped_redstone_block": "Warped Redstone Block",
 	
-	//Raw Blocks
+//Raw Blocks
 	"block.sophies_alloys.raw_silver_block": "Raw Silver Block",
 	"block.sophies_alloys.raw_tungsten_block": "Raw Tungsten Block",
 	"block.sophies_alloys.raw_electrum_block": "Raw Electrum Block",
@@ -115,7 +113,7 @@
 	"block.sophies_alloys.raw_tritonium_block": "Raw Tritonium Block",
 	"block.sophies_alloys.raw_lagomite_block": "Raw Lagomite Block",
 	
-	//Overworld Ores
+//Overworld Ores
 	"block.sophies_alloys.silver_ore": "Silver Ore",
 	"block.sophies_alloys.tungsten_ore": "Tungsten Ore",
 	"block.sophies_alloys.electrum_ore": "Electrum Ore",
@@ -137,7 +135,7 @@
 	"block.sophies_alloys.quingum_deepslate_ore": "Deepslate Quingum Ore",
 	"block.sophies_alloys.meat_deepslate_ore": "Deepslate Meat Ore",
 	
-	//Nether Ores
+//Nether Ores
 	"block.sophies_alloys.crimson_coal_nether_ore": "Netherrack Crimson Coal Ore",
 	"block.sophies_alloys.foxite_nether_ore": "Netherrack Foxite Ore",
 	"block.sophies_alloys.meat_nether_ore": "Netherrack Meat Ore",
@@ -148,13 +146,13 @@
 	"block.sophies_alloys.warped_redstone_soul_ore": "Soul Stone Warped Redstone Ore",
 	"block.sophies_alloys.meat_soul_ore": "Soul Stone Meat Ore",
 	
-	//End Ores
+//End Ores
 	"block.sophies_alloys.lagomite_end_ore": "End Stone Lagomite Ore",
 	"block.sophies_alloys.lagomite_obsidian_ore": "Obsidian Lagomite Ore",
 	"block.sophies_alloys.tungsten_end_ore": "End Stone Tungsten Ore",
 	"block.sophies_alloys.meat_end_ore": "End Stone Meat Ore",
 	
-	//Foods
+//Foods
 	"item.sophies_alloys.froggy_apple_crumple_thumpkin": "Froggy Apple Crumple Thumpkin",
 	"item.sophies_alloys.froggy_apple_crumple_thumpkin.desc": "A good chef must always taste it",
 	"item.sophies_alloys.smushroom": "Smushrooms",
@@ -186,7 +184,7 @@
 	"item.sophies_alloys.oreberry_bush": "Oreberries",
 	"item.sophies_alloys.quingum_mold": "Quingummy Mold",
 	
-	//Blocks
+//Blocks
 	"block.sophies_alloys.oreberry_bush": "Oreberry Bush",
 	"block.sophies_alloys.foxite_chain": "Foxite Chain",
 	"block.sophies_alloys.foxite_lantern": "Foxite Lantern",
@@ -270,7 +268,7 @@
 	"block.sophies_alloys.no_fruit_sign": "No Fruit Sign",
 	"block.sophies_alloys.no_fruit_wall_sign": "No Fruit Sign",
 	
-	//Tools
+//Tools
 	"item.sophies_alloys.foxite_pickaxe": "Foxite Pickaxe",
 	"item.sophies_alloys.foxite_axe": "Foxite Axe",
 	"item.sophies_alloys.foxite_shovel": "Foxite Shovel",
@@ -294,6 +292,7 @@
 	"item.sophies_alloys.lead_pickaxe": "Lead Pickaxe",
 	"item.sophies_alloys.lead_axe": "Lead Axe",
 	"item.sophies_alloys.lead_shovel": "Lead Shovel",
+	"item.sophies_alloys.lead_shears": "Lead Shears",
 	"item.sophies_alloys.mithril_pickaxe": "Mithril Pickaxe",
 	"item.sophies_alloys.mithril_axe": "Mithril Axe",
 	"item.sophies_alloys.mithril_hoe": "Mithril Hoe",
@@ -308,7 +307,7 @@
 	"item.sophies_alloys.silver_axe": "Silver Axe",
 	"item.sophies_alloys.babulymn_shovel": "Babulymn Shovel",
 	
-	//Armours
+//Armors
 	"item.sophies_alloys.babulymn_helmet": "Babulymn Helmet",
 	"item.sophies_alloys.electrum_helmet": "Electrum Helmet",
 	"item.sophies_alloys.electrum_chestplate": "Electrum Chestplate",
@@ -343,7 +342,7 @@
 	"item.sophies_alloys.tungsten_leggings": "Tungsten Leggings",
 	"item.sophies_alloys.tungsten_boots": "Tungsten Boots",
 	
-	//Items
+//Items
 	"item.sophies_alloys.slate_sheet": "Slate Sheet",
 	"item.sophies_alloys.soul_chunk": "Soul Chunk",
 	"item.sophies_alloys.end_stone_chunk": "End Stone Chunk",
@@ -405,9 +404,12 @@
 	"item.sophies_alloys.tungsten_upgrade": "Tungsten Upgrade",
 	"item.sophies_alloys.lagomite_upgrade": "Lagomite Upgrade",
 	
-	//Create Compat
+//Create Compat
 	"item.sophies_alloys.zinc_dust": "Zinc Dust",
 	"item.sophies_alloys.brass_dust": "Brass Dust",
+	
+	"item.sophies_alloys.chocolate_glazed_oreberries": "Chocolate Glazed Oreberries",
+	"item.sophies_alloys.chocolate_glazed_quingum": "Chocolate Glazed Quingum",
 	
 	"item.sophies_alloys.crushed_tungsten": "Crushed Tungsten",
 	"item.sophies_alloys.crushed_electrum": "Crushed Electrum",
@@ -429,8 +431,15 @@
 	"block.sophies_alloys.lycalite_casing": "Lycalite Casing",
 	
 	
-	//Farmer's Compat
+//Farmer's Compat
+	"item.sophies_alloys.oreberry_burger": "Oreberry Burger",
 	"item.sophies_alloys.oreberry_salad": "Oreberry Salad",
+	"item.sophies_alloys.quingum_salad": "Seared Quingum Salad",
+	"item.sophies_alloys.fancy_soup": "Fancy Underground Soup",
+	"item.sophies_alloys.raw_meat_strip": "Strip of Unknown Meat",
+	"item.sophies_alloys.cooked_meat_strip": "Strip of Unknown Cooked Meat",
+	"item.sophies_alloys.dino_nugget": "Totally Normal Dino Nugget",
+	"item.sophies_alloys.dino_nugget_ketchup": "Totally Normal Dino Nugget, Now With Ketchup!",
 	"block.sophies_alloys.oreberry_crate": "Oreberry Sack",
 	"block.sophies_alloys.no_fruit_crate": "No Fruit Crate"
 	

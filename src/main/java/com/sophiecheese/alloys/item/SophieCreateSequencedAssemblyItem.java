@@ -29,5 +29,4 @@ public class SophieCreateSequencedAssemblyItem extends Item {
 	public int getBarWidth(ItemStack stack) {
 		return Math.round(getProgress(stack) * 13);
 	}
-
 }

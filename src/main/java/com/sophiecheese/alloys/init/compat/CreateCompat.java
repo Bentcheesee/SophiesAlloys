@@ -9,6 +9,7 @@ import com.mojang.logging.LogUtils;
 import com.sophiecheese.alloys.SophiesAlloys;
 import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.item.SophieCreateSequencedAssemblyItem;
+import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -19,13 +20,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class CreateCompat {
-    private static final Logger LOGGER = LogUtils.getLogger();
+	private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static void setupCompat() {
-        LOGGER.info("[Sophie's Alloys] Starting Compatibility for Create");
-
-        CompatCheck.createPresent = true;
-    }
+	public static void setupCompat() {
+		LOGGER.info("[Sophie's Alloys] Starting Compatibility for Create");
+		CompatCheck.createPresent = true;
+	}
 	public static final DeferredRegister<Item> CREATE_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, 
 			SophiesAlloys.MOD_ID);
 	public static final DeferredRegister<Block> CREATE_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, 
@@ -51,6 +51,11 @@ public class CreateCompat {
 			() -> new Item(tabAttributeCreate()));
 	public static final RegistryObject<Item> CRUSHED_ENDSTONE = CREATE_ITEMS.register("crushed_end_stone", 
 			() -> new Item(tabAttributeCreate()));
+	
+	public static final RegistryObject<Item> CHOCOLATE_GLAZED_OREBERRIES = CREATE_ITEMS.register("chocolate_glazed_oreberries", 
+			() -> new Item(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.CHOCOLATE_GLAZED_OREBERRIES)));
+	public static final RegistryObject<Item> CHOCOLATE_GLAZED_QUINGUM = CREATE_ITEMS.register("chocolate_glazed_quingum", 
+			() -> new Item(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.CHOCOLATE_GLAZED_QUINGUM)));
 
 	public static final RegistryObject<Item> UNPROCESSED_BABULYMN_PLATE = CREATE_ITEMS.register("unprocessed_babulymn_sheet", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
@@ -67,9 +72,7 @@ public class CreateCompat {
 	public static final RegistryObject<Item> GROWING_EMERALD = CREATE_ITEMS.register("growing_emerald", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 
-
 //Blocks
-
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
 		return CREATE_BLOCKS.register(name, block);
@@ -87,7 +90,7 @@ public class CreateCompat {
 			return new ItemStack(GeneralItemInit.FUNKY_THING.get());
 		}
 	};
-    public static final Item.Properties tabAttributeCreate() {
-        return new Item.Properties().tab(SOPH_CREATE);
-    }
+	public static final Item.Properties tabAttributeCreate() {
+		return new Item.Properties().tab(SOPH_CREATE);
+	}
 }

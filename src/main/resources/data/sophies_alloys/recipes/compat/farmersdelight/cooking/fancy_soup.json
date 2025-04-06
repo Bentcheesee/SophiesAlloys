@@ -1,0 +1,40 @@
+{
+	"type": "farmersdelight:cooking",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"cookingtime": 200,
+	"experience": 1.0,
+	"ingredients": [
+		{
+			"item": "minecraft:carrot"
+		},
+		[
+			{
+				"item": "sophies_alloys:quingum_gem"
+			},
+			{
+				"item": "sophies_alloys:seared_quingum"
+			},
+			{
+				"item": "sophies_alloys:quingum_mixture"
+			}
+		],
+		{
+			"item": "sophies_alloys:oreberry_bush"
+		},
+		{
+			"item": "sophies_alloys:oreberry_bush"
+		},
+		{
+			"tag": "sophies_alloys:moss_mush"
+		}
+	],
+	"recipe_book_tab": "meals",
+	"result":{
+		"item": "sophies_alloys:fancy_soup"
+	}
+}

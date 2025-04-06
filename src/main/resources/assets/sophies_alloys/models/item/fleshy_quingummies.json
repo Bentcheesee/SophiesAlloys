@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/quingum/quingummies"
+		"layer0": "sophies_alloys:item/quingum/fleshy_quingummies"
 	}
 }

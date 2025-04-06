@@ -15,28 +15,27 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 public class Registration {
 	public static final String MOD_ID = "sophies_alloys";
-    public static void init(){
+	public static void init(){
 
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		ToolItemInit.ITEMS.register(bus);
+		OreBlockInit.BLOCKS.register(bus);
+		OtherBlocksInit.BLOCKS.register(bus);
+		GeneralItemInit.ITEMS.register(bus);
 
-        ToolItemInit.ITEMS.register(bus);
-        OreBlockInit.BLOCKS.register(bus);
-        OtherBlocksInit.BLOCKS.register(bus);
-        GeneralItemInit.ITEMS.register(bus);
+		AlloysConfiguredFeatures.CONFIGURED_FEATURES.register(bus);
+		AlloysPlacedFeatures.PLACED_FEATURES.register(bus);
 
-        AlloysConfiguredFeatures.CONFIGURED_FEATURES.register(bus);
-        AlloysPlacedFeatures.PLACED_FEATURES.register(bus);
-
-        if(CompatCheck.createPresent){
-            CreateCompat.CREATE_ITEMS.register(bus);
-            CreateCompat.CREATE_BLOCKS.register(bus);
-        }
-
-        if(CompatCheck.farmersPresent){
-            FarmersCompat.FARMERS_ITEMS.register(bus);
-            FarmersCompat.FARMERS_BLOCKS.register(bus);
-        }
-
-    }
-
+		if(CompatCheck.createPresent){
+			CreateCompat.CREATE_ITEMS.register(bus);
+			CreateCompat.CREATE_BLOCKS.register(bus);
+		}
+		if(CompatCheck.farmersPresent){
+			FarmersCompat.FARMERS_ITEMS.register(bus);
+			FarmersCompat.FARMERS_BLOCKS.register(bus);
+		}
+//		if(CompatCheck.farmersPresent && CompatCheck.createPresent){
+//		I might do some specific blocks that only appear if both are present, like a Chocolaty Oreberry Cake
+//		}
+	}
 }

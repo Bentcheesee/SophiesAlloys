@@ -5,9 +5,15 @@
 			"rolls": 1,
 			"entries": [
 				{
+					"type": "minecraft:item",
+					"name": "minecraft:apple",
+					"weight": 4
+				},
+				{
 					"type": "minecraft:tag",
 					"name": "forge:fruits",
-					"expand": true
+					"expand": true,
+					"weight": 1
 				}
 			]
 		}

@@ -1,0 +1,23 @@
+{
+	"type": "create:filling",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:oreberry_bush"
+		},
+		{
+			"fluid": "create:chocolate",
+			"amount": 250
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:chocolate_glazed_oreberries"
+		}
+	]
+}

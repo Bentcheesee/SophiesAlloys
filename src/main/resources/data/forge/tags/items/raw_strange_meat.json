@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:unknown_raw_meat",
+		"sophies_alloys:unknown_corrupt_meat",
+		{
+			"id": "sophies_alloys:raw_meat_strip",
+			"required": false
+		}
+	]
+}

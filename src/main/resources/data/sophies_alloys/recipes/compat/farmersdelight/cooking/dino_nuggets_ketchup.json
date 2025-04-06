@@ -1,0 +1,27 @@
+{
+	"type": "farmersdelight:cooking",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"cookingtime": 300,
+	"experience": 1.0,
+	"ingredients": [
+		{
+			"tag": "forge:raw_strange_meat"
+		},
+		{
+			"tag": "forge:bread"
+		},
+		{
+			"item": "farmersdelight:tomato_sauce"
+		}
+	],
+	"recipe_book_tab": "meals",
+	"result": {
+		"item": "sophies_alloys:dino_nugget_ketchup",
+		"count": 2
+	}
+}

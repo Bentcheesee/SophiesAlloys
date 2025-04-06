@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"n",
+		"i",
+		"n"
+	],
+	"key": {
+		"n": {
+			"item": "minecraft:gold_nugget"
+		},
+		"i": {
+			"item": "minecraft:gold_ingot"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:gold_chain",
+		"count": 4
+	}
+}

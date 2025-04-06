@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"group": "no_fruit_crate",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:no_fruit"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:no_fruit_crate"
+	}
+}

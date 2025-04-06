@@ -11,3 +11,8 @@ redstone
 liquorice
 mithril
 netherite
+lycalite
+deepslate
+cobbled
+oreberries
+oreberry
