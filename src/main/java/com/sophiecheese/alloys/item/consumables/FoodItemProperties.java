@@ -13,33 +13,36 @@ public class FoodItemProperties {
 
 //Oreberry
 	public static final FoodProperties OREBERRY = Resi(1,0.0F,15)
-		.fast().alwaysEat().build();
+			.fast().alwaysEat().build();
 //No Fruit
 	public static final FoodProperties NO_FRUIT = Basic(2,0.0F)
-		.fast().alwaysEat().build();
+			.fast().alwaysEat().build();
 //Quingum
 	public static final FoodProperties QUINGUM_GEM = Haste(2,0.0F,20).alwaysEat().build();
 	public static final FoodProperties SEARED_QUINGUM = Haste(4,0.2F,30).alwaysEat().build();
-	
-	public static final FoodProperties QUINGUMMIES = Haste(1,0F,45).alwaysEat().build();
-	public static final FoodProperties OTHER_QUINGUMMIES = Haste(1,0F,60).alwaysEat().build();
-	public static final FoodProperties OREBERRY_QUINGUMMIES = Haste(1,0F,90).alwaysEat().build();
-	
-	public static final FoodProperties GLOW_QUINGUMMIES = Haste(1,0F,60)
-		.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000, 0), 1F).alwaysEat().build();
-	public static final FoodProperties FUNKY_QUINGUMMIES = Haste(1,0F,45)
-		.effect( () -> new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 0), 1F)
-		.effect( () -> new MobEffectInstance(MobEffects.CONFUSION, 60, 0), 1F)
-		.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), .5F)
-		.effect( () -> new MobEffectInstance(MobEffects.WEAKNESS, 600, 0), .5F)
-		.alwaysEat().build();
-	public static final FoodProperties CORRUPT_QUINGUMMIES = Haste(1,0F,60)
-		.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 0), 1F)
-		.effect( () -> new MobEffectInstance(MobEffects.LUCK, 6000, 1), 1F)
-		.alwaysEat().build();
+
+	public static final FoodProperties CORRUPT_MIXTURE = CorruptQuingum(6,0.4F).build();
+	public static final FoodProperties CORRUPT_QUINGUMMIES = CorruptQuingum(3,0.2F).build();
+	public static final FoodProperties FLESH_QUINGUMMIES = CorruptQuingum(4,0.5F)
+			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1F).build();
+	public static final FoodProperties FRUIT_MIXTURE = Haste(4,0.2F,45)
+			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1F).alwaysEat().build();
+	public static final FoodProperties FRUIT_QUINGUMMIES = Haste(2,0.1F,45)
+			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1F).alwaysEat().build();
+	public static final FoodProperties FUNKY_MIXTURE = FunkyQuingum(4,0.4F).build();
+	public static final FoodProperties FUNKY_QUINGUMMIES = FunkyQuingum(2,0.2F).build();
+	public static final FoodProperties GLOW_MIXTURE = Haste(4,0.2F,45)
+			.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000, 0), 1F).alwaysEat().build();
+	public static final FoodProperties GLOW_QUINGUMMIES = Haste(2,0.1F,45)
+			.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000, 0), 1F).alwaysEat().build();
+	public static final FoodProperties OREBERRY_MIXTURE = ResiHaste(6,0.4F,45,45).alwaysEat().build();
+	public static final FoodProperties OREBERRY_QUINGUMMIES = ResiHaste(3,0.2F,45,45).alwaysEat().build();
+	public static final FoodProperties PLAIN_MIXTURE = Haste(4,0.2F,45).alwaysEat().build();
+	public static final FoodProperties PLAIN_QUINGUMMIES = Haste(2,0.1F,45).alwaysEat().build();
 //Meat
-	public static final FoodProperties RAW_MEAT = RawMeat(2,0.3F,2).build(); 
-	public static final FoodProperties COOKED_MEAT = CookedMeat(8,0.6F,2).build();
+	public static final FoodProperties RAW_MEAT = RawMeat(2,0.3F,2).build();
+	public static final FoodProperties COOKED_MEAT = CookedMeat(6,0.8F,2).build();
+
 //Farmer's Compat
 	public static final FoodProperties OREBERRY_SALAD = Resi(6,0.3F,60)
 			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1F).build();
@@ -48,53 +51,70 @@ public class FoodItemProperties {
 			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1F).build();
 	public static final FoodProperties FANCY_UNDERGROUND_SOUP = ResiHaste(9,1.0F,75,120).build();
 	public static final FoodProperties RAW_MEAT_STRIPS = RawMeat(1,0.15F,1).build(); 
-	public static final FoodProperties COOKED_MEAT_STRIPS = CookedMeat(4,0.3F,1).build();
+	public static final FoodProperties COOKED_MEAT_STRIPS = CookedMeat(3,0.4F,1).build();
 //Create Compat
 	public static final FoodProperties CHOCOLATE_GLAZED_QUINGUM = Haste(7,0.6F,45).build();
 	public static final FoodProperties CHOCOLATE_GLAZED_OREBERRIES = Resi(6,0.5F,30).build();
 //	CHOCOLATEY_OREBERRY_CAKE.. I'm going to wait for this one..  Don't know how I feel about it yet
-	
+
 //Builders
+	//Basic Builders
 	private static FoodProperties.Builder Basic(int nut, float sat) {
 		return (new FoodProperties.Builder())
 			.nutrition(nut).saturationMod(sat);
 	}
+	private static FoodProperties.Builder Haste(int nut, float sat, int secDigSpeed) {
+		return (new FoodProperties.Builder())
+			.nutrition(nut).saturationMod(sat)
+			.effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 20*secDigSpeed), 1F);
+	}
+	private static FoodProperties.Builder Resi(int nut, float sat, int secResistance) {
+		return (new FoodProperties.Builder())
+			.nutrition(nut).saturationMod(sat)
+			.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*secResistance), 1F);
+	}
+	private static FoodProperties.Builder ResiHaste(int nut, float sat, int secResistance, int secDigSpeed) {
+		return (new FoodProperties.Builder())
+			.nutrition(nut).saturationMod(sat)
+			.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*secResistance), 1F)
+			.effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 20*secDigSpeed), 1F);
+	}
+	//Quingum
+	private static FoodProperties.Builder CorruptQuingum(int nut, float sat) {
+		return (new FoodProperties.Builder())
+			.effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 900), 1F)
+			.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200), 1F)
+			.effect( () -> new MobEffectInstance(MobEffects.LUCK, 6000, 1), 1F)
+			.nutrition(nut).saturationMod(sat).alwaysEat();
+	}
+	private static FoodProperties.Builder FunkyQuingum(int nut, float sat) {
+		return (new FoodProperties.Builder())
+			.effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 900), 1F)
+			.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 900), 1F)
+			.effect( () -> new MobEffectInstance(MobEffects.NIGHT_VISION, 600), 1F)
+			.nutrition(nut).saturationMod(sat).alwaysEat();
+	}
+	//Meat
 	private static FoodProperties.Builder RawMeat(int nut, float sat, int edm) { //edm means Effect Duration Multiplier
 		return (new FoodProperties.Builder())
 			.nutrition(nut).saturationMod(sat)
-			.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200*edm, 0), 1f)
-			.effect(() -> new MobEffectInstance(MobEffects.GLOWING, 600*edm, 0), 0.4f)
-			.effect(() -> new MobEffectInstance(MobEffects.UNLUCK, 2400*edm, 0), 0.3f)
-			.effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 250*edm, 0), 0.2f)
-			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 50*edm, 0), 0.1f)
-			.effect(() -> new MobEffectInstance(MobEffects.HUNGER, 100*edm, 0), 0.05f)
+			.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200*edm), 1f)
+			.effect(() -> new MobEffectInstance(MobEffects.GLOWING, 600*edm), 0.4f)
+			.effect(() -> new MobEffectInstance(MobEffects.UNLUCK, 2400*edm), 0.3f)
+			.effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 250*edm), 0.2f)
+			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 50*edm, 1), 0.1f)
+			.effect(() -> new MobEffectInstance(MobEffects.HUNGER, 100*edm), 0.05f)
 			.meat();
 	}
 	private static FoodProperties.Builder CookedMeat(int nut, float sat, int edm) {
 		return (new FoodProperties.Builder())
 			.nutrition(nut).saturationMod(sat)
-			.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 150*edm, 0), 1f)
-			.effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 100*edm, 0), 0.6f)
-			.effect(() -> new MobEffectInstance(MobEffects.GLOWING, 600*edm, 0), 0.4f)
-			.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 800*edm, 0), 0.4f)
-			.effect(() -> new MobEffectInstance(MobEffects.UNLUCK, 1200*edm, 0), 0.3f)
-			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100*edm, 0), 0.1f)
+			.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 150*edm), 1f)
+			.effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 100*edm), 0.6f)
+			.effect(() -> new MobEffectInstance(MobEffects.GLOWING, 600*edm), 0.4f)
+			.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 800*edm), 0.4f)
+			.effect(() -> new MobEffectInstance(MobEffects.UNLUCK, 1200*edm), 0.3f)
+			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100*edm, 1), 0.1f)
 			.meat();
-	}
-	private static FoodProperties.Builder Haste(int nut, float sat, int secDigSpeed) {
-		return (new FoodProperties.Builder())
-			.nutrition(nut).saturationMod(sat)
-			.effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 20*secDigSpeed, 0), 1F);
-	}
-	private static FoodProperties.Builder Resi(int nut, float sat, int secResistance) {
-		return (new FoodProperties.Builder())
-			.nutrition(nut).saturationMod(sat)
-			.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*secResistance, 0), 1F);
-	}
-	private static FoodProperties.Builder ResiHaste(int nut, float sat, int secResistance, int secDigSpeed) {
-		return (new FoodProperties.Builder())
-			.nutrition(nut).saturationMod(sat)
-			.effect( () -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*secResistance, 0), 1F)
-			.effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 20*secDigSpeed, 0), 1F);
 	}
 }

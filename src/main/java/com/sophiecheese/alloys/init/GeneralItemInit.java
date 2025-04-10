@@ -327,46 +327,46 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> QUINGUM_MIXTURE = ITEMS.register("quingum_mixture", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
 					.craftRemainder(Items.GLASS_BOTTLE)
-					.food(FoodItemProperties.QUINGUMMIES).stacksTo(16)));
+					.food(FoodItemProperties.PLAIN_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> QUINGUMMIES = ITEMS.register("plain_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.QUINGUMMIES)));
+			() -> new Item(tabAttributeFood().food(FoodItemProperties.PLAIN_QUINGUMMIES)));
 	
-	public static final RegistryObject<Item> QUINGUM_MIXTURE_FRUIT = ITEMS.register("quingum_mixture_fruit", 
+	public static final RegistryObject<Item> FRUIT_MIXTURE = ITEMS.register("quingum_mixture_fruit", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
 					.craftRemainder(Items.GLASS_BOTTLE)
-					.food(FoodItemProperties.OTHER_QUINGUMMIES).stacksTo(16)));
+					.food(FoodItemProperties.FRUIT_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> FRUIT_QUINGUMMIES = ITEMS.register("fruit_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.OTHER_QUINGUMMIES)));
+			() -> new Item(tabAttributeFood().food(FoodItemProperties.FRUIT_QUINGUMMIES)));
 	
-	public static final RegistryObject<Item> QUINGUM_MIXTURE_OREBERRY = ITEMS.register("quingum_mixture_oreberry", 
+	public static final RegistryObject<Item> OREBERRY_MIXTURE = ITEMS.register("quingum_mixture_oreberry", 
 			() -> new OreberryQuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
 					.craftRemainder(Items.GLASS_BOTTLE)
-					.food(FoodItemProperties.OTHER_QUINGUMMIES).stacksTo(16)));
+					.food(FoodItemProperties.OREBERRY_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> OREBERRY_QUINGUMMIES = ITEMS.register("oreberry_quingummies", 
 			() -> new Item(tabAttributeFood().food(FoodItemProperties.OREBERRY_QUINGUMMIES)));
 	
-	public static final RegistryObject<Item> QUINGUM_MIXTURE_GLOW = ITEMS.register("quingum_mixture_glowy", 
+	public static final RegistryObject<Item> GLOWY_MIXTURE = ITEMS.register("quingum_mixture_glowy", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
 					.craftRemainder(Items.GLASS_BOTTLE)
-					.food(FoodItemProperties.GLOW_QUINGUMMIES).stacksTo(16)));
+					.food(FoodItemProperties.GLOW_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> GLOWBERRY_QUINGUMMIES = ITEMS.register("glow_quingummies", 
 			() -> new Item(tabAttributeFood().food(FoodItemProperties.GLOW_QUINGUMMIES)));
 	
-	public static final RegistryObject<Item> QUINGUM_MIXTURE_FUNKY = ITEMS.register("quingum_mixture_funky", 
+	public static final RegistryObject<Item> FUNKY_MIXTURE = ITEMS.register("quingum_mixture_funky", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
 					.craftRemainder(Items.GLASS_BOTTLE)
-					.food(FoodItemProperties.FUNKY_QUINGUMMIES).stacksTo(16)));
+					.food(FoodItemProperties.FUNKY_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> FUNKY_QUINGUMMIES = ITEMS.register("funky_quingummies", 
 			() -> new Item(tabAttributeFood().food(FoodItemProperties.FUNKY_QUINGUMMIES)));
 	
-	public static final RegistryObject<Item> QUINGUM_MIXTURE_CORRUPT = ITEMS.register("quingum_mixture_corrupt", 
+	public static final RegistryObject<Item> CORRUPT_MIXTURE = ITEMS.register("quingum_mixture_corrupt", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
 					.craftRemainder(Items.GLASS_BOTTLE)
-					.food(FoodItemProperties.CORRUPT_QUINGUMMIES).stacksTo(16)));
+					.food(FoodItemProperties.CORRUPT_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> CORRUPT_QUINGUMMIES = ITEMS.register("corrupt_quingummies", 
 			() -> new Item(tabAttributeFood().food(FoodItemProperties.CORRUPT_QUINGUMMIES)));
 	public static final RegistryObject<Item> FLESHY_QUINGUMMIES = ITEMS.register("fleshy_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.FUNKY_QUINGUMMIES)));
+			() -> new Item(tabAttributeFood().food(FoodItemProperties.FLESH_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> GUMMY_MOLD = ITEMS.register("quingum_mold", 
 			() -> new Item(tabAttributeFood().stacksTo(16)));

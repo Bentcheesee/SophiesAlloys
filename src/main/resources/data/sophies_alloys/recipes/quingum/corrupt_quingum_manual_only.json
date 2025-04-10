@@ -8,7 +8,7 @@
 			"item": "minecraft:honey_bottle"
 		},
 		{
-			"item": "sophies_alloys:unknown_raw_meat"
+			"tag": "forge:raw_strange_meat"
 		},
 		{
 			"item": "sophies_alloys:smushroom"
