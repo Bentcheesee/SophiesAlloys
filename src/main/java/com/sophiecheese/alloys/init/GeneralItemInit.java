@@ -372,17 +372,6 @@ public class GeneralItemInit {
 			() -> new Item(tabAttributeFood().stacksTo(16)));
 	
 
-
-	public static void registerCompostables() {
-		ComposterBlock.COMPOSTABLES.put(OtherBlocksInit.NO_FRUIT_BLOCK.get(), 0.6F);
-		ComposterBlock.COMPOSTABLES.put(OtherBlocksInit.NO_FRUIT_SAPLING.get(), 0.3F);
-		ComposterBlock.COMPOSTABLES.put(SMUSHROOM.get(), 0.5F);
-		ComposterBlock.COMPOSTABLES.put(LICHUORICE.get(), 0.4F);
-		ComposterBlock.COMPOSTABLES.put(MOSSY_MUSH.get(), 0.35F);
-		ComposterBlock.COMPOSTABLES.put(OtherBlocksInit.OREBERRY_BUSH_BLOCK.get(), 0.3F);
-	}
-	
-
 	public static final CreativeModeTab SOPH_ALLOY = new CreativeModeTab("sophies_alloys") {
 		@Override
 		public ItemStack makeIcon() {

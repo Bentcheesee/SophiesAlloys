@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "sophies_alloys:block/dusty_lamps/mithril_off"
+	}
+}

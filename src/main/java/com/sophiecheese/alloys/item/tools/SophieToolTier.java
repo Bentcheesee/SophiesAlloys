@@ -19,7 +19,8 @@ public enum SophieToolTier implements Tier{
 	BABULYMN(4, 1101, 11.0F, 2.5F, 25, () -> {
 		return Ingredient.of(GeneralItemInit.BABULYMN_INGOT.get());
 	}),
-	
+	//WOOD 0, 59, 2.0F, 0.0F, 15,
+	//STONE 1, 131, 4.0F, 1.0F, 5,
 	
 	LEAD(1, 214, 6.3F, 1.75F, 19, () -> {
 		return Ingredient.of(GeneralItemInit.LEAD_INGOT.get());

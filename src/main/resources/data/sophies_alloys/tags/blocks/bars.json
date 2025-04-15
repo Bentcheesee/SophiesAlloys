@@ -1,0 +1,23 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "create:andesite_bars",
+			"required": false
+		},
+		{
+			"id": "create:brass_bars",
+			"required": false
+		},
+		{
+			"id": "create:copper_bars",
+			"required": false
+		},
+		{
+			"id": "quark:gold_bars",
+			"required": false
+		},
+		"sophies_alloys:lead_bars",
+		"minecraft:iron_bars"
+	]
+}

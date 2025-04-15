@@ -10,6 +10,7 @@ import com.sophiecheese.alloys.init.compat.FarmersCompat;
 import com.sophiecheese.alloys.worldgen.AlloysConfiguredFeatures;
 import com.sophiecheese.alloys.worldgen.AlloysPlacedFeatures;
 
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -37,5 +38,17 @@ public class Registration {
 //		if(CompatCheck.farmersPresent && CompatCheck.createPresent){
 //		I might do some specific blocks that only appear if both are present, like a Chocolaty Oreberry Cake
 //		}
+//		if(CompatCheck.quarkPresent){
+//		Preparation for a No Fruit chest/trapped chest, and maybe a few other smaller things 
+//		}
 	}
+	
+//	public static void registerCompostables() {
+//		ComposterBlock.COMPOSTABLES.put(OtherBlocksInit.NO_FRUIT_BLOCK.get(), 0.6F);
+//		ComposterBlock.COMPOSTABLES.put(OtherBlocksInit.NO_FRUIT_BUSH.get(), 0.3F);
+//		ComposterBlock.COMPOSTABLES.put(GeneralItemInit.SMUSHROOM.get(), 0.5F);
+//		ComposterBlock.COMPOSTABLES.put(GeneralItemInit.LICHUORICE.get(), 0.4F);
+//		ComposterBlock.COMPOSTABLES.put(GeneralItemInit.MOSSY_MUSH.get(), 0.35F);
+//		ComposterBlock.COMPOSTABLES.put(OtherBlocksInit.OREBERRY_BUSH_BLOCK.get(), 0.3F);
+//	}
 }

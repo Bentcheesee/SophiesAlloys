@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:dusty_lamp",
+		"#sophies_alloys:dusty_lamps/medium_dusty_lamps",
+		"#sophies_alloys:dusty_lamps/strong_dusty_lamps",
+		"#sophies_alloys:dusty_lamps/very_strong_dusty_lamps",
+		"#sophies_alloys:dusty_lamps/weak_dusty_lamps"
+	]
+}

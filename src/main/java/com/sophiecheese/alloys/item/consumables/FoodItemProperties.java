@@ -21,35 +21,35 @@ public class FoodItemProperties {
 	public static final FoodProperties QUINGUM_GEM = Haste(2,0.0F,20).alwaysEat().build();
 	public static final FoodProperties SEARED_QUINGUM = Haste(4,0.2F,30).alwaysEat().build();
 
-	public static final FoodProperties CORRUPT_MIXTURE = CorruptQuingum(6,0.4F).build();
-	public static final FoodProperties CORRUPT_QUINGUMMIES = CorruptQuingum(3,0.2F).build();
-	public static final FoodProperties FLESH_QUINGUMMIES = CorruptQuingum(4,0.5F)
+	public static final FoodProperties CORRUPT_MIXTURE = CorruptQuingum(8,0.6F).build();
+	public static final FoodProperties CORRUPT_QUINGUMMIES = CorruptQuingum(4,0.3F).build();
+	public static final FoodProperties FLESH_QUINGUMMIES = CorruptQuingum(5,0.5F)
 			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1F).build();
-	public static final FoodProperties FRUIT_MIXTURE = Haste(4,0.2F,45)
+	public static final FoodProperties FRUIT_MIXTURE = Haste(8,0.6F,45)
 			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1F).alwaysEat().build();
-	public static final FoodProperties FRUIT_QUINGUMMIES = Haste(2,0.1F,45)
+	public static final FoodProperties FRUIT_QUINGUMMIES = Haste(4,0.4F,45)
 			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1F).alwaysEat().build();
-	public static final FoodProperties FUNKY_MIXTURE = FunkyQuingum(4,0.4F).build();
-	public static final FoodProperties FUNKY_QUINGUMMIES = FunkyQuingum(2,0.2F).build();
-	public static final FoodProperties GLOW_MIXTURE = Haste(4,0.2F,45)
-			.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000, 0), 1F).alwaysEat().build();
-	public static final FoodProperties GLOW_QUINGUMMIES = Haste(2,0.1F,45)
-			.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000, 0), 1F).alwaysEat().build();
-	public static final FoodProperties OREBERRY_MIXTURE = ResiHaste(6,0.4F,45,45).alwaysEat().build();
-	public static final FoodProperties OREBERRY_QUINGUMMIES = ResiHaste(3,0.2F,45,45).alwaysEat().build();
-	public static final FoodProperties PLAIN_MIXTURE = Haste(4,0.2F,45).alwaysEat().build();
-	public static final FoodProperties PLAIN_QUINGUMMIES = Haste(2,0.1F,45).alwaysEat().build();
+	public static final FoodProperties FUNKY_MIXTURE = FunkyQuingum(8,0.6F).build();
+	public static final FoodProperties FUNKY_QUINGUMMIES = FunkyQuingum(4,0.4F).build();
+	public static final FoodProperties GLOW_MIXTURE = Haste(7,0.4F,45)
+			.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000), 1F).alwaysEat().build();
+	public static final FoodProperties GLOW_QUINGUMMIES = Haste(4,0.2F,45)
+			.effect( () -> new MobEffectInstance(MobEffects.GLOWING, 3000), 1F).alwaysEat().build();
+	public static final FoodProperties OREBERRY_MIXTURE = ResiHaste(8,0.6F,45,45).alwaysEat().build();
+	public static final FoodProperties OREBERRY_QUINGUMMIES = ResiHaste(4,0.4F,45,45).alwaysEat().build();
+	public static final FoodProperties PLAIN_MIXTURE = Haste(7,0.5F,45).alwaysEat().build();
+	public static final FoodProperties PLAIN_QUINGUMMIES = Haste(4,0.3F,45).alwaysEat().build();
 //Meat
 	public static final FoodProperties RAW_MEAT = RawMeat(2,0.3F,2).build();
 	public static final FoodProperties COOKED_MEAT = CookedMeat(6,0.8F,2).build();
 
 //Farmer's Compat
-	public static final FoodProperties OREBERRY_SALAD = Resi(6,0.3F,60)
+	public static final FoodProperties OREBERRY_SALAD = Resi(8,0.6F,60)
 			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1F).build();
 	public static final FoodProperties OREBERRY_BURGER = Resi(10,0.7F,45).build();
 	public static final FoodProperties QUINGUM_SALAD = Haste(8,0.9F,90)
 			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1F).build();
-	public static final FoodProperties FANCY_UNDERGROUND_SOUP = ResiHaste(9,1.0F,75,120).build();
+	public static final FoodProperties FANCY_UNDERGROUND_SOUP = ResiHaste(10,1.2F,75,120).build();
 	public static final FoodProperties RAW_MEAT_STRIPS = RawMeat(1,0.15F,1).build(); 
 	public static final FoodProperties COOKED_MEAT_STRIPS = CookedMeat(3,0.4F,1).build();
 //Create Compat

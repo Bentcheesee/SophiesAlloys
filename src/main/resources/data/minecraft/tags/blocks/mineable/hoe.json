@@ -3,6 +3,7 @@
 	"values": [
 		"sophies_alloys:meat_block",
 		"sophies_alloys:no_fruit",
+		"sophies_alloys:no_fruit_leaves",
 		{
 			"id": "sophies_alloys:oreberry_crate",
 			"required": false

@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:diamond_pickaxe",
+		"sophies_alloys:foxite_pickaxe",
 		"sophies_alloys:steel_pickaxe",
 		{
 			"id": "alloyed:steel_pickaxe",

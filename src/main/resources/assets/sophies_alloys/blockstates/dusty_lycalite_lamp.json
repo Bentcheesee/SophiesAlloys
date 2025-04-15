@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"lit=true": {
+			"model": "sophies_alloys:block/dusty_lamps/lycalite_on"
+		},
+		"lit=false": {
+			"model": "sophies_alloys:block/dusty_lamps/lycalite_off"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" b ",
+		"bgb",
+		" b "
+	],
+	"key": {
+		"b": {
+			"item": "sophies_alloys:lead_bars"
+		},
+		"g": {
+			"item": "minecraft:glowstone" 
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:dusty_lamp",
+		"count": 3
+	}
+}

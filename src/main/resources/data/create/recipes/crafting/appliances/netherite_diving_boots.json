@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:netherite_upgrade"
+	},
+	"base": {
+		"item": "create:copper_diving_boots"
+	},
+	"result": {
+		"item": "create:netherite_diving_boots"
+	}
+}

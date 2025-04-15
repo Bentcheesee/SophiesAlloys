@@ -19,8 +19,12 @@
 			"fluid": "create:potion",
 			"nbt": {
 				"Bottle": "REGULAR",
-				"Potion": "minecraft:awkward"
+				"Potion": "minecraft:water"
 			}
+		},
+		{
+			"item": "minecraft:glass_bottle",
+			"count": 2
 		}
 	],
 	"results": [

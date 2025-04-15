@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:diamond_leggings",
+		"sophies_alloys:foxite_leggings",
 		"sophies_alloys:steel_leggings",
 		{
 			"id": "alloyed:steel_leggings",

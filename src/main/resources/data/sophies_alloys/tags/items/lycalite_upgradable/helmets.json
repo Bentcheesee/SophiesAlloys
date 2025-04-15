@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:diamond_helmet",
+		"sophies_alloys:foxite_helmet",
 		"sophies_alloys:steel_helmet",
 		{
 			"id": "alloyed:steel_helmet",

@@ -15,7 +15,45 @@
 					"expand": true,
 					"weight": 1
 				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"enchantments": [
+								{
+									"enchantment": "minecraft:silk_touch"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:no_fruit"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"items": [],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:silk_touch"
+							}
+						]
+					}
+				}
 			]
 		}
-	]
+	],
+	"functions": []
 }

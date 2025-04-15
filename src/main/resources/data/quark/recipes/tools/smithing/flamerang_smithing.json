@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:netherite_upgrade"
+	},
+	"base": {
+		"item": "quark:pickarang"
+	},
+	"result": {
+		"item": "quark:flamerang"
+	}
+}

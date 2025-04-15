@@ -27,13 +27,11 @@ public class SophieFlammableLogBlock extends RotatedPillarBlock  {
 	
 	@Override
 	public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-		// TODO Auto-generated method stub
 		return 5;
 	}
 	
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-		// TODO Auto-generated method stub
 		return 5;
 	}
 

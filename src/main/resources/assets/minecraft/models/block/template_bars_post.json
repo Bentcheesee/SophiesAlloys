@@ -1,0 +1,21 @@
+{
+	"credit": "Made by Bentcheesee",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "sophies_alloys:block/iron_bars",
+		"bars": "sophies_alloys:block/iron_bars"
+	},
+	"elements": [
+		{
+			"name": "me_when_i_post",
+			"from": [6.9688, 0, 6.9688],
+			"to": [9.0313, 16, 9.0313],
+			"faces": {
+				"north": {"uv": [9, 0, 7, 16], "texture": "#bars"},
+				"east": {"uv": [9, 0, 7, 16], "texture": "#bars"},
+				"south": {"uv": [9, 0, 7, 16], "texture": "#bars"},
+				"west": {"uv": [9, 0, 7, 16], "texture": "#bars"}
+			}
+		}
+	]
+}

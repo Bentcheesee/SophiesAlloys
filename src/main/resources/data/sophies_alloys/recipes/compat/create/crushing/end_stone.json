@@ -14,11 +14,13 @@
 	"processingTime": 300,
 	"results": [
 		{
+			"chance": 0.6,
 			"item": "sophies_alloys:crushed_end_stone"
 		},
 		{
-			"chance": 0.5,
-			"item": "sophies_alloys:end_stone_chunk"
+			"chance": 0.75,
+			"item": "sophies_alloys:end_stone_chunk",
+			"count": 2
 		}
 	]
 }

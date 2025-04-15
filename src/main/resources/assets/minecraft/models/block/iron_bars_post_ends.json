@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_bars_post_ends",
+    "textures": {
+        "particle": "sophies_alloys:block/iron_bars",
+        "bars": "sophies_alloys:block/iron_bars"
+    }
+}

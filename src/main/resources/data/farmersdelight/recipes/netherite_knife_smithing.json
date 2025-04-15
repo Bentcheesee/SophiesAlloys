@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "sophies_alloys:netherite_upgrade"
+	},
+	"base": {
+		"item": "farmersdelight:diamond_knife"
+	},
+	"result": {
+		"item": "farmersdelight:netherite_knife"
+	}
+}

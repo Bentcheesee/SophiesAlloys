@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:diamond_sword",
+		"sophies_alloys:foxite_sword",
 		"sophies_alloys:steel_sword",
 		{
 			"id": "alloyed:steel_sword",
