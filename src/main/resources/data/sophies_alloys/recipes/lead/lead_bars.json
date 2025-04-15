@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"III",
+		"III"
+	],
+	"key": {
+		"I": {
+		"tag": "forge:ingots/lead"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:lead_bars",
+		"count": 16
+	}
+}
