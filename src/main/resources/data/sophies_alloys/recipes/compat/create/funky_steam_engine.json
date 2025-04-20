@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"pattern": [
+		"F",
+		"C"
+	],
+	"key": {
+		"F": {
+			"item": "sophies_alloys:funky_thingamabob"
+		},
+		"C": {
+			"tag": "forge:storage_blocks/copper"
+		}
+	},
+	"result": {
+		"item": "create:steam_engine"
+	}
+}

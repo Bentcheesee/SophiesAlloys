@@ -76,10 +76,6 @@ public class AlloysConfiguredFeatures {
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_QUINGUM_ORES = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OreBlockInit.QUINGUM_ORE.get().defaultBlockState()),
 			OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, OreBlockInit.DEEPSLATE_QUINGUM_ORE.get().defaultBlockState())));
-	//Warped Redstone
-	//public static final Supplier<List<OreConfiguration.TargetBlockState>> WARPED_REDSTONE_ORES = Suppliers.memoize(() -> List.of(
-	//		OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, OreBlockInit.WARPED_REDSTONE_NETHER_ORE.get().defaultBlockState()),
-	//		OreConfiguration.target(new BlockMatchTest(Blocks.SOUL_SAND), OreBlockInit.WARPED_REDSTONE_SOUL_ORE.get().defaultBlockState())));
 	//Crimson Coal
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> CRIMSON_COAL_ORES = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), OreBlockInit.CRIMSON_COAL_ORE.get().defaultBlockState())));
@@ -154,9 +150,6 @@ public class AlloysConfiguredFeatures {
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_QUINGUM_ORES.get(),11)));
 	public static final RegistryObject<ConfiguredFeature<?, ?>> QUINGUM_LIGHT_ORE = CONFIGURED_FEATURES.register("quingum_light_ore_cf",
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_QUINGUM_ORES.get(),6)));
-	//Warped Redstone
-	//public static final RegistryObject<ConfiguredFeature<?, ?>> WARPED_REDSTONE_ORE = CONFIGURED_FEATURES.register("warped_redstone_ore_cf",
-	//		() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(WARPED_REDSTONE_ORES.get(),5)));
 	//Crimson Coal
 	public static final RegistryObject<ConfiguredFeature<?, ?>> CRIMSON_COAL_ORE = CONFIGURED_FEATURES.register("crimson_coal_ore_cf",
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(CRIMSON_COAL_ORES.get(),7)));
@@ -177,11 +170,8 @@ public class AlloysConfiguredFeatures {
 
 	//Soul Stone
 	public static final RegistryObject<ConfiguredFeature<?, ?>> OREBERRY_PATCH_CF = CONFIGURED_FEATURES.register("oreberry_patch_cf",
-			() -> new ConfiguredFeature<>(Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(OtherBlocksInit.OREBERRY_BUSH_BLOCK.get())), List.of(Blocks.GRASS_BLOCK))));
-
-
-	
-	
+			() -> new ConfiguredFeature<>(Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, 
+			new SimpleBlockConfiguration(BlockStateProvider.simple(OtherBlocksInit.OREBERRY_BUSH_BLOCK.get())), List.of(Blocks.GRASS_BLOCK))));
 	
 	public static void register(IEventBus eventBus) {
 		CONFIGURED_FEATURES.register(eventBus);

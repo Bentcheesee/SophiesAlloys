@@ -126,12 +126,7 @@ public class AlloysPlacedFeatures {
 			() -> new PlacedFeature(AlloysConfiguredFeatures.QUINGUM_LIGHT_ORE.getHolder().get(),
 					commonOrePlacement(10,
 							HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(145)))));
-
-	//public static final RegistryObject<PlacedFeature> WARPED_REDSTONE = PLACED_FEATURES.register("warped_redstone_placed",
-	//		() -> new PlacedFeature(AlloysConfiguredFeatures.WARPED_REDSTONE_ORE.getHolder().get(),
-	//				commonOrePlacement(17,
-	//						HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(30), VerticalAnchor.top()))));
-
+	
 	public static final RegistryObject<PlacedFeature> CRIMSON_COAL = PLACED_FEATURES.register("crimson_coal_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.CRIMSON_COAL_ORE.getHolder().get(),
 					commonOrePlacement(14,
@@ -157,16 +152,16 @@ public class AlloysPlacedFeatures {
 							RarityFilter.onAverageOnceEvery(28),CountPlacement.of(9),InSquarePlacement.spread(),
 							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(30), VerticalAnchor.absolute(30)))));
 	
-	public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
-		return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
+	public static List<PlacementModifier> orePlacement(PlacementModifier placeMod, PlacementModifier placeMod2) {
+		return List.of(placeMod, InSquarePlacement.spread(), placeMod2, BiomeFilter.biome());
 	}
 
-	public static List<PlacementModifier> commonOrePlacement(int p_195344_, PlacementModifier p_195345_) {
-		return orePlacement(CountPlacement.of(p_195344_), p_195345_);
+	public static List<PlacementModifier> commonOrePlacement(int count, PlacementModifier placeMod) {
+		return orePlacement(CountPlacement.of(count), placeMod);
 	}
 
-	public static List<PlacementModifier> rareOrePlacement(int p_195350_, PlacementModifier p_195351_) {
-		return orePlacement(RarityFilter.onAverageOnceEvery(p_195350_), p_195351_);
+	public static List<PlacementModifier> rareOrePlacement(int count, PlacementModifier placeMod) {
+		return orePlacement(RarityFilter.onAverageOnceEvery(count), placeMod);
 	}
 
 

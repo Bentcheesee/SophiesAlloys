@@ -1,6 +1,11 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
+	"pattern": [
+		"I",
+		"I",
+		"S"
+	],
 	"key": {
 		"I": {
 		"tag": "forge:ingots/lycalite"
@@ -9,11 +14,6 @@
 		"item": "sophies_alloys:oberite_handle"
 		}
 	},
-	"pattern": [
-		"I",
-		"I",
-		"S"
-	],
 	"result": {
 		"item": "sophies_alloys:lycalite_sword"
 	}

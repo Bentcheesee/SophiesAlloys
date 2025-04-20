@@ -19,42 +19,41 @@ import net.minecraft.world.level.Level;
 
 public class QuingumBottle extends Item{
 
-	public QuingumBottle(Properties p_41383_) {
-		super(p_41383_);
+	public QuingumBottle(Properties prop) {
+		super(prop);
 	}
 
-	public ItemStack finishUsingItem(ItemStack p_41348_, Level p_41349_, LivingEntity p_41350_) {
-		super.finishUsingItem(p_41348_, p_41349_, p_41350_);
-		if (p_41350_ instanceof ServerPlayer serverplayer) {
-			CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, p_41348_);
+	public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
+		super.finishUsingItem(stack, level, entity);
+		if (entity instanceof ServerPlayer serverplayer) {
+			CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, stack);
 			serverplayer.awardStat(Stats.ITEM_USED.get(this));
 		}
 		
-		if (!p_41349_.isClientSide) {
-			p_41350_.removeEffect(MobEffects.WITHER);
-			p_41350_.removeEffect(MobEffects.POISON);
+		if (!level.isClientSide) {
+			entity.removeEffect(MobEffects.WITHER);
+			entity.removeEffect(MobEffects.POISON);
 		}
 		
-		if (p_41348_.isEmpty()) {
+		if (stack.isEmpty()) {
 			return new ItemStack(Items.GLASS_BOTTLE);
 		} else {
-			if (p_41350_ instanceof Player && !((Player)p_41350_).getAbilities().instabuild) {
+			if (entity instanceof Player && !((Player)entity).getAbilities().instabuild) {
 				ItemStack itemstack = new ItemStack(Items.GLASS_BOTTLE);
-				Player player = (Player)p_41350_;
+				Player player = (Player)entity;
 				if (!player.getInventory().add(itemstack)) {
 					player.drop(itemstack, false);
 				}
 			}
-			
-			return p_41348_;
+			return stack;
 		}
 	}
 	
-	public int getUseDuration(ItemStack p_41360_) {
+	public int getUseDuration(ItemStack stack) {
 		return 50;
 	}
 	
-	public UseAnim getUseAnimation(ItemStack p_41358_) {
+	public UseAnim getUseAnimation(ItemStack stack) {
 		return UseAnim.DRINK;
 	}
 	
@@ -66,7 +65,7 @@ public class QuingumBottle extends Item{
 		return SoundEvents.HONEY_DRINK;
 	}
 	
-	public InteractionResultHolder<ItemStack> use(Level p_41352_, Player p_41353_, InteractionHand p_41354_) {
-		return ItemUtils.startUsingInstantly(p_41352_, p_41353_, p_41354_);
+	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+		return ItemUtils.startUsingInstantly(level, player, hand);
 	}
 }

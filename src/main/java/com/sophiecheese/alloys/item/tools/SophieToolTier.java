@@ -56,12 +56,12 @@ public enum SophieToolTier implements Tier{
 	private final int enchantmentValue;
 	private final LazyLoadedValue<Ingredient> repairIngredient;
 
-	SophieToolTier(int level, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+	SophieToolTier(int level, int uses, float speed, float damage, int enchantValue, Supplier<Ingredient> repairIngredient) {
 		this.level = level;
 		this.uses = uses;
 		this.speed = speed;
 		this.damage = damage;
-		this.enchantmentValue = enchantmentValue;
+		this.enchantmentValue = enchantValue;
 		this.repairIngredient = new LazyLoadedValue<>(repairIngredient);
 	}
 

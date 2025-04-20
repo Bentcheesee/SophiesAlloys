@@ -8,9 +8,9 @@ import com.google.common.base.Supplier;
 import com.mojang.logging.LogUtils;
 import com.sophiecheese.alloys.SophiesAlloys;
 import com.sophiecheese.alloys.block.lamps.DustyLampBlock;
-import com.sophiecheese.alloys.block.lamps.MediumDustyLampBlock;
 import com.sophiecheese.alloys.block.lamps.WeakDustyLampBlock;
 import com.sophiecheese.alloys.init.GeneralItemInit;
+import com.sophiecheese.alloys.init.OtherBlocksInit;
 import com.sophiecheese.alloys.item.SophieCreateSequencedAssemblyItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
@@ -19,9 +19,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -82,11 +79,9 @@ public class CreateCompat {
 //Blocks
 	
 	public static final RegistryObject<DustyLampBlock> DUSTY_ZINC_LAMP = register("dusty_zinc_lamp",
-			() -> new WeakDustyLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS)
-				.lightLevel(state -> state.getValue(DustyLampBlock.LIT) ? 6 : 0).strength(1.3F).sound(SoundType.GLASS)), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new WeakDustyLampBlock(OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_BRASS_LAMP = register("dusty_brass_lamp",
-			() -> new MediumDustyLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS)
-				.lightLevel(state -> state.getValue(DustyLampBlock.LIT) ? 9 : 0).strength(1.3F).sound(SoundType.GLASS)), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
 		return CREATE_BLOCKS.register(name, block);

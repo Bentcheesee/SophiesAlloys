@@ -12,33 +12,33 @@ import net.minecraft.world.level.Level;
 
 public class OreberryQuingumBottle extends QuingumBottle{
 
-	public OreberryQuingumBottle(Properties p_41383_) {
-		super(p_41383_);
+	public OreberryQuingumBottle(Properties prop) {
+		super(prop);
 	}
 
 	@Override
-	public ItemStack finishUsingItem(ItemStack p_41348_, Level p_41349_, LivingEntity p_41350_) {
-		super.finishUsingItem(p_41348_, p_41349_, p_41350_);
-		if (p_41350_ instanceof ServerPlayer serverplayer) {
-			CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, p_41348_);
+	public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
+		super.finishUsingItem(stack, level, entity);
+		if (entity instanceof ServerPlayer serverplayer) {
+			CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, stack);
 			serverplayer.awardStat(Stats.ITEM_USED.get(this));
 		}
-		if (!p_41349_.isClientSide) {
-			 p_41350_.removeEffect(MobEffects.WITHER);
-			 p_41350_.removeEffect(MobEffects.POISON);
-			 p_41350_.removeEffect(MobEffects.DIG_SLOWDOWN);
+		if (!level.isClientSide) {
+			 entity.removeEffect(MobEffects.WITHER);
+			 entity.removeEffect(MobEffects.POISON);
+			 entity.removeEffect(MobEffects.DIG_SLOWDOWN);
 		}
-		if (p_41348_.isEmpty()) {
+		if (stack.isEmpty()) {
 			return new ItemStack(Items.GLASS_BOTTLE);
 			} else {
-				if (p_41350_ instanceof Player && !((Player)p_41350_).getAbilities().instabuild) {
+				if (entity instanceof Player && !((Player)entity).getAbilities().instabuild) {
 					ItemStack itemstack = new ItemStack(Items.GLASS_BOTTLE);
-					Player player = (Player)p_41350_;
+					Player player = (Player)entity;
 					if (!player.getInventory().add(itemstack)) {
 						player.drop(itemstack, false);
 					}
 				}
-			return p_41348_;
+			return stack;
 		}
 	}
 

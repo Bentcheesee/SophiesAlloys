@@ -74,22 +74,22 @@ public enum SophieArmorTier implements ArmorMaterial{
 	private final float knockbackResistance;
 	private final LazyLoadedValue<Ingredient> repairIngredient;
 
-	private SophieArmorTier(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
-		this.name = p_40474_;
-		this.durabilityMultiplier = p_40475_;
-		this.slotProtections = p_40476_;
-		this.enchantmentValue = p_40477_;
-		this.sound = p_40478_;
-		this.toughness = p_40479_;
-		this.knockbackResistance = p_40480_;
-		this.repairIngredient = new LazyLoadedValue<>(p_40481_);
+	private SophieArmorTier(String name, int duraMulti, int[] slotProt, int enchantValue, SoundEvent sound, float tough, float knockResi, Supplier<Ingredient> repairIng) {
+		this.name = name;
+		this.durabilityMultiplier = duraMulti;
+		this.slotProtections = slotProt;
+		this.enchantmentValue = enchantValue;
+		this.sound = sound;
+		this.toughness = tough;
+		this.knockbackResistance = knockResi;
+		this.repairIngredient = new LazyLoadedValue<>(repairIng);
 	}
 
-	public int getDurabilityForSlot(EquipmentSlot p_40484_) {
-		return HEALTH_PER_SLOT[p_40484_.getIndex()] * this.durabilityMultiplier;
+	public int getDurabilityForSlot(EquipmentSlot equipSlot) {
+		return HEALTH_PER_SLOT[equipSlot.getIndex()] * this.durabilityMultiplier;
 	}
-	public int getDefenseForSlot(EquipmentSlot p_40487_) {
-		return this.slotProtections[p_40487_.getIndex()];
+	public int getDefenseForSlot(EquipmentSlot equipSlot) {
+		return this.slotProtections[equipSlot.getIndex()];
 	}
 	public int getEnchantmentValue() {
 		return this.enchantmentValue;

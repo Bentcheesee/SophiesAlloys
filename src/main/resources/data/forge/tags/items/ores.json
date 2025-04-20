@@ -11,10 +11,6 @@
 		"#forge:ores/silver",
 		"#forge:ores/tritonium",
 		"#forge:ores/tungsten",
-		{
-			"id": "#forge:ores/warped_redstone",
-			"required": false
-		},
 		"#forge:ores/mithril"
 	]
 }

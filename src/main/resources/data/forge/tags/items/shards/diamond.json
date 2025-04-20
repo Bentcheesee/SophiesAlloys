@@ -1,6 +1,10 @@
 {
 	"replace": false,
 	"values": [
-		"sophies_alloys:diamond_shard"
+		"sophies_alloys:diamond_shard",
+		{
+			"id": "create_dd:diamond_shard",
+			"required": false
+		}
 	]
 }

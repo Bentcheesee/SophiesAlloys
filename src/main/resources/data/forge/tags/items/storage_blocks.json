@@ -23,10 +23,6 @@
 		"sophies_alloys:lycalite_block",
 		"sophies_alloys:babulymn_block",
 		"sophies_alloys:crimson_coal_block",
-		{
-			"id": "sophies_alloys:warped_redstone_block",
-			"required": false
-		},
 		"sophies_alloys:meat_block"
 	]
 }

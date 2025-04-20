@@ -10,7 +10,6 @@ import com.sophiecheese.alloys.init.compat.FarmersCompat;
 import com.sophiecheese.alloys.worldgen.AlloysConfiguredFeatures;
 import com.sophiecheese.alloys.worldgen.AlloysPlacedFeatures;
 
-import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 

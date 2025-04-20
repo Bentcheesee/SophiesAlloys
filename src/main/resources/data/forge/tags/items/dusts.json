@@ -28,6 +28,10 @@
 		{
 			"id": "#forge:dusts/zinc",
 			"required": false
+		},
+		{
+			"id": "#forge:dusts/brass",
+			"required": false
 		}
 	]
 }

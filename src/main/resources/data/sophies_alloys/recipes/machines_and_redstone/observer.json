@@ -2,6 +2,11 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"group": "observer",
+	"pattern": [
+		"CCC",
+		"RRQ",
+		"CCC"
+	],
 	"key": {
 		"C": {
 				"tag": "minecraft:stone_crafting_materials"
@@ -18,11 +23,6 @@
 			}
 		]
 	},
-	"pattern": [
-		"CCC",
-		"RRQ",
-		"CCC"
-	],
 	"result": {
 		"item": "minecraft:observer"
 	}

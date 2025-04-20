@@ -7,12 +7,12 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
@@ -29,8 +29,7 @@ public class DustyLampBlock extends Block{
 	public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player,
 			InteractionHand hand, BlockHitResult hitResult) {
         float f = state.getValue(LIT) ? 0.4F : 0.6F;
-		ItemStack itemstack = player.getItemInHand(hand);
-		if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND && itemstack.isEmpty()) {
+		if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND && player.getMainHandItem().isEmpty() && player.getOffhandItem().isEmpty()) {
 			level.setBlock(pos, state.cycle(LIT), 3);
 			level.playSound((Player)null, pos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS, 0.3F, f);
 			level.gameEvent(player, state.getValue(LIT) ? GameEvent.BLOCK_ACTIVATE : GameEvent.BLOCK_DEACTIVATE, pos);
@@ -46,8 +45,7 @@ public class DustyLampBlock extends Block{
 
 	@Override
 	public int getSignal(BlockState state, BlockGetter getter, BlockPos pos, Direction direction) {
-		return state.getValue(LIT) ? 10 : 0;
+		return state.getValue(LIT) ? 9 : 0;
 	}
 }
-
 

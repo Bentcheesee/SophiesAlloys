@@ -4,7 +4,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class StrongDustyLampBlock extends DustyLampBlock{
 
@@ -17,5 +16,4 @@ public class StrongDustyLampBlock extends DustyLampBlock{
 	public int getSignal(BlockState state, BlockGetter getter, BlockPos pos, Direction direction) {
 		return state.getValue(LIT) ? 12 : 0;
 	}
-
 }

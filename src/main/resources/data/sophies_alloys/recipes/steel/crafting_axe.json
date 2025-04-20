@@ -1,6 +1,11 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
+	"pattern": [
+		"II",
+		"IS",
+		" S"
+	],
 	"key": {
 		"I": {
 		"tag": "forge:ingots/steel"
@@ -9,11 +14,6 @@
 		"item": "sophies_alloys:foxite_handle"
 		}
 	},
-	"pattern": [
-		"II",
-		"IS",
-		" S"
-	],
 	"result": {
 		"item": "sophies_alloys:steel_axe"
 	}
