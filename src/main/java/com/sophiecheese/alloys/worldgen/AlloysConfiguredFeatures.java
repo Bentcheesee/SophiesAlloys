@@ -91,13 +91,22 @@ public class AlloysConfiguredFeatures {
 			OreConfiguration.target(new BlockMatchTest(Blocks.OBSIDIAN), OreBlockInit.END_MEAT_ORE.get().defaultBlockState())));
 	
 
-	//Slate
+	//Deep
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> SLATE_ORE = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(OreFeatures.NATURAL_STONE, OtherBlocksInit.SLATE.get().defaultBlockState())));
-	//Soul Stone
+	public static final Supplier<List<OreConfiguration.TargetBlockState>> DEEP_GRAVEL_ORE = Suppliers.memoize(() -> List.of(
+			OreConfiguration.target(new BlockMatchTest(Blocks.GRAVEL), OtherBlocksInit.DEEP_GRAVEL.get().defaultBlockState()),
+			OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, OtherBlocksInit.DEEP_GRAVEL.get().defaultBlockState())));
+	
+	//Generic Nether
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> SOUL_STONE_ORE = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(new BlockMatchTest(Blocks.SOUL_SOIL), OtherBlocksInit.SOUL_STONE.get().defaultBlockState()),
 			OreConfiguration.target(new BlockMatchTest(Blocks.SOUL_SAND), OtherBlocksInit.SOUL_COBBLESTONE.get().defaultBlockState())));
+	public static final Supplier<List<OreConfiguration.TargetBlockState>> SOUL_GRAVEL_ORE = Suppliers.memoize(() -> List.of(
+			OreConfiguration.target(new BlockMatchTest(Blocks.GRAVEL), OtherBlocksInit.SOUL_GRAVEL.get().defaultBlockState()),
+			OreConfiguration.target(OreFeatures.NETHERRACK, OtherBlocksInit.SOUL_GRAVEL.get().defaultBlockState())));
+	public static final Supplier<List<OreConfiguration.TargetBlockState>> RICH_BASALT_ORE = Suppliers.memoize(() -> List.of(
+			OreConfiguration.target(new BlockMatchTest(Blocks.BASALT), OreBlockInit.RICH_BASALT.get().defaultBlockState())));
 
 
 	//Silver
@@ -160,15 +169,21 @@ public class AlloysConfiguredFeatures {
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_MEAT_ORES.get(),9,1.0F)));
 	public static final RegistryObject<ConfiguredFeature<?, ?>> MEAT_END_ORE = CONFIGURED_FEATURES.register("meat_end_ore_cf",
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_MEAT_ORES.get(),11,1.0F)));
-	//Slate
+	//Deep
 	public static final RegistryObject<ConfiguredFeature<?, ?>> SLATE_GORE = CONFIGURED_FEATURES.register("slate_ore_cf",
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(SLATE_ORE.get(),40)));
-	//Soul Stone
+	public static final RegistryObject<ConfiguredFeature<?, ?>> DEEP_GRAVEL_GORE = CONFIGURED_FEATURES.register("deep_gravel_ore_cf",
+			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(DEEP_GRAVEL_ORE.get(),40)));
+	//Generic Nether
 	public static final RegistryObject<ConfiguredFeature<?, ?>> SOUL_STONE_GORE = CONFIGURED_FEATURES.register("soul_stone_ore_cf",
 			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(SOUL_STONE_ORE.get(),50)));
+	public static final RegistryObject<ConfiguredFeature<?, ?>> SOUL_GRAVEL_GORE = CONFIGURED_FEATURES.register("soul_gravel_ore_cf",
+			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(SOUL_GRAVEL_ORE.get(),28)));
+	public static final RegistryObject<ConfiguredFeature<?, ?>> RICH_BASALT_GORE = CONFIGURED_FEATURES.register("rich_basalt_ore_cf",
+			() -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(RICH_BASALT_ORE.get(),4)));
 	
 
-	//Soul Stone
+	//Oreberry
 	public static final RegistryObject<ConfiguredFeature<?, ?>> OREBERRY_PATCH_CF = CONFIGURED_FEATURES.register("oreberry_patch_cf",
 			() -> new ConfiguredFeature<>(Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, 
 			new SimpleBlockConfiguration(BlockStateProvider.simple(OtherBlocksInit.OREBERRY_BUSH_BLOCK.get())), List.of(Blocks.GRASS_BLOCK))));

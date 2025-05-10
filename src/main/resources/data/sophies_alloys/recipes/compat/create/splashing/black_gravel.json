@@ -1,0 +1,28 @@
+{
+	"type": "create:splashing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:black_gravel"
+		}
+	],
+	"results": [
+		{
+			"item": "minecraft:flint",
+			"chance": 0.4
+		},
+		{
+			"item": "minecraft:gold_nugget",
+			"chance": 0.1
+		},
+		{
+			"item": "sophies_alloys:mithril_nugget",
+			"chance": 0.04
+		}
+	]
+}

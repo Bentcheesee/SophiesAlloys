@@ -1,0 +1,35 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:blackstone",
+		"minecraft:polished_blackstone",
+		"minecraft:polished_blackstone_bricks",
+		"minecraft:cracked_polished_blackstone_bricks",
+		"minecraft:chiseled_polished_blackstone",
+		"sophies_alloys:cobbled_blackstone",
+		{
+			"id": "quark:blackstone_bricks",
+			"required": false
+		},
+		{
+			"id": "create_dd:blackstone_pillar",
+			"required": false
+		},
+		{
+			"id": "create_dd:cut_blackstone",
+			"required": false
+		},
+		{
+			"id": "create_dd:cut_blackstone_bricks",
+			"required": false
+		},
+		{
+			"id": "create_dd:polished_cut_blackstone",
+			"required": false
+		},
+		{
+			"id": "create_dd:small_blackstone_bricks",
+			"required": false
+		}
+	]
+}

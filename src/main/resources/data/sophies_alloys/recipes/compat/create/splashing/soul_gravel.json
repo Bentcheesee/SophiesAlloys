@@ -1,0 +1,28 @@
+{
+	"type": "create:splashing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:soul_gravel"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:foxite_nugget",
+			"chance": 0.13
+		},
+		{
+			"item": "sophies_alloys:soul_chunk",
+			"chance": 0.1
+		},
+		{
+			"item": "minecraft:glowstone_dust",
+			"chance": 0.08
+		}
+	]
+}

@@ -7,9 +7,14 @@
 		}
 	],
 	"ingredients": [
-		{
-			"item": "minecraft:blackstone"
-		}
+		[
+			{
+				"item": "minecraft:blackstone"
+			},
+			{
+				"item": "sophies_alloys:cobbled_blackstone"
+			}
+		]
 	],
 	"result": [
 		{

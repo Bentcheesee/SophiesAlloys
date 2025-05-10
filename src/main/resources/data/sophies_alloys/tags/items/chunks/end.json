@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:end_stone_chunk",
+		"sophies_alloys:error_chunk",
+		{
+			"id": "sophies_alloys:myalite_chunk",
+			"required": false
+		}
+	]
+}

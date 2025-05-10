@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/template_potted_azalea_bush",
+	"textures": {
+		"plant": "sophies_alloys:block/no_fruit/no_fruit_bush_side",
+		"side": "sophies_alloys:block/no_fruit/no_fruit_bush_side",
+		"top": "sophies_alloys:block/no_fruit/no_fruit_bush_top"
+	}
+}

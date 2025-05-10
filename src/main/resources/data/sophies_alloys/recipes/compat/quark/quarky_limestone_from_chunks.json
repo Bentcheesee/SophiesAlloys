@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"pattern": [
+		"ss",
+		"ss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:quarky_limestone_chunk"
+		}
+	},
+	"result": {
+		"item": "quark:limestone"
+	}
+}

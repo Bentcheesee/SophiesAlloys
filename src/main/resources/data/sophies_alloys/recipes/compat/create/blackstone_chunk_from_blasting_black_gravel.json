@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:blasting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 0.7,
+	"group": "blackstone_chunk",
+	"ingredient": [
+		{
+			"item": "sophies_alloys:black_gravel"
+		}
+	],
+	"result": "sophies_alloys:blackstone_chunk"
+}

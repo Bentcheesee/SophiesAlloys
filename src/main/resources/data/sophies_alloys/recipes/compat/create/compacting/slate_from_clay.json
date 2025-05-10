@@ -11,7 +11,16 @@
 			"item": "minecraft:flint"
 		},
 		{
-			"item": "minecraft:clay"
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "minecraft:clay_ball"
 		},
 		{
 			"item": "sophies_alloys:slate_sheet"

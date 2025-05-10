@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:quartz"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		}
+
+	],
+	"result": {
+		"item": "sophies_alloys:granite_chunk",
+		"count": 2
+	}
+}

@@ -14,13 +14,27 @@
 			"item": "minecraft:flint"
 		},
 		{
-			"item": "minecraft:clay_ball"
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:clay"
 		},
 		{
 			"item": "sophies_alloys:slate"
 		},
 		{
 			"item": "sophies_alloys:slate"
+		},
+		{
+			"amount": 100,
+			"fluid": "minecraft:lava",
+			"nbt": {}
 		}
 	],
 	"results": [

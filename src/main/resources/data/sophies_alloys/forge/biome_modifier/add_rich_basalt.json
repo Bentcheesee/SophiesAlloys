@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#minecraft:is_nether",
+	"features": "sophies_alloys:rich_basalt_placed",
+	"step": "underground_ores"
+}

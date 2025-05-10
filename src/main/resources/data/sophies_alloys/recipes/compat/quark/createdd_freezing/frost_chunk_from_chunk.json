@@ -1,0 +1,23 @@
+{
+	"type": "create_dd:freezing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_dd"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks/convert/freeze"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:frost_chunk"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:lapis_shard",
+		{
+			"id": "create_dd:lapis_lazuli_shard",
+			"required": false
+		}
+	]
+}

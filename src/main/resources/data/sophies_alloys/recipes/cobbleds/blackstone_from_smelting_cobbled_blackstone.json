@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 0.7,
+	"group": "calcite",
+	"ingredient": {
+		"item": "sophies_alloys:cobbled_calcite"
+	},
+	"result": "minecraft:calcite"
+}

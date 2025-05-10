@@ -14,10 +14,6 @@
 	"processingTime": 250,
 	"results": [
 		{
-			"chance": 0.2,
-			"item": "minecraft:coal"
-		},
-		{
 			"chance": 0.4,
 			"item": "minecraft:gravel"
 		},

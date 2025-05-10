@@ -1,0 +1,18 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:netherrack_chunk",
+		"sophies_alloys:hot_chunk",
+		"sophies_alloys:soul_chunk",
+		"sophies_alloys:blackstone_chunk",
+		"sophies_alloys:basalt_chunk",
+		{
+			"id": "sophies_alloys:scorchia_chunk",
+			"required": false
+		},
+		{
+			"id": "sophies_alloys:scoria_chunk",
+			"required": false
+		}
+	]
+}

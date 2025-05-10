@@ -13,10 +13,11 @@
 			}
 		]
 	],
-	"processingTime": 400,
+	"processingTime": 200,
 	"results": [
 		{
-			"item": "sophies_alloys:crimson_coal_dust"
+			"item": "sophies_alloys:crimson_coal_dust",
+			"count": 2
 		}
 	]
 }

@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "sophies_alloys:block/cobbled/cobbled_calcite_slab"
+		},
+		"type=double": {
+			"model": "sophies_alloys:block/cobbled/cobbled_calcite"
+		},
+		"type=top": {
+			"model": "sophies_alloys:block/cobbled/cobbled_calcite_slab_top"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "create:haunting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:blackstone_chunk"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:scorchia_chunk"
+		}
+	]
+}

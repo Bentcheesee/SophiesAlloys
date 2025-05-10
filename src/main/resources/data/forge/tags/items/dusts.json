@@ -11,6 +11,7 @@
 		"#forge:dusts/quartz",
 		"#forge:dusts/emerald",
 		"#forge:dusts/diamond",
+		"#forge:dusts/flint",
 		"#forge:dusts/silver",
 		"#forge:dusts/tungsten",
 		"#forge:dusts/electrum",
@@ -31,6 +32,10 @@
 		},
 		{
 			"id": "#forge:dusts/brass",
+			"required": false
+		},
+		{
+			"id": "#forge:dusts/rose_gold",
 			"required": false
 		}
 	]

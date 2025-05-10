@@ -6,7 +6,6 @@
 			"modid": "create"
 		}
 	],
-	"heatRequirement": "heated",
 	"ingredients": [
 		{
 			"item": "minecraft:gravel"
@@ -18,10 +17,18 @@
 			"item": "minecraft:clay_ball"
 		},
 		{
+			"item": "minecraft:clay_ball"
+		},
+		{
 			"item": "sophies_alloys:slate_sheet"
 		},
 		{
 			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"amount": 100,
+			"fluid": "minecraft:lava",
+			"nbt": {}
 		}
 	],
 	"results": [

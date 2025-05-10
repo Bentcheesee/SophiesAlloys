@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:dusts/lead"
+		},
+		{
+			"tag": "forge:dusts/flint"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:stiffened_lead",
+		"count": 2
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:soul_gravel"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"item": "minecraft:soul_sand"
+		},
+		{
+			"item": "sophies_alloys:soul_chunk",
+			"chance": 0.25
+		}
+	]
+}

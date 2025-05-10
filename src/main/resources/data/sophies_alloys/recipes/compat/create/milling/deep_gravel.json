@@ -1,0 +1,32 @@
+{
+	"type": "create:milling",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:deep_gravel"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint",
+			"chance": 0.6
+		},
+		{
+			"item": "minecraft:dirt",
+			"chance": 0.4
+		},
+		{
+			"item": "sophies_alloys:andesite_chunk",
+			"chance": 0.325
+		}
+	]
+}

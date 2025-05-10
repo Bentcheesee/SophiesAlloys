@@ -1,0 +1,23 @@
+{
+	"type": "create:haunting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:limestone_chunk"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:quarky_limestone_chunk"
+		}
+	]
+}

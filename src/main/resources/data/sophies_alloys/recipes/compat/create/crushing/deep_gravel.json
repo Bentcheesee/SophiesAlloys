@@ -1,0 +1,31 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:deep_gravel"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"item": "minecraft:sand"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "sophies_alloys:andesite_chunk",
+			"chance": 0.15
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk",
+			"chance": 0.125
+		}
+	]
+}

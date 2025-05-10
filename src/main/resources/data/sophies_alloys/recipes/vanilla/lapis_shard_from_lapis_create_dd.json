@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_dd"
+		}
+	],
+	"group": "lapis_lazuli_shard",
+	"ingredients": [
+		{
+			"item": "minecraft:lapis_lazuli"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:lapis_shard",
+		"count": 4
+	}
+}

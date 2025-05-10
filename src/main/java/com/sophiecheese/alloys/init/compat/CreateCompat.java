@@ -7,8 +7,8 @@ import org.slf4j.Logger;
 import com.google.common.base.Supplier;
 import com.mojang.logging.LogUtils;
 import com.sophiecheese.alloys.SophiesAlloys;
-import com.sophiecheese.alloys.block.lamps.DustyLampBlock;
-import com.sophiecheese.alloys.block.lamps.WeakDustyLampBlock;
+import com.sophiecheese.alloys.block.DustyLampBlock;
+import com.sophiecheese.alloys.block.SophieFallingDustyBlock;
 import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.init.OtherBlocksInit;
 import com.sophiecheese.alloys.item.SophieCreateSequencedAssemblyItem;
@@ -19,6 +19,10 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -39,6 +43,21 @@ public class CreateCompat {
 	public static final RegistryObject<Item> ZINC_DUST = CREATE_ITEMS.register("zinc_dust", 
 			() -> new Item(tabAttributeCreate()));
 	public static final RegistryObject<Item> BRASS_DUST = CREATE_ITEMS.register("brass_dust", 
+			() -> new Item(tabAttributeCreate()));
+
+	public static final RegistryObject<Item> ASURINE_CHUNK = CREATE_ITEMS.register("asurine_chunk", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> CRIMSITE_CHUNK = CREATE_ITEMS.register("crimsite_chunk", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> LIMESTONE_CHUNK = CREATE_ITEMS.register("limestone_chunk", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> OCHRUM_CHUNK = CREATE_ITEMS.register("ochrum_chunk", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> SCORCHIA_CHUNK = CREATE_ITEMS.register("scorchia_chunk", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> SCORIA_CHUNK = CREATE_ITEMS.register("scoria_chunk", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> VERIDIUM_CHUNK = CREATE_ITEMS.register("veridium_chunk", 
 			() -> new Item(tabAttributeCreate()));
 	
 	public static final RegistryObject<Item> CRUSHED_FOXITE = CREATE_ITEMS.register("crushed_foxite", 
@@ -77,11 +96,15 @@ public class CreateCompat {
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 
 //Blocks
-	
 	public static final RegistryObject<DustyLampBlock> DUSTY_ZINC_LAMP = register("dusty_zinc_lamp",
-			() -> new WeakDustyLampBlock(OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(6, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_BRASS_LAMP = register("dusty_brass_lamp",
-			() -> new DustyLampBlock(OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(9, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+
+	
+	public static final RegistryObject<Block> BLACK_GRAVEL = register("black_gravel",
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_BLACK).sound(SoundType.GRAVEL).strength(0.8F, 0.4F)), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+	
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
 		return CREATE_BLOCKS.register(name, block);
@@ -92,9 +115,8 @@ public class CreateCompat {
 		CREATE_ITEMS.register(name, item.apply(obj));
 		return obj;
 	}
-	
+
 	public static final CreativeModeTab SOPH_CREATE = new CreativeModeTab("sophies_create_compat") {
-		@Override
 		public ItemStack makeIcon() {
 			return new ItemStack(GeneralItemInit.FUNKY_THING.get());
 		}

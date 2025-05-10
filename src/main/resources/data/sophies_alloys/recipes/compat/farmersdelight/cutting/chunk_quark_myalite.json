@@ -1,0 +1,28 @@
+{
+	"type": "farmersdelight:cutting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "quark:myalite"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:myalite_chunk",
+			"count": 4
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}
