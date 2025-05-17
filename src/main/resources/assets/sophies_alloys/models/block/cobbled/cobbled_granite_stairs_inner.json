@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "sophies_alloys:block/cobbled_granite",
+    "side": "sophies_alloys:block/cobbled_granite",
+    "top": "sophies_alloys:block/cobbled_granite"
+  }
+}

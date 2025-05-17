@@ -1,0 +1,61 @@
+{
+	"credit": "Made by Bentcheesee",
+	"textures": {
+		"particle": "sophies_alloys:block/tritonium/tritonium_bars",
+		"bars": "sophies_alloys:block/tritonium/tritonium_bars"
+	},
+	"elements": [
+		{
+			"from": [9, 0, 7],
+			"to": [15, 0.5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [1, 15, 7, 15.5], "texture": "#bars"},
+				"east": {"uv": [5, 15, 7, 15.5], "texture": "#bars"},
+				"south": {"uv": [9, 15, 15, 15.5], "texture": "#bars"},
+				"west": {"uv": [13, 15, 15, 15.5], "texture": "#bars"},
+				"up": {"uv": [11, 2, 13, 8], "rotation": 270, "texture": "#bars"},
+				"down": {"uv": [11, 9, 13, 15], "rotation": 270, "texture": "#bars"}
+			}
+		},
+		{
+			"from": [9, 15.5, 7],
+			"to": [15, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [1, 0, 7, 0.5], "texture": "#bars"},
+				"east": {"uv": [5, 0, 7, 0.5], "texture": "#bars"},
+				"south": {"uv": [9, 0, 15, 0.5], "texture": "#bars"},
+				"west": {"uv": [13, 0, 15, 0.5], "texture": "#bars"},
+				"up": {"uv": [11, 2, 13, 8], "rotation": 270, "texture": "#bars"},
+				"down": {"uv": [11, 9, 13, 15], "rotation": 270, "texture": "#bars"}
+			}
+		},
+		{
+			"from": [15, 0, 7],
+			"to": [16, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 16], "texture": "#bars"},
+				"east": {"uv": [11, 0, 13, 16], "texture": "#bars"},
+				"south": {"uv": [15, 0, 16, 16], "texture": "#bars"},
+				"west": {"uv": [11, 0, 13, 16], "texture": "#bars"},
+				"up": {"uv": [11, 2, 12, 4], "texture": "#bars"},
+				"down": {"uv": [0, 14, 1, 16], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [11, 0.5, 7.5],
+			"to": [13, 15.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3, 0, 5, 15], "texture": "#bars"},
+				"east": {"uv": [3, 0, 4, 15], "texture": "#bars"},
+				"south": {"uv": [11, 0, 13, 15], "texture": "#bars"},
+				"west": {"uv": [12, 0, 13, 15], "texture": "#bars"},
+				"up": {"uv": [3, 0, 5, 1], "texture": "#bars"},
+				"down": {"uv": [3, 0, 5, 1], "texture": "#bars"}
+			}
+		}
+	]
+}

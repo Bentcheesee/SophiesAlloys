@@ -3,6 +3,7 @@ package com.sophiecheese.alloys.setup;
 import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.init.OreBlockInit;
 import com.sophiecheese.alloys.init.OtherBlocksInit;
+import com.sophiecheese.alloys.init.PaintingsInit;
 import com.sophiecheese.alloys.init.ToolItemInit;
 import com.sophiecheese.alloys.init.compat.CompatCheck;
 import com.sophiecheese.alloys.init.compat.CreateCompat;
@@ -24,6 +25,7 @@ public class Registration {
 		OreBlockInit.BLOCKS.register(bus);
 		OtherBlocksInit.BLOCKS.register(bus);
 		GeneralItemInit.ITEMS.register(bus);
+		PaintingsInit.PAINTINGS.register(bus);
 
 		AlloysConfiguredFeatures.CONFIGURED_FEATURES.register(bus);
 		AlloysPlacedFeatures.PLACED_FEATURES.register(bus);
@@ -31,8 +33,6 @@ public class Registration {
 		if(CompatCheck.createPresent){
 			CreateCompat.CREATE_ITEMS.register(bus);
 			CreateCompat.CREATE_BLOCKS.register(bus);
-//			FluidInit.FLUIDS.register(bus);
-//			FluidInit.FLUID_TYPES.register(bus);
 		}
 		if(CompatCheck.dreamsPresent){
 			DreamsCompat.CREATE_DD_ITEMS.register(bus);

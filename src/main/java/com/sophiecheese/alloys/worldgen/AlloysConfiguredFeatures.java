@@ -23,6 +23,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 public class AlloysConfiguredFeatures {
+
 	public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
 			DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, SophiesAlloys.MOD_ID);
 	

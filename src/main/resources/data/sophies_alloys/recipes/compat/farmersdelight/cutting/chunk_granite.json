@@ -7,9 +7,14 @@
 		}
 	],
 	"ingredients": [
-		{
-			"item": "minecraft:granite"
-		}
+		[
+			{
+				"item": "minecraft:granite"
+			},
+			{
+				"item": "sophies_alloys:cobbled_granite"
+			}
+		]
 	],
 	"result": [
 		{

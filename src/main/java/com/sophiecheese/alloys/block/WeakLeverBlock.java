@@ -13,10 +13,10 @@ public class WeakLeverBlock extends LeverBlock{
 	
 	@Override
 	public int getSignal(BlockState state, BlockGetter getter, BlockPos pos, Direction direction) {
-		return state.getValue(POWERED) ? 8 : 0;
+		return state.getValue(POWERED) ? 1 : 0;
 	}
 	@Override
 	public int getDirectSignal(BlockState state, BlockGetter getter, BlockPos pos, Direction direction) {
-		return state.getValue(POWERED) && getConnectedDirection(state) == direction ? 8 : 0;
+		return state.getValue(POWERED) && getConnectedDirection(state) == direction ? 1 : 0;
 	}
 }

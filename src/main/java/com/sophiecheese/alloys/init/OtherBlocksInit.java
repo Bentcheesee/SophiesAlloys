@@ -64,7 +64,7 @@ public class OtherBlocksInit {
 			() -> new FlowerPotBlock(NO_FRUIT_BUSH.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_AZALEA).noOcclusion()));
 
 	public static final RegistryObject<NoFruitBlock> NO_FRUIT_BLOCK = register("no_fruit",
-			() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.1F).noCollission().sound(SoundType.SWEET_BERRY_BUSH)),
+			() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.1F).noCollission().sound(SoundType.SWEET_BERRY_BUSH).randomTicks()),
 			object -> () -> new ItemNameBlockItem(object.get(), GeneralItemInit.tabAttributeFood().food(FoodItemProperties.NO_FRUIT)));
 
 	public static final RegistryObject<RotatedPillarBlock> STRIPPED_NO_LOG = register("stripped_no_fruit_log",
@@ -223,10 +223,9 @@ public class OtherBlocksInit {
 			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	
 
-//Calcite
+//Cobbled
 	public static final Properties CALCITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
 			.strength(1F).requiresCorrectToolForDrops().sound(SoundType.CALCITE);
-
 	public static final RegistryObject<Block> COBBLED_CALCITE = register("cobbled_calcite",
 			() -> new Block(CALCITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> COBBLED_CALCITE_STAIRS = register("cobbled_calcite_stairs",
@@ -236,10 +235,8 @@ public class OtherBlocksInit {
 	public static final RegistryObject<WallBlock> COBBLED_CALCITE_WALL = register("cobbled_calcite_wall",
 			() -> new WallBlock(CALCITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 
-//Blackstone
 	public static final Properties BLACKSTONE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK)
 			.strength(2F, 6.5F).requiresCorrectToolForDrops();
-
 	public static final RegistryObject<Block> COBBLED_BLACKSTONE = register("cobbled_blackstone",
 			() -> new Block(BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> COBBLED_BLACKSTONE_STAIRS = register("cobbled_blackstone_stairs",
@@ -248,6 +245,28 @@ public class OtherBlocksInit {
 			() -> new SlabBlock(BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> COBBLED_BLACKSTONE_WALL = register("cobbled_blackstone_wall",
 			() -> new WallBlock(BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+
+	public static final Properties GRANITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DIRT)
+			.strength(2F, 6.5F).requiresCorrectToolForDrops();
+	public static final RegistryObject<Block> COBBLED_GRANITE = register("cobbled_granite",
+			() -> new Block(GRANITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<StairBlock> COBBLED_GRANITE_STAIRS = register("cobbled_granite_stairs",
+			() -> new StairBlock(COBBLED_GRANITE.get().defaultBlockState(), BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<SlabBlock> COBBLED_GRANITE_SLAB = register("cobbled_granite_slab",
+			() -> new SlabBlock(GRANITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<WallBlock> COBBLED_GRANITE_WALL = register("cobbled_granite_wall",
+			() -> new WallBlock(GRANITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+
+	public static final Properties DIORITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ)
+			.strength(2F, 6.5F).requiresCorrectToolForDrops();
+	public static final RegistryObject<Block> COBBLED_DIORITE = register("cobbled_diorite",
+			() -> new Block(DIORITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<StairBlock> COBBLED_DIORITE_STAIRS = register("cobbled_diorite_stairs",
+			() -> new StairBlock(COBBLED_DIORITE.get().defaultBlockState(), BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<SlabBlock> COBBLED_DIORITE_SLAB = register("cobbled_diorite_slab",
+			() -> new SlabBlock(DIORITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<WallBlock> COBBLED_DIORITE_WALL = register("cobbled_diorite_wall",
+			() -> new WallBlock(DIORITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 		
 //Oreberries
 	public static final RegistryObject<OreberryBushBlock> OREBERRY_BUSH_BLOCK = register("oreberry_bush",
@@ -295,8 +314,14 @@ public class OtherBlocksInit {
 			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	public static final RegistryObject<LanternBlock> TUNGSTEN_SOUL_LANTERN = register("tungsten_soul_lantern",
 			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
-	
+
 	public static final RegistryObject<IronBarsBlock> LEAD_BARS = register("lead_bars",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<IronBarsBlock> FOXITE_BARS = register("foxite_bars",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<IronBarsBlock> SILVER_BARS = register("silver_bars",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<IronBarsBlock> TRITONIUM_BARS = register("tritonium_bars",
 			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	
 //Dusty Lamps

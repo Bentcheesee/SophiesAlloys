@@ -1,0 +1,48 @@
+{
+	"credit": "Made by Bentcheesee",
+	"textures": {
+		"bars": "sophies_alloys:block/iron_bars",
+		"particle": "sophies_alloys:block/iron_bars"
+	},
+	"elements": [
+		{
+			"from": [9, 12, 7.5],
+			"to": [12, 14, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 12, 7.5]},
+			"faces": {
+				"north": {"uv": [4, 2, 7, 4], "texture": "#bars"},
+				"east": {"uv": [4, 2, 5, 4], "texture": "#bars"},
+				"south": {"uv": [7, 2, 4, 4], "texture": "#bars"},
+				"west": {"uv": [4, 2, 5, 4], "texture": "#bars"},
+				"up": {"uv": [4, 2, 7, 3], "texture": "#bars"},
+				"down": {"uv": [4, 3, 7, 4], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [14, 7, 7.5],
+			"to": [16, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 7, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 7, 2, 9], "texture": "#bars"},
+				"east": {"uv": [0, 7, 1, 9], "texture": "#bars"},
+				"south": {"uv": [2, 7, 0, 9], "texture": "#bars"},
+				"west": {"uv": [0, 7, 1, 9], "texture": "#bars"},
+				"up": {"uv": [0, 7, 2, 8], "texture": "#bars"},
+				"down": {"uv": [0, 8, 2, 9], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [12, 0, 7.5],
+			"to": [14, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 0, 7]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 16], "texture": "#bars"},
+				"east": {"uv": [2, 0, 3, 16], "texture": "#bars"},
+				"south": {"uv": [2, 0, 4, 16], "texture": "#bars"},
+				"west": {"uv": [3, 0, 4, 16], "texture": "#bars"},
+				"up": {"uv": [4, 0, 2, 1], "texture": "#bars"},
+				"down": {"uv": [2, 0, 4, 1], "texture": "#bars"}
+			}
+		}
+	]
+}

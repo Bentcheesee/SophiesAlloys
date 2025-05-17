@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "sophies_alloys:block/cobbled_diorite",
+    "side": "sophies_alloys:block/cobbled_diorite",
+    "top": "sophies_alloys:block/cobbled_diorite"
+  }
+}

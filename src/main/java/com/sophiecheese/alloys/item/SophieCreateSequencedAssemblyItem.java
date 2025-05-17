@@ -6,8 +6,8 @@ import net.minecraft.world.item.ItemStack;
 
 public class SophieCreateSequencedAssemblyItem extends Item {
 
-	public SophieCreateSequencedAssemblyItem(Properties p_i48487_1_) {
-		super(p_i48487_1_.stacksTo(1));
+	public SophieCreateSequencedAssemblyItem(Properties prop) {
+		super(prop.stacksTo(1));
 	}
 
 	public float getProgress(ItemStack stack) {

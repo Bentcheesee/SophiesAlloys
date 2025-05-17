@@ -13,8 +13,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class NoFruitBlock extends BasicDescriptionBlock{
 	private static final VoxelShape FRUIT = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D);
 
-	public NoFruitBlock(BlockBehaviour.Properties p_221545_) {
-		super(p_221545_);
+	public NoFruitBlock(BlockBehaviour.Properties prop) {
+		super(prop);
 	}
 
 	public VoxelShape getCollisionShape(BlockState blockstate, BlockGetter blockgetter, BlockPos BlockPos, CollisionContext collision) {

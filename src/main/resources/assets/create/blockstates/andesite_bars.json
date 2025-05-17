@@ -1,0 +1,44 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "create:block/andesite_center_bar"
+            }
+        },
+        {
+            "apply": {
+                "model": "create:block/andesite_outreach"
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "create:block/andesite_outreach",
+                "y": 90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "create:block/andesite_outreach",
+                "y": 180
+            },
+            "when": {
+                "west": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "create:block/andesite_outreach",
+                "y": 270
+            },
+            "when": {
+                "north": "true"
+            }
+        }
+    ]
+}

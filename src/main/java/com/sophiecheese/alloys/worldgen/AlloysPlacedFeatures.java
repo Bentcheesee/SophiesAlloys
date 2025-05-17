@@ -37,7 +37,7 @@ public class AlloysPlacedFeatures {
 	public static final RegistryObject<PlacedFeature> SOUL_GRAVEL = PLACED_FEATURES.register("soul_gravel_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.SOUL_GRAVEL_GORE.getHolder().get(),
 					commonOrePlacement(3,
-							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(5), VerticalAnchor.absolute(40)))));
+							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(15), VerticalAnchor.absolute(40)))));
 	public static final RegistryObject<PlacedFeature> RICH_BASALT = PLACED_FEATURES.register("rich_basalt_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.RICH_BASALT_GORE.getHolder().get(),
 					commonOrePlacement(18,

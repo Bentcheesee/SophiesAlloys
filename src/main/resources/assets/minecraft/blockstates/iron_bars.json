@@ -1,0 +1,43 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "minecraft:block/iron_bars_center"
+            }
+        },
+        {
+            "apply": {
+                "model": "minecraft:block/iron_bars_outreach"
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "minecraft:block/iron_bars_outreach",
+                "y": 90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "minecraft:block/iron_bars_outreach_secondary"
+            },
+            "when": {
+                "west": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "minecraft:block/iron_bars_outreach_secondary",
+                "y": 90
+            },
+            "when": {
+                "north": "true"
+            }
+        }
+    ]
+}

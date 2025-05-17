@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/template_center_bar",
+	"textures": {
+		"0": "create:block/bars/brass_bars",
+		"particle": "create:block/bars/brass_bars"
+	}
+}

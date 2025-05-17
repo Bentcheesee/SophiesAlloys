@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/template_center_bar",
+	"textures": {
+		"0": "sophies_alloys:block/foxite/foxite_bars",
+		"particle": "sophies_alloys:block/foxite/foxite_bars"
+	}
+}

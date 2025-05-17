@@ -1,0 +1,44 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/foxite_center_bar"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/foxite_outreach"
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/foxite_outreach",
+                "y": 90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/foxite_outreach",
+                "y": 180
+            },
+            "when": {
+                "west": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/foxite_outreach",
+                "y": 270
+            },
+            "when": {
+                "north": "true"
+            }
+        }
+    ]
+}

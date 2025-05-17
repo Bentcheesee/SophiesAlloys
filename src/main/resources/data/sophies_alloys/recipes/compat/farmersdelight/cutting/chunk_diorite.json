@@ -7,9 +7,14 @@
 		}
 	],
 	"ingredients": [
-		{
-			"item": "minecraft:diorite"
-		}
+		[
+			{
+				"item": "minecraft:diorite"
+			},
+			{
+				"item": "sophies_alloys:cobbled_diorite"
+			}
+		]
 	],
 	"result": [
 		{

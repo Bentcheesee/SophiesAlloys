@@ -1,7 +1,0 @@
-{
-    "parent": "block/template_bars_cap_alt",
-    "textures": {
-        "particle": "sophies_alloys:block/lead/lead_bars",
-        "bars": "sophies_alloys:block/lead/lead_bars"
-    }
-}
