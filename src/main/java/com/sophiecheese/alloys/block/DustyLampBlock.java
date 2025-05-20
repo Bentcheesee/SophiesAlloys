@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class DustyLampBlock extends BasicDescriptionBlock{
+public class DustyLampBlock extends Block{
 	private final int outputPower;
 	public static final BooleanProperty LIT = BooleanProperty.create("lit");
 

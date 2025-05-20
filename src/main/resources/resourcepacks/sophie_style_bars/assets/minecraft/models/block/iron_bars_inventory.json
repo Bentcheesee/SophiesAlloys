@@ -1,8 +1,8 @@
 {
 	"credit": "Made by Bentcheesee",
 	"textures": {
-		"particle": "minecraft:block/iron_bars",
-		"bars": "minecraft:block/iron_bars"
+		"particle": "sophies_alloys:block/iron_bars",
+		"bars": "sophies_alloys:block/iron_bars"
 	},
 	"elements": [
 		{

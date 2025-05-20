@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/template_center_bar",
 	"textures": {
-		"0": "minecraft:block/iron_bars"
+		"0": "sophies_alloys:block/iron_bars"
 	}
 }

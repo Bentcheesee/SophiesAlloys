@@ -278,6 +278,7 @@
 	"block.sophies_alloys.cobbled_diorite_stairs": "Cobbled Diorite Stairs",
 	
 	"item.sophies_alloys.no_fruit": "No Fruit",
+	"item.sophies_alloys.no_fruit.desc": "It's super apple-y!!",
 	"block.sophies_alloys.no_fruit.desc": "It's super apple-y!!",
 	"block.sophies_alloys.no_fruit_bush": "No Fruit Bush",
 	"block.sophies_alloys.no_fruit_leaves": "No Fruit Leaves",

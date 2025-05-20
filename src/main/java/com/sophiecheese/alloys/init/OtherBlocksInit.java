@@ -12,6 +12,7 @@ import com.sophiecheese.alloys.block.OreberryBushBlock;
 import com.sophiecheese.alloys.block.SophieFallingDustyBlock;
 import com.sophiecheese.alloys.block.SophieFlammableLogBlock;
 import com.sophiecheese.alloys.block.WeakLeverBlock;
+import com.sophiecheese.alloys.item.BasicDescriptionItemBlock;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.core.BlockPos;
@@ -64,7 +65,7 @@ public class OtherBlocksInit {
 			() -> new FlowerPotBlock(NO_FRUIT_BUSH.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_AZALEA).noOcclusion()));
 
 	public static final RegistryObject<NoFruitBlock> NO_FRUIT_BLOCK = register("no_fruit",
-			() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.1F).noCollission().sound(SoundType.SWEET_BERRY_BUSH).randomTicks()),
+			() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.075F).noCollission().sound(SoundType.SWEET_BERRY_BUSH).randomTicks()),
 			object -> () -> new ItemNameBlockItem(object.get(), GeneralItemInit.tabAttributeFood().food(FoodItemProperties.NO_FRUIT)));
 
 	public static final RegistryObject<RotatedPillarBlock> STRIPPED_NO_LOG = register("stripped_no_fruit_log",
@@ -331,49 +332,49 @@ public class OtherBlocksInit {
 			.strength(1.2F).sound(SoundType.GLASS).emissiveRendering(OtherBlocksInit::always);
 	
 	public static final RegistryObject<DustyLampBlock> DUSTY_LAMP = register("dusty_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_AMETHYST_LAMP = register("dusty_amethyst_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_COAL_LAMP = register("dusty_coal_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_COPPER_LAMP = register("dusty_copper_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_CRIMSON_LAMP = register("dusty_crimson_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_DIAMOND_LAMP = register("dusty_diamond_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_ELECTRUM_LAMP = register("dusty_electrum_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_EMERALD_LAMP = register("dusty_emerald_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_FAUNA_LAMP = register("dusty_faunathyst_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_FOXITE_LAMP = register("dusty_foxite_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_GOLD_LAMP = register("dusty_gold_lamp",
-			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_IRON_LAMP = register("dusty_iron_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_LAPIS_LAMP = register("dusty_lapis_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_LYCALITE_LAMP = register("dusty_lycalite_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_MITHRIL_LAMP = register("dusty_mithril_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_NETHERITE_LAMP = register("dusty_netherite_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_OBERITE_LAMP = register("dusty_oberite_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_QUARTZ_LAMP = register("dusty_quartz_lamp",
-			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_SILVER_LAMP = register("dusty_silver_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_STEEL_LAMP = register("dusty_steel_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_TRITONIUM_LAMP = register("dusty_tritonium_lamp",
-			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_TUNGSTEN_LAMP = register("dusty_tungsten_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
 		
 	
 	public static final Item.Properties tabAttributeBlock() {

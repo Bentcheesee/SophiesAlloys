@@ -11,6 +11,7 @@ import com.sophiecheese.alloys.block.DustyLampBlock;
 import com.sophiecheese.alloys.block.SophieFallingDustyBlock;
 import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.init.OtherBlocksInit;
+import com.sophiecheese.alloys.item.BasicDescriptionItemBlock;
 import com.sophiecheese.alloys.item.SophieCreateSequencedAssemblyItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
@@ -97,9 +98,9 @@ public class CreateCompat {
 
 //Blocks
 	public static final RegistryObject<DustyLampBlock> DUSTY_ZINC_LAMP = register("dusty_zinc_lamp",
-			() -> new DustyLampBlock(6, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(6, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeCreate()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_BRASS_LAMP = register("dusty_brass_lamp",
-			() -> new DustyLampBlock(9, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(9, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeCreate()));
 
 	
 	public static final RegistryObject<Block> BLACK_GRAVEL = register("black_gravel",

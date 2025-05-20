@@ -33,7 +33,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class OreberryBushBlock extends BushBlock implements BonemealableBlock {
-	   private static final float HURT_SPEED_THRESHOLD = 0.003F;
 	   public static final int MAX_AGE = 3;
 	   public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
 	   private static final VoxelShape SAPLING_SHAPE = Block.box(3.0D, 0.0D, 3.0D, 13.0D, 8.0D, 13.0D);
@@ -74,14 +73,6 @@ public class OreberryBushBlock extends BushBlock implements BonemealableBlock {
 	   public void entityInside(BlockState p_57270_, Level p_57271_, BlockPos p_57272_, Entity p_57273_) {
 	      if (p_57273_ instanceof LivingEntity && p_57273_.getType() != EntityType.FOX && p_57273_.getType() != EntityType.BEE) {
 	         p_57273_.makeStuckInBlock(p_57270_, new Vec3((double)0.8F, 0.75D, (double)0.8F));
-	         if (!p_57271_.isClientSide && p_57270_.getValue(AGE) > 0 && (p_57273_.xOld != p_57273_.getX() || p_57273_.zOld != p_57273_.getZ())) {
-	            double d0 = Math.abs(p_57273_.getX() - p_57273_.xOld);
-	            double d1 = Math.abs(p_57273_.getZ() - p_57273_.zOld);
-	            if (d0 >= (double)0.003F || d1 >= (double)0.003F) {
-	               p_57273_.hurt(DamageSource.SWEET_BERRY_BUSH, 1.0F);
-	            }
-	         }
-
 	      }
 	   }
 
