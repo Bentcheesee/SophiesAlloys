@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 import com.google.common.base.Supplier;
 import com.sophiecheese.alloys.SophiesAlloys;
-import com.sophiecheese.alloys.item.CrimsonCoalBlock;
+import com.sophiecheese.alloys.item.CrimsonCoalBlockItem;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -242,7 +242,7 @@ public class OreBlockInit {
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
 				.strength(5.0F, 6.0F).requiresCorrectToolForDrops()
 				.sound(SoundType.METAL)), 
-			object -> () -> new CrimsonCoalBlock(object.get(), tabAttributeOre()));
+			object -> () -> new CrimsonCoalBlockItem(object.get(), tabAttributeOre()));
 		
 //Other
 	public static final RegistryObject<Block> OBERITE_BLOCK = register("oberite_block",

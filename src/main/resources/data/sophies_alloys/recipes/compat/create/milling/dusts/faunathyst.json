@@ -13,10 +13,15 @@
 			}
 		]
 	],
-	"processingTime": 400,
+	"processingTime": 200,
 	"results": [
 		{
-			"item": "sophies_alloys:faunathyst_dust"
+			"item": "sophies_alloys:faunathyst_dust",
+			"count": 3
+		},
+		{
+			"item": "sophies_alloys:faunathyst_dust",
+			"chance": 0.4
 		}
 	]
 }

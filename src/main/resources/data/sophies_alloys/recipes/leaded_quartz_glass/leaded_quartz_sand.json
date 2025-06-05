@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:leaded_quartz_dust"
+		},
+		{
+			"tag": "forge:sand"
+		},
+		{
+			"tag": "forge:sand"
+		},
+		{
+			"tag": "forge:sand"
+		},
+		{
+			"tag": "forge:sand"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:leaded_quartz_sand",
+		"count": 4
+	}
+}

@@ -9,7 +9,7 @@
 	"ingredient": {
 		"tag": "forge:ingots/lead"
 	},
-	"loops": 3,
+	"loops": 2,
 	"results": [
 		{
 			"item": "sophies_alloys:funky_thingamabob",
@@ -25,6 +25,22 @@
 				},
 				{
 					"item": "minecraft:redstone"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				}
+			]
+		},
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				},
+				{
+					"item": "sophies_alloys:lapis_dust"
 				}
 			],
 			"results": [
@@ -63,19 +79,6 @@
 						"tag": "minecraft:wooden_buttons"
 					}
 				]
-			],
-			"results": [
-				{
-					"item": "sophies_alloys:unprocessed_thing"
-				}
-			]
-		},
-		{
-			"type": "create:pressing",
-			"ingredients": [
-				{
-					"item": "sophies_alloys:unprocessed_thing"
-				}
 			],
 			"results": [
 				{

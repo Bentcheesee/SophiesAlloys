@@ -18,6 +18,10 @@
 			"chance": 0.6
 		},
 		{
+			"item": "sophies_alloys:deepslate_chunk",
+			"chance": 0.22
+		},
+		{
 			"item": "sophies_alloys:silver_nugget",
 			"chance": 0.14
 		},

@@ -13,10 +13,16 @@
 			}
 		]
 	],
-	"processingTime": 400,
+	"processingTime": 200,
 	"results": [
 		{
-			"item": "sophies_alloys:quingum_dust"
+			"item": "sophies_alloys:quingum_dust",
+			"count": 2
+		},
+		{
+			"item": "sophies_alloys:quingum_dust",
+			"chance": 0.2,
+			"count": 2
 		}
 	]
 }

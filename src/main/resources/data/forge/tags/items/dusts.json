@@ -37,6 +37,7 @@
 		{
 			"id": "#forge:dusts/rose_gold",
 			"required": false
-		}
+		},
+		"sophies_alloys:leaded_quartz_dust"
 	]
 }

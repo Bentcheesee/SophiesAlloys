@@ -5,55 +5,42 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:apple",
-					"weight": 4
-				},
-				{
-					"type": "minecraft:tag",
-					"name": "forge:fruits",
-					"expand": true,
-					"weight": 1
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:inverted",
-					"term": {
-						"condition": "minecraft:match_tool",
-						"predicate": {
-							"enchantments": [
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "sophies_alloys:no_fruit",
+							"conditions": [
 								{
-									"enchantment": "minecraft:silk_touch"
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"enchantments": [
+											{
+												"enchantment": "minecraft:silk_touch"
+											}
+										]
+									}
 								}
 							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:apple",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.75
+								}
+							]
+						},
+						{
+							"type": "minecraft:tag",
+							"name": "forge:fruits",
+							"expand": true
 						}
-					}
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "sophies_alloys:no_fruit"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:match_tool",
-					"predicate": {
-						"items": [],
-						"enchantments": [
-							{
-								"enchantment": "minecraft:silk_touch"
-							}
-						]
-					}
+					]
 				}
 			]
 		}
-	],
-	"functions": []
+	]
 }

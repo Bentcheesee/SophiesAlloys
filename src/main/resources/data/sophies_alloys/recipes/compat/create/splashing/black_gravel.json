@@ -14,11 +14,11 @@
 	"results": [
 		{
 			"item": "minecraft:flint",
-			"chance": 0.4
+			"chance": 0.45
 		},
 		{
 			"item": "minecraft:gold_nugget",
-			"chance": 0.1
+			"chance": 0.2
 		},
 		{
 			"item": "sophies_alloys:mithril_nugget",

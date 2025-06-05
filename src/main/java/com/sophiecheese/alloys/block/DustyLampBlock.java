@@ -17,7 +17,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class DustyLampBlock extends Block{
-	private final int outputPower;
+	private int outputPower;
 	public static final BooleanProperty LIT = BooleanProperty.create("lit");
 
 	public DustyLampBlock(int power, Properties properties) {

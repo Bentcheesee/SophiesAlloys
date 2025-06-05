@@ -1,7 +1,8 @@
 package com.sophiecheese.alloys.init;
 
 import com.sophiecheese.alloys.item.CrimsonCoal;
-import com.sophiecheese.alloys.item.BasicDescriptionItem;
+import com.sophiecheese.alloys.item.FaunathystDustItem;
+import com.sophiecheese.alloys.item.BasicDescItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 import com.sophiecheese.alloys.item.consumables.OreberryQuingumBottle;
 import com.sophiecheese.alloys.item.consumables.QuingumBottle;
@@ -37,8 +38,10 @@ public class GeneralItemInit {
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> QUARTZ_DUST = ITEMS.register("quartz_dust", 
 			() -> new Item(tabAttributeAlloy()));
-	public static final RegistryObject<Item> DIAMOND_DUST = ITEMS.register("diamond_dust", 
+	public static final RegistryObject<Item> TINY_DIAMOND_DUST = ITEMS.register("tiny_diamond_dust", 
 			() -> new Item(tabAttributeAlloy()));
+	public static final RegistryObject<Item> DIAMOND_DUST = ITEMS.register("diamond_dust", 
+			() -> new BasicDescItem(tabAttributeAlloy().craftRemainder(TINY_DIAMOND_DUST.get())));
 	public static final RegistryObject<Item> EMERALD_DUST = ITEMS.register("emerald_dust", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> NETHERITE_DUST = ITEMS.register("netherite_dust", 
@@ -47,6 +50,8 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> ENDSTONE_DUST = ITEMS.register("end_stone_dust", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> FLINT_DUST = ITEMS.register("flint_dust", 
+			() -> new Item(tabAttributeAlloy()));
+	public static final RegistryObject<Item> LEADED_QUARTZ_DUST = ITEMS.register("leaded_quartz_dust", 
 			() -> new Item(tabAttributeAlloy()));
 	
 	public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget", 
@@ -107,7 +112,7 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget", 
 			() -> new Item(tabAttributeAlloy().fireResistant()));
 	public static final RegistryObject<Item> MITHRIL_SCRAP = ITEMS.register("mithril_scrap", 
-			() -> new BasicDescriptionItem(tabAttributeAlloy().fireResistant()));
+			() -> new BasicDescItem(tabAttributeAlloy().fireResistant()));
 
 	public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust", 
 			() -> new Item(tabAttributeAlloy()));
@@ -128,13 +133,13 @@ public class GeneralItemInit {
 			() -> new Item(tabAttributeAlloy()));
 	
 	public static final RegistryObject<Item> RAW_TRITONIUM = ITEMS.register("raw_tritonium", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new Item(tabAttributeAlloy().fireResistant()));
 	public static final RegistryObject<Item> TRITONIUM_DUST = ITEMS.register("tritonium_dust", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new Item(tabAttributeAlloy().fireResistant()));
 	public static final RegistryObject<Item> TRITONIUM_INGOT = ITEMS.register("tritonium_ingot", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new Item(tabAttributeAlloy().fireResistant()));
 	public static final RegistryObject<Item> TRITONIUM_NUGGET = ITEMS.register("tritonium_nugget", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new Item(tabAttributeAlloy().fireResistant()));
 	
 	public static final RegistryObject<Item> RAW_LAGOMITE = ITEMS.register("raw_lagomite", 
 			() -> new Item(tabAttributeAlloy().fireResistant()));
@@ -153,7 +158,7 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> FAUNATHYST_GEM = ITEMS.register("faunathyst_gem", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> FAUNATHYST_DUST = ITEMS.register("faunathyst_dust", 
-			() -> new BoneMealItem(tabAttributeAlloy()));
+			() -> new FaunathystDustItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> QUINGUM_SHARD = ITEMS.register("quingum_shard", 
 			() -> new Item(tabAttributeAlloy().food(FoodItemProperties.QUINGUM_GEM)));
 	public static final RegistryObject<Item> QUINGUM_GEM = ITEMS.register("quingum_gem", 
@@ -187,7 +192,7 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> SLATE_SHEET = ITEMS.register("slate_sheet", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> ROUGH_LAPIS_PLATE = ITEMS.register("rough_lapis_sheet", 
-			() -> new BasicDescriptionItem(tabAttributeAlloy()));
+			() -> new BasicDescItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> LAPIS_PLATE = ITEMS.register("lapis_sheet", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> ROUGH_IRON_PLATE = ITEMS.register("rough_iron_sheet", 
@@ -278,7 +283,7 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> ENDSTONE_CHUNK = ITEMS.register("end_stone_chunk", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> ERROR_CHUNK = ITEMS.register("error_chunk", 
-			() -> new BasicDescriptionItem(tabAttributeAlloy()));
+			() -> new BasicDescItem(tabAttributeAlloy()));
 	
 	public static final RegistryObject<Item> OBERITE_HANDLE = ITEMS.register("oberite_handle", 
 			() -> new Item(tabAttributeAlloy().fireResistant()));
@@ -286,9 +291,9 @@ public class GeneralItemInit {
 			() -> new Item(tabAttributeAlloy()));
 
 	public static final RegistryObject<Item> TEMPLATE_UPGRADE = ITEMS.register("template_upgrade", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new BasicDescItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> AD_TEMPLATE_UPGRADE = ITEMS.register("advanced_template_upgrade", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new BasicDescItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> ELECTRUM_UPGRADE = ITEMS.register("electrum_upgrade", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> BABULYMN_UPGRADE = ITEMS.register("babulymn_upgrade", 
@@ -317,29 +322,29 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> NUGGET_CONGLOMERATE = ITEMS.register("nugget_conglomerate", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> FUNKY_THING = ITEMS.register("funky_thingamabob", 
-			() -> new BasicDescriptionItem(tabAttributeAlloy()));
+			() -> new BasicDescItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> ABNORMAL_THING = ITEMS.register("abnormal_object", 
-			() -> new BasicDescriptionItem(tabAttributeAlloy()));
+			() -> new BasicDescItem(tabAttributeAlloy()));
 
 	public static final RegistryObject<Item> MOSSY_MUSH = ITEMS.register("mossy_mush", //smushed moss
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
 	public static final RegistryObject<Item> SMUSHROOM = ITEMS.register("smushroom", //smushed mushrooms
 			() -> new Item(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
 	public static final RegistryObject<Item> LICHUORICE = ITEMS.register("lichuorice", //glow lichen liquorice  
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
 	public static final RegistryObject<Item> RED_LICHUORICE = ITEMS.register("red_lichuorice", 
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
 	public static final RegistryObject<Item> BLACK_LICHUORICE = ITEMS.register("black_lichuorice", 
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.WEAK_BASIC)));
 
 	public static final RegistryObject<BowlFoodItem> FROGGY_APPLE_CRUMPLE_THUMPKIN = ITEMS.register("froggy_apple_crumple_thumpkin",  
 			() -> new BowlFoodItem(tabAttributeFood().food(FoodItemProperties.STRONG_BASIC)));
 	public static final RegistryObject<Item> UNKNOWN_RAW_MEAT = ITEMS.register("unknown_raw_meat", 
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.RAW_MEAT)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.RAW_MEAT)));
 	public static final RegistryObject<Item> UNKNOWN_CORRUPT_MEAT = ITEMS.register("unknown_corrupt_meat", 
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.RAW_MEAT)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.RAW_MEAT)));
 	public static final RegistryObject<Item> UNKNOWN_MEAT = ITEMS.register("unknown_cooked_meat", 
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.COOKED_MEAT)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.COOKED_MEAT)));
 	
 	
 	public static final RegistryObject<Item> SEARED_QUINGUM = ITEMS.register("seared_quingum", 
@@ -378,7 +383,7 @@ public class GeneralItemInit {
 					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.FUNKY_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> FUNKY_QUINGUMMIES = ITEMS.register("funky_quingummies", 
-			() -> new BasicDescriptionItem(tabAttributeFood().food(FoodItemProperties.FUNKY_QUINGUMMIES)));
+			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.FUNKY_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> CORRUPT_MIXTURE = ITEMS.register("quingum_mixture_corrupt", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)

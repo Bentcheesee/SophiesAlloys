@@ -1,0 +1,8 @@
+{
+    "parent": "block/template_glass_pane_inventory",
+    "textures": {
+        "front": "sophies_alloys:block/leaded_quartz_glass/magenta",
+        "sides": "sophies_alloys:block/leaded_quartz_glass/magenta_side",
+        "particle": "sophies_alloys:block/leaded_quartz_glass/magenta"
+    }
+}

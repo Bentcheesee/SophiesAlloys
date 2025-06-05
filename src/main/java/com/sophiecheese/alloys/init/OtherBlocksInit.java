@@ -12,11 +12,16 @@ import com.sophiecheese.alloys.block.OreberryBushBlock;
 import com.sophiecheese.alloys.block.SophieFallingDustyBlock;
 import com.sophiecheese.alloys.block.SophieFlammableLogBlock;
 import com.sophiecheese.alloys.block.WeakLeverBlock;
-import com.sophiecheese.alloys.item.BasicDescriptionItemBlock;
+import com.sophiecheese.alloys.block.quartzglasses.LeadedQuartzGlassBlock;
+import com.sophiecheese.alloys.block.quartzglasses.LeadedQuartzGlassPaneBlock;
+import com.sophiecheese.alloys.block.quartzglasses.StainedLeadedQuartzGlassBlock;
+import com.sophiecheese.alloys.block.quartzglasses.StainedLeadedQuartzGlassPaneBlock;
+import com.sophiecheese.alloys.item.BasicDescBlockItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.BlockGetter;
@@ -222,8 +227,11 @@ public class OtherBlocksInit {
 			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.DEEPSLATE)
 				.strength(0.8f, 0.5f).sound(SoundType.GRAVEL)), 
 			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> DEEP_SAND = register("deep_sand",
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.DEEPSLATE)
+				.strength(0.6f, 0.3f).sound(SoundType.SAND)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	
-
 //Cobbled
 	public static final Properties CALCITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
 			.strength(1F).requiresCorrectToolForDrops().sound(SoundType.CALCITE);
@@ -323,7 +331,7 @@ public class OtherBlocksInit {
 	public static final RegistryObject<IronBarsBlock> SILVER_BARS = register("silver_bars",
 			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<IronBarsBlock> TRITONIUM_BARS = register("tritonium_bars",
-			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	
 //Dusty Lamps
 	public static ToIntFunction<BlockState> dustyLight(int lightLevel) {
@@ -332,50 +340,132 @@ public class OtherBlocksInit {
 			.strength(1.2F).sound(SoundType.GLASS).emissiveRendering(OtherBlocksInit::always);
 	
 	public static final RegistryObject<DustyLampBlock> DUSTY_LAMP = register("dusty_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_AMETHYST_LAMP = register("dusty_amethyst_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_COAL_LAMP = register("dusty_coal_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_COPPER_LAMP = register("dusty_copper_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_CRIMSON_LAMP = register("dusty_crimson_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_DIAMOND_LAMP = register("dusty_diamond_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_ELECTRUM_LAMP = register("dusty_electrum_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_EMERALD_LAMP = register("dusty_emerald_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_FAUNA_LAMP = register("dusty_faunathyst_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_FOXITE_LAMP = register("dusty_foxite_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_GOLD_LAMP = register("dusty_gold_lamp",
-			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_IRON_LAMP = register("dusty_iron_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_LAPIS_LAMP = register("dusty_lapis_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<DustyLampBlock> DUSTY_LEADED_QUARTZ_LAMP = register("dusty_leaded_quartz_lamp",
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_LYCALITE_LAMP = register("dusty_lycalite_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_MITHRIL_LAMP = register("dusty_mithril_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_NETHERITE_LAMP = register("dusty_netherite_lamp",
-			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_OBERITE_LAMP = register("dusty_oberite_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_QUARTZ_LAMP = register("dusty_quartz_lamp",
-			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_SILVER_LAMP = register("dusty_silver_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_STEEL_LAMP = register("dusty_steel_lamp",
-			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_TRITONIUM_LAMP = register("dusty_tritonium_lamp",
-			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_TUNGSTEN_LAMP = register("dusty_tungsten_lamp",
-			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeBlock()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 		
+//Leaded Glass
+
+	public static final RegistryObject<Block> LEADED_QUARTZ_SAND = register("leaded_quartz_sand",
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.TERRACOTTA_LIGHT_GRAY)
+				.strength(0.5f, 0.3f).sound(SoundType.SAND)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+	public static final Properties LG_BLOCKS = BlockBehaviour.Properties.of(Material.GLASS)
+			.strength(0.5F).sound(SoundType.GLASS).noOcclusion().isRedstoneConductor(OtherBlocksInit::never).isSuffocating(OtherBlocksInit::never).isViewBlocking(OtherBlocksInit::never);
+
+	public static final RegistryObject<Block> LEADED_GLASS = register("leaded_quartz_glass",
+			() -> new LeadedQuartzGlassBlock(LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> WHITE_LEADED_GLASS = register("white_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.WHITE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> ORANGE_LEADED_GLASS = register("orange_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.ORANGE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> MAGENTA_LEADED_GLASS = register("magenta_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.MAGENTA, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_BLUE_LEADED_GLASS = register("light_blue_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.LIGHT_BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> YELLOW_LEADED_GLASS = register("yellow_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.YELLOW, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIME_LEADED_GLASS = register("lime_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.LIME, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PINK_LEADED_GLASS = register("pink_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.PINK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GRAY_LEADED_GLASS = register("gray_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_GRAY_LEADED_GLASS = register("light_gray_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.LIGHT_GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> CYAN_LEADED_GLASS = register("cyan_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.CYAN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PURPLE_LEADED_GLASS = register("purple_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.PURPLE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLUE_LEADED_GLASS = register("blue_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BROWN_LEADED_GLASS = register("brown_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.BROWN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GREEN_LEADED_GLASS = register("green_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.GREEN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> RED_LEADED_GLASS = register("red_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.RED, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLACK_LEADED_GLASS = register("black_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.BLACK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+
+	public static final RegistryObject<Block> LEADED_GLASS_PANE = register("leaded_quartz_glass_pane",
+			() -> new LeadedQuartzGlassPaneBlock(LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> WHITE_LEADED_GLASS_PANE = register("white_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.WHITE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> ORANGE_LEADED_GLASS_PANE = register("orange_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.ORANGE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> MAGENTA_LEADED_GLASS_PANE = register("magenta_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.MAGENTA, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_BLUE_LEADED_GLASS_PANE = register("light_blue_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.LIGHT_BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> YELLOW_LEADED_GLASS_PANE = register("yellow_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.YELLOW, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIME_LEADED_GLASS_PANE = register("lime_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.LIME, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PINK_LEADED_GLASS_PANE = register("pink_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.PINK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GRAY_LEADED_GLASS_PANE = register("gray_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_GRAY_LEADED_GLASS_PANE = register("light_gray_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.LIGHT_GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> CYAN_LEADED_GLASS_PANE = register("cyan_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.CYAN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PURPLE_LEADED_GLASS_PANE = register("purple_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.PURPLE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLUE_LEADED_GLASS_PANE = register("blue_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BROWN_LEADED_GLASS_PANE = register("brown_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BROWN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GREEN_LEADED_GLASS_PANE = register("green_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.GREEN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> RED_LEADED_GLASS_PANE = register("red_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.RED, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLACK_LEADED_GLASS_PANE = register("black_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BLACK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	
 	public static final Item.Properties tabAttributeBlock() {
 		return new Item.Properties().tab(GeneralItemInit.SOPH_ALLOY);
@@ -393,5 +483,8 @@ public class OtherBlocksInit {
 	
 	private static boolean always(BlockState state, BlockGetter getter, BlockPos pos) {
 		return true;
+	};
+	private static boolean never(BlockState state, BlockGetter getter, BlockPos pos) {
+		return false;
 	};
 }

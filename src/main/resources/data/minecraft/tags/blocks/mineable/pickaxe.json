@@ -10,6 +10,10 @@
 		"#sophies_alloys:compressed_slates",
 		"#sophies_alloys:mossy_deepslates",
 		"#sophies_alloys:dusty_lamps/all_dusty_lamps",
+		"#sophies_alloys:leaded_quartz_glass_stained",
+		"#sophies_alloys:leaded_quartz_glass_stained_panes",
+		"sophies_alloys:leaded_quartz_glass_pane",
+		"sophies_alloys:leaded_quartz_glass",
 		"sophies_alloys:slate",
 		"sophies_alloys:rich_basalt"
 	]

@@ -2,7 +2,7 @@
 	"type": "minecraft:smelting",
 	"category": "misc",
 	"cookingtime": 200,
-	"experience": 0.0,
+	"experience": 0.7,
 	"group": "silver_nugget",
 	"ingredient": [
 		{
@@ -10,6 +10,18 @@
 		},
 		{
 			"item": "sophies_alloys:silver_sword"
+		},
+		{
+			"item": "sophies_alloys:silver_helmet"
+		},
+		{
+			"item": "sophies_alloys:silver_chestplate"
+		},
+		{
+			"item": "sophies_alloys:silver_leggings"
+		},
+		{
+			"item": "sophies_alloys:silver_boots"
 		}
 	],
 	"result": "sophies_alloys:silver_nugget"

@@ -11,7 +11,7 @@ import com.sophiecheese.alloys.block.DustyLampBlock;
 import com.sophiecheese.alloys.block.SophieFallingDustyBlock;
 import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.init.OtherBlocksInit;
-import com.sophiecheese.alloys.item.BasicDescriptionItemBlock;
+import com.sophiecheese.alloys.item.BasicDescBlockItem;
 import com.sophiecheese.alloys.item.SophieCreateSequencedAssemblyItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
@@ -87,6 +87,8 @@ public class CreateCompat {
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 	public static final RegistryObject<Item> UNPROCESSED_LAGOMITE_PLATE = CREATE_ITEMS.register("unprocessed_lagomite_sheet", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
+	public static final RegistryObject<Item> UNPROCESSED_NETHERITE_PLATE = CREATE_ITEMS.register("unprocessed_netherite_sheet", 
+			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 	public static final RegistryObject<Item> UNPROCESSED_THING = CREATE_ITEMS.register("unprocessed_thing", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 	public static final RegistryObject<Item> UNPROCESSED_OBJECT = CREATE_ITEMS.register("unprocessed_object", 
@@ -98,13 +100,17 @@ public class CreateCompat {
 
 //Blocks
 	public static final RegistryObject<DustyLampBlock> DUSTY_ZINC_LAMP = register("dusty_zinc_lamp",
-			() -> new DustyLampBlock(6, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(6, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeCreate()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_BRASS_LAMP = register("dusty_brass_lamp",
-			() -> new DustyLampBlock(9, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BasicDescriptionItemBlock(object.get(), tabAttributeCreate()));
+			() -> new DustyLampBlock(9, OtherBlocksInit.LAMP_BLOCKS.lightLevel(OtherBlocksInit.dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeCreate()));
 
-	
+
 	public static final RegistryObject<Block> BLACK_GRAVEL = register("black_gravel",
-			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_BLACK).sound(SoundType.GRAVEL).strength(0.8F, 0.4F)), object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_BLACK).sound(SoundType.GRAVEL).strength(0.8F, 0.4F)),
+			object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
+	public static final RegistryObject<Block> BLACK_SAND = register("black_sand",
+			() -> new SophieFallingDustyBlock(-2056741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_BLACK).sound(SoundType.SAND).strength(0.5F, 0.3F)),
+			object -> () -> new BlockItem(object.get(), tabAttributeCreate()));
 	
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {

@@ -3,15 +3,6 @@
 	"category": "redstone",
 	"ingredients": [
 		{
-			"tag": "forge:nuggets/lead"
-		},
-		{
-			"tag": "forge:nuggets/lycalite"
-		},
-		{
-			"tag": "forge:nuggets/steel"
-		},
-		{
 			"tag": "forge:nuggets/mithril"
 		},
 		[
