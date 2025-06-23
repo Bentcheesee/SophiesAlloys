@@ -1,0 +1,17 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:soul_gravel",
+		"sophies_alloys:leaded_quartz_sand",
+		"sophies_alloys:deep_gravel",
+		"sophies_alloys:deep_sand",
+		{
+			"id": "sophies_alloys:black_gravel",
+			"required": false
+		},
+		{
+			"id": "sophies_alloys:black_sand",
+			"required": false
+		}
+	]
+}

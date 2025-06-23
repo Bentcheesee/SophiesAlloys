@@ -1,0 +1,23 @@
+{
+	"credit": "Made by Bentcheesee",
+	"textures": {
+		"sides": "sophies_alloys:block/leaded_quartz_glass/white_side",
+		"particle": "sophies_alloys:block/leaded_quartz_glass/white"
+	},
+	"elements": [
+		{
+			"name": "pane",
+			"from": [7, 0, 0],
+			"to": [9, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#sides"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#particle"},
+				"south": {"uv": [3, 0, 5, 16], "texture": "#sides"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#particle"},
+				"up": {"uv": [0, 0, 2, 16], "rotation": 180, "texture": "#sides"},
+				"down": {"uv": [5, 0, 3, 16], "texture": "#sides"}
+			}
+		}
+	]
+}

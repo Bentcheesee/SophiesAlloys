@@ -35,6 +35,40 @@ public class ModSetup {
 			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.POTTED_NO_FRUIT_BUSH.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.POTTED_OREBERRY_BUSH.get(), RenderType.cutout());
 			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.POTTED_SWEETBERRY_BUSH.get(), RenderType.cutout());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.RED_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.RED_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.ORANGE_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.ORANGE_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.YELLOW_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.YELLOW_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LIME_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LIME_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.GREEN_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.GREEN_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.CYAN_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.CYAN_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LIGHT_BLUE_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LIGHT_BLUE_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.BLUE_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.BLUE_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.PURPLE_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.PURPLE_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.MAGENTA_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.MAGENTA_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.PINK_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.PINK_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.WHITE_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.WHITE_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LIGHT_GRAY_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.LIGHT_GRAY_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.GRAY_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.GRAY_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.BLACK_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.BLACK_LEADED_GLASS_PANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.BROWN_LEADED_GLASS.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OtherBlocksInit.BROWN_LEADED_GLASS_PANE.get(), RenderType.translucent());
 		}
 	}
 }

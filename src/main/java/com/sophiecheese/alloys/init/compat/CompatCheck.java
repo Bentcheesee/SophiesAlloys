@@ -6,18 +6,23 @@ import net.minecraftforge.fml.ModList;
 
 public class CompatCheck {
 	public static boolean createPresent = false;
+	public static boolean dreamsPresent = false;
 	public static boolean farmersPresent = false;
+	public static boolean quarkPresent = false;
+	
 	public static void setupModCompatPreInit(){
 		String mod_id = "";
 		try{
 			mod_id = "create";
 			ModCompat(mod_id, () -> CreateCompat.setupCompat());
-			
+			mod_id = "create_dd";
+			ModCompat(mod_id, () -> DreamsCompat.setupCompat());
+
 			mod_id = "farmersdelight";
 			ModCompat(mod_id, () -> FarmersCompat.setupCompat());
 			
-			//mod_id = "quark";  I'm going to get to these eventually, I just want to have a lot of my other stuff properly set up first. 
-			//ModCompat(mod_id, () -> QuarkCompat.setupCompat());
+			mod_id = "quark";
+			ModCompat(mod_id, () -> QuarkCompat.setupCompat());
 		}
 		catch (Throwable tossed) {
 			printErrorToLogs("classloading with " + mod_id + " broke something, idk");

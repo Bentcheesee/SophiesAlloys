@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"GGG",
+		"GGG"
+	],
+	"key": {
+		"G": {
+			"item": "sophies_alloys:lime_leaded_quartz_glass"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:lime_leaded_quartz_glass_pane",
+		"count": 16
+	}
+}

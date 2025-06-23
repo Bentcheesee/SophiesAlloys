@@ -1,9 +1,14 @@
 {
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
-		{
-			"tag": "forge:dusts/diamond"
-		},
+		[
+			{
+				"tag": "forge:dusts/diamond"
+			},
+			{
+				"item": "sophies_alloys:tiny_diamond_dust"
+			}
+		],
 		{
 			"item": "sophies_alloys:rough_lapis_sheet"
 		}

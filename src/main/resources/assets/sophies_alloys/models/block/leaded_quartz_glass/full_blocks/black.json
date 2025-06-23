@@ -1,0 +1,6 @@
+{
+    "parent": "block/glass",
+    "textures": {
+        "all": "sophies_alloys:block/leaded_quartz_glass/black"
+    }
+}

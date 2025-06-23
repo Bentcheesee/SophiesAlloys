@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s  ",
+		"ss ",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:cobbled_calcite"
+		}
+	},
+	"result": {
+		"item": "sophies_alloys:cobbled_calcite_stairs",
+		"count": 4
+	}
+}

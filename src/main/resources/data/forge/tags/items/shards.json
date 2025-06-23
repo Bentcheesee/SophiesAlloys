@@ -5,10 +5,7 @@
 		"#forge:shards/quingum",
 		"#forge:shards/diamond",
 		"#forge:shards/emerald",
-		"minecraft:amethyst_shard",
-		{
-			"id": "create_dd:lapis_shard",
-			"required": false
-		}
+		"#forge:shards/lapis",
+		"minecraft:amethyst_shard"
 	]
 }

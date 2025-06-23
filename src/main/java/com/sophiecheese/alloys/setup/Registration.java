@@ -3,10 +3,13 @@ package com.sophiecheese.alloys.setup;
 import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.init.OreBlockInit;
 import com.sophiecheese.alloys.init.OtherBlocksInit;
+import com.sophiecheese.alloys.init.PaintingsInit;
 import com.sophiecheese.alloys.init.ToolItemInit;
 import com.sophiecheese.alloys.init.compat.CompatCheck;
 import com.sophiecheese.alloys.init.compat.CreateCompat;
+import com.sophiecheese.alloys.init.compat.DreamsCompat;
 import com.sophiecheese.alloys.init.compat.FarmersCompat;
+import com.sophiecheese.alloys.init.compat.QuarkCompat;
 import com.sophiecheese.alloys.worldgen.AlloysConfiguredFeatures;
 import com.sophiecheese.alloys.worldgen.AlloysPlacedFeatures;
 
@@ -22,6 +25,7 @@ public class Registration {
 		OreBlockInit.BLOCKS.register(bus);
 		OtherBlocksInit.BLOCKS.register(bus);
 		GeneralItemInit.ITEMS.register(bus);
+		PaintingsInit.PAINTINGS.register(bus);
 
 		AlloysConfiguredFeatures.CONFIGURED_FEATURES.register(bus);
 		AlloysPlacedFeatures.PLACED_FEATURES.register(bus);
@@ -30,6 +34,9 @@ public class Registration {
 			CreateCompat.CREATE_ITEMS.register(bus);
 			CreateCompat.CREATE_BLOCKS.register(bus);
 		}
+		if(CompatCheck.dreamsPresent){
+			DreamsCompat.CREATE_DD_ITEMS.register(bus);
+		}
 		if(CompatCheck.farmersPresent){
 			FarmersCompat.FARMERS_ITEMS.register(bus);
 			FarmersCompat.FARMERS_BLOCKS.register(bus);
@@ -37,9 +44,10 @@ public class Registration {
 //		if(CompatCheck.farmersPresent && CompatCheck.createPresent){
 //		I might do some specific blocks that only appear if both are present, like a Chocolaty Oreberry Cake
 //		}
-//		if(CompatCheck.quarkPresent){
-//		Preparation for a No Fruit chest/trapped chest, and maybe a few other smaller things 
-//		}
+		if(CompatCheck.quarkPresent){
+			QuarkCompat.QUARK_ITEMS.register(bus);
+			QuarkCompat.QUARK_BLOCKS.register(bus);
+		}
 	}
 	
 //	public static void registerCompostables() {

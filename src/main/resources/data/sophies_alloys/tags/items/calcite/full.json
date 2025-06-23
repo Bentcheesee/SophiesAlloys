@@ -1,0 +1,51 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:calcite",
+		"sophies_alloys:cobbled_calcite",
+		{
+			"id": "#create:stone_types/calcite",
+			"required": false
+		},
+		{
+			"id": "quark:polished_calcite",
+			"required": false
+		},
+		{
+			"id": "quark:calcite_stairs",
+			"required": false
+		},
+		{
+			"id": "quark:calcite_wall",
+			"required": false
+		},
+		{
+			"id": "quark:polished_calcite_stairs",
+			"required": false
+		},
+		{
+			"id": "quark:polished_calcite_wall",
+			"required": false
+		},
+		{
+			"id": "quark:calcite_bricks",
+			"required": false
+		},
+		{
+			"id": "quark:calcite_brick_stairs",
+			"required": false
+		},
+		{
+			"id": "quark:calcite_brick_wall",
+			"required": false
+		},
+		{
+			"id": "quark:chiseled_calcite_bricks",
+			"required": false
+		},
+		{
+			"id": "quark:calcite_pillar",
+			"required": false
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"type": "farmersdelight:cutting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:crimson_coal"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:crimson_coal_dust",
+			"count": 2
+		}
+	],
+	"tool": {
+		"tag": "sophies_alloys:chunks/all"
+	}
+}

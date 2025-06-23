@@ -14,15 +14,10 @@
 	"processingTime": 300,
 	"results": [
 		{
-			"item": "minecraft:soul_soil"
+			"item": "sophies_alloys:soul_gravel"
 		},
 		{
 			"chance": 0.25,
-			"item": "sophies_alloys:soul_chunk",
-			"count": 2
-		},
-		{
-			"chance": 0.5,
 			"item": "sophies_alloys:soul_chunk"
 		}
 	]

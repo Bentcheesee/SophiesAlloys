@@ -1,0 +1,33 @@
+{
+	"type": "create:milling",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "quark:shale"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"chance": 0.4,
+			"item": "minecraft:gravel"
+		},
+		{
+			"chance": 0.4,
+			"item": "sophies_alloys:shale_sheet"
+		},
+		{
+			"item": "sophies_alloys:shale_sheet",
+			"count": 2
+		}
+	]
+}

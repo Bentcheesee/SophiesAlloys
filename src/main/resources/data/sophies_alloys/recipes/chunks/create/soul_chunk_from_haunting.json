@@ -1,0 +1,19 @@
+{
+	"type": "create:haunting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks/convert/soul"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:soul_chunk"
+		}
+	]
+}

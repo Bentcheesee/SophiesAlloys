@@ -1,0 +1,37 @@
+{
+	"credit": "Made by Bentcheesee",
+	"textures": {
+		"sides": "sophies_alloys:block/leaded_quartz_glass/light_blue_side",
+		"particle": "sophies_alloys:block/leaded_quartz_glass/light_blue"
+	},
+	"elements": [
+		{
+			"name": "pane",
+			"from": [7, 0, 0],
+			"to": [9, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#sides"},
+				"east": {"uv": [8, 0, 16, 16], "texture": "#particle"},
+				"south": {"uv": [5, 0, 7, 16], "texture": "#sides"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#particle"},
+				"up": {"uv": [0, 4, 2, 12], "rotation": 180, "texture": "#sides"},
+				"down": {"uv": [3, 15, 5, 7], "rotation": 180, "texture": "#sides"}
+			}
+		},
+		{
+			"name": "don't worry about it",
+			"from": [7, 0, 8],
+			"to": [9, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [5, 0, 7, 16], "texture": "#sides"},
+				"east": {"uv": [1, 0, 2, 16], "texture": "#sides"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#sides"},
+				"west": {"uv": [1, 0, 2, 16], "texture": "#sides"},
+				"up": {"uv": [2, 3, 0, 4], "texture": "#sides"},
+				"down": {"uv": [3, 6, 5, 7], "rotation": 180, "texture": "#sides"}
+			}
+		}
+	]
+}

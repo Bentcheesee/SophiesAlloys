@@ -21,8 +21,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class NoFruitBlock extends Block{
 	private static final VoxelShape FRUIT = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D);
 
-	public NoFruitBlock(BlockBehaviour.Properties p_221545_) {
-		super(p_221545_);
+	public NoFruitBlock(BlockBehaviour.Properties prop) {
+		super(prop);
 	}
 
 	public VoxelShape getCollisionShape(BlockState blockstate, BlockGetter blockgetter, BlockPos BlockPos, CollisionContext collision) {
@@ -47,8 +47,7 @@ public class NoFruitBlock extends Block{
 	
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter getter, List<Component> component, TooltipFlag flag) {
-		component.add(Component.literal("It's super apple-y!!").withStyle(ChatFormatting.GRAY,ChatFormatting.ITALIC));
+		component.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY,ChatFormatting.ITALIC));
 		super.appendHoverText(stack, getter, component, flag);
 	}
-
 }

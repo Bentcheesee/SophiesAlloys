@@ -1,0 +1,7 @@
+{
+	"parent": "block/template_center_bar",
+	"textures": {
+		"0": "sophies_alloys:block/silver/silver_bars",
+		"particle": "sophies_alloys:block/silver/silver_bars"
+	}
+}

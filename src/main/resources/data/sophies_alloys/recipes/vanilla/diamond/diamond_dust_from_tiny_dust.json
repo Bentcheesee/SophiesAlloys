@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tiny_diamond_dust"
+		},
+		{
+			"item": "sophies_alloys:tiny_diamond_dust"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:diamond_dust"
+	}
+}

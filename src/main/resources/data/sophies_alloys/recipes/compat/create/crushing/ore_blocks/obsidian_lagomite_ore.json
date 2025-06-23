@@ -25,8 +25,8 @@
 			"item": "create:experience_nugget"
 		},
 		{
-			"chance": 0.125,
-			"item": "minecraft:end_stone"
+			"chance": 0.15,
+			"item": "create:powdered_obsidian"
 		}
 	]
 }

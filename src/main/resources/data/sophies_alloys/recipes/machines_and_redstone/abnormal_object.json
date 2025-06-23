@@ -6,9 +6,6 @@
 			"tag": "forge:ingots/lycalite"
 		},
 		{
-			"tag": "forge:ingots/lycalite"
-		},
-		{
 			"item": "sophies_alloys:nugget_conglomerate"
 		},
 		[
@@ -19,6 +16,9 @@
 				"tag": "minecraft:stone_buttons"
 			}
 		],
+		{
+			"item": "sophies_alloys:lapis_dust"
+		},
 		{
 			"item": "minecraft:redstone"
 		}

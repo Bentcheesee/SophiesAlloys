@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/iron_bars_inventory",
+    "textures": {
+        "bars": "sophies_alloys:block/lead/lead_bars",
+        "particle": "sophies_alloys:block/lead/lead_bars"
+    }
+}

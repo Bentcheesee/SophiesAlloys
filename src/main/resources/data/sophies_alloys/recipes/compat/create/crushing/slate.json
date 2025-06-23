@@ -18,16 +18,12 @@
 			"item": "sophies_alloys:slate_sheet"
 		},
 		{
-			"chance": 0.1,
-			"item": "minecraft:iron_nugget"
+			"chance": 0.14,
+			"item": "sophies_alloys:lead_nugget"
 		},
 		{
-			"chance": 0.1,
-			"item": "sophies_alloys:foxite_nugget"
-		},
-		{
-			"chance": 0.05,
-			"item": "sophies_alloys:foxite_nugget"
+			"chance": 0.09,
+			"item": "create:zinc_nugget"
 		},
 		{
 			"chance": 0.05,

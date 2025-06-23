@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "sophies_alloys:block/cobbled/cobbled_diorite_slab"
+		},
+		"type=double": {
+			"model": "sophies_alloys:block/cobbled/cobbled_diorite"
+		},
+		"type=top": {
+			"model": "sophies_alloys:block/cobbled/cobbled_diorite_slab_top"
+		}
+	}
+}

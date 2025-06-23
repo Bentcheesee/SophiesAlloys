@@ -26,21 +26,32 @@ public class AlloysPlacedFeatures {
 	public static final RegistryObject<PlacedFeature> SLATE = PLACED_FEATURES.register("slate_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.SLATE_GORE.getHolder().get(),
 					commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60)))));
+	public static final RegistryObject<PlacedFeature> DEEP_GRAVEL = PLACED_FEATURES.register("deep_gravel_placed",
+			() -> new PlacedFeature(AlloysConfiguredFeatures.DEEP_GRAVEL_GORE.getHolder().get(),
+					commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.absolute(-70), VerticalAnchor.absolute(5)))));
 
 	public static final RegistryObject<PlacedFeature> SOUL_STONE = PLACED_FEATURES.register("soul_stone_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.SOUL_STONE_GORE.getHolder().get(),
 					commonOrePlacement(22,   // this number means how many veins will spawn per chunk
 							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(20), VerticalAnchor.belowTop(20)))));
+	public static final RegistryObject<PlacedFeature> SOUL_GRAVEL = PLACED_FEATURES.register("soul_gravel_placed",
+			() -> new PlacedFeature(AlloysConfiguredFeatures.SOUL_GRAVEL_GORE.getHolder().get(),
+					commonOrePlacement(3,
+							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(15), VerticalAnchor.absolute(40)))));
+	public static final RegistryObject<PlacedFeature> RICH_BASALT = PLACED_FEATURES.register("rich_basalt_placed",
+			() -> new PlacedFeature(AlloysConfiguredFeatures.RICH_BASALT_GORE.getHolder().get(),
+					commonOrePlacement(18,
+							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.top()))));
 	
 
 
 	public static final RegistryObject<PlacedFeature> SILVER_TRIANGLE = PLACED_FEATURES.register("silver_triangle_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.SILVER_ORE.getHolder().get(),
-					commonOrePlacement(14,
+					commonOrePlacement(12,
 							HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(20), VerticalAnchor.absolute(80)))));
 	public static final RegistryObject<PlacedFeature> SILVER_UNIFORM = PLACED_FEATURES.register("silver_uniform_placed",
 			() -> new PlacedFeature(AlloysConfiguredFeatures.SILVER_ORE.getHolder().get(),
-					commonOrePlacement(5,
+					commonOrePlacement(3,
 							HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(65), VerticalAnchor.absolute(60)))));
 	
 	public static final RegistryObject<PlacedFeature> TUNGSTEN_OVERWORLD = PLACED_FEATURES.register("tungsten_overworld_placed",

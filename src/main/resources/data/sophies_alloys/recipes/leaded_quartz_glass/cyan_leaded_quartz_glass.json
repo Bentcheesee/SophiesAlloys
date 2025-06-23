@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"tag": "forge:dyes/cyan"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:cyan_leaded_quartz_glass",
+		"count": 8
+	}
+}

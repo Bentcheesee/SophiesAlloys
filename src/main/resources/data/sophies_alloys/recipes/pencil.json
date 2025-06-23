@@ -2,14 +2,13 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"tag": "forge:dusts/lead"
+			"item": "sophies_alloys:stiffened_lead"
 		},
 		{
 			"item": "minecraft:stick"
 		}
 	],
 	"result": {
-		"item": "sophies_alloys:lead_pencil",
-		"count": 2
+		"item": "sophies_alloys:lead_pencil"
 	}
 }

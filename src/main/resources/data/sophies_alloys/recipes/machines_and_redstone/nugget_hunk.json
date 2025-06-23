@@ -11,22 +11,12 @@
 		{
 			"tag": "forge:nuggets/steel"
 		},
-		[
-			{
-				"tag": "forge:nuggets/electrum"
-			},
-			{
-				"tag": "forge:nuggets/gold"
-			}
-		],
-		[
-			{
-				"tag": "forge:nuggets/iron"
-			},
-			{
-				"tag": "forge:nuggets/lead"
-			}
-		],
+		{
+			"tag": "forge:nuggets/electrum"
+		},
+		{
+			"tag": "forge:nuggets/lead"
+		},
 		[
 			{
 				"item": "minecraft:honeycomb"

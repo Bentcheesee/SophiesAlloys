@@ -1,0 +1,30 @@
+{
+	"type": "create:mixing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_dd"
+		}
+	],
+	"heatRequirement": "heated",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:andesite_chunk"
+		},
+		{
+			"item": "sophies_alloys:andesite_chunk"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:dolomite_chunk",
+			"count": 4
+		}
+	]
+}

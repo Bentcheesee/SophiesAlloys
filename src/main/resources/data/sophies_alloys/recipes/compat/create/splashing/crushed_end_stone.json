@@ -13,12 +13,16 @@
 	],
 	"results": [
 		{
-			"chance": 0.1,
+			"chance": 0.06,
 			"item": "sophies_alloys:tungsten_nugget"
 		},
 		{
-			"chance": 0.15,
+			"chance": 0.09,
 			"item": "sophies_alloys:oberite_nugget"
+		},
+		{
+			"chance": 0.01,
+			"item": "sophies_alloys:error_chunk"
 		}
 	]
 }

@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:deepslate_chunk",
+		"sophies_alloys:netherrack_chunk",
+		"sophies_alloys:basalt_chunk",
+		{
+			"id": "sophies_alloys:scorchia_chunk",
+			"required": false
+		}
+	]
+}

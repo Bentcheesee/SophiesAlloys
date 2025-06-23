@@ -1,0 +1,28 @@
+{
+	"replace": false,
+	"values": [
+		"sophies_alloys:andesite_chunk",
+		"sophies_alloys:calcite_chunk",
+		"sophies_alloys:cobblestone_chunk",
+		"sophies_alloys:diorite_chunk",
+		"sophies_alloys:granite_chunk",
+		"sophies_alloys:tuff_chunk",
+		"sophies_alloys:deepslate_chunk",
+		{
+			"id": "sophies_alloys:limestone_chunk",
+			"required": false
+		},
+		{
+			"id": "sophies_alloys:ochrum_chunk",
+			"required": false
+		},
+		{
+			"id": "sophies_alloys:quarky_limestone_chunk",
+			"required": false
+		},
+		{
+			"id": "sophies_alloys:dolomite_chunk",
+			"required": false
+		}
+	]
+}

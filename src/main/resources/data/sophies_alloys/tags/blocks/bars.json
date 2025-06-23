@@ -17,7 +17,14 @@
 			"id": "quark:gold_bars",
 			"required": false
 		},
+		{
+			"id": "tconstruct:gold_bars",
+			"required": false
+		},
 		"sophies_alloys:lead_bars",
+		"sophies_alloys:foxite_bars",
+		"sophies_alloys:silver_bars",
+		"sophies_alloys:tritonium_bars",
 		"minecraft:iron_bars"
 	]
 }

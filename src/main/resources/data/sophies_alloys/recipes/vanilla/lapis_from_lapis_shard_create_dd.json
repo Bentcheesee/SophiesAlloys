@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_dd"
+		}
+	],
+	"group": "lapis_lazuli",
+	"pattern": [
+		"ff",
+		"ff"
+	],
+	"key": {
+		"f": {
+			"tag": "forge:nuggets/lapis"
+		}
+	},
+	"result": {
+		"item": "minecraft:lapis_lazuli"
+	}
+}

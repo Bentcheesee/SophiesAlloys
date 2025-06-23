@@ -1,0 +1,25 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:blackstone/partial"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"item": "sophies_alloys:blackstone_chunk",
+			"count": 2
+		},
+		{
+			"item": "sophies_alloys:blackstone_chunk",
+			"chance": 0.5
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/silver_center_bar"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/silver_outreach"
+            },
+            "when": {
+                "east": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/silver_outreach",
+                "y": 90
+            },
+            "when": {
+                "south": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/silver_outreach_secondary"
+            },
+            "when": {
+                "west": "true"
+            }
+        },
+        {
+            "apply": {
+                "model": "sophies_alloys:block/bars/silver_outreach_secondary",
+                "y": 90
+            },
+            "when": {
+                "north": "true"
+            }
+        }
+    ]
+}

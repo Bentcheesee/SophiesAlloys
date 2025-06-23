@@ -1,0 +1,29 @@
+{
+	"type": "farmersdelight:cutting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"item": "minecraft:diorite"
+			},
+			{
+				"item": "sophies_alloys:cobbled_diorite"
+			}
+		]
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:diorite_chunk",
+			"count": 4
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}

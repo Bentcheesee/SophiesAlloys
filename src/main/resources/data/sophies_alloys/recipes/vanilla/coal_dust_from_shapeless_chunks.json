@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks/all"
+		},
+		[
+			{
+				"item": "minecraft:coal"
+			},
+			{
+				"item": "minecraft:charcoal"
+			}
+		]
+	],
+	"result": {
+		"item": "sophies_alloys:coal_dust",
+		"count": 2
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "sophies_alloys:blackstone/full"
+	},
+	"result": "minecraft:blackstone",
+	"count": 1
+}

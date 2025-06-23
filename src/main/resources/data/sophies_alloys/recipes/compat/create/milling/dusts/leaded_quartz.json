@@ -1,0 +1,23 @@
+{
+	"type": "create:milling",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"item": "sophies_alloys:leaded_quartz"
+			}
+		]
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"item": "sophies_alloys:leaded_quartz_dust",
+			"count": 2
+		}
+	]
+}

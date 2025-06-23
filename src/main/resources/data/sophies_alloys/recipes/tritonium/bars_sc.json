@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "forge:ingots/tritonium"
+	},
+	"result": "sophies_alloys:tritonium_bars",
+	"count": 3
+}

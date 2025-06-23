@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass"
+		},
+		{
+			"tag": "forge:dyes/light_gray"
+		}
+	],
+	"result": {
+		"item": "sophies_alloys:light_gray_leaded_quartz_glass",
+		"count": 8
+	}
+}

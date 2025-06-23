@@ -5,19 +5,23 @@ import java.util.function.ToIntFunction;
 
 import com.google.common.base.Supplier;
 import com.sophiecheese.alloys.SophiesAlloys;
+import com.sophiecheese.alloys.block.DustyLampBlock;
 import com.sophiecheese.alloys.block.NoFruitBlock;
 import com.sophiecheese.alloys.block.NoFruitBushBlock;
 import com.sophiecheese.alloys.block.OreberryBushBlock;
+import com.sophiecheese.alloys.block.SophieFallingDustyBlock;
 import com.sophiecheese.alloys.block.SophieFlammableLogBlock;
 import com.sophiecheese.alloys.block.WeakLeverBlock;
-import com.sophiecheese.alloys.block.lamps.DustyLampBlock;
-import com.sophiecheese.alloys.block.lamps.StrongDustyLampBlock;
-import com.sophiecheese.alloys.block.lamps.VeryStrongDustyLampBlock;
-import com.sophiecheese.alloys.block.lamps.WeakDustyLampBlock;
+import com.sophiecheese.alloys.block.quartzglasses.LeadedQuartzGlassBlock;
+import com.sophiecheese.alloys.block.quartzglasses.LeadedQuartzGlassPaneBlock;
+import com.sophiecheese.alloys.block.quartzglasses.StainedLeadedQuartzGlassBlock;
+import com.sophiecheese.alloys.block.quartzglasses.StainedLeadedQuartzGlassPaneBlock;
+import com.sophiecheese.alloys.item.BasicDescBlockItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.BlockGetter;
@@ -28,7 +32,6 @@ import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
-import net.minecraft.world.level.block.GravelBlock;
 import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.LeavesBlock;
@@ -62,96 +65,101 @@ public class OtherBlocksInit {
 	public static final WoodType NO_FRUIT_WT = WoodType.create("sophies_alloys:no_fruit");
 	public static final RegistryObject<NoFruitBushBlock> NO_FRUIT_BUSH = register("no_fruit_bush",
 			() -> new NoFruitBushBlock(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().instabreak().sound(SoundType.AZALEA)),
-			object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<FlowerPotBlock> POTTED_NO_FRUIT_BUSH = BLOCKS.register("potted_no_fruit_bush",
 			() -> new FlowerPotBlock(NO_FRUIT_BUSH.get(), BlockBehaviour.Properties.copy(Blocks.POTTED_AZALEA).noOcclusion()));
 
 	public static final RegistryObject<NoFruitBlock> NO_FRUIT_BLOCK = register("no_fruit",
-			() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.1F).noCollission().sound(SoundType.SWEET_BERRY_BUSH)),
+			() -> new NoFruitBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.075F).noCollission().sound(SoundType.SWEET_BERRY_BUSH).randomTicks()),
 			object -> () -> new ItemNameBlockItem(object.get(), GeneralItemInit.tabAttributeFood().food(FoodItemProperties.NO_FRUIT)));
 
 	public static final RegistryObject<RotatedPillarBlock> STRIPPED_NO_LOG = register("stripped_no_fruit_log",
-			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<RotatedPillarBlock> NO_LOG = register("no_fruit_log",
-			() -> new SophieFlammableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).color(MaterialColor.DEEPSLATE), STRIPPED_NO_LOG), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SophieFlammableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).color(MaterialColor.DEEPSLATE), STRIPPED_NO_LOG), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<RotatedPillarBlock> STRIPPED_NO_WOOD = register("stripped_no_fruit_wood",
-			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<RotatedPillarBlock> NO_WOOD = register("no_fruit_wood",
-			() -> new SophieFlammableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).color(MaterialColor.DEEPSLATE), STRIPPED_NO_WOOD), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SophieFlammableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).color(MaterialColor.DEEPSLATE), STRIPPED_NO_WOOD), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LeavesBlock> NO_FRUIT_LEAVES = register("no_fruit_leaves",
 			() -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).color(MaterialColor.QUARTZ).noOcclusion()),
-			object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> NO_FRUIT_PLANKS = register("no_fruit_planks",
 			() -> new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_LIGHT_GREEN).strength(2.0F, 3.0F).sound(SoundType.WOOD)),
-			object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> NO_FRUIT_STAIRS = register("no_fruit_stairs",
-			() -> new StairBlock(NO_FRUIT_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(NO_FRUIT_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> NO_FRUIT_SLAB = register("no_fruit_slab",
-			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DoorBlock> NO_FRUIT_DOOR = register("no_fruit_door",
-			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_LIGHT_GREEN).strength(3.0F).sound(SoundType.WOOD).noOcclusion()), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_LIGHT_GREEN).strength(3.0F).sound(SoundType.WOOD).noOcclusion()), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<TrapDoorBlock> NO_FRUIT_TRAPDOOR = register("no_fruit_trapdoor",
-			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).color(MaterialColor.TERRACOTTA_LIGHT_GREEN).noOcclusion()), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).color(MaterialColor.TERRACOTTA_LIGHT_GREEN).noOcclusion()), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<FenceBlock> NO_FRUIT_FENCE = register("no_fruit_fence",
-			() -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<FenceGateBlock> NO_FRUIT_FENCE_GATE = register("no_fruit_fence_gate",
-			() -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).color(MaterialColor.TERRACOTTA_LIGHT_GREEN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<PressurePlateBlock> NO_FRUIT_PRESSURE_PLATE = register("no_fruit_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WoodButtonBlock> NO_FRUIT_BUTTON = register("no_fruit_button",
-			() -> new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 
 //Soul Stone
 	public static final Material SOUL_MAT = (new Material.Builder(MaterialColor.COLOR_BROWN)).build();
 	public static final Properties SOUL_STONES = BlockBehaviour.Properties.of(SOUL_MAT)
-			.strength(1.8f).requiresCorrectToolForDrops().sound(SoundType.STONE);
+			.strength(1.8f, 6.5f).requiresCorrectToolForDrops().sound(SoundType.STONE);
 	public static final Properties SOUL_COBBLES = BlockBehaviour.Properties.of(SOUL_MAT)
-			.strength(2.3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE);
+			.strength(2.3f, 7.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE);
 
 	public static final RegistryObject<Block> SOUL_STONE = register("soul_stone",
-			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SOUL_STONE_STAIRS = register("soul_stone_stairs",
-			() -> new StairBlock(SOUL_STONE.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SOUL_STONE.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SOUL_STONE_SLAB = register("soul_stone_slab",
-			() -> new SlabBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SOUL_STONE_WALL = register("soul_stone_wall",
-			() -> new WallBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SOUL_STONE_BRICKS = register("soul_stone_bricks",
-			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SOUL_STONE_BRICK_STAIRS = register("soul_stone_brick_stairs",
-			() -> new StairBlock(SOUL_STONE_BRICKS.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SOUL_STONE_BRICKS.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SOUL_STONE_BRICK_SLAB = register("soul_stone_brick_slab",
-			() -> new SlabBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SOUL_STONE_BRICK_WALL = register("soul_stone_brick_wall",
-			() -> new WallBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SOUL_STONE_BRICK_CRACKED = register("soul_stone_bricks_cracked",
-			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SOUL_STONE_TILES = register("soul_stone_tiles",
-			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SOUL_STONE_TILE_STAIRS = register("soul_stone_tile_stairs",
-			() -> new StairBlock(SOUL_STONE_TILES.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SOUL_STONE_TILES.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SOUL_STONE_TILE_SLAB = register("soul_stone_tile_slab",
-			() -> new SlabBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SOUL_STONE_TILE_WALL = register("soul_stone_tile_wall",
-			() -> new WallBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SOUL_STONE_TILE_CRACKED = register("soul_stone_tiles_cracked",
-			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 
 	public static final RegistryObject<StoneButtonBlock> SOUL_STONE_BUTTON = register("soul_stone_button",
 			() -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F)),
-			object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WeakLeverBlock> SOUL_STONE_LEVER = register("soul_stone_lever",
 			() -> new WeakLeverBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.STONE)),
-			object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 		
 	public static final RegistryObject<Block> SOUL_COBBLESTONE = register("soul_cobblestone",
-			() -> new Block(SOUL_COBBLES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SOUL_COBBLES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SOUL_COBBLESTONE_STAIRS = register("soul_cobblestone_stairs",
-			() -> new StairBlock(SOUL_COBBLESTONE.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SOUL_COBBLESTONE.get().defaultBlockState(), SOUL_STONES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SOUL_COBBLESTONE_SLAB = register("soul_cobblestone_slab",
-			() -> new SlabBlock(SOUL_COBBLES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SOUL_COBBLES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SOUL_COBBLESTONE_WALL = register("soul_cobblestone_wall",
-			() -> new WallBlock(SOUL_COBBLES), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SOUL_COBBLES), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+	public static final RegistryObject<Block> SOUL_GRAVEL = register("soul_gravel",
+			() -> new SophieFallingDustyBlock(00000000, BlockBehaviour.Properties.of(SOUL_MAT)
+				.strength(0.6f, 0.4f).sound(SoundType.GRAVEL)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 
 //Slate
 	public static final Material SLATE_MAT = (new Material.Builder(MaterialColor.CLAY)).build();
@@ -159,62 +167,115 @@ public class OtherBlocksInit {
 			.strength(2.1f, 1.9f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES);
 
 	public static final RegistryObject<Block> SLATE = register("slate",
-			() -> new GravelBlock(BlockBehaviour.Properties.of(SLATE_MAT)
+			() -> new SophieFallingDustyBlock(00000000, BlockBehaviour.Properties.of(SLATE_MAT)
 				.strength(1.2f, 0.75f).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)), 
-			object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 
 	public static final RegistryObject<Block> SLATE_COMPRESSED = register("compressed_slate",
-			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SLATE_COMPRESSED_STAIRS = register("slate_stairs",
-			() -> new StairBlock(SLATE_COMPRESSED.get().defaultBlockState(), SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SLATE_COMPRESSED.get().defaultBlockState(), SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SLATE_SLAB = register("slate_slab",
-			() -> new SlabBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SLATE_WALL = register("slate_wall",
-			() -> new WallBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SLATE_BRICK = register("slate_bricks",
-			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SLATE_BRICK_STAIRS = register("slate_brick_stairs",
-			() -> new StairBlock(SLATE_BRICK.get().defaultBlockState(), SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SLATE_BRICK.get().defaultBlockState(), SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SLATE_BRICK_SLAB = register("slate_brick_slab",
-			() -> new SlabBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SLATE_BRICK_WALL = register("slate_brick_wall",
-			() -> new WallBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SLATE_BRICK_CRACKED = register("slate_bricks_cracked",
-			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SLATE_TILE = register("slate_tiles",
-			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> SLATE_TILE_STAIRS = register("slate_tile_stairs",
-			() -> new StairBlock(SLATE_TILE.get().defaultBlockState(), SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(SLATE_TILE.get().defaultBlockState(), SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> SLATE_TILE_SLAB = register("slate_tile_slab",
-			() -> new SlabBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> SLATE_TILE_WALL = register("slate_tile_wall",
-			() -> new WallBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> SLATE_TILE_CRACKED = register("slate_tiles_cracked",
-			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<RotatedPillarBlock> SLATE_PILLAR = register("slate_pillar",
-			() -> new RotatedPillarBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new RotatedPillarBlock(SLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 		
-//Mossy Cobbled Deepslate
-	public static final Material DEEPSLATE_MAT = (new Material.Builder(MaterialColor.DEEPSLATE)).build();
-	public static final Properties DEEPSLATE_BLOCKS = BlockBehaviour.Properties.of(DEEPSLATE_MAT)
+//Deepslate
+	public static final Properties DEEPSLATE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DEEPSLATE)
 			.strength(3.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE);
 
 	public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = register("mossy_cobbled_deepslate",
-			() -> new Block(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> MOSSY_COBBLED_DEEPSLATE_STAIRS = register("mossy_cobbled_deepslate_stairs",
-			() -> new StairBlock(MOSSY_COBBLED_DEEPSLATE.get().defaultBlockState(), DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(MOSSY_COBBLED_DEEPSLATE.get().defaultBlockState(), DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> MOSSY_COBBLED_DEEPSLATE_SLAB = register("mossy_cobbled_deepslate_slab",
-			() -> new SlabBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> MOSSY_COBBLED_DEEPSLATE_WALL = register("mossy_cobbled_deepslate_wall",
-			() -> new WallBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> MOSSY_DEEPSLATE_BRICK = register("mossy_deepslate_bricks",
-			() -> new Block(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new Block(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<StairBlock> MOSSY_DEEPSLATE_BRICK_STAIRS = register("mossy_deepslate_brick_stairs",
-			() -> new StairBlock(MOSSY_DEEPSLATE_BRICK.get().defaultBlockState(), DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new StairBlock(MOSSY_DEEPSLATE_BRICK.get().defaultBlockState(), DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<SlabBlock> MOSSY_DEEPSLATE_BRICK_SLAB = register("mossy_deepslate_brick_slab",
-			() -> new SlabBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new SlabBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<WallBlock> MOSSY_DEEPSLATE_BRICK_WALL = register("mossy_deepslate_brick_wall",
-			() -> new WallBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new WallBlock(DEEPSLATE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+
+	public static final RegistryObject<Block> DEEP_GRAVEL = register("deep_gravel",
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.DEEPSLATE)
+				.strength(0.8f, 0.5f).sound(SoundType.GRAVEL)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> DEEP_SAND = register("deep_sand",
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.DEEPSLATE)
+				.strength(0.6f, 0.3f).sound(SoundType.SAND)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+//Cobbled
+	public static final Properties CALCITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_WHITE)
+			.strength(1F).requiresCorrectToolForDrops().sound(SoundType.CALCITE);
+	public static final RegistryObject<Block> COBBLED_CALCITE = register("cobbled_calcite",
+			() -> new Block(CALCITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<StairBlock> COBBLED_CALCITE_STAIRS = register("cobbled_calcite_stairs",
+			() -> new StairBlock(COBBLED_CALCITE.get().defaultBlockState(), CALCITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<SlabBlock> COBBLED_CALCITE_SLAB = register("cobbled_calcite_slab",
+			() -> new SlabBlock(CALCITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<WallBlock> COBBLED_CALCITE_WALL = register("cobbled_calcite_wall",
+			() -> new WallBlock(CALCITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+
+	public static final Properties BLACKSTONE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK)
+			.strength(2F, 6.5F).requiresCorrectToolForDrops();
+	public static final RegistryObject<Block> COBBLED_BLACKSTONE = register("cobbled_blackstone",
+			() -> new Block(BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<StairBlock> COBBLED_BLACKSTONE_STAIRS = register("cobbled_blackstone_stairs",
+			() -> new StairBlock(COBBLED_BLACKSTONE.get().defaultBlockState(), BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<SlabBlock> COBBLED_BLACKSTONE_SLAB = register("cobbled_blackstone_slab",
+			() -> new SlabBlock(BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<WallBlock> COBBLED_BLACKSTONE_WALL = register("cobbled_blackstone_wall",
+			() -> new WallBlock(BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+
+	public static final Properties GRANITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DIRT)
+			.strength(2F, 6.5F).requiresCorrectToolForDrops();
+	public static final RegistryObject<Block> COBBLED_GRANITE = register("cobbled_granite",
+			() -> new Block(GRANITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<StairBlock> COBBLED_GRANITE_STAIRS = register("cobbled_granite_stairs",
+			() -> new StairBlock(COBBLED_GRANITE.get().defaultBlockState(), BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<SlabBlock> COBBLED_GRANITE_SLAB = register("cobbled_granite_slab",
+			() -> new SlabBlock(GRANITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<WallBlock> COBBLED_GRANITE_WALL = register("cobbled_granite_wall",
+			() -> new WallBlock(GRANITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+
+	public static final Properties DIORITE_BLOCKS = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ)
+			.strength(2F, 6.5F).requiresCorrectToolForDrops();
+	public static final RegistryObject<Block> COBBLED_DIORITE = register("cobbled_diorite",
+			() -> new Block(DIORITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<StairBlock> COBBLED_DIORITE_STAIRS = register("cobbled_diorite_stairs",
+			() -> new StairBlock(COBBLED_DIORITE.get().defaultBlockState(), BLACKSTONE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<SlabBlock> COBBLED_DIORITE_SLAB = register("cobbled_diorite_slab",
+			() -> new SlabBlock(DIORITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<WallBlock> COBBLED_DIORITE_WALL = register("cobbled_diorite_wall",
+			() -> new WallBlock(DIORITE_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 		
 //Oreberries
 	public static final RegistryObject<OreberryBushBlock> OREBERRY_BUSH_BLOCK = register("oreberry_bush",
@@ -227,99 +288,189 @@ public class OtherBlocksInit {
 
 //Chains and Lanterns
 	public static final RegistryObject<ChainBlock> FOXITE_CHAIN = register("foxite_chain",
-			() -> new ChainBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN).noOcclusion()), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new ChainBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN).noOcclusion()), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> FOXITE_LANTERN = register("foxite_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> FOXITE_SOUL_LANTERN = register("foxite_soul_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<ChainBlock> GOLD_CHAIN = register("gold_chain",
-			() -> new ChainBlock(BlockBehaviour.Properties.copy(FOXITE_CHAIN.get())), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new ChainBlock(BlockBehaviour.Properties.copy(FOXITE_CHAIN.get())), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> GOLD_LANTERN = register("gold_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> GOLD_SOUL_LANTERN = register("gold_soul_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<ChainBlock> NETHERITE_CHAIN = register("netherite_chain",
-			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy().fireResistant()));
+			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	public static final RegistryObject<LanternBlock> NETHERITE_LANTERN = register("netherite_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy().fireResistant()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	public static final RegistryObject<LanternBlock> NETHERITE_SOUL_LANTERN = register("netherite_soul_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy().fireResistant()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	public static final RegistryObject<ChainBlock> SILVER_CHAIN = register("silver_chain",
-			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> SILVER_LANTERN = register("silver_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> SILVER_SOUL_LANTERN = register("silver_soul_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<ChainBlock> TRITONIUM_CHAIN = register("tritonium_chain",
-			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> TRITONIUM_LANTERN = register("tritonium_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<LanternBlock> TRITONIUM_SOUL_LANTERN = register("tritonium_soul_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<ChainBlock> TUNGSTEN_CHAIN = register("tungsten_chain",
-			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy().fireResistant()));
+			() -> new ChainBlock(BlockBehaviour.Properties.copy(GOLD_CHAIN.get())), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	public static final RegistryObject<LanternBlock> TUNGSTEN_LANTERN = register("tungsten_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy().fireResistant()));
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	public static final RegistryObject<LanternBlock> TUNGSTEN_SOUL_LANTERN = register("tungsten_soul_lantern",
-			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy().fireResistant()));
-	
+			() -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
+
 	public static final RegistryObject<IronBarsBlock> LEAD_BARS = register("lead_bars",
-			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<IronBarsBlock> FOXITE_BARS = register("foxite_bars",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<IronBarsBlock> SILVER_BARS = register("silver_bars",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<IronBarsBlock> TRITONIUM_BARS = register("tritonium_bars",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BARS)), object -> () -> new BlockItem(object.get(), tabAttributeBlock().fireResistant()));
 	
 //Dusty Lamps
-	
-
 	public static ToIntFunction<BlockState> dustyLight(int lightLevel) {
 		return (state) -> {return state.getValue(DustyLampBlock.LIT) ? lightLevel : 0;};}
 	public static final Properties LAMP_BLOCKS = BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS)
 			.strength(1.2F).sound(SoundType.GLASS).emissiveRendering(OtherBlocksInit::always);
 	
 	public static final RegistryObject<DustyLampBlock> DUSTY_LAMP = register("dusty_lamp",
-			() -> new DustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_AMETHYST_LAMP = register("dusty_amethyst_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_COAL_LAMP = register("dusty_coal_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_COPPER_LAMP = register("dusty_copper_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_CRIMSON_LAMP = register("dusty_crimson_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(3))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_DIAMOND_LAMP = register("dusty_diamond_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_ELECTRUM_LAMP = register("dusty_electrum_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_EMERALD_LAMP = register("dusty_emerald_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_FAUNA_LAMP = register("dusty_faunathyst_lamp",
-			() -> new DustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_FOXITE_LAMP = register("dusty_foxite_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_GOLD_LAMP = register("dusty_gold_lamp",
-			() -> new VeryStrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_IRON_LAMP = register("dusty_iron_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_LAPIS_LAMP = register("dusty_lapis_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<DustyLampBlock> DUSTY_LEADED_QUARTZ_LAMP = register("dusty_leaded_quartz_lamp",
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_LYCALITE_LAMP = register("dusty_lycalite_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_MITHRIL_LAMP = register("dusty_mithril_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_NETHERITE_LAMP = register("dusty_netherite_lamp",
-			() -> new WeakDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(6, LAMP_BLOCKS.lightLevel(dustyLight(6))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_OBERITE_LAMP = register("dusty_oberite_lamp",
-			() -> new DustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_QUARTZ_LAMP = register("dusty_quartz_lamp",
-			() -> new VeryStrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_SILVER_LAMP = register("dusty_silver_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_STEEL_LAMP = register("dusty_steel_lamp",
-			() -> new DustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(9, LAMP_BLOCKS.lightLevel(dustyLight(9))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_TRITONIUM_LAMP = register("dusty_tritonium_lamp",
-			() -> new VeryStrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
+			() -> new DustyLampBlock(15, LAMP_BLOCKS.lightLevel(dustyLight(15))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<DustyLampBlock> DUSTY_TUNGSTEN_LAMP = register("dusty_tungsten_lamp",
-			() -> new StrongDustyLampBlock(LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BlockItem(object.get(), GeneralItemInit.tabAttributeAlloy()));
-	
+			() -> new DustyLampBlock(12, LAMP_BLOCKS.lightLevel(dustyLight(12))), object -> () -> new BasicDescBlockItem(object.get(), tabAttributeBlock()));
 		
+//Leaded Glass
+
+	public static final RegistryObject<Block> LEADED_QUARTZ_SAND = register("leaded_quartz_sand",
+			() -> new SophieFallingDustyBlock(-8356741, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.TERRACOTTA_LIGHT_GRAY)
+				.strength(0.5f, 0.3f).sound(SoundType.SAND)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+	public static final Properties LG_BLOCKS = BlockBehaviour.Properties.of(Material.GLASS)
+			.strength(0.5F).sound(SoundType.GLASS).noOcclusion().isRedstoneConductor(OtherBlocksInit::never).isSuffocating(OtherBlocksInit::never).isViewBlocking(OtherBlocksInit::never);
+
+	public static final RegistryObject<Block> LEADED_GLASS = register("leaded_quartz_glass",
+			() -> new LeadedQuartzGlassBlock(LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> WHITE_LEADED_GLASS = register("white_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.WHITE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> ORANGE_LEADED_GLASS = register("orange_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.ORANGE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> MAGENTA_LEADED_GLASS = register("magenta_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.MAGENTA, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_BLUE_LEADED_GLASS = register("light_blue_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.LIGHT_BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> YELLOW_LEADED_GLASS = register("yellow_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.YELLOW, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIME_LEADED_GLASS = register("lime_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.LIME, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PINK_LEADED_GLASS = register("pink_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.PINK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GRAY_LEADED_GLASS = register("gray_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_GRAY_LEADED_GLASS = register("light_gray_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.LIGHT_GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> CYAN_LEADED_GLASS = register("cyan_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.CYAN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PURPLE_LEADED_GLASS = register("purple_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.PURPLE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLUE_LEADED_GLASS = register("blue_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BROWN_LEADED_GLASS = register("brown_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.BROWN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GREEN_LEADED_GLASS = register("green_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.GREEN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> RED_LEADED_GLASS = register("red_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.RED, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLACK_LEADED_GLASS = register("black_leaded_quartz_glass",
+			() -> new StainedLeadedQuartzGlassBlock(DyeColor.BLACK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+
+	public static final RegistryObject<Block> LEADED_GLASS_PANE = register("leaded_quartz_glass_pane",
+			() -> new LeadedQuartzGlassPaneBlock(LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> WHITE_LEADED_GLASS_PANE = register("white_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.WHITE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> ORANGE_LEADED_GLASS_PANE = register("orange_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.ORANGE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> MAGENTA_LEADED_GLASS_PANE = register("magenta_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.MAGENTA, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_BLUE_LEADED_GLASS_PANE = register("light_blue_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.LIGHT_BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> YELLOW_LEADED_GLASS_PANE = register("yellow_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.YELLOW, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIME_LEADED_GLASS_PANE = register("lime_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.LIME, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PINK_LEADED_GLASS_PANE = register("pink_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.PINK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GRAY_LEADED_GLASS_PANE = register("gray_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> LIGHT_GRAY_LEADED_GLASS_PANE = register("light_gray_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.LIGHT_GRAY, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> CYAN_LEADED_GLASS_PANE = register("cyan_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.CYAN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> PURPLE_LEADED_GLASS_PANE = register("purple_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.PURPLE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLUE_LEADED_GLASS_PANE = register("blue_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BLUE, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BROWN_LEADED_GLASS_PANE = register("brown_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BROWN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> GREEN_LEADED_GLASS_PANE = register("green_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.GREEN, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> RED_LEADED_GLASS_PANE = register("red_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.RED, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	public static final RegistryObject<Block> BLACK_LEADED_GLASS_PANE = register("black_leaded_quartz_glass_pane",
+			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BLACK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+	public static final Item.Properties tabAttributeBlock() {
+		return new Item.Properties().tab(GeneralItemInit.SOPH_ALLOY);
+	}
+	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
 		return BLOCKS.register(name, block);
 	}
@@ -332,5 +483,8 @@ public class OtherBlocksInit {
 	
 	private static boolean always(BlockState state, BlockGetter getter, BlockPos pos) {
 		return true;
+	};
+	private static boolean never(BlockState state, BlockGetter getter, BlockPos pos) {
+		return false;
 	};
 }

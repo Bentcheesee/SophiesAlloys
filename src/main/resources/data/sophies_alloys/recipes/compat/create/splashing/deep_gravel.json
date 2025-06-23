@@ -1,0 +1,33 @@
+{
+	"type": "create:splashing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:deep_gravel"
+		}
+	],
+	"results": [
+		{
+			"item": "minecraft:flint",
+			"count": 2,
+			"chance": 0.6
+		},
+		{
+			"item": "sophies_alloys:deepslate_chunk",
+			"chance": 0.22
+		},
+		{
+			"item": "sophies_alloys:silver_nugget",
+			"chance": 0.14
+		},
+		{
+			"item": "sophies_alloys:lapis_shard",
+			"chance": 0.09
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:andesite",
+		"minecraft:calcite",
+		"minecraft:cobblestone",
+		"minecraft:diorite",
+		"minecraft:granite",
+		"minecraft:tuff",
+		"minecraft:deepslate",
+		"minecraft:netherrack",
+		"minecraft:magma_block",
+		"minecraft:basalt",
+		"minecraft:blackstone",
+		"minecraft:end_stone",
+		"sophies_alloys:soul_stone",
+		"sophies_alloys:soul_cobblestone",
+		"sophies_alloys:cobbled_calcite",
+		"sophies_alloys:cobbled_blackstone",
+		{
+			"id": "create:asurine",
+			"required": false
+		},
+		{
+			"id": "create:crimsite",
+			"required": false
+		},
+		{
+			"id": "create:limestone",
+			"required": false
+		},
+		{
+			"id": "create:ochrum",
+			"required": false
+		},
+		{
+			"id": "create:scorchia",
+			"required": false
+		},
+		{
+			"id": "create:scoria",
+			"required": false
+		},
+		{
+			"id": "create:veridium",
+			"required": false
+		},
+		{
+			"id": "quark:limestone",
+			"required": false
+		},
+		{
+			"id": "quark:jasper",
+			"required": false
+		},
+		{
+			"id": "quark:perma_frost",
+			"required": false
+		},
+		{
+			"id": "quark:myalite",
+			"required": false
+		}
+	]
+}

@@ -12,7 +12,8 @@
 	"loops": 2,
 	"results": [
 		{
-			"item": "sophies_alloys:abnormal_object"
+			"item": "sophies_alloys:abnormal_object",
+			"count": 2
 		}
 	],
 	"sequence": [
@@ -24,6 +25,22 @@
 				},
 				{
 					"item": "minecraft:redstone"
+				}
+			],
+			"results": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				}
+			]
+		},
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "sophies_alloys:unprocessed_thing"
+				},
+				{
+					"item": "sophies_alloys:lapis_dust"
 				}
 			],
 			"results": [
@@ -66,19 +83,6 @@
 			"results": [
 				{
 					"item": "sophies_alloys:unprocessed_thing"
-				}
-			]
-		},
-		{
-			"type": "create:pressing",
-			"ingredients": [
-				{
-					"item": "sophies_alloys:unprocessed_object"
-				}
-			],
-			"results": [
-				{
-					"item": "sophies_alloys:unprocessed_object"
 				}
 			]
 		}
