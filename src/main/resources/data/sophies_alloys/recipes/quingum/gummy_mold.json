@@ -2,13 +2,18 @@
 	"type": "minecraft:crafting_shaped",
 	"group": "quingum_mold",
 	"pattern": [
-		"e",
+		"s",
 		"l"
 	],
 	"key": {
-		"e": {
-			"item": "sophies_alloys:diamond_shard"
-		},
+		"s": [
+			{
+				"tag": "forge:shards/diamond"
+			},
+			{
+				"tag": "forge:shards/emerald"
+			}
+		],
 		"l": {
 			"tag": "forge:plates/lapis"
 		}

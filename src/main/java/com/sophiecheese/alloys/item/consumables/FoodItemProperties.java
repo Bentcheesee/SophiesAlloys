@@ -45,10 +45,10 @@ public class FoodItemProperties {
 
 //Farmer's Compat
 	public static final FoodProperties OREBERRY_SALAD = Resi(8,0.6F,60)
-			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1F).build();
+			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 200), 1F).build();
 	public static final FoodProperties OREBERRY_BURGER = Resi(10,0.7F,45).build();
 	public static final FoodProperties QUINGUM_SALAD = Haste(8,0.9F,90)
-			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1F).build();
+			.effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 200), 1F).build();
 	public static final FoodProperties FANCY_UNDERGROUND_SOUP = ResiHaste(10,1.2F,75,120).build();
 	public static final FoodProperties RAW_MEAT_STRIPS = RawMeat(1,0.15F,1).build(); 
 	public static final FoodProperties COOKED_MEAT_STRIPS = CookedMeat(3,0.4F,1).build();

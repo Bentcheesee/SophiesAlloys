@@ -26,6 +26,7 @@
 		"sophies_alloys:raw_mithril_block",
 		"sophies_alloys:mithril_block",
 		"sophies_alloys:mithril_ore",
-		"sophies_alloys:mithril_deepslate_ore"
+		"sophies_alloys:mithril_deepslate_ore",
+		"sophies_alloys:mithril_soul_ore"
 	]
 }

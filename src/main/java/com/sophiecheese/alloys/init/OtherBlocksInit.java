@@ -17,6 +17,7 @@ import com.sophiecheese.alloys.block.quartzglasses.LeadedQuartzGlassPaneBlock;
 import com.sophiecheese.alloys.block.quartzglasses.StainedLeadedQuartzGlassBlock;
 import com.sophiecheese.alloys.block.quartzglasses.StainedLeadedQuartzGlassPaneBlock;
 import com.sophiecheese.alloys.item.BasicDescBlockItem;
+import com.sophiecheese.alloys.item.OreberryBushBlockItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.core.BlockPos;
@@ -280,7 +281,7 @@ public class OtherBlocksInit {
 //Oreberries
 	public static final RegistryObject<OreberryBushBlock> OREBERRY_BUSH_BLOCK = register("oreberry_bush",
 			() -> new OreberryBushBlock(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH).lightLevel((p_50870_) -> {return 4;})),
-			object -> () -> new ItemNameBlockItem(object.get(), GeneralItemInit.tabAttributeFood().food(FoodItemProperties.OREBERRY)));
+			object -> () -> new OreberryBushBlockItem(object.get(), GeneralItemInit.tabAttributeFood().food(FoodItemProperties.OREBERRY)));
 	public static final RegistryObject<FlowerPotBlock> POTTED_OREBERRY_BUSH = BLOCKS.register("potted_oreberry_bush",
 			() -> new FlowerPotBlock(OREBERRY_BUSH_BLOCK.get(), BlockBehaviour.Properties.copy(POTTED_NO_FRUIT_BUSH.get()).noOcclusion()));
 	public static final RegistryObject<FlowerPotBlock> POTTED_SWEETBERRY_BUSH = BLOCKS.register("potted_sweetberry_bush",
@@ -466,6 +467,8 @@ public class OtherBlocksInit {
 			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.RED, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
 	public static final RegistryObject<Block> BLACK_LEADED_GLASS_PANE = register("black_leaded_quartz_glass_pane",
 			() -> new StainedLeadedQuartzGlassPaneBlock(DyeColor.BLACK, LG_BLOCKS), object -> () -> new BlockItem(object.get(), tabAttributeBlock()));
+	
+	
 	
 	public static final Item.Properties tabAttributeBlock() {
 		return new Item.Properties().tab(GeneralItemInit.SOPH_ALLOY);

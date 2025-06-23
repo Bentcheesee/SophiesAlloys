@@ -8,6 +8,8 @@ import com.google.common.base.Supplier;
 import com.mojang.logging.LogUtils;
 import com.sophiecheese.alloys.SophiesAlloys;
 import com.sophiecheese.alloys.init.GeneralItemInit;
+import com.sophiecheese.alloys.item.consumables.BowlEffectDescItem;
+import com.sophiecheese.alloys.item.consumables.EffectDescItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.world.item.BlockItem;
@@ -37,13 +39,13 @@ public class FarmersCompat {
 
 //Items
 	public static final RegistryObject<BowlFoodItem> OREBERRY_SALAD = FARMERS_ITEMS.register("oreberry_salad", 
-			() -> new BowlFoodItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.OREBERRY_SALAD).stacksTo(16)));
+			() -> new BowlEffectDescItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.OREBERRY_SALAD).stacksTo(16)));
 	public static final RegistryObject<Item> OREBERRY_BURGER = FARMERS_ITEMS.register("oreberry_burger", 
-			() -> new Item(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.OREBERRY_BURGER)));
+			() -> new EffectDescItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.OREBERRY_BURGER)));
 	public static final RegistryObject<BowlFoodItem> QUINGUM_SALAD = FARMERS_ITEMS.register("quingum_salad", 
-			() -> new BowlFoodItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.QUINGUM_SALAD).stacksTo(16)));
+			() -> new BowlEffectDescItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.QUINGUM_SALAD).stacksTo(16)));
 	public static final RegistryObject<BowlFoodItem> FANCY_SOUP = FARMERS_ITEMS.register("fancy_soup", 
-			() -> new BowlFoodItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.FANCY_UNDERGROUND_SOUP).stacksTo(16)));
+			() -> new BowlEffectDescItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.FANCY_UNDERGROUND_SOUP).stacksTo(16)));
 	public static final RegistryObject<Item> RAW_MEAT_STRIPS = FARMERS_ITEMS.register("raw_meat_strip", 
 			() -> new Item(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.RAW_MEAT_STRIPS)));
 	public static final RegistryObject<Item> COOKED_MEAT_STRIPS = FARMERS_ITEMS.register("cooked_meat_strip", 

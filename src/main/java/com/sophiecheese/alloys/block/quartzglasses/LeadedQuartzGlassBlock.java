@@ -32,11 +32,6 @@ public class LeadedQuartzGlassBlock extends AbstractGlassBlock{
 		}
 	}
 	
-	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(POWERED);
-	}
-	
 	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource source) {
 		if (state.getValue(POWERED) && !level.hasNeighborSignal(pos)) {
 			level.setBlock(pos, state.cycle(POWERED), 2);
@@ -59,5 +54,10 @@ public class LeadedQuartzGlassBlock extends AbstractGlassBlock{
 			} else {
 				return 0;
 			}
+	}
+	
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(POWERED);
 	}
 }

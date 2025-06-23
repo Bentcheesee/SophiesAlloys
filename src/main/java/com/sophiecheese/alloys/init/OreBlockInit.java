@@ -127,6 +127,11 @@ public class OreBlockInit {
 				.strength(50.0f, 20.0f).requiresCorrectToolForDrops()
 				.sound(SoundType.GILDED_BLACKSTONE)), 
 			object -> () -> new BlockItem(object.get(), tabAttributeOre()));
+	public static final RegistryObject<Block> SOUL_MITHRIL_ORE = register("mithril_soul_ore",
+			() -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BROWN)
+				.strength(8.0f, 6.0f).requiresCorrectToolForDrops()
+				.sound(SoundType.STONE)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeOre()));
 	public static final RegistryObject<RotatedPillarBlock> RICH_BASALT = register("rich_basalt",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY)
 				.strength(1.25F, 4.2F).requiresCorrectToolForDrops()
@@ -159,6 +164,11 @@ public class OreBlockInit {
 			object -> () -> new BlockItem(object.get(), tabAttributeOre()));
 	public static final RegistryObject<Block> NETHER_FOXITE_ORE = register("foxite_nether_ore",
 			() -> new DropExperienceBlock(NETHERRACK_ORES.strength(3.3f)), 
+			object -> () -> new BlockItem(object.get(), tabAttributeOre()));
+	public static final RegistryObject<Block> SOUL_FOXITE_ORE = register("foxite_soul_ore",
+			() -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BROWN)
+				.strength(5.0f, 4.0f).requiresCorrectToolForDrops()
+				.sound(SoundType.STONE)), 
 			object -> () -> new BlockItem(object.get(), tabAttributeOre()));
 	public static final RegistryObject<Block> RAW_FOXITE_BLOCK = register("raw_foxite_block",
 			() -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_ORANGE)

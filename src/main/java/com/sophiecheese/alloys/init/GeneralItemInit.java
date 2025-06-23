@@ -1,14 +1,15 @@
 package com.sophiecheese.alloys.init;
 
-import com.sophiecheese.alloys.item.CrimsonCoal;
-import com.sophiecheese.alloys.item.FaunathystDustItem;
 import com.sophiecheese.alloys.item.BasicDescItem;
+import com.sophiecheese.alloys.item.CoalDustItem;
+import com.sophiecheese.alloys.item.CrimsonCoalItem;
+import com.sophiecheese.alloys.item.FaunathystDustItem;
+import com.sophiecheese.alloys.item.consumables.EffectDescItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 import com.sophiecheese.alloys.item.consumables.OreberryQuingumBottle;
 import com.sophiecheese.alloys.item.consumables.QuingumBottle;
 import com.sophiecheese.alloys.setup.Registration;
 
-import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -25,7 +26,7 @@ public class GeneralItemInit {
 
 //Minecraft Materials
 	public static final RegistryObject<Item> COAL_DUST = ITEMS.register("coal_dust", 
-			() -> new Item(tabAttributeAlloy()));
+			() -> new CoalDustItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> AMETHYST_DUST = ITEMS.register("amethyst_dust", 
@@ -55,8 +56,6 @@ public class GeneralItemInit {
 			() -> new Item(tabAttributeAlloy()));
 	
 	public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget", 
-			() -> new Item(tabAttributeAlloy()));
-	public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", 
 			() -> new Item(tabAttributeAlloy()));
 	public static final RegistryObject<Item> DIAMOND_SHARD = ITEMS.register("diamond_shard", 
 			() -> new Item(tabAttributeAlloy()));
@@ -160,9 +159,9 @@ public class GeneralItemInit {
 	public static final RegistryObject<Item> FAUNATHYST_DUST = ITEMS.register("faunathyst_dust", 
 			() -> new FaunathystDustItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> QUINGUM_SHARD = ITEMS.register("quingum_shard", 
-			() -> new Item(tabAttributeAlloy().food(FoodItemProperties.QUINGUM_GEM)));
+			() -> new EffectDescItem(tabAttributeAlloy().food(FoodItemProperties.QUINGUM_GEM)));
 	public static final RegistryObject<Item> QUINGUM_GEM = ITEMS.register("quingum_gem", 
-			() -> new Item(tabAttributeAlloy().food(FoodItemProperties.QUINGUM_GEM)));
+			() -> new EffectDescItem(tabAttributeAlloy().food(FoodItemProperties.QUINGUM_GEM)));
 	public static final RegistryObject<Item> QUINGUM_DUST = ITEMS.register("quingum_dust", 
 			() -> new Item(tabAttributeAlloy()));
 
@@ -247,9 +246,9 @@ public class GeneralItemInit {
 			() -> new Item(tabAttributeAlloy().fireResistant()));
 	
 	public static final RegistryObject<Item> CRIMSON_COAL = ITEMS.register("crimson_coal", 
-			() -> new CrimsonCoal(tabAttributeAlloy()));
+			() -> new CrimsonCoalItem(tabAttributeAlloy()));
 	public static final RegistryObject<Item> CRIMSON_COAL_DUST = ITEMS.register("crimson_coal_dust", 
-			() -> new CrimsonCoal(tabAttributeAlloy()));
+			() -> new CrimsonCoalItem(tabAttributeAlloy()));
 
 	public static final RegistryObject<Item> PENCIL = ITEMS.register("lead_pencil", 
 			() -> new Item(tabAttributeAlloy()));
@@ -348,51 +347,45 @@ public class GeneralItemInit {
 	
 	
 	public static final RegistryObject<Item> SEARED_QUINGUM = ITEMS.register("seared_quingum", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.SEARED_QUINGUM)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.SEARED_QUINGUM)));
 
 	public static final RegistryObject<Item> QUINGUM_MIXTURE = ITEMS.register("quingum_mixture", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
-					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.PLAIN_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> QUINGUMMIES = ITEMS.register("plain_quingummies", 
 			() -> new Item(tabAttributeFood().food(FoodItemProperties.PLAIN_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> FRUIT_MIXTURE = ITEMS.register("quingum_mixture_fruit", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
-					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.FRUIT_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> FRUIT_QUINGUMMIES = ITEMS.register("fruit_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.FRUIT_QUINGUMMIES)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.FRUIT_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> OREBERRY_MIXTURE = ITEMS.register("quingum_mixture_oreberry", 
 			() -> new OreberryQuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
-					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.OREBERRY_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> OREBERRY_QUINGUMMIES = ITEMS.register("oreberry_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.OREBERRY_QUINGUMMIES)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.OREBERRY_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> GLOWY_MIXTURE = ITEMS.register("quingum_mixture_glowy", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
-					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.GLOW_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> GLOWBERRY_QUINGUMMIES = ITEMS.register("glow_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.GLOW_QUINGUMMIES)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.GLOW_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> FUNKY_MIXTURE = ITEMS.register("quingum_mixture_funky", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
-					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.FUNKY_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> FUNKY_QUINGUMMIES = ITEMS.register("funky_quingummies", 
-			() -> new BasicDescItem(tabAttributeFood().food(FoodItemProperties.FUNKY_QUINGUMMIES)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.FUNKY_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> CORRUPT_MIXTURE = ITEMS.register("quingum_mixture_corrupt", 
 			() -> new QuingumBottle(tabAttributeFood().craftRemainder(Items.GLASS_BOTTLE)
-					.craftRemainder(Items.GLASS_BOTTLE)
 					.food(FoodItemProperties.CORRUPT_MIXTURE).stacksTo(16)));
 	public static final RegistryObject<Item> CORRUPT_QUINGUMMIES = ITEMS.register("corrupt_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.CORRUPT_QUINGUMMIES)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.CORRUPT_QUINGUMMIES)));
 	public static final RegistryObject<Item> FLESHY_QUINGUMMIES = ITEMS.register("fleshy_quingummies", 
-			() -> new Item(tabAttributeFood().food(FoodItemProperties.FLESH_QUINGUMMIES)));
+			() -> new EffectDescItem(tabAttributeFood().food(FoodItemProperties.FLESH_QUINGUMMIES)));
 	
 	public static final RegistryObject<Item> GUMMY_MOLD = ITEMS.register("quingum_mold", 
 			() -> new Item(tabAttributeFood().stacksTo(16)));

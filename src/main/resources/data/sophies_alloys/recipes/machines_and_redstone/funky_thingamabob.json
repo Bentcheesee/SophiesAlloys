@@ -3,7 +3,7 @@
 	"category": "redstone",
 	"ingredients": [
 		{
-			"tag": "forge:ingots/lead"
+			"tag": "forge:ingots/steel"
 		},
 		{
 			"tag": "forge:dusts/lapis"

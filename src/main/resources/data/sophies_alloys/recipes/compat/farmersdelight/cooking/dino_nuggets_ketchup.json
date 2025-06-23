@@ -7,7 +7,7 @@
 		}
 	],
 	"cookingtime": 300,
-	"experience": 1.0,
+	"experience": 0.8,
 	"ingredients": [
 		{
 			"tag": "forge:raw_strange_meat"

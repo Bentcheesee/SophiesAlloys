@@ -1,0 +1,33 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:mithril_soul_ore"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:raw_mithril",
+			"count": 2
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.25,
+			"item": "sophies_alloys:soul_cobblestone"
+		}
+	]
+}

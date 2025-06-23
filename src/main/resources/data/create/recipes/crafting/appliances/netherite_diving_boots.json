@@ -1,5 +1,11 @@
 {
 	"type": "minecraft:smithing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
 	"addition": {
 		"item": "sophies_alloys:netherite_upgrade"
 	},

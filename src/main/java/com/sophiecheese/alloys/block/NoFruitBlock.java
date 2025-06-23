@@ -14,6 +14,7 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -49,5 +50,10 @@ public class NoFruitBlock extends Block{
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter getter, List<Component> component, TooltipFlag flag) {
 		component.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY,ChatFormatting.ITALIC));
 		super.appendHoverText(stack, getter, component, flag);
+	}
+	
+	@Override
+	public PushReaction getPistonPushReaction(BlockState state) {
+		return PushReaction.DESTROY;
 	}
 }

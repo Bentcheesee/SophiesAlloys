@@ -34,7 +34,7 @@ public class DustyLampBlock extends Block{
 			level.setBlock(pos, state.cycle(LIT), 3);
 			level.playSound((Player)null, pos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS, 0.3F, f);
 			level.gameEvent(player, state.getValue(LIT) ? GameEvent.BLOCK_ACTIVATE : GameEvent.BLOCK_DEACTIVATE, pos);
-			return InteractionResult.SUCCESS;
+			return InteractionResult.CONSUME;
 		}
 		return super.use(state, level, pos, player, hand, hitResult);
 	}

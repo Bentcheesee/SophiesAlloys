@@ -1,0 +1,29 @@
+{
+	"type": "create:crushing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:foxite_soul_ore"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:foxite_nugget",
+			"count": 22
+		},
+		{
+			"chance": 0.75,
+			"item": "create:experience_nugget"
+		},
+		{
+			"chance": 0.25,
+			"item": "sophies_alloys:soul_cobblestone"
+		}
+	]
+}

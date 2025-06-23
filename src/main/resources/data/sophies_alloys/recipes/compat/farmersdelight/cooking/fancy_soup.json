@@ -7,7 +7,7 @@
 		}
 	],
 	"cookingtime": 200,
-	"experience": 1.0,
+	"experience": 1.2,
 	"ingredients": [
 		{
 			"item": "minecraft:carrot"
@@ -36,5 +36,8 @@
 	"recipe_book_tab": "meals",
 	"result":{
 		"item": "sophies_alloys:fancy_soup"
+	},
+	"container": {
+		"item": "minecraft:bowl"
 	}
 }

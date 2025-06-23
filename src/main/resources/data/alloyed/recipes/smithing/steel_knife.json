@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:smithing",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "alloyed"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"addition": {
+		"item": "sophies_alloys:steel_upgrade"
+	},
+	"base": {
+		"item": "farmersdelight:iron_knife"
+	},
+	"result": {
+		"item": "alloyed:steel_knife"
+	}
+}

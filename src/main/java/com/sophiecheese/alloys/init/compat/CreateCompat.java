@@ -13,6 +13,7 @@ import com.sophiecheese.alloys.init.GeneralItemInit;
 import com.sophiecheese.alloys.init.OtherBlocksInit;
 import com.sophiecheese.alloys.item.BasicDescBlockItem;
 import com.sophiecheese.alloys.item.SophieCreateSequencedAssemblyItem;
+import com.sophiecheese.alloys.item.consumables.EffectDescItem;
 import com.sophiecheese.alloys.item.consumables.FoodItemProperties;
 
 import net.minecraft.world.item.BlockItem;
@@ -61,25 +62,25 @@ public class CreateCompat {
 	public static final RegistryObject<Item> VERIDIUM_CHUNK = CREATE_ITEMS.register("veridium_chunk", 
 			() -> new Item(tabAttributeCreate()));
 	
+	public static final RegistryObject<Item> CRUSHED_ELECTRUM = CREATE_ITEMS.register("crushed_electrum", 
+			() -> new Item(tabAttributeCreate()));
+	public static final RegistryObject<Item> CRUSHED_ENDSTONE = CREATE_ITEMS.register("crushed_end_stone", 
+			() -> new Item(tabAttributeCreate()));
 	public static final RegistryObject<Item> CRUSHED_FOXITE = CREATE_ITEMS.register("crushed_foxite", 
 			() -> new Item(tabAttributeCreate()));
-	public static final RegistryObject<Item> CRUSHED_TUNGSTEN = CREATE_ITEMS.register("crushed_tungsten", 
-			() -> new Item(tabAttributeCreate()));
-	public static final RegistryObject<Item> CRUSHED_ELECTRUM = CREATE_ITEMS.register("crushed_electrum", 
+	public static final RegistryObject<Item> CRUSHED_LAGOMITE = CREATE_ITEMS.register("crushed_lagomite", 
 			() -> new Item(tabAttributeCreate()));
 	public static final RegistryObject<Item> CRUSHED_MITHRIL = CREATE_ITEMS.register("crushed_mithril", 
 			() -> new Item(tabAttributeCreate()));
 	public static final RegistryObject<Item> CRUSHED_TRITONIUM = CREATE_ITEMS.register("crushed_tritonium", 
 			() -> new Item(tabAttributeCreate()));
-	public static final RegistryObject<Item> CRUSHED_LAGOMITE = CREATE_ITEMS.register("crushed_lagomite", 
-			() -> new Item(tabAttributeCreate()));
-	public static final RegistryObject<Item> CRUSHED_ENDSTONE = CREATE_ITEMS.register("crushed_end_stone", 
+	public static final RegistryObject<Item> CRUSHED_TUNGSTEN = CREATE_ITEMS.register("crushed_tungsten", 
 			() -> new Item(tabAttributeCreate()));
 	
 	public static final RegistryObject<Item> CHOCOLATE_GLAZED_OREBERRIES = CREATE_ITEMS.register("chocolate_glazed_oreberries", 
-			() -> new Item(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.CHOCOLATE_GLAZED_OREBERRIES)));
+			() -> new EffectDescItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.CHOCOLATE_GLAZED_OREBERRIES)));
 	public static final RegistryObject<Item> CHOCOLATE_GLAZED_QUINGUM = CREATE_ITEMS.register("chocolate_glazed_quingum", 
-			() -> new Item(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.CHOCOLATE_GLAZED_QUINGUM)));
+			() -> new EffectDescItem(GeneralItemInit.tabAttributeFood().food(FoodItemProperties.CHOCOLATE_GLAZED_QUINGUM)));
 
 	public static final RegistryObject<Item> UNPROCESSED_BABULYMN_PLATE = CREATE_ITEMS.register("unprocessed_babulymn_sheet", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
@@ -92,8 +93,6 @@ public class CreateCompat {
 	public static final RegistryObject<Item> UNPROCESSED_THING = CREATE_ITEMS.register("unprocessed_thing", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 	public static final RegistryObject<Item> UNPROCESSED_OBJECT = CREATE_ITEMS.register("unprocessed_object", 
-			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
-	public static final RegistryObject<Item> GROWING_DIAMOND = CREATE_ITEMS.register("growing_diamond", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));
 	public static final RegistryObject<Item> GROWING_EMERALD = CREATE_ITEMS.register("growing_emerald", 
 			() -> new SophieCreateSequencedAssemblyItem(tabAttributeCreate()));

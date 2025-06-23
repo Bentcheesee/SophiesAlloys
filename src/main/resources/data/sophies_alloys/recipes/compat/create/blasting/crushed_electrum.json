@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:blasting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 0.7,
+	"group": "electrum",
+	"ingredient": {
+		"item": "sophies_alloys:crushed_electrum"
+	},
+	"result": "sophies_alloys:electrum_ingot"
+}

@@ -12,6 +12,7 @@ public class PaintingsInit {
 	public static final DeferredRegister<PaintingVariant> PAINTINGS = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, 
 			SophiesAlloys.MOD_ID);
 	public static final RegistryObject<PaintingVariant> CORRUPTION = PAINTINGS.register("corruption", () -> new PaintingVariant(32, 32));
+	public static final RegistryObject<PaintingVariant> DISAPPOINTMENT = PAINTINGS.register("disappointment", () -> new PaintingVariant(48, 48));
 	public static final RegistryObject<PaintingVariant> KNIGHT = PAINTINGS.register("knight", () -> new PaintingVariant(16, 32));
 	public static final RegistryObject<PaintingVariant> LEG = PAINTINGS.register("leg", () -> new PaintingVariant(16, 32));
 	public static final RegistryObject<PaintingVariant> MASS = PAINTINGS.register("mass", () -> new PaintingVariant(48, 32));

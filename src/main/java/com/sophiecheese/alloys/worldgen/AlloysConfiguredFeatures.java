@@ -11,6 +11,7 @@ import com.sophiecheese.alloys.init.OtherBlocksInit;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -18,6 +19,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -51,7 +53,8 @@ public class AlloysConfiguredFeatures {
 			OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OreBlockInit.MITHRIL_ORE.get().defaultBlockState()),
 			OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, OreBlockInit.DEEPSLATE_MITHRIL_ORE.get().defaultBlockState())));
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_MITHRIL_ORES = Suppliers.memoize(() -> List.of(
-			OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), OreBlockInit.NETHER_MITHRIL_ORE.get().defaultBlockState())));
+			OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), OreBlockInit.NETHER_MITHRIL_ORE.get().defaultBlockState()),
+			OreConfiguration.target(new TagMatchTest(BlockTags.SOUL_FIRE_BASE_BLOCKS), OreBlockInit.SOUL_MITHRIL_ORE.get().defaultBlockState())));
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> SPECIAL_MITHRIL_ORES = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(new BlockMatchTest(Blocks.BLACKSTONE), OreBlockInit.BLACKSTONE_MITHRIL_ORE.get().defaultBlockState()),
 			OreConfiguration.target(new BlockMatchTest(Blocks.BASALT), OreBlockInit.BASALT_MITHRIL_ORE.get().defaultBlockState())));
@@ -60,7 +63,8 @@ public class AlloysConfiguredFeatures {
 			OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OreBlockInit.FOXITE_ORE.get().defaultBlockState()),
 			OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, OreBlockInit.DEEPSLATE_FOXITE_ORE.get().defaultBlockState())));
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_FOXITE_ORES = Suppliers.memoize(() -> List.of(
-			OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), OreBlockInit.NETHER_FOXITE_ORE.get().defaultBlockState())));
+			OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), OreBlockInit.NETHER_FOXITE_ORE.get().defaultBlockState()),
+			OreConfiguration.target(new TagMatchTest(BlockTags.SOUL_FIRE_BASE_BLOCKS), OreBlockInit.SOUL_FOXITE_ORE.get().defaultBlockState())));
 	//Tritonium
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_TRITONIUM_ORES = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OreBlockInit.TRITONIUM_ORE.get().defaultBlockState()),
@@ -86,7 +90,7 @@ public class AlloysConfiguredFeatures {
 			OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, OreBlockInit.DEEPSLATE_MEAT_ORE.get().defaultBlockState())));
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_MEAT_ORES = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, OreBlockInit.NETHER_MEAT_ORE.get().defaultBlockState()),
-			OreConfiguration.target(new BlockMatchTest(OtherBlocksInit.SOUL_STONE.get()), OreBlockInit.SOUL_MEAT_ORE.get().defaultBlockState())));
+			OreConfiguration.target(new TagMatchTest(BlockTags.SOUL_FIRE_BASE_BLOCKS), OreBlockInit.SOUL_MEAT_ORE.get().defaultBlockState())));
 	public static final Supplier<List<OreConfiguration.TargetBlockState>> END_MEAT_ORES = Suppliers.memoize(() -> List.of(
 			OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), OreBlockInit.END_MEAT_ORE.get().defaultBlockState()),
 			OreConfiguration.target(new BlockMatchTest(Blocks.OBSIDIAN), OreBlockInit.END_MEAT_ORE.get().defaultBlockState())));

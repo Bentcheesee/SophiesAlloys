@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:smelting",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"category": "misc",
+	"cookingtime": 300,
+	"experience": 0.7,
+	"group": "lagomite",
+	"ingredient": {
+		"item": "sophies_alloys:crushed_lagomite"
+	},
+	"result": "sophies_alloys:lagomite_ingot"
+}
