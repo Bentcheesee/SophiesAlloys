@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "lagomite_ingot",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:lagomite_nugget"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:lagomite_ingot"
+	}
+}

@@ -1,5 +1,6 @@
 {
 	"parent": "minecraft:block/cross",
+	"render_type": "cutout",
 	"textures": {
 		"cross": "sophies_alloys:block/oreberry_bush_stage2"
 	}

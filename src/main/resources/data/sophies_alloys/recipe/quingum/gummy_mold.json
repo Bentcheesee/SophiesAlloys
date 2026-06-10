@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "quingum_mold",
+	"pattern": [
+		"s",
+		"l"
+	],
+	"key": {
+		"s": [
+			{
+				"tag": "c:shards/diamond"
+			},
+			{
+				"tag": "c:shards/emerald"
+			}
+		],
+		"l": {
+			"tag": "c:plates/lapis"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:quingum_mold",
+		"count": 8
+	}
+}

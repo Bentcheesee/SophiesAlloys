@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "foxite_ingot",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:foxite_nugget"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:foxite_ingot"
+	}
+}

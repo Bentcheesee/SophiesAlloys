@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:stonecutting",
-	"ingredient": {
-		"tag": "sophies_alloys:full_mossy_cobbled_deepslates"
-	},
-	"result": "sophies_alloys:mossy_cobbled_deepslate_wall",
-	"count": 1
-}

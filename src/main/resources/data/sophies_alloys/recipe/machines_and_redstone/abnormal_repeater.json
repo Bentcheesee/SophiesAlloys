@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "repeater",
+	"pattern": [
+		"A R",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "sophies_alloys:slate"
+		},
+		"R": {
+			"item": "minecraft:redstone_torch"
+		},
+		"A": {
+			"item": "sophies_alloys:abnormal_object"
+		}
+	},
+	"result": {
+		"id": "minecraft:repeater",
+		"count": 4
+	}
+}

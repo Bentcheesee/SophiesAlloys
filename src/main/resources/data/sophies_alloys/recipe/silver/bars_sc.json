@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "c:ingots/silver"
+	},
+	"result": {
+		"id": "sophies_alloys:silver_bars",
+		"count": 3
+	}
+}

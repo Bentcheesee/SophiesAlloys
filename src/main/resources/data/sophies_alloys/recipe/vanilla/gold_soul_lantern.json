@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" n ",
+		"ntn",
+		" n "
+	],
+	"key": {
+		"n": {
+			"item": "minecraft:gold_nugget"
+		},
+		"t": {
+			"item": "minecraft:soul_torch"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:gold_soul_lantern"
+	}
+}

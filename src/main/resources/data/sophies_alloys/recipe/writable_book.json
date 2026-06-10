@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:lead_pencil"
+		},
+		{
+			"item": "minecraft:book"
+		}
+	],
+	"result": {
+		"id": "minecraft:writable_book",
+		"count": 1
+	}
+}

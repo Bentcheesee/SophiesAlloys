@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:quartz_dust"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:diorite_chunk",
+		"count": 2
+	}
+}

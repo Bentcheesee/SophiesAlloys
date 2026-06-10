@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#sophies_alloys:soul_stone/all",
+    "#sophies_alloys:blackstone/all",
+    "#sophies_alloys:calcite/all",
+    "#sophies_alloys:slate/all",
+    "#sophies_alloys:diorite/all",
+    "#sophies_alloys:granite/all",
+    "#sophies_alloys:mossy_deepslates",
+    "#sophies_alloys:sophie_storage",
+    "#sophies_alloys:sophie_raw_storage",
+    "#sophies_alloys:sophie_ores",
+    "#sophies_alloys:dusty_lamps/all",
+    "#sophies_alloys:leaded_quartz_glass",
+    "#sophies_alloys:leaded_quartz_glass_panes",
+    "sophies_alloys:rich_basalt",
+    "sophies_alloys:rough_slate"
+  ]
+}

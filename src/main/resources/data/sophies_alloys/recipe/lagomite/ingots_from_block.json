@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lagomite_ingot",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:lagomite_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:lagomite_ingot",
+		"count": 9
+	}
+}

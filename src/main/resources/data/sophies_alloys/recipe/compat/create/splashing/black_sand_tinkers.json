@@ -1,0 +1,29 @@
+{
+	"type": "create:splashing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:black_sand"
+		}
+	],
+	"results": [
+		{
+			"id": "minecraft:gold_nugget",
+			"chance": 0.45,
+			"count": 2
+		},
+		{
+			"id": "tconstruct:cobalt_nugget",
+			"chance": 0.2
+		}
+	]
+}

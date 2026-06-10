@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:smithing_transform",
+	"group": "babulymn",
+	"base": {
+		"item": "sophies_alloys:lycalite_shovel"
+	},
+	"addition": {
+		"tag": "c:plates/oberite"
+	},
+	"template": {
+		"item": "sophies_alloys:babulymn_upgrade"
+	},
+	"result": {
+		"id": "sophies_alloys:babulymn_shovel"
+	}
+}

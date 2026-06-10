@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"pattern": [
+		"F",
+		"C"
+	],
+	"key": {
+		"F": {
+			"item": "sophies_alloys:funky_thingamabob"
+		},
+		"C": {
+			"tag": "c:storage_blocks/copper"
+		}
+	},
+	"result": {
+		"id": "create:steam_engine"
+	}
+}

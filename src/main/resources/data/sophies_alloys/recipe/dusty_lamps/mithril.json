@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:dusty_lamps/all_dusty_lamps"
+		},
+		{
+			"item": "sophies_alloys:mithril_dust"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:dusty_mithril_lamp"
+	}
+}

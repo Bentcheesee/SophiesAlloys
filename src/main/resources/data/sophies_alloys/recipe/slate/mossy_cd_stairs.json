@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s  ",
+		"ss ",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:mossy_cobbled_deepslate"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:mossy_cobbled_deepslate_stairs",
+		"count": 4
+	}
+}

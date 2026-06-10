@@ -1,0 +1,28 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:mossy_cobbled_deepslate"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:deepslate_chunk",
+			"count": 4
+		},
+		{
+			"item": "minecraft:vine",
+			"chance": 0.5
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}

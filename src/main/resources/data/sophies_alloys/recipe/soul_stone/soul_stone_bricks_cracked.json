@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"group": "soul_stone_bricks_cracked",
+	"category": "blocks",
+	"ingredient": {
+		"item": "sophies_alloys:soul_stone_bricks"
+	},
+	"result": {
+		"id": "sophies_alloys:soul_stone_bricks_cracked"
+	},
+	"experience": 0.25,
+	"cookingtime": 200
+}

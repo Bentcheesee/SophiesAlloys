@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:dusty_lamps/all_dusty_lamps"
+		},
+		{
+			"item": "create:zinc_dust"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:dusty_zinc_lamp"
+	}
+}

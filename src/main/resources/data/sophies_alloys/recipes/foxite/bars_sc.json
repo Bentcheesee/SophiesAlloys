@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:stonecutting",
-	"ingredient": {
-		"tag": "forge:ingots/foxite"
-	},
-	"result": "sophies_alloys:foxite_bars",
-	"count": 3
-}

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "observer",
+	"pattern": [
+		"CCC",
+		"APL",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"tag": "minecraft:stone_crafting_materials"
+		},
+		"L": {
+			"item": "sophies_alloys:leaded_quartz"
+		},
+		"A": {
+			"item": "sophies_alloys:abnormal_object"
+		},
+		"P": {
+			"tag": "c:plates/electrum"
+		}
+	},
+	"result": {
+		"id": "minecraft:observer",
+		"count": 4
+	}
+}

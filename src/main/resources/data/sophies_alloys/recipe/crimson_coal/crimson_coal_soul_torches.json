@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"c",
+		"s",
+		"f"
+	],
+	"key": {
+		"s": {
+			"item": "minecraft:stick"
+		},
+		"c": {
+			"item": "sophies_alloys:crimson_coal"
+		},
+		"f": {
+			"tag": "minecraft:soul_fire_base_blocks"
+		}
+	},
+	"result": {
+		"id": "minecraft:soul_torch",
+		"count": 8
+	}
+}

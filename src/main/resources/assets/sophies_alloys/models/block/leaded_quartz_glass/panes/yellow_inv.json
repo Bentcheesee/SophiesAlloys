@@ -1,5 +1,5 @@
 {
-    "parent": "block/template_glass_pane_inventory",
+    "parent": "minecraft:block/template_glass_pane_inventory",
     "textures": {
         "front": "sophies_alloys:block/leaded_quartz_glass/yellow",
         "sides": "sophies_alloys:block/leaded_quartz_glass/yellow_side",

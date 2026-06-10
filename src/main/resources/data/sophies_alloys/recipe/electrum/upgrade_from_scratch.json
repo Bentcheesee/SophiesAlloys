@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "electrum_upgrade",
+	"ingredients": [
+		{
+			"tag": "c:plates/electrum"
+		},
+		{
+			"tag": "c:plates/electrum"
+		},
+		{
+			"tag": "c:plates/foxite"
+		},
+		{
+			"item": "sophies_alloys:template_upgrade"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:electrum_upgrade"
+	}
+}

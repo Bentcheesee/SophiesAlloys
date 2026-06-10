@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "babulymn_upgrade",
+	"ingredients": [
+		{
+			"tag": "c:plates/lycalite"
+		},
+		{
+			"tag": "c:plates/babulymn"
+		},
+		{
+			"item": "sophies_alloys:advanced_template_upgrade"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:babulymn_upgrade"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_dust"
+		},
+		{
+			"item": "minecraft:honey_bottle"
+		},
+		{
+			"tag": "c:raw_strange_meat"
+		},
+		{
+			"item": "sophies_alloys:smushroom"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:corrupt_quingum_mixture"
+	}
+}

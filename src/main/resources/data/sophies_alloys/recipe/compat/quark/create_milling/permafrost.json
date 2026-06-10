@@ -1,0 +1,30 @@
+{
+	"type": "create:milling",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "quark:permafrost"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"item": "sophies_alloys:frost_chunk",
+			"count": 2,
+			"chance": 0.9
+		},
+		{
+			"item": "sophies_alloys:frost_chunk",
+			"chance": 0.75
+		}
+	]
+}

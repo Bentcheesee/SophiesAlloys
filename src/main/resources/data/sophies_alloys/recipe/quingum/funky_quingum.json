@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_dust"
+		},
+		{
+			"item": "minecraft:honey_bottle"
+		},
+		{
+			"item": "minecraft:chorus_fruit"
+		},
+		[
+			{
+				"item": "minecraft:nether_wart"
+			},
+			{
+				"item": "sophies_alloys:smushroom"
+			}
+		],
+		{
+			"item": "minecraft:blaze_powder"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:funky_quingum_mixture",
+		"count": 1
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 0.7,
+	"group": "end_stone",
+	"ingredient": {
+		"item": "sophies_alloys:end_stone_dust"
+	},
+	"result": {
+		"id": "sophies_alloys:end_stone_chunk"
+	}
+}

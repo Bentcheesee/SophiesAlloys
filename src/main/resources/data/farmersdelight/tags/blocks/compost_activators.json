@@ -1,8 +1,0 @@
-{
-	"replace": false,
-	"values": [
-		"#forge:ores/faunathyst",
-		"#forge:storage_blocks/faunathyst",
-		"sophies_alloys:dusty_faunathyst_lamp"
-	]
-}

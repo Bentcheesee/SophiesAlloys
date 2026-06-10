@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"item": "sophies_alloys:leaded_quartz_glass_pane"
+		},
+		{
+			"tag": "c:dyes/light_gray"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:light_gray_leaded_quartz_glass_pane",
+		"count": 8
+	}
+}

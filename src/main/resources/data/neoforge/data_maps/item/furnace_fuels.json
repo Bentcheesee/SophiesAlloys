@@ -1,0 +1,16 @@
+{
+	"values": {
+		"sophies_alloys:coal_dust": {
+			"burn_time": 1000
+		},
+		"sophies_alloys:crimson_coal": {
+			"burn_time": 2400
+		},
+		"sophies_alloys:crimson_coal_dust": {
+			"burn_time": 1400
+		},
+		"sophies_alloys:crimson_coal_block": {
+			"burn_time": 24000
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:smoking",
+	"category": "misc",
+	"cookingtime": 150,
+	"experience": 1.0,
+	"group": "meat",
+	"ingredient": [
+		{
+			"item": "sophies_alloys:unknown_raw_meat"
+		},
+		{
+			"item": "sophies_alloys:unknown_corrupt_meat"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:unknown_cooked_meat"
+	}
+}

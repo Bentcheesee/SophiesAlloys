@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:smelting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 0.7,
+	"group": "scoria_chunk",
+	"ingredient": {
+		"item": "sophies_alloys:soul_chunk"
+	},
+	"result": {
+		"id": "sophies_alloys:scoria_chunk"
+	}
+}

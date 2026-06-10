@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "mithril_upgrade",
+	"ingredients": [
+		{
+			"tag": "c:plates/oberite"
+		},
+		{
+			"tag": "c:plates/oberite"
+		},
+		{
+			"item": "sophies_alloys:advanced_template_upgrade"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:mithril_upgrade"
+	}
+}

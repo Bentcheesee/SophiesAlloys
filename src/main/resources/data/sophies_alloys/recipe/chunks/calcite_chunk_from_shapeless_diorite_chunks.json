@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:bone_meal"
+		},
+		{
+			"item": "sophies_alloys:diorite_chunk"
+		},
+		{
+			"item": "sophies_alloys:diorite_chunk"
+		},
+		{
+			"item": "sophies_alloys:diorite_chunk"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:calcite_chunk",
+		"count": 3
+	}
+}

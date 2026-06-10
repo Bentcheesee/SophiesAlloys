@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"group": "slate_tiles_cracked",
+	"category": "blocks",
+	"ingredient": {
+		"item": "sophies_alloys:slate_tiles"
+	},
+	"result": {
+		"id": "sophies_alloys:slate_tiles_cracked"
+	},
+	"experience": 0.25,
+	"cookingtime": 200
+}

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "lapis_lazuli",
+	"pattern": [
+		"ff",
+		"ff"
+	],
+	"key": {
+		"f": {
+			"tag": "c:shards/lapis"
+		}
+	},
+	"result": {
+		"id": "minecraft:lapis_lazuli"
+	}
+}

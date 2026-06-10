@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"pattern": [
+		"ss",
+		"ss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:frost_chunk"
+		}
+	},
+	"result": {
+		"id": "quark:permafrost"
+	}
+}

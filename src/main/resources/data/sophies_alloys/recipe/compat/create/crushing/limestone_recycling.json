@@ -1,0 +1,32 @@
+{
+	"type": "create:crushing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "create:stone_types/limestone"
+		}
+	],
+	"processingTime": 200,
+	"results": [
+		{
+			"id": "minecraft:sand"
+		},
+		{
+			"id": "sophies_alloys:limestone_chunk",
+			"chance": 0.55
+		},
+		{
+			"id": "sophies_alloys:limestone_chunk",
+			"chance": 0.35
+		},
+		{
+			"id": "minecraft:bone_meal",
+			"chance": 0.14
+		}
+	]
+}

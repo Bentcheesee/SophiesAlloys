@@ -1,5 +1,5 @@
 {
-	"credit": "Made by Bentcheesee",
+	"parent": "sophies_alloys:block/leaded_quartz_glass/panes/template_corner_pane",
 	"textures": {
 		"sides": "sophies_alloys:block/leaded_quartz_glass/pink_side",
 		"particle": "sophies_alloys:block/leaded_quartz_glass/pink"

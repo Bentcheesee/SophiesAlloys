@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks/convert/freeze"
+		},
+		{
+			"tag": "sophies_alloys:chunks/convert/freeze"
+		},
+		{
+			"tag": "sophies_alloys:chunks/convert/freeze"
+		},
+		{
+			"tag": "sophies_alloys:chunks/convert/freeze"
+		},
+		{
+			"item": "minecraft:packed_ice"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:frost_chunk",
+		"count": 4
+	}
+}

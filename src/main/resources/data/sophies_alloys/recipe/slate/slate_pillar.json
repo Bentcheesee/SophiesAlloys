@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s",
+		"s"
+	],
+	"key": {
+		"s": {
+			"tag": "sophies_alloys:slate/slate_slabs"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:slate_pillar",
+		"count": 1
+	}
+}

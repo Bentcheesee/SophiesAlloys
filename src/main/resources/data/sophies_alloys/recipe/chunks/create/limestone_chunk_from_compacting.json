@@ -1,0 +1,32 @@
+{
+	"type": "create:compacting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "minecraft:bone_meal"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:limestone_chunk",
+			"count": 3
+		}
+	]
+}

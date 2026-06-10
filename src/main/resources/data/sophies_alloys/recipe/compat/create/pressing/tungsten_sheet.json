@@ -1,0 +1,19 @@
+{
+	"type":	"create:pressing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients":	[
+		{
+			"tag":	"forge:ingots/tungsten"
+		}
+	],
+	"results":	[
+		{
+			"id":	"sophies_alloys:tungsten_sheet"
+		}
+	]
+}

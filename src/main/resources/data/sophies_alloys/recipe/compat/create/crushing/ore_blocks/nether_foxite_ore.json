@@ -1,0 +1,29 @@
+{
+	"type": "create:crushing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:foxite_nether_ore"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:foxite_nugget",
+			"count": 18
+		},
+		{
+			"chance": 0.75,
+			"id": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"id": "minecraft:netherrack"
+		}
+	]
+}

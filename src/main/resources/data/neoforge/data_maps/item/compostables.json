@@ -1,0 +1,31 @@
+{
+	"values": {
+		"sophies_alloys:oreberries": {
+			"chance": 0.55
+		},
+		"sophies_alloys:chocolate_glazed_oreberries": {
+			"chance": 0.75
+		},
+		"sophies_alloys:mossy_mush": {
+			"chance": 0.15
+		},
+		"sophies_alloys:smushroom": {
+			"chance": 0.25
+		},
+		"sophies_alloys:lichuorice": {
+			"chance": 0.35
+		},
+		"sophies_alloys:red_lichuorice": {
+			"chance": 0.35
+		},
+		"sophies_alloys:black_lichuorice": {
+			"chance": 0.35
+		},
+		"sophies_alloys:jade_shard": {
+			"chance": 0.45
+		},
+		"sophies_alloys:jade_gem": {
+			"chance": 1
+		}
+	}
+}

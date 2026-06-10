@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "redstone",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/copper"
+		},
+		{
+			"tag": "c:nuggets/foxite"
+		},
+		{
+			"tag": "c:nuggets/steel"
+		},
+		{
+			"tag": "c:nuggets/electrum"
+		},
+		{
+			"tag": "c:nuggets/lead"
+		},
+		[
+			{
+				"item": "minecraft:honeycomb"
+			},
+			{
+				"item": "minecraft:honey_bottle"
+			}
+		]
+	],
+	"result": {
+		"id": "sophies_alloys:nugget_hunk"
+	}
+}

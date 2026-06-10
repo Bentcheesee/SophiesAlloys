@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"II",
+		"IS",
+		" S"
+	],
+	"key": {
+		"I": {
+			"tag": "c:ingots/lead"
+		},
+		"S": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:lead_axe"
+	}
+}

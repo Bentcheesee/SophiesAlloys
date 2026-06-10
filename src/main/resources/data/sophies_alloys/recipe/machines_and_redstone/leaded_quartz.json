@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		{
+			"tag": "c:dusts/lead"
+		},
+		{
+			"tag": "c:dusts/foxite"
+		},
+		{
+			"item": "minecraft:quartz"
+		},
+		{
+			"item": "minecraft:quartz"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:leaded_quartz",
+		"count": 2
+	}
+}

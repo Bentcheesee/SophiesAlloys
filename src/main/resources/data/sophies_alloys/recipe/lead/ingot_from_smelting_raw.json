@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 1.0,
+	"group": "lead",
+	"ingredient": {
+		"tag": "c:raw_materials/lead"
+	},
+	"result": {
+		"id": "sophies_alloys:lead_ingot"
+	}
+}

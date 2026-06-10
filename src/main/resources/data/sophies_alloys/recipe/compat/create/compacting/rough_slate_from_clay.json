@@ -1,0 +1,42 @@
+{
+	"type": "create:compacting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		},
+		{
+			"amount": 100,
+			"fluid": "minecraft:lava",
+			"nbt": {}
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:rough_slate"
+		}
+	]
+}

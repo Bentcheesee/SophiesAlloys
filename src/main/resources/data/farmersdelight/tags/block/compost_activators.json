@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"#c:ores/jade",
+		"#c:storage_blocks/jade",
+		"sophies_alloys:dusty_jade_lamp"
+	]
+}

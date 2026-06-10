@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"III",
+		" S ",
+		" S "
+	],
+	"key": {
+		"I": {
+			"tag": "c:ingots/lycalite"
+		},
+		"S": {
+			"item": "sophies_alloys:oberite_handle"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:lycalite_pickaxe"
+	}
+}

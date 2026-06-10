@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"sss",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:cobbled_blackstone"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:cobbled_blackstone_wall",
+		"count": 6
+	}
+}

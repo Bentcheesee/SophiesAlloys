@@ -1,0 +1,28 @@
+{
+	"type": "create:splashing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:crushed_end_stone"
+		}
+	],
+	"results": [
+		{
+			"chance": 0.06,
+			"id": "sophies_alloys:tungsten_nugget"
+		},
+		{
+			"chance": 0.09,
+			"id": "sophies_alloys:oberite_nugget"
+		},
+		{
+			"chance": 0.01,
+			"id": "sophies_alloys:error_chunk"
+		}
+	]
+}

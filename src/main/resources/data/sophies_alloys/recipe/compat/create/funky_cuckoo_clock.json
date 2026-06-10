@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"pattern": [
+		"FAC"
+	],
+	"key": {
+		"F": {
+			"item": "sophies_alloys:funky_thingamabob"
+		},
+		"C": {
+			"item": "minecraft:clock"
+		},
+		"A": {
+			"item": "create:andesite_casing"
+		}
+	},
+	"result": {
+		"id": "create:cuckoo_clock",
+		"count": 2
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"type": "create:crushing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"tag": "c:raw_materials/tungsten"
+			}
+		]
+	],
+	"processingTime": 600,
+	"results": [
+		{
+			"id": "sophies_alloys:crushed_tungsten"
+		},
+		{
+			"chance": 0.8,
+			"id": "create:experience_nugget"
+		},
+		{
+			"id": "create:experience_nugget"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"type": "create:splashing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:not",
+			"value": {
+				"type": "neoforge:mod_loaded",
+				"modid": "tconstruct"
+			}
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:black_sand"
+		}
+	],
+	"results": [
+		{
+			"id": "minecraft:gold_nugget",
+			"chance": 0.45,
+			"count": 2
+		},
+		{
+			"id": "create:powdered_obsidian",
+			"chance": 0.15
+		}
+	]
+}

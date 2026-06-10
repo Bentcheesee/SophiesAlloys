@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 400,
+	"experience": 1.0,
+	"group": "mithril",
+	"ingredient": {
+		"tag": "c:ores/mithril"
+	},
+	"result": {
+		"id": "sophies_alloys:mithril_ingot"
+	}
+}

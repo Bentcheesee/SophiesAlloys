@@ -1,0 +1,23 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:unknown_cooked_meat"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:cooked_meat_strip",
+			"count": 2
+		}
+	],
+	"tool": {
+		"tag": "c:tools/knives"
+	}
+}

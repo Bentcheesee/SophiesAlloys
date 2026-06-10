@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "c:gems/lapis"
+		},
+		{
+			"item": "sophies_alloys:slate_sheet"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:rough_lapis_sheet"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:blasting",
+	"group": "babulymn_ingot",
+	"category": "misc",
+	"ingredient": {
+		"tag": "c:dusts/babulymn"
+	},
+	"result": {
+		"id": "sophies_alloys:babulymn_ingot"
+	},
+	"experience": 1,
+	"cookingtime": 100
+}

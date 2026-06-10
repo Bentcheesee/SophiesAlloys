@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "sophies_alloys:soul_stone/full_cobbled_soul_stone"
+	},
+	"result": {
+		"id": "sophies_alloys:soul_cobblestone"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#c:ores/electrum",
+    "#c:ores/foxite",
+    "#c:ores/mithril",
+    "sophies_alloys:foxite_block",
+    "sophies_alloys:electrum_block",
+    "sophies_alloys:mithril_block"
+  ]
+}

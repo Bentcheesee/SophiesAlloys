@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		" I",
+		"I "
+	],
+	"key": {
+		"I": {
+			"tag": "c:ingots/lead"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:lead_shears"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "misc",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:raw_mithril_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:raw_mithril",
+		"count": 9
+	}
+}

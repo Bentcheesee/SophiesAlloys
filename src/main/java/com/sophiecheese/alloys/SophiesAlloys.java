@@ -1,28 +1,51 @@
 package com.sophiecheese.alloys;
 
-import java.util.Locale;
-
+import com.sophiecheese.alloys.init.*;
+import com.sophiecheese.alloys.setup.CompatCheck;
+import com.sophiecheese.alloys.setup.Registration;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-import com.sophiecheese.alloys.init.compat.CompatCheck;
-import com.sophiecheese.alloys.setup.ModSetup;
-import com.sophiecheese.alloys.setup.Registration;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-@Mod(value = "sophies_alloys")
+@Mod(SophiesAlloys.MOD_ID)
 public class SophiesAlloys {
-	public static final String MOD_ID = "sophies_alloys";
-	public static final Logger LOGGER = LogUtils.getLogger();
-	public SophiesAlloys()
-	{
+    public static final String MOD_ID = "sophies_alloys";
+    public static final Logger LOGGER = LogUtils.getLogger();
+    public SophiesAlloys(IEventBus modEventBus, ModContainer modContainer) {
 		CompatCheck.setupModCompatPreInit();
-		Registration.init();
-		ModSetup.setup();
-	}
-	public static ResourceLocation prefix(String name) {
-		return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
-	}
+
+        modEventBus.addListener(this::commonSetup);
+        NeoForge.EVENT_BUS.register(this);
+
+        Registration.register(modEventBus);
+
+        ItemInit.register(modEventBus);
+		BlockInit.register(modEventBus);
+
+		if(CompatCheck.dreamsPresent){
+			DreamsCompat.register(modEventBus);
+		}
+		if(CompatCheck.farmersPresent){
+			FarmerCompat.register(modEventBus);
+		}
+		if(CompatCheck.quarkPresent){
+			QuarkCompat.register(modEventBus);
+		}
+    }
+
+    private void commonSetup(FMLCommonSetupEvent event) {
+    }
+
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
+    @SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event) {
+    }
 }

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 1.0,
+	"group": "silver",
+	"ingredient": {
+		"tag": "c:ores/silver"
+	},
+	"result": {
+		"id": "sophies_alloys:silver_ingot"
+	}
+}

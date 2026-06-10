@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "raw_electrum",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:raw_electrum_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:raw_electrum",
+		"count": 9
+	}
+}

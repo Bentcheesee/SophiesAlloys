@@ -1,0 +1,38 @@
+{
+	"type": "create:crushing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:slate"
+		}
+	],
+	"processingTime": 300,
+	"results": [
+		{
+			"id": "sophies_alloys:slate_sheet",
+			"count": 4
+		},
+		{
+			"chance": 0.5,
+			"id": "sophies_alloys:slate_sheet",
+			"count": 2
+		},
+		{
+			"chance": 0.3,
+			"id": "sophies_alloys:lead_nugget"
+		},
+		{
+			"chance": 0.25,
+			"id": "create:zinc_nugget"
+		},
+		{
+			"chance": 0.1,
+			"id": "minecraft:quartz"
+		}
+	]
+}

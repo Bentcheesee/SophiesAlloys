@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "c:shards/emerald"
+		},
+		{
+			"item": "sophies_alloys:rough_lapis_sheet"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:growing_emerald"
+	}
+}

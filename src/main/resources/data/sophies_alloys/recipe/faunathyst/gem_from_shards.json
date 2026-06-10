@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "jade_gem",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:jade_shard"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:jade_gem"
+	}
+}

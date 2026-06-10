@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"group": "slate_bricks_cracked",
+	"category": "blocks",
+	"ingredient": {
+		"item": "sophies_alloys:slate_bricks"
+	},
+	"result": {
+		"id": "sophies_alloys:slate_bricks_cracked"
+	},
+	"experience": 0.25,
+	"cookingtime": 200
+}

@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "hopper",
+	"pattern": [
+		"I I",
+		"ICI",
+		" I "
+	],
+	"key": {
+		"I": {
+				"tag": "c:ingots/lead"
+		},
+		"C": [
+			{
+				"tag": "c:chests/wooden"
+			},
+			{
+				"item": "sophies_alloys:funky_thingamabob"
+			}
+		]
+	},
+	"result": {
+		"id": "minecraft:hopper",
+		"count": 1
+	}
+}

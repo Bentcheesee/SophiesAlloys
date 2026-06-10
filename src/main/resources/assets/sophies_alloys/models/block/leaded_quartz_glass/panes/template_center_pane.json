@@ -1,5 +1,6 @@
 {
 	"credit": "Made by Bentcheesee",
+	"render_type": "translucent",
 	"textures": {
 		"sides": "sophies_alloys:block/leaded_quartz_glass/leaded_quartz_side",
 		"particle": "sophies_alloys:block/leaded_quartz_glass/leaded_quartz"

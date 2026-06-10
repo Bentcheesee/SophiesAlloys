@@ -1,21 +1,34 @@
-MIT License
-
 Copyright (c) 2025 Bentcheesee
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Definitions:
+- "Package": The package of which associated documentation files are contained within by any means.
+- "Content": Associated documentation files contained within a Package.
+- "Original Package" or "Initial Package": The state at which the provided initial package was obtained as prior to third party modifications.
+- "Root": Highest file within the Package's hierarchy.
+- "Modifier": Person(s) who alter or modify a Package or an Original Package by any means.
+- "Owner": Creator and copyright holder(s) of the Original Package.
+- "Sub-owner": Modifier(s) who release versions of a modified Package or any modified Content to a third-party source.
+- "Modpack": Collection or bundle of modifications and resources for a software.
+- "Updating": Replacing Content with a newer version of replaced Content.  Ex: replacing `pack.soph` with a more recent iteration from a more recent version of Original Package
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1: Permission is hereby granted, free of charge, to any person obtaining a copy of this Package and to deal in the Content with marginalized restriction.  Any person is allowed to use, copy, distribute, and modify this Package or Content by any means under the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+	a: The above copyright notice and this permission notice shall be included in all copies and portions of the Package.
+
+	b: Persons are not to sell any Packages or Content by any means for direct monetary gain.
+
+	c: Persons are not to attempt to claim any portion of the Package or Content as one's own work, unless the following conditions apply:
+		c.1: The Package has been modified substantially to be unrecognisable from Original Package.
+		c.2: The Package includes modified Content, in which the Modifier must instead include credit of ownership to Owner and any previous Sub-owner.  Modifiers must document themselves for any future potential Modifiers of their modified Package and Content.
+
+	d: If the Package is to be modified or sampled by any means and contains documentation file `pack.soph`, persons must always include documentation file `pack.soph` as provided in Original Package within the Root of their modified Package.
+		d.1: `pack.soph` is to not be modified by any means with the exception of Updating.
+
+	e: If the Package or Content is to be included within a Modpack, creator of the Modpack must notify Package Owner(s) or Sub-owner(s) of the Package's initial inclusion within the Modpack.
+		e.1: Owner(s) or Sub-owner(s) of the Package may decline the Package's inclusion within a Modpack in which the creator of the Modpack must remove the Package from the Modpack immediately.  Any Owner or Sub-owner of the Package may decline at any time and declaration of denial must be respected, even if any/all other Owner(s) or Sub-owner(s) may approve of the Package or Content's inclusion within a Modpack.
+			e.1.a: Clause e.1 may be ignored if terms of use/service by third-party sources or hosts would be to countermeasure and/or disagree with clause e.1.
+	
+	f: If the Package or Content is to be modified or sampled by any means, Modifiers must include this License as is in the Package within their own modified Package.
+		f.1: If the Package or Content was sampled, this license will only pertain to sampled Content.
+
+2: In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Package or Content or the use or other dealings in the Package or Content.

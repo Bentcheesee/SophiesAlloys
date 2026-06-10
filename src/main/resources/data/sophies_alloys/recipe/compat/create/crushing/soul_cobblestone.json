@@ -1,0 +1,24 @@
+{
+	"type": "create:crushing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:soul_cobblestone"
+		}
+	],
+	"processingTime": 300,
+	"results": [
+		{
+			"id": "sophies_alloys:soul_gravel"
+		},
+		{
+			"chance": 0.25,
+			"id": "sophies_alloys:soul_chunk"
+		}
+	]
+}

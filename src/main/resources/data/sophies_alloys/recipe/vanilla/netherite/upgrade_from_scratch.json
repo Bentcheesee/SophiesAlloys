@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "netherite_upgrade",
+	"ingredients": [
+		{
+			"tag": "c:plates/oberite"
+		},
+		{
+			"tag": "c:plates/netherite"
+		},
+		{
+			"tag": "c:plates/netherite"
+		},
+		{
+			"item": "sophies_alloys:advanced_template_upgrade"
+		}
+	],
+	"result": {
+		"id": "minecraft:netherite_upgrade_smithing_template"
+	}
+}

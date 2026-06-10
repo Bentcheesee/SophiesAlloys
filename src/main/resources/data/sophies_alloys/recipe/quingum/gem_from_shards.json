@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "quingum_gem",
+	"pattern": [
+		"ff",
+		"ff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:quingum_shard"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:quingum_gem"
+	}
+}

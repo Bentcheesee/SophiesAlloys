@@ -1,0 +1,28 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "create:crimsite"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:crimsite_chunk",
+			"count": 4
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}

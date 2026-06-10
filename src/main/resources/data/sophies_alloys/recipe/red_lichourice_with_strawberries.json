@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:not",
+			"value": {
+				"type": "neoforge:tag_empty",
+				"tag": "c:fruits/strawberry"
+			}
+		}
+	],
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:moss_mush"
+		},
+		{
+			"item": "minecraft:glow_lichen"
+		},
+		{
+			"item": "minecraft:sugar"
+		},
+		{
+			"item": "minecraft:honeycomb"
+		},
+		{
+			"tag": "c:fruits/strawberry"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:red_lichuorice",
+		"count": 7
+	}
+}

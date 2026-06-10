@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:stiffened_lead"
+		},
+		{
+			"item": "minecraft:stick"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:lead_pencil"
+	}
+}

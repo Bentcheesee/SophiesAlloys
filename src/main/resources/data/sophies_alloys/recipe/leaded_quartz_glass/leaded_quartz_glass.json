@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 0.7,
+	"group": "leaded_quartz_glass",
+	"ingredient": {
+		"item": "sophies_alloys:leaded_quartz_sand"
+	},
+	"result": {
+		"id": "sophies_alloys:leaded_quartz_glass"
+	}
+}

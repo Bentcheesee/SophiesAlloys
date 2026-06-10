@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" n ",
+		"ntn",
+		" n "
+	],
+	"key": {
+		"n": {
+			"item": "minecraft:iron_nugget"
+		},
+		"t": {
+			"item": "minecraft:soul_torch"
+		}
+	},
+	"result": {
+		"id": "minecraft:soul_lantern"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"item": "minecraft:granite"
+			},
+			{
+				"item": "sophies_alloys:cobbled_granite"
+			}
+		]
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:granite_chunk",
+			"count": 4
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}

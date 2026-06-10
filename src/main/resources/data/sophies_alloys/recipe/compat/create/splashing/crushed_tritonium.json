@@ -1,0 +1,33 @@
+{
+	"type": "create:splashing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:crushed_tritonium"
+		}
+	],
+	"results": [
+		{
+			"count": 9,
+			"id": "sophies_alloys:tritonium_nugget"
+		},
+		{
+			"chance": 0.05,
+			"id": "sophies_alloys:diamond_dust"
+		},
+		{
+			"chance": 0.25,
+			"id": "sophies_alloys:jade_dust"
+		},
+		{
+			"chance": 0.25,
+			"id": "sophies_alloys:zinc_dust",
+			"count": 2
+		}
+	]
+}

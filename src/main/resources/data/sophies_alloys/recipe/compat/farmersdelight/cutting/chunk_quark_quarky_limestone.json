@@ -1,0 +1,28 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "quark:limestone"
+		}
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:quarky_limestone_chunk",
+			"count": 4
+		}
+	],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "pickaxe_dig"
+	}
+}

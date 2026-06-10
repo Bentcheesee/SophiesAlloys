@@ -1,0 +1,23 @@
+{
+	"type": "create:haunting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:slate_sheet"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:shale_sheet"
+		}
+	]
+}

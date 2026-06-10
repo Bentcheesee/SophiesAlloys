@@ -1,7 +1,21 @@
 {
 	"variants": {
-		"": {
-			"model": "sophies_alloys:block/oreberry_crate"
-		}
+		"": [
+			{
+				"model": "sophies_alloys:block/oreberry_crate"
+			},
+			{
+				"model": "sophies_alloys:block/oreberry_crate",
+				"y": 90
+			},
+			{
+				"model": "sophies_alloys:block/oreberry_crate",
+				"y": 180
+			},
+			{
+				"model": "sophies_alloys:block/oreberry_crate",
+				"y": 270
+			}
+		]
 	}
 }

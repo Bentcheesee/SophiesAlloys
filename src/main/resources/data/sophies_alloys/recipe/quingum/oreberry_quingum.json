@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_dust"
+		},
+		{
+			"item": "minecraft:honey_bottle"
+		},
+		{
+			"item": "sophies_alloys:oreberries"
+		},
+		{
+			"item": "sophies_alloys:oreberries"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:oreberry_quingum_mixture",
+		"count": 1
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:quingum_mixture"
+		},
+		{
+			"item": "sophies_alloys:quingum_mold"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:plain_quingummies"
+	}
+}

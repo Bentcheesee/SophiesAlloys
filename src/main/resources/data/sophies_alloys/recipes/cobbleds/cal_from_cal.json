@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:stonecutting",
-	"ingredient": {
-		"tag": "sophies_alloys:calcite/full"
-	},
-	"result": "minecraft:calcite",
-	"count": 1
-}

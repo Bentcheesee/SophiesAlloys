@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "tungsten_ingot",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:tungsten_nugget"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:tungsten_ingot"
+	}
+}

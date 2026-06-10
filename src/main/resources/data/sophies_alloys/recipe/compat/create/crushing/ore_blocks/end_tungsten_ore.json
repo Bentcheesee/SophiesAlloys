@@ -1,0 +1,29 @@
+{
+	"type": "create:crushing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tungsten_end_ore"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:crushed_tungsten",
+			"count": 2
+		},
+		{
+			"chance": 0.75,
+			"id": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"id": "minecraft:end_stone"
+		}
+	]
+}

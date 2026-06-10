@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"sss",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:soul_stone_tiles"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:soul_stone_tile_wall",
+		"count": 6
+	}
+}

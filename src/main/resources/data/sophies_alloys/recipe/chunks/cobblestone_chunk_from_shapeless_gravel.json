@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:gravel"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:cobblestone_chunk"
+	}
+}

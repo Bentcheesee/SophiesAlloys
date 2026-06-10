@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tungsten_ingot"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:tungsten_nugget",
+		"count": 9
+	}
+}

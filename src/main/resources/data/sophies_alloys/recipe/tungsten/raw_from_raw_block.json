@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "raw_tungsten",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:raw_tungsten_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:raw_tungsten",
+		"count": 9
+	}
+}

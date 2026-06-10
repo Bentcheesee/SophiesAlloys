@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"group": "soul_stone",
+	"category": "blocks",
+	"ingredient": {
+		"item": "sophies_alloys:soul_cobblestone"
+	},
+	"result": {
+		"id": "sophies_alloys:soul_stone"
+	},
+	"experience": 0.7,
+	"cookingtime": 200
+}

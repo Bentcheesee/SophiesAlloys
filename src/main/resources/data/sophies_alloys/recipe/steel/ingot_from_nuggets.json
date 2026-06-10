@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "steel_ingot",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:steel_nugget"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:steel_ingot"
+	}
+}

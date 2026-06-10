@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s  ",
+		"ss ",
+		"sss"
+	],
+	"key": {
+		"s": {
+			"item": "sophies_alloys:soul_cobblestone"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:soul_cobblestone_stairs",
+		"count": 4
+	}
+}

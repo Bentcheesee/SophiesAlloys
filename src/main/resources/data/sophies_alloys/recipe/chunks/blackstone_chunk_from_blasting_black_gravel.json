@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 0.7,
+	"group": "blackstone_chunk",
+	"ingredient": [
+		{
+			"item": "sophies_alloys:black_gravel"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:blackstone_chunk"
+	}
+}

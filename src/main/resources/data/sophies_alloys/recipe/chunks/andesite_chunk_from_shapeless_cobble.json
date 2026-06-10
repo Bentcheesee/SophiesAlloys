@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:quartz_dust"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:andesite_chunk",
+		"count": 4
+	}
+}

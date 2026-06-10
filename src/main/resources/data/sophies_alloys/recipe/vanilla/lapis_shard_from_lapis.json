@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lapis_lazuli_shard",
+	"ingredients": [
+		{
+			"item": "minecraft:lapis_lazuli"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:lapis_shard",
+		"count": 4
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"III",
+		"III"
+	],
+	"key": {
+		"I": {
+		"tag": "c:ingots/tritonium"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:tritonium_bars",
+		"count": 16
+	}
+}

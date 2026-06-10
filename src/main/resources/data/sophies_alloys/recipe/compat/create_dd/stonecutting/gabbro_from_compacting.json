@@ -1,0 +1,35 @@
+{
+	"type": "create:compacting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create_dd"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:granite_chunk"
+		},
+		{
+			"item": "sophies_alloys:granite_chunk"
+		},
+		{
+			"item": "sophies_alloys:granite_chunk"
+		},
+		{
+			"amount": 100,
+			"fluid": "create:honey"
+		}
+	],
+	"results": [
+		{
+			"item": "create_dd:gabbro"
+		}
+	]
+}

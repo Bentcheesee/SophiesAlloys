@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "diamond_gem",
+	"pattern": [
+		"ff",
+		"ff"
+	],
+	"key": {
+		"f": {
+			"tag": "c:shards/diamond"
+		}
+	},
+	"result": {
+		"id": "minecraft:diamond"
+	}
+}

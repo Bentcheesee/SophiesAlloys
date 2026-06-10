@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "steel_upgrade",
+	"ingredients": [
+		{
+			"tag": "c:plates/foxite"
+		},
+		{
+			"tag": "c:plates/steel"
+		},
+		{
+			"tag": "c:plates/steel"
+		},
+		{
+			"item": "sophies_alloys:iron_upgrade"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:steel_upgrade"
+	}
+}

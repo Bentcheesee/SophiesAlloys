@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "tritonium_ingot",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tritonium_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:tritonium_ingot",
+		"count": 9
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "crimson_coal",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:crimson_coal_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:crimson_coal",
+		"count": 9
+	}
+}

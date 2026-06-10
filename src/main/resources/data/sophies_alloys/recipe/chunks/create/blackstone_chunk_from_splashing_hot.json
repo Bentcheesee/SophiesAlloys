@@ -1,0 +1,19 @@
+{
+	"type": "create:splashing",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:hot_chunk"
+		}
+	],
+	"results": [
+		{
+			"item": "sophies_alloys:blackstone_chunk"
+		}
+	]
+}

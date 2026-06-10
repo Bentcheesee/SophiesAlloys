@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"I I",
+		"III",
+		"III"
+	],
+	"key": {
+		"I": {
+			"tag": "c:ingots/mithril"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:mithril_chestplate"
+	}
+}

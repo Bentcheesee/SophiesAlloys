@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:stonecutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create_dd"
+		}
+	],
+	"ingredient": {
+		"tag": "c:ingots/lead"
+	},
+	"result": {
+		"id": "create_dd:dark_metal_block",
+		"count": 4
+	}
+}

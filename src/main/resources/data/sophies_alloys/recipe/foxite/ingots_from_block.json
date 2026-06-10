@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "foxite_ingot",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:foxite_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:foxite_ingot",
+		"count": 9
+	}
+}

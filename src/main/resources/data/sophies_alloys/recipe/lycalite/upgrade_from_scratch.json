@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lycalite_upgrade",
+	"ingredients": [
+		{
+			"tag": "c:plates/lycalite"
+		},
+		{
+			"tag": "c:plates/oberite"
+		},
+		{
+			"tag": "c:plates/foxite"
+		},
+		{
+			"tag": "c:plates/foxite"
+		},
+		{
+			"item": "sophies_alloys:foxite_upgrade"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:lycalite_upgrade"
+	}
+}

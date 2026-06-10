@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "anvil",
+	"pattern": [
+		"BBB",
+		" I ",
+		"III"
+	],
+	"key": {
+		"I": {
+		"tag": "c:ingots/lead"
+		},
+		"B": {
+		"tag": "c:storage_blocks/lead"
+		}
+	},
+	"result": {
+		"id": "minecraft:anvil"
+	}
+}

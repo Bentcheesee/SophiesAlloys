@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#c:storage_blocks/raw_electrum",
+    "#c:storage_blocks/raw_foxite",
+    "#c:storage_blocks/raw_lagomite",
+    "#c:storage_blocks/raw_lead",
+    "#c:storage_blocks/raw_mithril",
+    "#c:storage_blocks/raw_silver",
+    "#c:storage_blocks/raw_tritonium",
+    "#c:storage_blocks/raw_tungsten"
+  ]
+}

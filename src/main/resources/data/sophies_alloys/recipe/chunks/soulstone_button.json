@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:soul_chunk"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:soul_stone_button"
+	}
+}

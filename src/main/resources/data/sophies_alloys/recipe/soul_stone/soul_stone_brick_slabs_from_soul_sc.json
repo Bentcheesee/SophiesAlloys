@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"tag": "sophies_alloys:soul_stone/full_pure_soul_stone"
+	},
+	"result": {
+		"id": "sophies_alloys:soul_stone_brick_slab",
+		"count": 2
+	}
+}

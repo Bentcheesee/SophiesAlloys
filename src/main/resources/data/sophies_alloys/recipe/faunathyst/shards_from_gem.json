@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:jade_gem"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:jade_shard",
+		"count": 9
+	}
+}

@@ -6,11 +6,11 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.LeverBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class WeakLeverBlock extends LeverBlock{
+public class WeakLeverBlock extends LeverBlock {
 	public WeakLeverBlock(Properties prop) {
 		super(prop);
 	}
-	
+
 	@Override
 	public int getSignal(BlockState state, BlockGetter getter, BlockPos pos, Direction direction) {
 		return state.getValue(POWERED) ? 1 : 0;

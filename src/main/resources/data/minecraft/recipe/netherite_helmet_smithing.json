@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:smithing_transform",
+	"addition": {
+		"item": "minecraft:netherite_ingot"
+	},
+	"base": {
+		"tag": "sophies_alloys:netherite_upgradable/helmets"
+	},
+	"template": {
+		"item": "minecraft:netherite_upgrade_smithing_template"
+	},
+	"result": {
+		"id": "minecraft:netherite_helmet"
+	}
+}

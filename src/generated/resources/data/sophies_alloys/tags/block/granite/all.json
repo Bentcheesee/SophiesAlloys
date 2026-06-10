@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:granite",
+    "minecraft:granite_slab",
+    "minecraft:granite_wall",
+    "minecraft:granite_stairs",
+    "minecraft:polished_granite",
+    "minecraft:polished_granite_slab",
+    "minecraft:polished_granite_stairs",
+    "sophies_alloys:cobbled_granite",
+    "sophies_alloys:cobbled_granite_slab",
+    "sophies_alloys:cobbled_granite_wall",
+    "sophies_alloys:cobbled_granite_stairs"
+  ]
+}

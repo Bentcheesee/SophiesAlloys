@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lagomite_ingot",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:lagomite_scrap"
+		},
+		{
+			"item": "sophies_alloys:lagomite_scrap"
+		},
+		{
+			"item": "sophies_alloys:lagomite_scrap"
+		},
+		{
+			"item": "sophies_alloys:lagomite_scrap"
+		},
+		{
+			"item": "minecraft:netherite_scrap"
+		},
+		{
+			"tag": "c:dusts/steel"
+		},
+		{
+			"tag": "c:dusts/steel"
+		},
+		{
+			"tag": "c:gems/jade"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:lagomite_ingot"
+	}
+}

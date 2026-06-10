@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "lycalite_ingot",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:lycalite_block"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:lycalite_ingot",
+		"count": 9
+	}
+}

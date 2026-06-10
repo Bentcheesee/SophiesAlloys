@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"pattern": [
+		" E ",
+		"FBT",
+		"FC "
+	],
+	"key": {
+		"F": {
+			"item": "sophies_alloys:funky_thingamabob"
+		},
+		"T": {
+			"item": "minecraft:crafting_table"
+		},
+		"E": {
+			"item": "create:electron_tube"
+		},
+		"B": {
+			"item": "create:brass_casing"
+		},
+		"C": {
+			"item": "create:cogwheel"
+		}
+	},
+	"result": {
+		"id": "create:mechanical_crafter",
+		"count": 5
+	}
+}

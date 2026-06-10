@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "redstone",
+	"ingredients": [
+		{
+			"tag": "c:ingots/lycalite"
+		},
+		{
+			"item": "sophies_alloys:nugget_conglomerate"
+		},
+		[
+			{
+				"item": "sophies_alloys:soul_stone_lever"
+			},
+			{
+				"tag": "minecraft:stone_buttons"
+			}
+		],
+		{
+			"item": "sophies_alloys:lapis_dust"
+		},
+		{
+			"item": "minecraft:redstone"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:abnormal_object"
+	}
+}

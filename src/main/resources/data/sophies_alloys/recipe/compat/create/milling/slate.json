@@ -1,0 +1,29 @@
+{
+	"type": "create:milling",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "sophies_alloys:slate"
+		}
+	],
+	"processingTime": 250,
+	"results": [
+		{
+			"id": "minecraft:gravel"
+		},
+		{
+			"id": "sophies_alloys:slate_sheet",
+			"count": 4
+		},
+		{
+			"chance": 0.5,
+			"id": "sophies_alloys:slate_sheet",
+			"count": 4
+		}
+	]
+}

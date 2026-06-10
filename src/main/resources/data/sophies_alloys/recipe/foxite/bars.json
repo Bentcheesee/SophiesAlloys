@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"III",
+		"III"
+	],
+	"key": {
+		"I": {
+		"tag": "c:ingots/foxite"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:foxite_bars",
+		"count": 16
+	}
+}

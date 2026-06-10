@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "hopper",
+	"pattern": [
+		"I",
+		"C",
+		"B"
+	],
+	"key": {
+		"I": [
+			{
+				"tag": "c:ingots/iron"
+			},
+			{
+				"tag": "c:ingots/lead"
+			}
+		],
+		"B": [
+			{
+				"tag": "c:storage_blocks/iron"
+			},
+			{
+				"tag": "c:storage_blocks/lead"
+			}
+		],
+		"C":{
+			"item": "sophies_alloys:abnormal_object"
+		}
+	},
+	"result": {
+		"id": "minecraft:hopper",
+		"count": 3
+	}
+}

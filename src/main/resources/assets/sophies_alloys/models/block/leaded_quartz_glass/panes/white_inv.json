@@ -1,5 +1,6 @@
 {
-    "parent": "block/template_glass_pane_inventory",
+	"parent": "block/template_glass_pane_inventory",
+	"render_type": "translucent",
     "textures": {
         "front": "sophies_alloys:block/leaded_quartz_glass/white",
         "sides": "sophies_alloys:block/leaded_quartz_glass/white_side",

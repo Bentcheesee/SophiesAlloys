@@ -1,0 +1,28 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		[
+			{
+				"item": "minecraft:coal"
+			},
+			{
+				"item": "minecraft:charcoal"
+			}
+		]
+	],
+	"result": [
+		{
+			"item": "sophies_alloys:coal_dust",
+			"count": 2
+		}
+	],
+	"tool": {
+		"tag": "sophies_alloys:chunks/all"
+	}
+}

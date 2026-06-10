@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "babulymn_ingot",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"tag": "c:nuggets/babulymn"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:babulymn_ingot"
+	}
+}
