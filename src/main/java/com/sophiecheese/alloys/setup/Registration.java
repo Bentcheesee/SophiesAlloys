@@ -172,10 +172,6 @@ public class Registration {
 						output.accept(ItemInit.TUFF_CHUNK);
 						output.accept(ItemInit.VERIDIUM_CHUNK);
 						output.accept(ItemInit.ERROR_CHUNK);
-						if (CompatCheck.dreamsPresent) {
-							output.accept(DreamsCompat.DOLOMITE_CHUNK);
-							output.accept(DreamsCompat.GABBRO_CHUNK);
-						}
 						if (CompatCheck.quarkPresent) {
 							output.accept(QuarkCompat.QUARKY_LIMESTONE_CHUNK);
 							output.accept(QuarkCompat.JASPER_CHUNK);

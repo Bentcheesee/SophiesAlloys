@@ -1,0 +1,27 @@
+{
+  "values": [
+    "#c:dusts/amethyst",
+    "#c:dusts/babulymn",
+    "#c:dusts/brass",
+    "#c:dusts/coal",
+    "#c:dusts/copper",
+    "#c:dusts/diamond",
+    "#c:dusts/electrum",
+    "#c:dusts/emerald",
+    "#c:dusts/end_stone",
+    "#c:dusts/flint",
+    "#c:dusts/foxite",
+    "#c:dusts/lagomite",
+    "#c:dusts/lead",
+    "sophies_alloys:leaded_quartz_dust",
+    "#c:dusts/lycalite",
+    "#c:dusts/mithril",
+    "#c:dusts/netherite",
+    "#c:dusts/oberite",
+    "#c:dusts/silver",
+    "#c:dusts/steel",
+    "#c:dusts/tritonium",
+    "#c:dusts/tungsten",
+    "#c:dusts/zinc"
+  ]
+}

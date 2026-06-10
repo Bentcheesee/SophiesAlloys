@@ -49,6 +49,7 @@ public class AlloysTags {
 		public static final TagKey<Block> C_ORE_BEARING_GROUND_BLACKSTONE_BLOCK = createCommonBlockTag("ore_bearing_ground/blackstone");
 		public static final TagKey<Block> C_ORE_BEARING_GROUND_OBSIDIAN_BLOCK = createCommonBlockTag("ore_bearing_ground/obsidian");
 
+		public static final TagKey<Block> C_BARS_BLOCK = createCommonBlockTag("bars");
 		public static final TagKey<Block> C_LANTERNS_BLOCK = createCommonBlockTag("lanterns");
 		public static final TagKey<Block> C_SOUL_LANTERNS_BLOCK = createCommonBlockTag("soul_lanterns");
 
@@ -96,6 +97,7 @@ public class AlloysTags {
 		public static final TagKey<Block> FARMERS_COMPOST_ACTIVATOR = createSpecialBlockTag("farmersdelight", "compost_activators");
 
 		public static final TagKey<Block> CREATE_FAN_TRANSPARENT = createSpecialBlockTag("create", "fan_transparent");
+		public static final TagKey<Block> CREATE_HAUNTING_CATALYST = createSpecialBlockTag("create", "fan_processing_catalysts/haunting");
 		public static final TagKey<Block> CREATE_WRENCH_PICKUP = createSpecialBlockTag("create", "wrench_pickup");
 
 
@@ -144,9 +146,12 @@ public class AlloysTags {
 		public static final TagKey<Item> SLATE_SLAB_ITEM = createItemTag("slate/slabs");
 
 		public static final TagKey<Item> SOUL_ALL_ITEM = createItemTag("soul_stone/all");
-		public static final TagKey<Item> SOUL_BLOCK_ITEM = createItemTag("soul_stone/blocks");
-		public static final TagKey<Item> SOUL_FULL_ITEM = createItemTag("soul_stone/full");
-		public static final TagKey<Item> SOUL_SLAB_ITEM = createItemTag("soul_stone/slabs");
+		public static final TagKey<Item> SOUL_ALL_BLOCK_ITEM = createItemTag("soul_stone/blocks");
+		public static final TagKey<Item> SOUL_PURE_BLOCK_ITEM = createItemTag("soul_stone/pure_blocks");
+		public static final TagKey<Item> SOUL_PURE_FULL_ITEM = createItemTag("soul_stone/pure_full");
+		public static final TagKey<Item> SOUL_PURE_SLAB_ITEM = createItemTag("soul_stone/pure_slabs");
+		public static final TagKey<Item> SOUL_COBBLE_ALL_ITEM = createItemTag("soul_stone/cobble_all");
+		public static final TagKey<Item> SOUL_COBBLE_FULL_ITEM = createItemTag("soul_stone/cobble_full");
 
 		public static final TagKey<Item> MOSSY_DEEPSLATE_ALL_ITEM = createItemTag("mossy_deepslate/all");
 		public static final TagKey<Item> MOSSY_DEEPSLATE_BLOCK_ITEM = createItemTag("mossy_deepslate/blocks");
@@ -158,6 +163,86 @@ public class AlloysTags {
 		public static final TagKey<Item> LAMPS_MEDIUM_ITEM = createItemTag("dusty_lamps/medium");
 		public static final TagKey<Item> LAMPS_STRONG_ITEM = createItemTag("dusty_lamps/strong");
 		public static final TagKey<Item> LAMPS_VERY_STRONG_ITEM = createItemTag("dusty_lamps/very_strong");
+
+
+		public static final TagKey<Item> CHUNKS_ITEM = createItemTag("chunks/all");
+		public static final TagKey<Item> CHUNKABLES_ITEM = createItemTag("chunks/chunkable_blocks");
+		public static final TagKey<Item> CHUNKS_END_ITEM = createItemTag("chunks/end");
+		public static final TagKey<Item> CHUNKS_NETHER_ITEM = createItemTag("chunks/nether");
+		public static final TagKey<Item> CHUNKS_OVERWORLD_ITEM = createItemTag("chunks/overworld");
+		public static final TagKey<Item> CHUNKS_CONVERT_SOUL_ITEM = createItemTag("chunks/convert_soul");
+		public static final TagKey<Item> CHUNKS_CONVERT_NETHERRACK_ITEM = createItemTag("chunks/convert_netherrack");
+		public static final TagKey<Item> CHUNKS_CONVERT_FREEZE_ITEM = createItemTag("chunks/convert_freeze");
+		public static final TagKey<Item> CHUNKS_CONVERT_BLACKSTONE_ITEM = createItemTag("chunks/convert_blackstone");
+
+
+		public static final TagKey<Item> UPGRADE_ELECTRUM_AXES = createItemTag("upgrade_electrum/axes");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_BOOTS = createItemTag("upgrade_electrum/boots");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_CHESTPLATES = createItemTag("upgrade_electrum/chestplates");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_HELMETS = createItemTag("upgrade_electrum/helmets");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_HOES = createItemTag("upgrade_electrum/hoes");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_LEGGINGS = createItemTag("upgrade_electrum/leggings");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_PICKAXES = createItemTag("upgrade_electrum/pickaxes");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_SHOVELS = createItemTag("upgrade_electrum/shovels");
+		public static final TagKey<Item> UPGRADE_ELECTRUM_SWORDS = createItemTag("upgrade_electrum/swords");
+
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_AXES = createItemTag("upgrade_iron_foxite/axes");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_BOOTS = createItemTag("upgrade_iron_foxite/boots");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_CHESTPLATES = createItemTag("upgrade_iron_foxite/chestplates");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_HELMETS = createItemTag("upgrade_iron_foxite/helmets");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_HOES = createItemTag("upgrade_iron_foxite/hoes");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_LEGGINGS = createItemTag("upgrade_iron_foxite/leggings");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_PICKAXES = createItemTag("upgrade_iron_foxite/pickaxes");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_SHOVELS = createItemTag("upgrade_iron_foxite/shovels");
+		public static final TagKey<Item> UPGRADE_IRON_FOXIDE_SWORDS = createItemTag("upgrade_iron_foxite/swords");
+
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_AXES = createItemTag("upgrade_lago_tung/axes");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_BOOTS = createItemTag("upgrade_lago_tung/boots");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_CHESTPLATES = createItemTag("upgrade_lago_tung/chestplates");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_HELMETS = createItemTag("upgrade_lago_tung/helmets");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_HOES = createItemTag("upgrade_lago_tung/hoes");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_LEGGINGS = createItemTag("upgrade_lago_tung/leggings");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_PICKAXES = createItemTag("upgrade_lago_tung/pickaxes");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_SHOVELS = createItemTag("upgrade_lago_tung/shovels");
+		public static final TagKey<Item> UPGRADE_LAGO_TUNG_SWORDS = createItemTag("upgrade_lago_tung/swords");
+
+		public static final TagKey<Item> UPGRADE_LYCALITE_AXES = createItemTag("upgrade_lycalite/axes");
+		public static final TagKey<Item> UPGRADE_LYCALITE_BOOTS = createItemTag("upgrade_lycalite/boots");
+		public static final TagKey<Item> UPGRADE_LYCALITE_CHESTPLATES = createItemTag("upgrade_lycalite/chestplates");
+		public static final TagKey<Item> UPGRADE_LYCALITE_HELMETS = createItemTag("upgrade_lycalite/helmets");
+		public static final TagKey<Item> UPGRADE_LYCALITE_HOES = createItemTag("upgrade_lycalite/hoes");
+		public static final TagKey<Item> UPGRADE_LYCALITE_LEGGINGS = createItemTag("upgrade_lycalite/leggings");
+		public static final TagKey<Item> UPGRADE_LYCALITE_PICKAXES = createItemTag("upgrade_lycalite/pickaxes");
+		public static final TagKey<Item> UPGRADE_LYCALITE_SHOVELS = createItemTag("upgrade_lycalite/shovels");
+		public static final TagKey<Item> UPGRADE_LYCALITE_SWORDS = createItemTag("upgrade_lycalite/swords");
+
+		public static final TagKey<Item> UPGRADE_MITHRIL_AXES = createItemTag("upgrade_mithril/axes");
+		public static final TagKey<Item> UPGRADE_MITHRIL_BOOTS = createItemTag("upgrade_mithril/boots");
+		public static final TagKey<Item> UPGRADE_MITHRIL_CHESTPLATES = createItemTag("upgrade_mithril/chestplates");
+		public static final TagKey<Item> UPGRADE_MITHRIL_HELMETS = createItemTag("upgrade_mithril/helmets");
+		public static final TagKey<Item> UPGRADE_MITHRIL_HOES = createItemTag("upgrade_mithril/hoes");
+		public static final TagKey<Item> UPGRADE_MITHRIL_LEGGINGS = createItemTag("upgrade_mithril/leggings");
+		public static final TagKey<Item> UPGRADE_MITHRIL_PICKAXES = createItemTag("upgrade_mithril/pickaxes");
+
+		public static final TagKey<Item> UPGRADE_NETHERITE_AXES = createItemTag("upgrade_netherite/axes");
+		public static final TagKey<Item> UPGRADE_NETHERITE_BOOTS = createItemTag("upgrade_netherite/boots");
+		public static final TagKey<Item> UPGRADE_NETHERITE_CHESTPLATES = createItemTag("upgrade_netherite/chestplates");
+		public static final TagKey<Item> UPGRADE_NETHERITE_HELMETS = createItemTag("upgrade_netherite/helmets");
+		public static final TagKey<Item> UPGRADE_NETHERITE_HOES = createItemTag("upgrade_netherite/hoes");
+		public static final TagKey<Item> UPGRADE_NETHERITE_LEGGINGS = createItemTag("upgrade_netherite/leggings");
+		public static final TagKey<Item> UPGRADE_NETHERITE_PICKAXES = createItemTag("upgrade_netherite/pickaxes");
+		public static final TagKey<Item> UPGRADE_NETHERITE_SHOVELS = createItemTag("upgrade_netherite/shovels");
+		public static final TagKey<Item> UPGRADE_NETHERITE_SWORDS = createItemTag("upgrade_netherite/swords");
+
+		public static final TagKey<Item> UPGRADE_STEEL_AXES = createItemTag("upgrade_steel/axes");
+		public static final TagKey<Item> UPGRADE_STEEL_BOOTS = createItemTag("upgrade_steel/boots");
+		public static final TagKey<Item> UPGRADE_STEEL_CHESTPLATES = createItemTag("upgrade_steel/chestplates");
+		public static final TagKey<Item> UPGRADE_STEEL_HELMETS = createItemTag("upgrade_steel/helmets");
+		public static final TagKey<Item> UPGRADE_STEEL_HOES = createItemTag("upgrade_steel/hoes");
+		public static final TagKey<Item> UPGRADE_STEEL_LEGGINGS = createItemTag("upgrade_steel/leggings");
+		public static final TagKey<Item> UPGRADE_STEEL_PICKAXES = createItemTag("upgrade_steel/pickaxes");
+		public static final TagKey<Item> UPGRADE_STEEL_SHOVELS = createItemTag("upgrade_steel/shovels");
+		public static final TagKey<Item> UPGRADE_STEEL_SWORDS = createItemTag("upgrade_steel/swords");
 
 
 		public static final TagKey<Item> C_ORES_IN_GROUND_SOUL_ITEM = createCommonItemTag("ores_in_ground/soul");
@@ -235,6 +320,21 @@ public class AlloysTags {
 		public static final TagKey<Item> C_INGOT_TRITONIUM_ITEM = createCommonItemTag("ingots/tritonium");
 		public static final TagKey<Item> C_INGOT_TUNGSTEN_ITEM = createCommonItemTag("ingots/tungsten");
 
+		public static final TagKey<Item> C_PLATES_ITEM = createCommonItemTag("plates");
+
+		public static final TagKey<Item> C_PLATE_BABULYMN_ITEM = createCommonItemTag("plates/babulymn");
+		public static final TagKey<Item> C_PLATE_ELECTRUM_ITEM = createCommonItemTag("plates/electrum");
+		public static final TagKey<Item> C_PLATE_FOXITE_ITEM = createCommonItemTag("plates/foxite");
+		public static final TagKey<Item> C_PLATE_LAGOMITE_ITEM = createCommonItemTag("plates/lagomite");
+		public static final TagKey<Item> C_PLATE_LAPIS_ITEM = createCommonItemTag("plates/lapis");
+		public static final TagKey<Item> C_PLATE_LYCALITE_ITEM = createCommonItemTag("plates/lycalite");
+		public static final TagKey<Item> C_PLATE_MITHRIL_ITEM = createCommonItemTag("plates/mithril");
+		public static final TagKey<Item> C_PLATE_NETHERITE_ITEM = createCommonItemTag("plates/netherite");
+		public static final TagKey<Item> C_PLATE_OBERITE_ITEM = createCommonItemTag("plates/oberite");
+		public static final TagKey<Item> C_PLATE_SILVER_ITEM = createCommonItemTag("plates/silver");
+		public static final TagKey<Item> C_PLATE_STEEL_ITEM = createCommonItemTag("plates/steel");
+		public static final TagKey<Item> C_PLATE_TUNGSTEN_ITEM = createCommonItemTag("plates/tungsten");
+
 		public static final TagKey<Item> C_DUST_AMETHYST_ITEM = createCommonItemTag("dusts/amethyst");
 		public static final TagKey<Item> C_DUST_BABULYMN_ITEM = createCommonItemTag("dusts/babulymn");
 		public static final TagKey<Item> C_DUST_BRASS_ITEM = createCommonItemTag("dusts/brass");
@@ -280,11 +380,15 @@ public class AlloysTags {
 		public static final TagKey<Item> C_SHARD_LAPIS_ITEM = createCommonItemTag("shards/lapis");
 		public static final TagKey<Item> C_SHARD_QUINGUM_ITEM = createCommonItemTag("shards/quingum");
 
+		public static final TagKey<Item> C_BARS_ITEM = createCommonItemTag("bars");
 		public static final TagKey<Item> C_LANTERNS_ITEM = createCommonItemTag("lanterns");
 		public static final TagKey<Item> C_SOUL_LANTERNS_ITEM = createCommonItemTag("soul_lanterns");
 
 		public static final TagKey<Item> C_FOODS_STRANGE_MEAT = createCommonItemTag("foods/strange_meat");
 		public static final TagKey<Item> C_FOODS_STRANGE_RAW_MEAT = createCommonItemTag("foods/strange_raw_meat");
+
+
+		public static final TagKey<Item> MOSS_MUSH_ITEM = createItemTag("moss_mush");
 
 
 		public static final TagKey<Item> SALT_CAN_BE_SALTED = createSpecialItemTag("salt", "can_be_salted");

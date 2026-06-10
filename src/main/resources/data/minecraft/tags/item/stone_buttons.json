@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "minecraft:stone_button",
-        "minecraft:polished_blackstone_button",
-        "sophies_alloys:soul_stone_button"
-    ]
-}

@@ -2,13 +2,11 @@ package com.sophiecheese.alloys.setup;
 
 import com.sophiecheese.alloys.SophiesAlloys;
 import com.sophiecheese.alloys.datagen.AlloysItemTagProvider;
-import com.sophiecheese.alloys.init.DreamsCompat;
 import com.sophiecheese.alloys.init.FarmerCompat;
 import com.sophiecheese.alloys.init.QuarkCompat;
 import net.neoforged.fml.ModList;
 
 public class CompatCheck {
-	public static boolean dreamsPresent = false;
 	public static boolean farmersPresent = false;
 	public static boolean quarkPresent = false;
 	public static boolean saltPresent = false;
@@ -16,17 +14,12 @@ public class CompatCheck {
 	public static void setupModCompatPreInit() {
 		String mod_id = "";
 		try {
-			mod_id = "create_dd";
-			ModCompat(mod_id, DreamsCompat::setupCompat);
 
 			mod_id = "farmersdelight";
 			ModCompat(mod_id, FarmerCompat::setupCompat);
 
 			mod_id = "quark";
 			ModCompat(mod_id, QuarkCompat::setupCompat);
-
-			mod_id = "salt";
-			ModCompat(mod_id, AlloysItemTagProvider::setupCompat);
 		}
 		catch (Throwable tossed) {
 			printErrorToLogs("classloading with " + mod_id + " broke something, idk");

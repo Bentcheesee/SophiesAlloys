@@ -1,0 +1,9 @@
+{
+  "values": [
+    "sophies_alloys:mossy_mush",
+    {
+      "id": "quark:moss_paste",
+      "required": false
+    }
+  ]
+}

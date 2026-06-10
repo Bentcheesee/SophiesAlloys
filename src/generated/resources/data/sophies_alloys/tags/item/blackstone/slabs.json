@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:blackstone_slab",
+    "minecraft:polished_blackstone_slab",
+    "minecraft:polished_blackstone_brick_slab",
+    "sophies_alloys:cobbled_blackstone_slab",
+    {
+      "id": "quark:blackstone_bricks_slab",
+      "required": false
+    }
+  ]
+}

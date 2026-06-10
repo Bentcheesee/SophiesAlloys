@@ -1,0 +1,9 @@
+{
+  "values": [
+    "sophies_alloys:diamond_shard",
+    {
+      "id": "dndesires:diamond_shard",
+      "required": false
+    }
+  ]
+}

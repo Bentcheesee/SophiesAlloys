@@ -30,9 +30,7 @@ public class SophiesAlloys {
         ItemInit.register(modEventBus);
 		BlockInit.register(modEventBus);
 
-		if(CompatCheck.dreamsPresent){
-			DreamsCompat.register(modEventBus);
-		}
+
 		if(CompatCheck.farmersPresent){
 			FarmerCompat.register(modEventBus);
 		}

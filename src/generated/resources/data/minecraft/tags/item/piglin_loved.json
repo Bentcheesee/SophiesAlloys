@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#c:ores/electrum",
+    "sophies_alloys:gold_dust",
+    "sophies_alloys:electrum_dust",
+    "sophies_alloys:crushed_electrum",
+    "sophies_alloys:electrum_nugget",
+    "sophies_alloys:electrum_ingot",
+    "sophies_alloys:electrum_block",
+    "sophies_alloys:electrum_axe",
+    "sophies_alloys:electrum_hoe",
+    "sophies_alloys:electrum_pickaxe",
+    "sophies_alloys:electrum_shovel",
+    "sophies_alloys:electrum_sword",
+    "sophies_alloys:electrum_helmet",
+    "sophies_alloys:electrum_chestplate",
+    "sophies_alloys:electrum_leggings",
+    "sophies_alloys:electrum_boots"
+  ]
+}

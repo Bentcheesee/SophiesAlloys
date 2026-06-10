@@ -1,0 +1,9 @@
+{
+  "values": [
+    "sophies_alloys:unknown_cooked_meat",
+    {
+      "id": "sophies_alloys:cooked_meat_strip",
+      "required": false
+    }
+  ]
+}

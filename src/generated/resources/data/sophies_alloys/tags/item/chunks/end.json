@@ -1,0 +1,9 @@
+{
+  "values": [
+    "sophies_alloys:error_chunk",
+    {
+      "id": "sophies_alloys:myalite_chunk",
+      "required": false
+    }
+  ]
+}

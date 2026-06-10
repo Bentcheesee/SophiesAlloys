@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:blackstone",
+    "minecraft:polished_blackstone",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:chiseled_polished_blackstone",
+    "sophies_alloys:cobbled_blackstone",
+    {
+      "id": "quark:blackstone_bricks",
+      "required": false
+    }
+  ]
+}

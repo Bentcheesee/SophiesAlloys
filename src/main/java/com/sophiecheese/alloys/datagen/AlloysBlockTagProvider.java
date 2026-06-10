@@ -2,7 +2,6 @@ package com.sophiecheese.alloys.datagen;
 
 import com.sophiecheese.alloys.SophiesAlloys;
 import com.sophiecheese.alloys.init.BlockInit;
-import com.sophiecheese.alloys.setup.CompatCheck;
 import com.sophiecheese.alloys.util.AlloysTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -221,8 +220,18 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.COBBLED_DIORITE.get())
 			.add(BlockInit.SOUL_COBBLESTONE.get())
 			.add(BlockInit.MOSSY_COBBLED_DEEPSLATE.get());
+
+
 		tag(Tags.Blocks.GLASS_BLOCKS_TINTED)
 			.addTag(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_BLOCK);
+		tag(Tags.Blocks.GLASS_BLOCKS_COLORLESS)
+			.add(BlockInit.LEADED_GLASS.get());
+		tag(Tags.Blocks.GLASS_BLOCKS)
+			.addTag(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_BLOCK);
+		tag(Tags.Blocks.GLASS_PANES_COLORLESS)
+			.add(BlockInit.LEADED_GLASS_PANE.get());
+		tag(Tags.Blocks.GLASS_PANES)
+			.addTag(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_PANES_BLOCK);
 
 		tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
 			.add(BlockInit.DEEPSLATE_SILVER_ORE.get())
@@ -398,6 +407,41 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.SOUL_STONE.get())
 			.add(Blocks.SOUL_SOIL)
 			.add(Blocks.SOUL_SAND);
+
+
+		tag(AlloysTags.Blocks.SOPHIE_ORES_BLOCK)
+			.add(BlockInit.CRIMSON_COAL_ORE.get())
+			.add(BlockInit.JADE_ORE.get())
+			.add(BlockInit.DEEPSLATE_JADE_ORE.get())
+			.add(BlockInit.QUINGUM_ORE.get())
+			.add(BlockInit.DEEPSLATE_QUINGUM_ORE.get())
+			.add(BlockInit.END_LAGOMITE_ORE.get())
+			.add(BlockInit.OBSIDIAN_LAGOMITE_ORE.get())
+			.add(BlockInit.TRITONIUM_ORE.get())
+			.add(BlockInit.DEEPSLATE_TRITONIUM_ORE.get())
+			.add(BlockInit.SOUL_FOXITE_ORE.get())
+			.add(BlockInit.NETHER_FOXITE_ORE.get())
+			.add(BlockInit.DEEPSLATE_FOXITE_ORE.get())
+			.add(BlockInit.FOXITE_ORE.get())
+			.add(BlockInit.SOUL_MITHRIL_ORE.get())
+			.add(BlockInit.RICH_BASALT.get())
+			.add(BlockInit.BASALT_MITHRIL_ORE.get())
+			.add(BlockInit.BLACKSTONE_MITHRIL_ORE.get())
+			.add(BlockInit.NETHER_MITHRIL_ORE.get())
+			.add(BlockInit.DEEPSLATE_LEAD_ORE.get())
+			.add(BlockInit.LEAD_ORE.get())
+			.add(BlockInit.END_MEAT_ORE.get())
+			.add(BlockInit.SOUL_MEAT_ORE.get())
+			.add(BlockInit.NETHER_MEAT_ORE.get())
+			.add(BlockInit.DEEPSLATE_MEAT_ORE.get())
+			.add(BlockInit.MEAT_ORE.get())
+			.add(BlockInit.DEEPSLATE_ELECTRUM_ORE.get())
+			.add(BlockInit.ELECTRUM_ORE.get())
+			.add(BlockInit.END_TUNGSTEN_ORE.get())
+			.add(BlockInit.DEEPSLATE_TUNGSTEN_ORE.get())
+			.add(BlockInit.TUNGSTEN_ORE.get())
+			.add(BlockInit.DEEPSLATE_SILVER_ORE.get())
+			.add(BlockInit.SILVER_ORE.get());
 
 		tag(AlloysTags.Blocks.SMELTED_STORAGE_BLOCK)
 			.addTag(AlloysTags.Blocks.C_STORAGE_BABULYMN_BLOCK)
@@ -609,6 +653,12 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.SILVER_SOUL_LANTERN.get())
 			.add(BlockInit.TRITONIUM_SOUL_LANTERN.get())
 			.add(BlockInit.TUNGSTEN_SOUL_LANTERN.get());
+		tag(AlloysTags.Blocks.C_BARS_BLOCK)
+			.add(Blocks.IRON_BARS)
+			.add(BlockInit.FOXITE_BARS.get())
+			.add(BlockInit.LEAD_BARS.get())
+			.add(BlockInit.SILVER_BARS.get())
+			.add(BlockInit.TRITONIUM_BARS.get());
 		tag(Tags.Blocks.CHAINS)
 			.add(Blocks.CHAIN)
 			.add(BlockInit.FOXITE_CHAIN.get())
@@ -618,16 +668,23 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.TUNGSTEN_CHAIN.get());
 
 	//Special Tags
-		if (CompatCheck.farmersPresent) {
-			tag(AlloysTags.Blocks.FARMERS_COMPOST_ACTIVATOR)
-				.addTag(AlloysTags.Blocks.C_ORES_JADE_BLOCK)
-				.addTag(AlloysTags.Blocks.C_STORAGE_JADE_BLOCK)
-				.add(BlockInit.DUSTY_JADE_LAMP.get());
-		}
+		tag(AlloysTags.Blocks.FARMERS_COMPOST_ACTIVATOR)
+			.addTag(AlloysTags.Blocks.C_ORES_JADE_BLOCK)
+			.addTag(AlloysTags.Blocks.C_STORAGE_JADE_BLOCK)
+			.add(BlockInit.DUSTY_JADE_LAMP.get());
+
 		tag(AlloysTags.Blocks.CREATE_WRENCH_PICKUP)
 			.addTag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
 			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK)
+			.addTag(AlloysTags.Blocks.DUSTY_LAMPS_BLOCK)
 			.addTag(Tags.Blocks.CHAINS);
+		tag(AlloysTags.Blocks.CREATE_FAN_TRANSPARENT)
+			.addTag(Tags.Blocks.CHAINS)
+			.addTag(AlloysTags.Blocks.C_BARS_BLOCK)
+			.addTag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
+			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK);
+		tag(AlloysTags.Blocks.CREATE_HAUNTING_CATALYST)
+			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK);
 
 	}
 	private static ResourceLocation internal(String path) {

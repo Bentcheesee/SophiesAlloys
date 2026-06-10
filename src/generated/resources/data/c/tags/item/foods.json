@@ -1,0 +1,56 @@
+{
+  "values": [
+    "sophies_alloys:oreberries",
+    "sophies_alloys:mossy_mush",
+    "sophies_alloys:smushroom",
+    "sophies_alloys:lichuorice",
+    "sophies_alloys:red_lichuorice",
+    "sophies_alloys:black_lichuorice",
+    "sophies_alloys:unknown_cooked_meat",
+    "sophies_alloys:unknown_raw_meat",
+    "sophies_alloys:unknown_corrupt_meat",
+    "sophies_alloys:quingum_gem",
+    "sophies_alloys:seared_quingum",
+    "sophies_alloys:chocolate_glazed_quingum",
+    "sophies_alloys:chocolate_glazed_oreberries",
+    "sophies_alloys:plain_quingummies",
+    "sophies_alloys:oreberry_quingummies",
+    "sophies_alloys:fruit_quingummies",
+    "sophies_alloys:glow_quingummies",
+    "sophies_alloys:funky_quingummies",
+    "sophies_alloys:corrupt_quingummies",
+    "sophies_alloys:fleshy_quingummies",
+    {
+      "id": "sophies_alloys:oreberry_salad",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:oreberry_burger",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:quingum_salad",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:fancy_soup",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:raw_meat_strip",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:cooked_meat_strip",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:dino_nugget",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:dino_nugget_ketchup",
+      "required": false
+    }
+  ]
+}

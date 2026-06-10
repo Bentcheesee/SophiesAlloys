@@ -10,8 +10,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -19,18 +17,11 @@ import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 public class AlloysItemTagProvider extends ItemTagsProvider {
 	public AlloysItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
 		super(output, lookupProvider, blockTags, SophiesAlloys.MOD_ID, existingFileHelper);
-	}
-
-	public static void setupCompat() {
-		LOGGER.info("[Sophie's Alloys] Starting Compatibility for Salt");
-		CompatCheck.saltPresent = true;
 	}
 
 	@Override
@@ -205,62 +196,187 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addTag(AlloysTags.Items.C_STORAGE_TRITONIUM_RAW_ITEM)
 			.addTag(AlloysTags.Items.C_STORAGE_TUNGSTEN_RAW_ITEM);
 
-		copy(Tags.Blocks.ORE_BEARING_GROUND_DEEPSLATE, Tags.Items.ORE_BEARING_GROUND_DEEPSLATE);
-		copy(Tags.Blocks.ORE_BEARING_GROUND_STONE, Tags.Items.ORE_BEARING_GROUND_STONE);
-		copy(Tags.Blocks.ORE_BEARING_GROUND_NETHERRACK, Tags.Items.ORE_BEARING_GROUND_NETHERRACK);
-		copy(AlloysTags.Blocks.C_ORE_BEARING_GROUND_BASALT_BLOCK, AlloysTags.Items.C_ORE_BEARING_GROUND_BASALT_ITEM);
-		copy(AlloysTags.Blocks.C_ORE_BEARING_GROUND_BLACKSTONE_BLOCK, AlloysTags.Items.C_ORE_BEARING_GROUND_BLACKSTONE_ITEM);
-		copy(AlloysTags.Blocks.C_ORE_BEARING_GROUND_SOUL_BLOCK, AlloysTags.Items.C_ORE_BEARING_GROUND_SOUL_ITEM);
-		copy(AlloysTags.Blocks.C_ORE_BEARING_GROUND_OBSIDIAN_BLOCK, AlloysTags.Items.C_ORE_BEARING_GROUND_OBSIDIAN_ITEM);
-		copy(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE, Tags.Items.ORES_IN_GROUND_DEEPSLATE);
-		copy(Tags.Blocks.ORES_IN_GROUND_STONE, Tags.Items.ORES_IN_GROUND_STONE);
-		copy(Tags.Blocks.ORES_IN_GROUND_NETHERRACK, Tags.Items.ORES_IN_GROUND_NETHERRACK);
-		copy(AlloysTags.Blocks.C_ORES_IN_GROUND_BASALT_BLOCK, AlloysTags.Items.C_ORES_IN_GROUND_BASALT_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_IN_GROUND_BLACKSTONE_BLOCK, AlloysTags.Items.C_ORES_IN_GROUND_BLACKSTONE_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_IN_GROUND_SOUL_BLOCK, AlloysTags.Items.C_ORES_IN_GROUND_SOUL_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_IN_GROUND_OBSIDIAN_BLOCK, AlloysTags.Items.C_ORES_IN_GROUND_OBSIDIAN_ITEM);
+		tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE)
+			.add(BlockInit.DEEPSLATE_SILVER_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_TUNGSTEN_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_ELECTRUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_MEAT_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_LEAD_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_FOXITE_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_TRITONIUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_JADE_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_QUINGUM_ORE.asItem());
+		tag(Tags.Items.ORES_IN_GROUND_STONE)
+			.add(BlockInit.SILVER_ORE.asItem())
+			.add(BlockInit.TUNGSTEN_ORE.asItem())
+			.add(BlockInit.ELECTRUM_ORE.asItem())
+			.add(BlockInit.MEAT_ORE.asItem())
+			.add(BlockInit.LEAD_ORE.asItem())
+			.add(BlockInit.FOXITE_ORE.asItem())
+			.add(BlockInit.TRITONIUM_ORE.asItem())
+			.add(BlockInit.JADE_ORE.asItem())
+			.add(BlockInit.QUINGUM_ORE.asItem());
+		tag(Tags.Items.ORES_IN_GROUND_NETHERRACK)
+			.add(BlockInit.NETHER_MEAT_ORE.asItem())
+			.add(BlockInit.NETHER_FOXITE_ORE.asItem())
+			.add(BlockInit.NETHER_MITHRIL_ORE.asItem())
+			.add(BlockInit.CRIMSON_COAL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_IN_GROUND_BASALT_ITEM)
+			.add(BlockInit.BASALT_MITHRIL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_IN_GROUND_BLACKSTONE_ITEM)
+			.add(BlockInit.BLACKSTONE_MITHRIL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_IN_GROUND_SOUL_ITEM)
+			.add(BlockInit.SOUL_FOXITE_ORE.asItem())
+			.add(BlockInit.SOUL_MEAT_ORE.asItem())
+			.add(BlockInit.SOUL_MITHRIL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_IN_GROUND_OBSIDIAN_ITEM)
+			.add(BlockInit.OBSIDIAN_LAGOMITE_ORE.asItem());
 
-		copy(AlloysTags.Blocks.C_ORES_CRIMSON_COAL_BLOCK, AlloysTags.Items.C_ORES_CRIMSON_COAL_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_ELECTRUM_BLOCK, AlloysTags.Items.C_ORES_ELECTRUM_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_FOXITE_BLOCK, AlloysTags.Items.C_ORES_FOXITE_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_JADE_BLOCK, AlloysTags.Items.C_ORES_JADE_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_LAGOMITE_BLOCK, AlloysTags.Items.C_ORES_LAGOMITE_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_LEAD_BLOCK, AlloysTags.Items.C_ORES_LEAD_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_MEAT_BLOCK, AlloysTags.Items.C_ORES_MEAT_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_MITHRIL_BLOCK, AlloysTags.Items.C_ORES_MITHRIL_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_QUINGUM_BLOCK, AlloysTags.Items.C_ORES_QUINGUM_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_SILVER_BLOCK, AlloysTags.Items.C_ORES_SILVER_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_TRITONIUM_BLOCK, AlloysTags.Items.C_ORES_TRITONIUM_ITEM);
-		copy(AlloysTags.Blocks.C_ORES_TUNGSTEN_BLOCK, AlloysTags.Items.C_ORES_TUNGSTEN_ITEM);
+		tag(Tags.Items.ORE_BEARING_GROUND_DEEPSLATE)
+			.add(BlockInit.DEEPSLATE_SILVER_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_TUNGSTEN_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_ELECTRUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_MEAT_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_LEAD_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_FOXITE_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_TRITONIUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_JADE_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_QUINGUM_ORE.asItem());
+		tag(Tags.Items.ORE_BEARING_GROUND_STONE)
+			.add(BlockInit.SILVER_ORE.asItem())
+			.add(BlockInit.TUNGSTEN_ORE.asItem())
+			.add(BlockInit.ELECTRUM_ORE.asItem())
+			.add(BlockInit.MEAT_ORE.asItem())
+			.add(BlockInit.LEAD_ORE.asItem())
+			.add(BlockInit.FOXITE_ORE.asItem())
+			.add(BlockInit.TRITONIUM_ORE.asItem())
+			.add(BlockInit.JADE_ORE.asItem())
+			.add(BlockInit.QUINGUM_ORE.asItem());
+		tag(Tags.Items.ORE_BEARING_GROUND_NETHERRACK)
+			.add(BlockInit.NETHER_MEAT_ORE.asItem())
+			.add(BlockInit.NETHER_FOXITE_ORE.asItem())
+			.add(BlockInit.NETHER_MITHRIL_ORE.asItem())
+			.add(BlockInit.CRIMSON_COAL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORE_BEARING_GROUND_BASALT_ITEM)
+			.add(BlockInit.BASALT_MITHRIL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORE_BEARING_GROUND_BLACKSTONE_ITEM)
+			.add(BlockInit.BLACKSTONE_MITHRIL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORE_BEARING_GROUND_SOUL_ITEM)
+			.add(BlockInit.SOUL_FOXITE_ORE.asItem())
+			.add(BlockInit.SOUL_MEAT_ORE.asItem())
+			.add(BlockInit.SOUL_MITHRIL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORE_BEARING_GROUND_OBSIDIAN_ITEM)
+			.add(BlockInit.OBSIDIAN_LAGOMITE_ORE.asItem());
 
-		copy(AlloysTags.Blocks.C_STORAGE_BABULYMN_BLOCK, AlloysTags.Items.C_STORAGE_BABULYMN_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_CRIMSON_COAL_BLOCK, AlloysTags.Items.C_STORAGE_CRIMSON_COAL_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_ELECTRUM_BLOCK, AlloysTags.Items.C_STORAGE_ELECTRUM_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_FOXITE_BLOCK, AlloysTags.Items.C_STORAGE_FOXITE_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_JADE_BLOCK, AlloysTags.Items.C_STORAGE_JADE_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_LAGOMITE_BLOCK, AlloysTags.Items.C_STORAGE_LAGOMITE_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_LEAD_BLOCK, AlloysTags.Items.C_STORAGE_LEAD_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_LYCALITE_BLOCK, AlloysTags.Items.C_STORAGE_LYCALITE_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_MEAT_BLOCK, AlloysTags.Items.C_STORAGE_MEAT_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_MITHRIL_BLOCK, AlloysTags.Items.C_STORAGE_MITHRIL_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_OBERITE_BLOCK, AlloysTags.Items.C_STORAGE_OBERITE_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_QUINGUM_BLOCK, AlloysTags.Items.C_STORAGE_QUINGUM_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_SILVER_BLOCK, AlloysTags.Items.C_STORAGE_SILVER_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_STEEL_BLOCK, AlloysTags.Items.C_STORAGE_STEEL_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_TRITONIUM_BLOCK, AlloysTags.Items.C_STORAGE_TRITONIUM_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_TUNGSTEN_BLOCK, AlloysTags.Items.C_STORAGE_TUNGSTEN_ITEM);
 
-		copy(AlloysTags.Blocks.C_STORAGE_ELECTRUM_RAW_BLOCK, AlloysTags.Items.C_STORAGE_ELECTRUM_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_FOXITE_RAW_BLOCK, AlloysTags.Items.C_STORAGE_FOXITE_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_LAGOMITE_RAW_BLOCK, AlloysTags.Items.C_STORAGE_LAGOMITE_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_LEAD_RAW_BLOCK, AlloysTags.Items.C_STORAGE_LEAD_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_MITHRIL_RAW_BLOCK, AlloysTags.Items.C_STORAGE_MITHRIL_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_SILVER_RAW_BLOCK, AlloysTags.Items.C_STORAGE_SILVER_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_TRITONIUM_RAW_BLOCK, AlloysTags.Items.C_STORAGE_TRITONIUM_RAW_ITEM);
-		copy(AlloysTags.Blocks.C_STORAGE_TUNGSTEN_RAW_BLOCK, AlloysTags.Items.C_STORAGE_TUNGSTEN_RAW_ITEM);
+		tag(AlloysTags.Items.C_ORES_CRIMSON_COAL_ITEM)
+			.add(BlockInit.CRIMSON_COAL_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_ELECTRUM_ITEM)
+			.add(BlockInit.ELECTRUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_ELECTRUM_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_FOXITE_ITEM)
+			.add(BlockInit.FOXITE_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_FOXITE_ORE.asItem())
+			.add(BlockInit.NETHER_FOXITE_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_JADE_ITEM)
+			.add(BlockInit.JADE_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_JADE_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_LAGOMITE_ITEM)
+			.add(BlockInit.END_LAGOMITE_ORE.asItem())
+			.add(BlockInit.OBSIDIAN_LAGOMITE_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_LEAD_ITEM)
+			.add(BlockInit.LEAD_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_LEAD_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_MEAT_ITEM)
+			.add(BlockInit.MEAT_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_MEAT_ORE.asItem())
+			.add(BlockInit.NETHER_MEAT_ORE.asItem())
+			.add(BlockInit.SOUL_MEAT_ORE.asItem())
+			.add(BlockInit.END_MEAT_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_MITHRIL_ITEM)
+			.add(BlockInit.BASALT_MITHRIL_ORE.asItem())
+			.add(BlockInit.BLACKSTONE_MITHRIL_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_MEAT_ORE.asItem())
+			.add(BlockInit.NETHER_MITHRIL_ORE.asItem())
+			.add(BlockInit.SOUL_MITHRIL_ORE.asItem())
+			.add(BlockInit.END_MEAT_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_QUINGUM_ITEM)
+			.add(BlockInit.QUINGUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_QUINGUM_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_SILVER_ITEM)
+			.add(BlockInit.SILVER_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_SILVER_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_TRITONIUM_ITEM)
+			.add(BlockInit.TRITONIUM_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_TRITONIUM_ORE.asItem());
+		tag(AlloysTags.Items.C_ORES_TUNGSTEN_ITEM)
+			.add(BlockInit.TUNGSTEN_ORE.asItem())
+			.add(BlockInit.DEEPSLATE_TUNGSTEN_ORE.asItem())
+			.add(BlockInit.END_TUNGSTEN_ORE.asItem());
+
+
+		tag(AlloysTags.Items.C_STORAGE_BABULYMN_ITEM)
+			.add(BlockInit.BABULYMN_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_CRIMSON_COAL_ITEM)
+			.add(BlockInit.CRIMSON_COAL_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_ELECTRUM_ITEM)
+			.add(BlockInit.ELECTRUM_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_FOXITE_ITEM)
+			.add(BlockInit.FOXITE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_JADE_ITEM)
+			.add(BlockInit.JADE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_LAGOMITE_ITEM)
+			.add(BlockInit.LAGOMITE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_LEAD_ITEM)
+			.add(BlockInit.LEAD_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_LYCALITE_ITEM)
+			.add(BlockInit.LYCALITE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_MEAT_ITEM)
+			.add(BlockInit.MEAT_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_MITHRIL_ITEM)
+			.add(BlockInit.MITHRIL_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_OBERITE_ITEM)
+			.add(BlockInit.OBERITE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_QUINGUM_ITEM)
+			.add(BlockInit.QUINGUM_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_SILVER_ITEM)
+			.add(BlockInit.SILVER_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_STEEL_ITEM)
+			.add(BlockInit.STEEL_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_TRITONIUM_ITEM)
+			.add(BlockInit.TRITONIUM_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_TUNGSTEN_ITEM)
+			.add(BlockInit.TUNGSTEN_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_ELECTRUM_RAW_ITEM)
+			.add(BlockInit.RAW_ELECTRUM_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_FOXITE_RAW_ITEM)
+			.add(BlockInit.RAW_FOXITE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_LAGOMITE_RAW_ITEM)
+			.add(BlockInit.RAW_LAGOMITE_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_LEAD_RAW_ITEM)
+			.add(BlockInit.RAW_LEAD_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_MITHRIL_RAW_ITEM)
+			.add(BlockInit.RAW_MITHRIL_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_SILVER_RAW_ITEM)
+			.add(BlockInit.RAW_SILVER_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_TRITONIUM_RAW_ITEM)
+			.add(BlockInit.RAW_TRITONIUM_BLOCK.asItem());
+		tag(AlloysTags.Items.C_STORAGE_TUNGSTEN_RAW_ITEM)
+			.add(BlockInit.RAW_TUNGSTEN_BLOCK.asItem());
 
 
 		tag(Tags.Items.TOOLS_SHEAR).add(ItemInit.LEAD_SHEARS.get());
+
+		tag(Tags.Items.GLASS_BLOCKS_TINTED)
+			.addTag(AlloysTags.Items.LEADED_QUARTZ_GLASS_ITEM);
+		tag(Tags.Items.GLASS_BLOCKS_COLORLESS)
+			.add(BlockInit.LEADED_GLASS.asItem());
+		tag(Tags.Items.GLASS_BLOCKS)
+			.addTag(AlloysTags.Items.LEADED_QUARTZ_GLASS_ITEM);
+		tag(Tags.Items.GLASS_PANES_COLORLESS)
+			.add(BlockInit.LEADED_GLASS_PANE.asItem());
+		tag(Tags.Items.GLASS_PANES)
+			.addTag(AlloysTags.Items.LEADED_QUARTZ_GLASS_PANES_ITEM);
 
 		tag(Tags.Items.DYED_BLACK)
 			.add(BlockInit.BLACK_LEADED_GLASS.asItem())
@@ -363,6 +479,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addTag(AlloysTags.Items.C_DUST_FOXITE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_LAGOMITE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_LEAD_ITEM)
+			.add(ItemInit.LEADED_QUARTZ_DUST.get())
 			.addTag(AlloysTags.Items.C_DUST_LYCALITE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_MITHRIL_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_NETHERITE_ITEM)
@@ -431,7 +548,6 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.OBERITE_INGOT.get())
 			.add(ItemInit.LYCALITE_INGOT.get())
 			.add(ItemInit.BABULYMN_INGOT.get());
-
 		tag(AlloysTags.Items.C_INGOT_BABULYMN_ITEM).add(ItemInit.BABULYMN_INGOT.get());
 		tag(AlloysTags.Items.C_INGOT_ELECTRUM_ITEM).add(ItemInit.ELECTRUM_INGOT.get());
 		tag(AlloysTags.Items.C_INGOT_FOXITE_ITEM).add(ItemInit.FOXITE_INGOT.get());
@@ -444,6 +560,32 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_INGOT_STEEL_ITEM).add(ItemInit.STEEL_INGOT.get());
 		tag(AlloysTags.Items.C_INGOT_TRITONIUM_ITEM).add(ItemInit.TRITONIUM_INGOT.get());
 		tag(AlloysTags.Items.C_INGOT_TUNGSTEN_ITEM).add(ItemInit.TUNGSTEN_INGOT.get());
+
+		tag(AlloysTags.Items.C_PLATES_ITEM)
+			.add(ItemInit.BABULYMN_PLATE.get())
+			.add(ItemInit.ELECTRUM_PLATE.get())
+			.add(ItemInit.FOXITE_PLATE.get())
+			.add(ItemInit.LAGOMITE_PLATE.get())
+			.add(ItemInit.LAPIS_PLATE.get())
+			.add(ItemInit.LYCALITE_PLATE.get())
+			.add(ItemInit.MITHRIL_PLATE.get())
+			.add(ItemInit.NETHERITE_PLATE.get())
+			.add(ItemInit.OBERITE_PLATE.get())
+			.add(ItemInit.SILVER_PLATE.get())
+			.add(ItemInit.STEEL_PLATE.get())
+			.add(ItemInit.TUNGSTEN_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_BABULYMN_ITEM).add(ItemInit.BABULYMN_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_ELECTRUM_ITEM).add(ItemInit.ELECTRUM_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_FOXITE_ITEM).add(ItemInit.FOXITE_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_LAGOMITE_ITEM).add(ItemInit.LAGOMITE_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_LAPIS_ITEM).add(ItemInit.LAPIS_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_LYCALITE_ITEM).add(ItemInit.LYCALITE_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_MITHRIL_ITEM).add(ItemInit.MITHRIL_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_NETHERITE_ITEM).add(ItemInit.NETHERITE_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_OBERITE_ITEM).add(ItemInit.OBERITE_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_SILVER_ITEM).add(ItemInit.SILVER_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_STEEL_ITEM).add(ItemInit.STEEL_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_TUNGSTEN_ITEM).add(ItemInit.TUNGSTEN_PLATE.get());
 
 		tag(AlloysTags.Items.C_CRIMSON_COAL).add(ItemInit.CRIMSON_COAL.get());
 
@@ -476,7 +618,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_NUGGET_LEAD).add(ItemInit.LEAD_NUGGET.get());
 		tag(AlloysTags.Items.C_NUGGET_LYCALITE).add(ItemInit.LYCALITE_NUGGET.get());
 		tag(AlloysTags.Items.C_NUGGET_MITHRIL).add(ItemInit.MITHRIL_NUGGET.get());
-		tag(AlloysTags.Items.C_NUGGET_MITHRIL).add(ItemInit.NETHERITE_NUGGET.get());
+		tag(AlloysTags.Items.C_NUGGET_NETHERITE).add(ItemInit.NETHERITE_NUGGET.get());
 		tag(AlloysTags.Items.C_NUGGET_OBERITE).add(ItemInit.OBERITE_NUGGET.get());
 		tag(AlloysTags.Items.C_NUGGET_SILVER).add(ItemInit.SILVER_NUGGET.get());
 		tag(AlloysTags.Items.C_NUGGET_STEEL).add(ItemInit.STEEL_NUGGET.get());
@@ -536,7 +678,9 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addOptional(internal("quingum_salad"))
 			.addOptional(internal("fancy_soup"))
 			.addOptional(internal("raw_meat_strip"))
-			.addOptional(internal("cooked_meat_strip"));
+			.addOptional(internal("cooked_meat_strip"))
+			.addOptional(internal("dino_nugget"))
+			.addOptional(internal("dino_nugget_ketchup"));
 		tag(Tags.Items.FOODS_COOKED_MEAT)
 			.add(ItemInit.UNKNOWN_MEAT.get())
 			.addOptional(internal("cooked_meat_strip"));
@@ -565,8 +709,33 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(Tags.Items.FOODS_BERRY)
 			.add(ItemInit.OREBERRIES_ITEM.get());
 
-		copy(AlloysTags.Blocks.C_LANTERNS_BLOCK, AlloysTags.Items.C_LANTERNS_ITEM);
-		copy(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK, AlloysTags.Items.C_SOUL_LANTERNS_ITEM);
+		tag(AlloysTags.Items.C_LANTERNS_ITEM)
+			.add(Blocks.LANTERN.asItem())
+			.add(BlockInit.FOXITE_LANTERN.asItem())
+			.add(BlockInit.NETHERITE_LANTERN.asItem())
+			.add(BlockInit.SILVER_LANTERN.asItem())
+			.add(BlockInit.TRITONIUM_LANTERN.asItem())
+			.add(BlockInit.TUNGSTEN_LANTERN.asItem());
+		tag(AlloysTags.Items.C_SOUL_LANTERNS_ITEM)
+			.add(Blocks.SOUL_LANTERN.asItem())
+			.add(BlockInit.FOXITE_SOUL_LANTERN.asItem())
+			.add(BlockInit.NETHERITE_SOUL_LANTERN.asItem())
+			.add(BlockInit.SILVER_SOUL_LANTERN.asItem())
+			.add(BlockInit.TRITONIUM_SOUL_LANTERN.asItem())
+			.add(BlockInit.TUNGSTEN_SOUL_LANTERN.asItem());
+		tag(AlloysTags.Items.C_BARS_ITEM)
+			.add(Blocks.IRON_BARS.asItem())
+			.add(BlockInit.FOXITE_BARS.asItem())
+			.add(BlockInit.LEAD_BARS.asItem())
+			.add(BlockInit.SILVER_BARS.asItem())
+			.add(BlockInit.TRITONIUM_BARS.asItem());
+		tag(Tags.Items.CHAINS)
+			.add(Blocks.CHAIN.asItem())
+			.add(BlockInit.FOXITE_CHAIN.asItem())
+			.add(BlockInit.NETHERITE_CHAIN.asItem())
+			.add(BlockInit.SILVER_CHAIN.asItem())
+			.add(BlockInit.TRITONIUM_CHAIN.asItem())
+			.add(BlockInit.TUNGSTEN_CHAIN.asItem());
 
 
 	//Alloys Tags
@@ -706,16 +875,25 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(BlockInit.SLATE_TILE_SLAB.asItem());
 
 		tag(AlloysTags.Items.SOUL_ALL_ITEM)
-			.addTag(AlloysTags.Items.SOUL_BLOCK_ITEM)
-			.addTag(AlloysTags.Items.SOUL_FULL_ITEM)
-			.addTag(AlloysTags.Items.SOUL_SLAB_ITEM);
-		tag(AlloysTags.Items.SOUL_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.SOUL_PURE_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.SOUL_PURE_FULL_ITEM)
+			.addTag(AlloysTags.Items.SOUL_PURE_SLAB_ITEM)
+			.addTag(AlloysTags.Items.SOUL_COBBLE_ALL_ITEM)
+			.addTag(AlloysTags.Items.SOUL_COBBLE_FULL_ITEM);
+		tag(AlloysTags.Items.SOUL_ALL_BLOCK_ITEM)
+			.add(BlockInit.SOUL_STONE.asItem())
+			.add(BlockInit.SOUL_STONE_BRICKS.asItem())
+			.add(BlockInit.SOUL_STONE_BRICK_CRACKED.asItem())
+			.add(BlockInit.SOUL_STONE_TILES.asItem())
+			.add(BlockInit.SOUL_STONE_TILES_CRACKED.asItem())
+			.add(BlockInit.SOUL_COBBLESTONE.asItem());
+		tag(AlloysTags.Items.SOUL_PURE_BLOCK_ITEM)
 			.add(BlockInit.SOUL_STONE.asItem())
 			.add(BlockInit.SOUL_STONE_BRICKS.asItem())
 			.add(BlockInit.SOUL_STONE_BRICK_CRACKED.asItem())
 			.add(BlockInit.SOUL_STONE_TILES.asItem())
 			.add(BlockInit.SOUL_STONE_TILES_CRACKED.asItem());
-		tag(AlloysTags.Items.SOUL_FULL_ITEM)
+		tag(AlloysTags.Items.SOUL_PURE_FULL_ITEM)
 			.add(BlockInit.SOUL_STONE.asItem())
 			.add(BlockInit.SOUL_STONE_WALL.asItem())
 			.add(BlockInit.SOUL_STONE_STAIRS.asItem())
@@ -727,10 +905,19 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(BlockInit.SOUL_STONE_TILES_WALL.asItem())
 			.add(BlockInit.SOUL_STONE_TILES_STAIRS.asItem())
 			.add(BlockInit.SOUL_STONE_TILES_CRACKED.asItem());
-		tag(AlloysTags.Items.SOUL_SLAB_ITEM)
+		tag(AlloysTags.Items.SOUL_PURE_SLAB_ITEM)
 			.add(BlockInit.SOUL_STONE_SLAB.asItem())
 			.add(BlockInit.SOUL_STONE_BRICK_SLAB.asItem())
 			.add(BlockInit.SOUL_STONE_TILES_SLAB.asItem());
+		tag(AlloysTags.Items.SOUL_COBBLE_ALL_ITEM)
+			.add(BlockInit.SOUL_COBBLESTONE.asItem())
+			.add(BlockInit.SOUL_COBBLESTONE_WALL.asItem())
+			.add(BlockInit.SOUL_COBBLESTONE_STAIRS.asItem())
+			.add(BlockInit.SOUL_COBBLESTONE_SLAB.asItem());
+		tag(AlloysTags.Items.SOUL_COBBLE_FULL_ITEM)
+			.add(BlockInit.SOUL_COBBLESTONE.asItem())
+			.add(BlockInit.SOUL_COBBLESTONE_WALL.asItem())
+			.add(BlockInit.SOUL_COBBLESTONE_STAIRS.asItem());
 
 		tag(AlloysTags.Items.MOSSY_DEEPSLATE_ALL_ITEM)
 			.addTag(AlloysTags.Items.MOSSY_DEEPSLATE_BLOCK_ITEM)
@@ -750,16 +937,379 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(BlockInit.MOSSY_COBBLED_DEEPSLATE_SLAB.asItem())
 			.add(BlockInit.MOSSY_DEEPSLATE_BRICK_SLAB.asItem());
 
-		copy(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_BLOCK, AlloysTags.Items.LEADED_QUARTZ_GLASS_ITEM);
-		copy(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_PANES_BLOCK, AlloysTags.Items.LEADED_QUARTZ_GLASS_PANES_ITEM);
-		copy(AlloysTags.Blocks.STAINED_LEADED_QUARTZ_GLASS_BLOCK, AlloysTags.Items.STAINED_LEADED_QUARTZ_GLASS_ITEM);
-		copy(AlloysTags.Blocks.STAINED_LEADED_QUARTZ_GLASS_PANES_BLOCK, AlloysTags.Items.STAINED_LEADED_QUARTZ_GLASS_PANES_ITEM);
+		
+		tag(AlloysTags.Items.LEADED_QUARTZ_GLASS_ITEM)
+			.add(BlockInit.LEADED_GLASS.asItem())
+			.addTag(AlloysTags.Items.STAINED_LEADED_QUARTZ_GLASS_ITEM);
+		tag(AlloysTags.Items.STAINED_LEADED_QUARTZ_GLASS_ITEM)
+			.add(BlockInit.RED_LEADED_GLASS.asItem())
+			.add(BlockInit.ORANGE_LEADED_GLASS.asItem())
+			.add(BlockInit.YELLOW_LEADED_GLASS.asItem())
+			.add(BlockInit.LIME_LEADED_GLASS.asItem())
+			.add(BlockInit.GREEN_LEADED_GLASS.asItem())
+			.add(BlockInit.CYAN_LEADED_GLASS.asItem())
+			.add(BlockInit.LIGHT_BLUE_LEADED_GLASS.asItem())
+			.add(BlockInit.BLUE_LEADED_GLASS.asItem())
+			.add(BlockInit.PURPLE_LEADED_GLASS.asItem())
+			.add(BlockInit.MAGENTA_LEADED_GLASS.asItem())
+			.add(BlockInit.PINK_LEADED_GLASS.asItem())
+			.add(BlockInit.WHITE_LEADED_GLASS.asItem())
+			.add(BlockInit.LIGHT_GRAY_LEADED_GLASS.asItem())
+			.add(BlockInit.GRAY_LEADED_GLASS.asItem())
+			.add(BlockInit.BLACK_LEADED_GLASS.asItem());
 
-		copy(AlloysTags.Blocks.DUSTY_LAMPS_BLOCK, AlloysTags.Items.DUSTY_LAMPS_ITEM);
-		copy(AlloysTags.Blocks.LAMPS_WEAK_BLOCK, AlloysTags.Items.LAMPS_WEAK_ITEM);
-		copy(AlloysTags.Blocks.LAMPS_MEDIUM_BLOCK, AlloysTags.Items.LAMPS_MEDIUM_ITEM);
-		copy(AlloysTags.Blocks.LAMPS_STRONG_BLOCK, AlloysTags.Items.LAMPS_STRONG_ITEM);
-		copy(AlloysTags.Blocks.LAMPS_VERY_STRONG_BLOCK, AlloysTags.Items.LAMPS_VERY_STRONG_ITEM);
+		tag(AlloysTags.Items.LEADED_QUARTZ_GLASS_PANES_ITEM)
+			.add(BlockInit.LEADED_GLASS_PANE.asItem())
+			.addTag(AlloysTags.Items.STAINED_LEADED_QUARTZ_GLASS_PANES_ITEM);
+		tag(AlloysTags.Items.STAINED_LEADED_QUARTZ_GLASS_PANES_ITEM)
+			.add(BlockInit.RED_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.ORANGE_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.YELLOW_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.LIME_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.GREEN_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.CYAN_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.LIGHT_BLUE_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.BLUE_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.PURPLE_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.MAGENTA_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.PINK_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.WHITE_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.LIGHT_GRAY_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.GRAY_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.BLACK_LEADED_GLASS_PANE.asItem());
+
+		
+		tag(AlloysTags.Items.DUSTY_LAMPS_ITEM)
+			.addTag(AlloysTags.Items.LAMPS_WEAK_ITEM)
+			.addTag(AlloysTags.Items.LAMPS_MEDIUM_ITEM)
+			.addTag(AlloysTags.Items.LAMPS_STRONG_ITEM)
+			.addTag(AlloysTags.Items.LAMPS_VERY_STRONG_ITEM);
+		tag(AlloysTags.Items.LAMPS_WEAK_ITEM)
+			.add(BlockInit.DUSTY_COAL_LAMP.asItem())
+			.add(BlockInit.DUSTY_CRIMSON_LAMP.asItem())
+			.add(BlockInit.DUSTY_FOXITE_LAMP.asItem())
+			.add(BlockInit.DUSTY_IRON_LAMP.asItem())
+			.add(BlockInit.DUSTY_LAPIS_LAMP.asItem())
+			.add(BlockInit.DUSTY_LYCALITE_LAMP.asItem())
+			.add(BlockInit.DUSTY_NETHERITE_LAMP.asItem())
+			.add(BlockInit.DUSTY_ZINC_LAMP.asItem());
+		tag(AlloysTags.Items.LAMPS_MEDIUM_ITEM)
+			.add(BlockInit.DUSTY_JADE_LAMP.asItem())
+			.add(BlockInit.DUSTY_LAMP.asItem())
+			.add(BlockInit.DUSTY_OBERITE_LAMP.asItem())
+			.add(BlockInit.DUSTY_STEEL_LAMP.asItem())
+			.add(BlockInit.DUSTY_BRASS_LAMP.asItem());
+		tag(AlloysTags.Items.LAMPS_STRONG_ITEM)
+			.add(BlockInit.DUSTY_AMETHYST_LAMP.asItem())
+			.add(BlockInit.DUSTY_COPPER_LAMP.asItem())
+			.add(BlockInit.DUSTY_DIAMOND_LAMP.asItem())
+			.add(BlockInit.DUSTY_ELECTRUM_LAMP.asItem())
+			.add(BlockInit.DUSTY_EMERALD_LAMP.asItem())
+			.add(BlockInit.DUSTY_LEADED_QUARTZ_LAMP.asItem())
+			.add(BlockInit.DUSTY_MITHRIL_LAMP.asItem())
+			.add(BlockInit.DUSTY_SILVER_LAMP.asItem())
+			.add(BlockInit.DUSTY_TUNGSTEN_LAMP.asItem());
+		tag(AlloysTags.Items.LAMPS_VERY_STRONG_ITEM)
+			.add(BlockInit.DUSTY_GOLD_LAMP.asItem())
+			.add(BlockInit.DUSTY_QUARTZ_LAMP.asItem())
+			.add(BlockInit.DUSTY_TRITONIUM_LAMP.asItem());
+
+		tag(AlloysTags.Items.CHUNKS_ITEM)
+			.add(ItemInit.ANDESITE_CHUNK.get())
+			.add(ItemInit.ASURINE_CHUNK.get())
+			.add(ItemInit.BASALT_CHUNK.get())
+			.add(ItemInit.BLACKSTONE_CHUNK.get())
+			.add(ItemInit.CALCITE_CHUNK.get())
+			.add(ItemInit.COBBLESTONE_CHUNK.get())
+			.add(ItemInit.CRIMSITE_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.DIORITE_CHUNK.get())
+			.add(ItemInit.ENDSTONE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.add(ItemInit.HOT_CHUNK.get())
+			.add(ItemInit.LIMESTONE_CHUNK.get())
+			.add(ItemInit.NETHERRACK_CHUNK.get())
+			.add(ItemInit.OCHRUM_CHUNK.get())
+			.add(ItemInit.SCORCHIA_CHUNK.get())
+			.add(ItemInit.SCORIA_CHUNK.get())
+			.add(ItemInit.SOUL_CHUNK.get())
+			.add(ItemInit.TUFF_CHUNK.get())
+			.add(ItemInit.VERIDIUM_CHUNK.get())
+			.add(ItemInit.ERROR_CHUNK.get())
+			.addOptional(internal("quarky_limestone_chunk"))
+			.addOptional(internal("jasper_chunk"))
+			.addOptional(internal("frost_chunk"))
+			.addOptional(internal("myalite_chunk"));
+		tag(AlloysTags.Items.CHUNKABLES_ITEM)
+			.add(Blocks.ANDESITE.asItem())
+			.add(Blocks.COBBLESTONE.asItem())
+			.add(Blocks.COBBLED_DEEPSLATE.asItem())
+			.add(Blocks.TUFF.asItem())
+			.add(Blocks.DEEPSLATE.asItem())
+			.add(Blocks.NETHERRACK.asItem())
+			.add(Blocks.MAGMA_BLOCK.asItem())
+			.add(Blocks.BASALT.asItem())
+			.add(Blocks.END_STONE.asItem())
+			.addTag(AlloysTags.Items.BLACKSTONE_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.CALCITE_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.DIORITE_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.GRANITE_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.MOSSY_DEEPSLATE_BLOCK_ITEM)
+			.addTag(AlloysTags.Items.SOUL_PURE_BLOCK_ITEM)
+			.addOptional(create("asurine"))
+			.addOptional(create("crimsite"))
+			.addOptional(create("limestone"))
+			.addOptional(create("ochrum"))
+			.addOptional(create("scorchia"))
+			.addOptional(create("scoria"))
+			.addOptional(create("veridium"))
+			.addOptional(quark("limestone"))
+			.addOptional(quark("jasper"))
+			.addOptional(quark("perma_frost"))
+			.addOptional(quark("myalite"));
+		tag(AlloysTags.Items.CHUNKS_END_ITEM)
+			.add(ItemInit.ERROR_CHUNK.get())
+			.addOptional(internal("myalite_chunk"));
+		tag(AlloysTags.Items.CHUNKS_NETHER_ITEM)
+			.add(ItemInit.BASALT_CHUNK.get())
+			.add(ItemInit.BLACKSTONE_CHUNK.get())
+			.add(ItemInit.HOT_CHUNK.get())
+			.add(ItemInit.NETHERRACK_CHUNK.get())
+			.add(ItemInit.SCORCHIA_CHUNK.get())
+			.add(ItemInit.SCORIA_CHUNK.get())
+			.add(ItemInit.SOUL_CHUNK.get());
+		tag(AlloysTags.Items.CHUNKS_OVERWORLD_ITEM)
+			.add(ItemInit.ANDESITE_CHUNK.get())
+			.add(ItemInit.ASURINE_CHUNK.get())
+			.add(ItemInit.CALCITE_CHUNK.get())
+			.add(ItemInit.COBBLESTONE_CHUNK.get())
+			.add(ItemInit.CRIMSITE_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.DIORITE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.add(ItemInit.LIMESTONE_CHUNK.get())
+			.add(ItemInit.OCHRUM_CHUNK.get())
+			.add(ItemInit.TUFF_CHUNK.get())
+			.add(ItemInit.VERIDIUM_CHUNK.get())
+			.addOptional(internal("quarky_limestone_chunk"))
+			.addOptional(internal("jasper_chunk"))
+			.addOptional(internal("frost_chunk"));
+		tag(AlloysTags.Items.CHUNKS_CONVERT_SOUL_ITEM)
+			.add(ItemInit.ANDESITE_CHUNK.get())
+			.add(ItemInit.CALCITE_CHUNK.get())
+			.add(ItemInit.COBBLESTONE_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.DIORITE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.addOptional(internal("jasper_chunk"));
+		tag(AlloysTags.Items.CHUNKS_CONVERT_NETHERRACK_ITEM)
+			.add(ItemInit.BASALT_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.add(ItemInit.TUFF_CHUNK.get());
+		tag(AlloysTags.Items.CHUNKS_CONVERT_FREEZE_ITEM)
+			.add(ItemInit.ANDESITE_CHUNK.get())
+			.add(ItemInit.CALCITE_CHUNK.get())
+			.add(ItemInit.COBBLESTONE_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.DIORITE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.add(ItemInit.LIMESTONE_CHUNK.get())
+			.addOptional(internal("quarky_limestone_chunk"));
+		tag(AlloysTags.Items.CHUNKS_CONVERT_BLACKSTONE_ITEM)
+			.add(ItemInit.BASALT_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.NETHERRACK_CHUNK.get())
+			.add(ItemInit.SCORCHIA_CHUNK.get());
+
+
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_AXES)
+			.add(Items.GOLDEN_AXE);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_BOOTS)
+			.add(Items.GOLDEN_BOOTS);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_CHESTPLATES)
+			.add(Items.GOLDEN_CHESTPLATE);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_HELMETS)
+			.add(Items.GOLDEN_HELMET);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_HOES)
+			.add(Items.GOLDEN_HOE);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_LEGGINGS)
+			.add(Items.GOLDEN_LEGGINGS);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_PICKAXES)
+			.add(Items.GOLDEN_PICKAXE);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_SHOVELS)
+			.add(Items.GOLDEN_SHOVEL);
+		tag(AlloysTags.Items.UPGRADE_ELECTRUM_SWORDS)
+			.add(Items.GOLDEN_SWORD);
+
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_AXES)
+			.add(Items.STONE_AXE)
+			.add(ItemInit.LEAD_AXE.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_BOOTS)
+			.add(ItemInit.SILVER_BOOTS.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_CHESTPLATES)
+			.add(ItemInit.SILVER_CHESTPLATE.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_HELMETS)
+			.add(ItemInit.SILVER_HELMET.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_HOES)
+			.add(Items.STONE_HOE);
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_LEGGINGS)
+			.add(ItemInit.SILVER_LEGGINGS.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_PICKAXES)
+			.add(Items.STONE_PICKAXE)
+			.add(ItemInit.LEAD_PICKAXE.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_SHOVELS)
+			.add(Items.STONE_SHOVEL)
+			.add(ItemInit.LEAD_SHOVEL.get());
+		tag(AlloysTags.Items.UPGRADE_IRON_FOXIDE_SWORDS)
+			.add(Items.STONE_SWORD);
+
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_AXES)
+			.add(Items.NETHERITE_AXE)
+			.add(ItemInit.MITHRIL_AXE.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_BOOTS)
+			.add(Items.NETHERITE_BOOTS)
+			.add(ItemInit.MITHRIL_BOOTS.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_CHESTPLATES)
+			.add(Items.NETHERITE_CHESTPLATE)
+			.add(ItemInit.MITHRIL_CHESTPLATE.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_HELMETS)
+			.add(Items.NETHERITE_HELMET)
+			.add(ItemInit.MITHRIL_HELMET.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_HOES)
+			.add(Items.NETHERITE_HOE)
+			.add(ItemInit.MITHRIL_HOE.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_LEGGINGS)
+			.add(Items.NETHERITE_LEGGINGS)
+			.add(ItemInit.MITHRIL_LEGGINGS.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_PICKAXES)
+			.add(Items.NETHERITE_PICKAXE)
+			.add(ItemInit.MITHRIL_PICKAXE.get());
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_SHOVELS)
+			.add(Items.NETHERITE_SHOVEL);
+		tag(AlloysTags.Items.UPGRADE_LAGO_TUNG_SWORDS)
+			.add(Items.NETHERITE_SWORD);
+
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_AXES)
+			.add(ItemInit.FOXITE_AXE.get())
+			.add(ItemInit.STEEL_AXE.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_BOOTS)
+			.add(ItemInit.FOXITE_BOOTS.get())
+			.add(ItemInit.STEEL_BOOTS.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_CHESTPLATES)
+			.add(ItemInit.FOXITE_CHESTPLATE.get())
+			.add(ItemInit.STEEL_CHESTPLATE.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_HELMETS)
+			.add(ItemInit.FOXITE_HELMET.get())
+			.add(ItemInit.STEEL_HELMET.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_HOES)
+			.add(ItemInit.FOXITE_HOE.get())
+			.add(ItemInit.STEEL_HOE.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_LEGGINGS)
+			.add(ItemInit.FOXITE_LEGGINGS.get())
+			.add(ItemInit.STEEL_LEGGINGS.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_PICKAXES)
+			.add(ItemInit.FOXITE_PICKAXE.get())
+			.add(ItemInit.STEEL_PICKAXE.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_SHOVELS)
+			.add(ItemInit.FOXITE_SHOVEL.get())
+			.add(ItemInit.STEEL_SHOVEL.get());
+		tag(AlloysTags.Items.UPGRADE_LYCALITE_SWORDS)
+			.add(ItemInit.FOXITE_SWORD.get())
+			.add(ItemInit.STEEL_SHOVEL.get());
+
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_AXES)
+			.add(Items.DIAMOND_AXE)
+			.add(ItemInit.LYCALITE_AXE.get());
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_BOOTS)
+			.add(Items.DIAMOND_BOOTS);
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_CHESTPLATES)
+			.add(Items.DIAMOND_CHESTPLATE);
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_HELMETS)
+			.add(Items.DIAMOND_HELMET);
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_HOES)
+			.add(Items.DIAMOND_HOE)
+			.add(ItemInit.LYCALITE_HOE.get());
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_LEGGINGS)
+			.add(Items.DIAMOND_LEGGINGS);
+		tag(AlloysTags.Items.UPGRADE_MITHRIL_PICKAXES)
+			.add(Items.DIAMOND_PICKAXE)
+			.add(ItemInit.LYCALITE_PICKAXE.get());
+
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_AXES)
+			.add(Items.DIAMOND_AXE)
+			.add(ItemInit.LYCALITE_AXE.get())
+			.add(ItemInit.MITHRIL_AXE.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_BOOTS)
+			.add(Items.DIAMOND_BOOTS)
+			.add(ItemInit.LYCALITE_BOOTS.get())
+			.add(ItemInit.MITHRIL_BOOTS.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_CHESTPLATES)
+			.add(Items.DIAMOND_CHESTPLATE)
+			.add(ItemInit.LYCALITE_CHESTPLATE.get())
+			.add(ItemInit.MITHRIL_CHESTPLATE.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_HELMETS)
+			.add(Items.DIAMOND_HELMET)
+			.add(ItemInit.LYCALITE_HELMET.get())
+			.add(ItemInit.MITHRIL_HELMET.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_HOES)
+			.add(Items.DIAMOND_HOE)
+			.add(ItemInit.LYCALITE_HOE.get())
+			.add(ItemInit.MITHRIL_HOE.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_LEGGINGS)
+			.add(Items.DIAMOND_LEGGINGS)
+			.add(ItemInit.LYCALITE_LEGGINGS.get())
+			.add(ItemInit.MITHRIL_LEGGINGS.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_PICKAXES)
+			.add(Items.DIAMOND_PICKAXE)
+			.add(ItemInit.LYCALITE_PICKAXE.get())
+			.add(ItemInit.MITHRIL_PICKAXE.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_SHOVELS)
+			.add(Items.DIAMOND_PICKAXE)
+			.add(ItemInit.LYCALITE_SHOVEL.get());
+		tag(AlloysTags.Items.UPGRADE_NETHERITE_SWORDS)
+			.add(Items.DIAMOND_PICKAXE)
+			.add(ItemInit.LYCALITE_SWORD.get());
+
+		tag(AlloysTags.Items.UPGRADE_STEEL_AXES)
+			.add(ItemInit.FOXITE_AXE.get())
+			.add(ItemInit.LEAD_AXE.get())
+			.add(Items.IRON_AXE);
+		tag(AlloysTags.Items.UPGRADE_STEEL_BOOTS)
+			.add(ItemInit.FOXITE_BOOTS.get())
+			.add(ItemInit.SILVER_BOOTS.get())
+			.add(Items.IRON_BOOTS);
+		tag(AlloysTags.Items.UPGRADE_STEEL_CHESTPLATES)
+			.add(ItemInit.SILVER_CHESTPLATE.get())
+			.add(ItemInit.FOXITE_CHESTPLATE.get())
+			.add(Items.IRON_CHESTPLATE);
+		tag(AlloysTags.Items.UPGRADE_STEEL_HELMETS)
+			.add(ItemInit.FOXITE_HELMET.get())
+			.add(ItemInit.SILVER_HELMET.get())
+			.add(Items.IRON_HELMET);
+		tag(AlloysTags.Items.UPGRADE_STEEL_HOES)
+			.add(ItemInit.FOXITE_HOE.get())
+			.add(Items.IRON_HOE);
+		tag(AlloysTags.Items.UPGRADE_STEEL_LEGGINGS)
+			.add(ItemInit.FOXITE_LEGGINGS.get())
+			.add(ItemInit.SILVER_LEGGINGS.get())
+			.add(Items.IRON_LEGGINGS);
+		tag(AlloysTags.Items.UPGRADE_STEEL_PICKAXES)
+			.add(ItemInit.FOXITE_PICKAXE.get())
+			.add(ItemInit.LEAD_PICKAXE.get())
+			.add(Items.IRON_PICKAXE);
+		tag(AlloysTags.Items.UPGRADE_STEEL_SHOVELS)
+			.add(ItemInit.FOXITE_SHOVEL.get())
+			.add(ItemInit.LEAD_SHOVEL.get())
+			.add(Items.IRON_SHOVEL);
+		tag(AlloysTags.Items.UPGRADE_STEEL_SWORDS)
+			.add(ItemInit.FOXITE_SWORD.get())
+			.add(Items.IRON_SHOVEL);
+
+		tag(AlloysTags.Items.MOSS_MUSH_ITEM)
+			.add(ItemInit.MOSSY_MUSH.get())
+			.addOptional(quark("moss_paste"));
+
 
 	//Special Tags
 		if (CompatCheck.saltPresent) {
@@ -808,11 +1358,6 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 	}
 	private static ResourceLocation dreams(String path) {
 		return ResourceLocation.fromNamespaceAndPath("dndesires", path);
-	}
-
-	private final Map<TagKey<Block>, TagKey<Item>> tagsToCopy = new HashMap<>();
-	protected void copy(TagKey<Block> blockTag, TagKey<Item> itemTag) {
-		this.tagsToCopy.put(blockTag, itemTag);
 	}
 
 }

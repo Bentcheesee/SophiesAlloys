@@ -1,0 +1,21 @@
+{
+  "values": [
+    "sophies_alloys:cobbled_calcite_slab",
+    {
+      "id": "create:cut_calcite_slab",
+      "required": false
+    },
+    {
+      "id": "create:polished_cut_calcite_slab",
+      "required": false
+    },
+    {
+      "id": "create:cut_calcite_brick_slab",
+      "required": false
+    },
+    {
+      "id": "create:small_calcite_brick_slab",
+      "required": false
+    }
+  ]
+}
