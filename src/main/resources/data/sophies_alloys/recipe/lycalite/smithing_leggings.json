@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "lycalite",
 	"addition": {
-		"item": "sophies_alloys:lycalite_upgrade"
+		"tag": "c:plates/lycalite"
 	},
 	"base": {
-		"tag": "sophies_alloys:lycalite_upgradable/leggings"
+		"tag": "sophies_alloys:upgrade_lycalite/leggings"
 	},
 	"result": {
-		"item": "sophies_alloys:lycalite_leggings"
+		"count": 1,
+		"id": "sophies_alloys:lycalite_leggings"
+	},
+	"template": {
+		"item": "sophies_alloys:lycalite_upgrade"
 	}
 }

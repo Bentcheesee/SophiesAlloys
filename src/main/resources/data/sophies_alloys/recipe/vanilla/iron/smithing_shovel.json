@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "iron",
 	"addition": {
-		"item": "sophies_alloys:iron_upgrade"
+		"tag": "c:plates/iron"
 	},
 	"base": {
-		"tag": "sophies_alloys:iron_foxite_upgradable/shovels"
+		"tag": "sophies_alloys:upgrade_iron_foxite/shovels"
 	},
 	"result": {
-		"item": "minecraft:iron_shovel"
+		"count": 1,
+		"id": "minecraft:iron_shovel"
+	},
+	"template": {
+		"item": "sophies_alloys:iron_upgrade"
 	}
 }

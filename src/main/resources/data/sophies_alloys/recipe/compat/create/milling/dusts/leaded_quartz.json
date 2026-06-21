@@ -1,11 +1,5 @@
 {
 	"type": "create:milling",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
-		}
-	],
 	"ingredients": [
 		[
 			{
@@ -13,7 +7,6 @@
 			}
 		]
 	],
-	"processingTime": 200,
 	"results": [
 		{
 			"id": "sophies_alloys:leaded_quartz_dust",

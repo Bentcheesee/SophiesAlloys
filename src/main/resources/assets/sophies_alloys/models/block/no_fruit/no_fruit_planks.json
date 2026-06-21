@@ -1,6 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "sophies_alloys:block/no_fruit/no_fruit_planks"
-	}
-}

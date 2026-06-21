@@ -1,0 +1,13 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks/convert_soul"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:soul_chunk"
+		}
+	]
+}

@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:stonecutting",
 	"ingredient": {
-		"tag": "sophies_alloys:slate/full_slates"
+		"tag": "sophies_alloys:slate/full"
 	},
 	"result": {
 		"id": "sophies_alloys:slate_brick_wall"

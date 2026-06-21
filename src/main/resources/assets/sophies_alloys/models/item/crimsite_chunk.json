@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/crimsite_chunk"
+		"layer0": "sophies_alloys:item/create_materials/crimsite_chunk"
 	}
 }

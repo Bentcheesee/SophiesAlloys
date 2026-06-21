@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#minecraft:dirt",
+    "#minecraft:sand",
+    "#minecraft:base_stone_overworld",
+    "#c:cobblestones",
+    "#c:cobblestones/deepslate",
+    "#c:stones"
+  ]
+}

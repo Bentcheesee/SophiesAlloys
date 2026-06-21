@@ -109,6 +109,7 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.SOUL_COBBLESTONE.get())
 			.add(BlockInit.SOUL_STONE.get());
 		tag(BlockTags.BASE_STONE_OVERWORLD)
+			.add(BlockInit.ROUGH_SLATE.get())
 			.add(BlockInit.SLATE.get());
 		tag(BlockTags.NETHER_CARVER_REPLACEABLES)
 			.add(BlockInit.SOUL_STONE.get())
@@ -119,7 +120,6 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 		tag(BlockTags.STONE_ORE_REPLACEABLES)
 			.add(BlockInit.ROUGH_SLATE.get());
 		tag(BlockTags.DEEPSLATE_ORE_REPLACEABLES)
-			.add(BlockInit.ROUGH_SLATE.get())
 			.add(BlockInit.SLATE.get())
 			.add(BlockInit.DEEP_GRAVEL.get());
 
@@ -165,7 +165,24 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.addTag(AlloysTags.Blocks.SOUL_STONE_ALL_BLOCK);
 
 		tag(BlockTags.WITHER_IMMUNE)
-			.add(BlockInit.TUNGSTEN_BLOCK.get());
+			.add(BlockInit.TUNGSTEN_BLOCK.get())
+			.add(BlockInit.RAW_TUNGSTEN_BLOCK.get());
+
+		tag(BlockTags.WALLS)
+			.add(BlockInit.SLATE_WALL.get())
+			.add(BlockInit.SLATE_BRICK_WALL.get())
+			.add(BlockInit.SLATE_TILE_WALL.get())
+			.add(BlockInit.SLATE_WALL.get())
+			.add(BlockInit.SOUL_STONE_WALL.get())
+			.add(BlockInit.SOUL_STONE_BRICK_WALL.get())
+			.add(BlockInit.SOUL_STONE_TILES_WALL.get())
+			.add(BlockInit.SOUL_COBBLESTONE_WALL.get())
+			.add(BlockInit.COBBLED_GRANITE_WALL.get())
+			.add(BlockInit.COBBLED_BLACKSTONE_WALL.get())
+			.add(BlockInit.COBBLED_DIORITE_WALL.get())
+			.add(BlockInit.COBBLED_CALCITE_WALL.get())
+			.add(BlockInit.MOSSY_COBBLED_DEEPSLATE_WALL.get())
+			.add(BlockInit.MOSSY_DEEPSLATE_BRICK_WALL.get());
 
 		tag(BlockTags.BEACON_BASE_BLOCKS)
 			.add(BlockInit.BABULYMN_BLOCK.get())
@@ -186,7 +203,8 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.addTag(AlloysTags.Blocks.C_ORES_MITHRIL_BLOCK)
 			.add(BlockInit.FOXITE_BLOCK.get())
 			.add(BlockInit.ELECTRUM_BLOCK.get())
-			.add(BlockInit.MITHRIL_BLOCK.get());
+			.add(BlockInit.MITHRIL_BLOCK.get())
+			.add(BlockInit.RICH_BASALT.get());
 		tag(BlockTags.PIGLIN_REPELLENTS)
 			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK);
 		tag(BlockTags.IMPERMEABLE)
@@ -407,6 +425,30 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.SOUL_STONE.get())
 			.add(Blocks.SOUL_SOIL)
 			.add(Blocks.SOUL_SAND);
+		tag(AlloysTags.Blocks.SOUL_GRAVEL_REPLACEABLES)
+			.add(Blocks.SOUL_SAND)
+			.add(Blocks.NETHERRACK)
+			.add(Blocks.GRAVEL);
+		tag(AlloysTags.Blocks.SLATE_REPLACEABLES)
+			.add(Blocks.STONE)
+			.add(Blocks.COBBLESTONE)
+			.add(Blocks.DEEPSLATE)
+			.add(Blocks.COBBLED_DEEPSLATE)
+			.add(Blocks.DIORITE)
+			.add(Blocks.GRANITE)
+			.add(Blocks.ANDESITE)
+			.add(Blocks.DRIPSTONE_BLOCK)
+			.add(Blocks.GRAVEL)
+			.add(BlockInit.DEEP_GRAVEL.get());
+
+		tag(AlloysTags.Blocks.OREBERRY_SURVIVE)
+			.addTag(BlockTags.DIRT)
+			.addTag(BlockTags.SAND)
+			.addTag(BlockTags.BASE_STONE_OVERWORLD)
+			.addTag(Tags.Blocks.COBBLESTONES)
+			.addTag(Tags.Blocks.COBBLESTONES_DEEPSLATE)
+			.addTag(Tags.Blocks.STONES);
+
 
 
 		tag(AlloysTags.Blocks.SOPHIE_ORES_BLOCK)
@@ -617,7 +659,8 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.WHITE_LEADED_GLASS.get())
 			.add(BlockInit.LIGHT_GRAY_LEADED_GLASS.get())
 			.add(BlockInit.GRAY_LEADED_GLASS.get())
-			.add(BlockInit.BLACK_LEADED_GLASS.get());
+			.add(BlockInit.BLACK_LEADED_GLASS.get())
+			.add(BlockInit.BROWN_LEADED_GLASS.get());
 
 		tag(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_PANES_BLOCK)
 			.add(BlockInit.LEADED_GLASS_PANE.get())
@@ -637,7 +680,8 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.WHITE_LEADED_GLASS_PANE.get())
 			.add(BlockInit.LIGHT_GRAY_LEADED_GLASS_PANE.get())
 			.add(BlockInit.GRAY_LEADED_GLASS_PANE.get())
-			.add(BlockInit.BLACK_LEADED_GLASS_PANE.get());
+			.add(BlockInit.BLACK_LEADED_GLASS_PANE.get())
+			.add(BlockInit.BROWN_LEADED_GLASS_PANE.get());
 
 		tag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
 			.add(Blocks.LANTERN)

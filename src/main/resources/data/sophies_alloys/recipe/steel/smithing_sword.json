@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "steel",
 	"addition": {
-		"item": "sophies_alloys:steel_upgrade"
+		"tag": "c:plates/steel"
 	},
 	"base": {
-		"tag": "sophies_alloys:steel_upgradable/swords"
+		"tag": "sophies_alloys:upgrade_steel/swords"
 	},
 	"result": {
-		"item": "sophies_alloys:steel_sword"
+		"count": 1,
+		"id": "sophies_alloys:steel_sword"
+	},
+	"template": {
+		"item": "sophies_alloys:steel_upgrade"
 	}
 }

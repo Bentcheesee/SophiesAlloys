@@ -26,5 +26,7 @@ public class DataGenerators {
 		generator.addProvider(event.includeServer(), blockTagsProvider);
 		generator.addProvider(event.includeServer(), new AlloysItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
+		generator.addProvider(event.includeServer(), new AlloysDatapackProvider(packOutput, lookupProvider));
+
 	}
 }

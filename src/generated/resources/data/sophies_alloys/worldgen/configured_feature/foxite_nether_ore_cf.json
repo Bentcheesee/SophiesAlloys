@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.2,
+    "size": 12,
+    "targets": [
+      {
+        "state": {
+          "Name": "sophies_alloys:foxite_nether_ore"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "sophies_alloys:foxite_soul_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "sophies_alloys:soul_ore_replaceables"
+        }
+      }
+    ]
+  }
+}

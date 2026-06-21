@@ -1,19 +1,16 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"pattern": [
-		" n ",
-		"ntn",
-		" n "
-	],
-	"key": {
-		"n": {
-			"item": "sophies_alloys:silver_nugget"
+	"type": "minecraft:crafting_shapeless",
+	"group": "silver_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/silver"
 		},
-		"t": {
+		{
 			"item": "minecraft:torch"
 		}
-	},
+	],
 	"result": {
-		"id": "sophies_alloys:silver_lantern"
+		"id": "sophies_alloys:silver_lantern",
+		"count": 1
 	}
 }

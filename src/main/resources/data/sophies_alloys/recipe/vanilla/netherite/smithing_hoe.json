@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "netherite",
 	"addition": {
-		"item": "minecraft:netherite_upgrade_smithing_template"
+		"tag": "c:plates/netherite"
 	},
 	"base": {
-		"tag": "sophies_alloys:netherite_upgradable/hoes"
+		"tag": "sophies_alloys:upgrade_netherite/hoes"
 	},
 	"result": {
-		"item": "minecraft:netherite_hoe"
+		"count": 1,
+		"id": "minecraft:netherite_hoe"
+	},
+	"template": {
+		"item": "minecraft:netherite_upgrade_smithing_template"
 	}
 }

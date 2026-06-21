@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/unprocessed_babulymn_sheet"
+		"layer0": "sophies_alloys:item/create_materials/unprocessed_babulymn_sheet"
 	}
 }

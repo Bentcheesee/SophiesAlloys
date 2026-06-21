@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/growing_emerald"
+		"layer0": "sophies_alloys:item/create_materials/growing_emerald"
 	}
 }

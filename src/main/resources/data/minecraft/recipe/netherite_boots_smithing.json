@@ -1,15 +1,17 @@
 {
 	"type": "minecraft:smithing_transform",
+	"group": "netherite",
 	"addition": {
-		"item": "minecraft:netherite_ingot"
+		"tag": "c:plates/netherite"
 	},
 	"base": {
-		"tag": "sophies_alloys:netherite_upgradable/boots"
+		"tag": "sophies_alloys:upgrade_netherite/boots"
+	},
+	"result": {
+		"count": 1,
+		"id": "minecraft:netherite_boots"
 	},
 	"template": {
 		"item": "minecraft:netherite_upgrade_smithing_template"
-	},
-	"result": {
-		"id": "minecraft:netherite_boots"
 	}
 }

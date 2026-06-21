@@ -1,9 +1,9 @@
 package com.sophiecheese.alloys.datagen;
 
 import com.sophiecheese.alloys.SophiesAlloys;
-import com.sophiecheese.alloys.worldgen.AlloysBiomeModifiers;
-import com.sophiecheese.alloys.worldgen.AlloysConfiguredFeatures;
-import com.sophiecheese.alloys.worldgen.AlloysPlacedFeatures;
+import com.sophiecheese.alloys.datagen.worldgen.AlloysBiomeModifiers;
+import com.sophiecheese.alloys.datagen.worldgen.AlloysConfiguredFeatures;
+import com.sophiecheese.alloys.datagen.worldgen.AlloysPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

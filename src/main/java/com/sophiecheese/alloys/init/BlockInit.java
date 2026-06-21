@@ -1,6 +1,7 @@
 package com.sophiecheese.alloys.init;
 
 import com.sophiecheese.alloys.SophiesAlloys;
+import com.sophiecheese.alloys.block.DropExperiencePillarBlock;
 import com.sophiecheese.alloys.block.DustyLampBlock;
 import com.sophiecheese.alloys.block.OreberryBushBlock;
 import com.sophiecheese.alloys.block.WeakLeverBlock;
@@ -172,11 +173,11 @@ public class BlockInit {
 			.strength(45.0f, 30.0f).requiresCorrectToolForDrops()
 			.sound(SoundType.GILDED_BLACKSTONE)));
 	public static final DeferredBlock<Block> BASALT_MITHRIL_ORE = registerBlock("mithril_basalt_ore",
-		() -> new DropExperienceBlock(DEB_6_8, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ)
+		() -> new DropExperienceBlock(DEB_6_8, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY)
 			.strength(50.0f, 20.0f).requiresCorrectToolForDrops()
 			.sound(SoundType.GILDED_BLACKSTONE)));
 	public static final DeferredBlock<Block> RICH_BASALT = registerBlock("rich_basalt",
-		() -> new DropExperienceBlock(DEB_6_8, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ)
+		() -> new DropExperiencePillarBlock(DEB_6_8, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY)
 			.strength(6.0f, 5.0f).requiresCorrectToolForDrops()
 			.sound(SoundType.GILDED_BLACKSTONE)));
 	public static final DeferredBlock<Block> SOUL_MITHRIL_ORE = registerBlock("mithril_soul_ore",
@@ -319,12 +320,12 @@ public class BlockInit {
 	public static final DeferredBlock<Block> SOUL_COBBLESTONE_SLAB = registerBlock("soul_cobblestone_slab", () -> new SlabBlock(SOUL_COBBLES));
 	public static final DeferredBlock<Block> SOUL_COBBLESTONE_WALL = registerBlock("soul_cobblestone_wall", () -> new WallBlock(BlockBehaviour.Properties.ofLegacyCopy(SOUL_COBBLESTONE.get()).forceSolidOn()));
 
-	public static final DeferredBlock<Block> SOUL_GRAVEL = registerBlock("soul_gravel", () -> new ColoredFallingBlock(new ColorRGBA(28161008), BlockBehaviour.Properties.of()
+	public static final DeferredBlock<Block> SOUL_GRAVEL = registerBlock("soul_gravel", () -> new ColoredFallingBlock(new ColorRGBA(2693903), BlockBehaviour.Properties.of()
 		.strength(0.6f).mapColor(MapColor.COLOR_BROWN)
 		.sound(SoundType.GRAVEL).instrument(NoteBlockInstrument.COW_BELL)));
 
 //Slates
-public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slate", () -> new ColoredFallingBlock(new ColorRGBA(15151515), BlockBehaviour.Properties.of().mapColor(MapColor.CLAY)
+public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slate", () -> new ColoredFallingBlock(new ColorRGBA(5072466), BlockBehaviour.Properties.of().mapColor(MapColor.CLAY)
 	.strength(1.2f, 0.75f).requiresCorrectToolForDrops()
 	.sound(SoundType.DRIPSTONE_BLOCK)));
 //	public static final DeferredBlock<Block> SUSPICIOUS_SLATE = registerBlock("suspicious_slate", () -> new BrushableBlock(ROUGH_SLATE.get(),
@@ -380,17 +381,17 @@ public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slat
 	public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab", () -> new SlabBlock(DEEPSLATES));
 	public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofLegacyCopy(MOSSY_DEEPSLATE_BRICKS.get()).forceSolidOn()));
 
-	public static final DeferredBlock<Block> DEEP_GRAVEL = registerBlock("deep_gravel", () -> new ColoredFallingBlock(new ColorRGBA(8356741), BlockBehaviour.Properties.of()
+	public static final DeferredBlock<Block> DEEP_GRAVEL = registerBlock("deep_gravel", () -> new ColoredFallingBlock(new ColorRGBA(2700344), BlockBehaviour.Properties.of()
 		.strength(0.8f).mapColor(MapColor.DEEPSLATE)
 		.sound(SoundType.GRAVEL).instrument(NoteBlockInstrument.SNARE)));
-	public static final DeferredBlock<Block> DEEP_SAND = registerBlock("deep_sand", () -> new ColoredFallingBlock(new ColorRGBA(8356741), BlockBehaviour.Properties.of()
+	public static final DeferredBlock<Block> DEEP_SAND = registerBlock("deep_sand", () -> new ColoredFallingBlock(new ColorRGBA(2700344), BlockBehaviour.Properties.of()
 		.strength(0.6f).mapColor(MapColor.DEEPSLATE)
 		.sound(SoundType.SAND).instrument(NoteBlockInstrument.SNARE)));
 
-	public static final DeferredBlock<Block> BLACK_GRAVEL = registerBlock("black_gravel", () -> new ColoredFallingBlock(new ColorRGBA(8356741), BlockBehaviour.Properties.of()
+	public static final DeferredBlock<Block> BLACK_GRAVEL = registerBlock("black_gravel", () -> new ColoredFallingBlock(new ColorRGBA(1449255), BlockBehaviour.Properties.of()
 		.strength(0.8f, 0.4f).mapColor(MapColor.COLOR_BLACK)
 		.sound(SoundType.GRAVEL).instrument(NoteBlockInstrument.SNARE)));
-	public static final DeferredBlock<Block> BLACK_SAND = registerBlock("black_sand", () -> new ColoredFallingBlock(new ColorRGBA(8356741), BlockBehaviour.Properties.of()
+	public static final DeferredBlock<Block> BLACK_SAND = registerBlock("black_sand", () -> new ColoredFallingBlock(new ColorRGBA(1449255), BlockBehaviour.Properties.of()
 		.strength(0.6f, 0.3f).mapColor(MapColor.COLOR_BLACK)
 		.sound(SoundType.SAND).instrument(NoteBlockInstrument.SNARE)));
 
@@ -476,7 +477,7 @@ public static ToIntFunction<BlockState> dustyLight(int lightLevel) {
 
 //Leaded Quartz Glass
 	public static final DeferredBlock<Block> LEADED_QUARTZ_SAND = registerBlock("leaded_quartz_sand",
-		() -> new ColoredFallingBlock(new ColorRGBA(28161008), BlockBehaviour.Properties.ofFullCopy(Blocks.SAND).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)
+		() -> new ColoredFallingBlock(new ColorRGBA(13475394), BlockBehaviour.Properties.ofFullCopy(Blocks.SAND).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)
 			.strength(0.5f, 0.3f)));
 	public static final DeferredBlock<Block> LEADED_GLASS = registerBlock("leaded_quartz_glass",
 		() -> new LeadedQuartzGlassBlock(LQ_GLASS));

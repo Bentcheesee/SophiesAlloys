@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/crushed_silver"
+		"layer0": "sophies_alloys:item/silver/crushed_silver"
 	}
 }

@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "lagomite",
 	"addition": {
-		"item": "sophies_alloys:lagomite_upgrade"
+		"tag": "c:plates/lagomite"
 	},
 	"base": {
-		"tag": "sophies_alloys:lago_tung_upgradable/chestplates"
+		"tag": "sophies_alloys:upgrade_lago_tung/chestplates"
 	},
 	"result": {
-		"item": "sophies_alloys:lagomite_chestplate"
+		"count": 1,
+		"id": "sophies_alloys:lagomite_chestplate"
+	},
+	"template": {
+		"item": "sophies_alloys:lagomite_upgrade"
 	}
 }

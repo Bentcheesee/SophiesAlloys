@@ -1,18 +1,24 @@
 package com.sophiecheese.alloys.util;
 
 import com.sophiecheese.alloys.SophiesAlloys;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class AlloysTags {
 
 	public static class Blocks {
 	//Alloys Tags
+		public static final TagKey<Block> OREBERRY_SURVIVE = createBlockTag("oreberry_survive_on");
+
 		public static final TagKey<Block> SOUL_ORE_REPLACEABLES = createBlockTag("soul_ore_replaceables");
+		public static final TagKey<Block> SOUL_GRAVEL_REPLACEABLES = createBlockTag("soul_gravel_replaceables");
+		public static final TagKey<Block> SLATE_REPLACEABLES = createBlockTag("slate_replaceables");
 
 		public static final TagKey<Block> SOUL_STONE_ALL_BLOCK = createBlockTag("soul_stone/all");
 		public static final TagKey<Block> BLACKSTONE_ALL_BLOCK = createBlockTag("blackstone/all");
@@ -170,6 +176,7 @@ public class AlloysTags {
 		public static final TagKey<Item> CHUNKS_END_ITEM = createItemTag("chunks/end");
 		public static final TagKey<Item> CHUNKS_NETHER_ITEM = createItemTag("chunks/nether");
 		public static final TagKey<Item> CHUNKS_OVERWORLD_ITEM = createItemTag("chunks/overworld");
+		public static final TagKey<Item> CHUNKS_CONVERT_END_ITEM = createItemTag("chunks/convert_end");
 		public static final TagKey<Item> CHUNKS_CONVERT_SOUL_ITEM = createItemTag("chunks/convert_soul");
 		public static final TagKey<Item> CHUNKS_CONVERT_NETHERRACK_ITEM = createItemTag("chunks/convert_netherrack");
 		public static final TagKey<Item> CHUNKS_CONVERT_FREEZE_ITEM = createItemTag("chunks/convert_freeze");
@@ -332,6 +339,7 @@ public class AlloysTags {
 		public static final TagKey<Item> C_PLATE_NETHERITE_ITEM = createCommonItemTag("plates/netherite");
 		public static final TagKey<Item> C_PLATE_OBERITE_ITEM = createCommonItemTag("plates/oberite");
 		public static final TagKey<Item> C_PLATE_SILVER_ITEM = createCommonItemTag("plates/silver");
+		public static final TagKey<Item> C_PLATE_SLATE_ITEM = createCommonItemTag("plates/slate");
 		public static final TagKey<Item> C_PLATE_STEEL_ITEM = createCommonItemTag("plates/steel");
 		public static final TagKey<Item> C_PLATE_TUNGSTEN_ITEM = createCommonItemTag("plates/tungsten");
 
@@ -340,18 +348,24 @@ public class AlloysTags {
 		public static final TagKey<Item> C_DUST_BRASS_ITEM = createCommonItemTag("dusts/brass");
 		public static final TagKey<Item> C_DUST_COAL_ITEM = createCommonItemTag("dusts/coal");
 		public static final TagKey<Item> C_DUST_COPPER_ITEM = createCommonItemTag("dusts/copper");
+		public static final TagKey<Item> C_DUST_CRIMSON_COAL_ITEM = createCommonItemTag("dusts/crimson_coal");
 		public static final TagKey<Item> C_DUST_DIAMOND_ITEM = createCommonItemTag("dusts/diamond");
 		public static final TagKey<Item> C_DUST_ELECTRUM_ITEM = createCommonItemTag("dusts/electrum");
 		public static final TagKey<Item> C_DUST_EMERALD_ITEM = createCommonItemTag("dusts/emerald");
 		public static final TagKey<Item> C_DUST_END_STONE_ITEM = createCommonItemTag("dusts/end_stone");
 		public static final TagKey<Item> C_DUST_FLINT_ITEM = createCommonItemTag("dusts/flint");
 		public static final TagKey<Item> C_DUST_FOXITE_ITEM = createCommonItemTag("dusts/foxite");
+		public static final TagKey<Item> C_DUST_GOLD_ITEM = createCommonItemTag("dusts/gold");
+		public static final TagKey<Item> C_DUST_IRON_ITEM = createCommonItemTag("dusts/iron");
+		public static final TagKey<Item> C_DUST_JADE_ITEM = createCommonItemTag("dusts/jade");
 		public static final TagKey<Item> C_DUST_LAGOMITE_ITEM = createCommonItemTag("dusts/lagomite");
+		public static final TagKey<Item> C_DUST_LAPIS_ITEM = createCommonItemTag("dusts/lapis");
 		public static final TagKey<Item> C_DUST_LEAD_ITEM = createCommonItemTag("dusts/lead");
 		public static final TagKey<Item> C_DUST_LYCALITE_ITEM = createCommonItemTag("dusts/lycalite");
 		public static final TagKey<Item> C_DUST_MITHRIL_ITEM = createCommonItemTag("dusts/mithril");
 		public static final TagKey<Item> C_DUST_NETHERITE_ITEM = createCommonItemTag("dusts/netherite");
 		public static final TagKey<Item> C_DUST_OBERITE_ITEM = createCommonItemTag("dusts/oberite");
+		public static final TagKey<Item> C_DUST_QUINGUM_ITEM = createCommonItemTag("dusts/quingum");
 		public static final TagKey<Item> C_DUST_SILVER_ITEM = createCommonItemTag("dusts/silver");
 		public static final TagKey<Item> C_DUST_STEEL_ITEM = createCommonItemTag("dusts/steel");
 		public static final TagKey<Item> C_DUST_TRITONIUM_ITEM = createCommonItemTag("dusts/tritonium");
@@ -404,6 +418,17 @@ public class AlloysTags {
 		}
 		private static TagKey<Item> createSpecialItemTag(String namespace, String name) {
 			return ItemTags.create(ResourceLocation.fromNamespaceAndPath(namespace, name));
+		}
+	}
+
+	public static class Biomes {
+		public static final TagKey<Biome> IS_CORRUPT = createBiomeTag("is_corrupt");
+		public static final TagKey<Biome> BLACK_GRAVEL_SPAWNABLE = createBiomeTag("black_gravel_spawnable");
+		public static final TagKey<Biome> OREBERRY_SPAWNABLE = createBiomeTag("oreberry_spawnable");
+
+
+		private static TagKey<Biome> createBiomeTag(String name) {
+			return TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(SophiesAlloys.MOD_ID, name));
 		}
 	}
 }

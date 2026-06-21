@@ -1,12 +1,5 @@
 {
 	"type": "create:crushing",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
-		}
-	],
-    "processsingTime": 250,
 	"ingredients": [
 		{
 			"item": "sophies_alloys:lead_deepslate_ore"
@@ -14,12 +7,12 @@
 	],
 	"results": [
 		{
-			"id": "create:crushed_raw_lead",
+			"id": "sophies_alloys:crushed_lead",
 			"count": 2
 		},
 		{
 			"chance": 0.75,
-			"id": "create:crushed_raw_lead"
+			"id": "sophies_alloys:crushed_lead"
 		},
 		{
 			"chance": 0.75,

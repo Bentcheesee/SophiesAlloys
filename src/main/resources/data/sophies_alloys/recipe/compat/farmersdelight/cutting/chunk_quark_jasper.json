@@ -1,5 +1,4 @@
 {
-	"type": "farmersdelight:cutting",
 	"neoforge:conditions": [
 		{
 			"type": "neoforge:mod_loaded",
@@ -10,19 +9,27 @@
 			"modid": "quark"
 		}
 	],
+	"type": "farmersdelight:cutting",
 	"ingredients": [
 		{
 			"item": "quark:jasper"
 		}
 	],
-	"result": [
+	"tool": [
 		{
-			"item": "sophies_alloys:jasper_chunk",
-			"count": 4
+			"type": "farmersdelight:item_ability",
+			"action": "pickaxe_dig"
+		},
+		{
+			"tag": "minecraft:pickaxes"
 		}
 	],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "pickaxe_dig"
-	}
+	"result": [
+		{
+			"item": {
+				"count": 4,
+				"id": "sophies_alloys:jasper_chunk"
+			}
+		}
+	]
 }

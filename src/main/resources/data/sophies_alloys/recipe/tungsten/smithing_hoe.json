@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "tungsten",
 	"addition": {
-		"item": "sophies_alloys:tungsten_upgrade"
+		"tag": "c:plates/tungsten"
 	},
 	"base": {
-		"tag": "sophies_alloys:lago_tung_upgradable/hoes"
+		"tag": "sophies_alloys:upgrade_lago_tung/hoes"
 	},
 	"result": {
-		"item": "sophies_alloys:tungsten_hoe"
+		"count": 1,
+		"id": "sophies_alloys:tungsten_hoe"
+	},
+	"template": {
+		"item": "sophies_alloys:tungsten_upgrade"
 	}
 }

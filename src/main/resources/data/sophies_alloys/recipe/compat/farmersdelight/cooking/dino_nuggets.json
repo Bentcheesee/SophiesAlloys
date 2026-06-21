@@ -6,20 +6,18 @@
 			"modid": "farmersdelight"
 		}
 	],
-	"cookingtime": 300,
 	"experience": 0.8,
 	"ingredients": [
 		{
-			"tag": "c:raw_strange_meat"
+			"tag": "c:foods/strange_raw_meat"
 		},
 		{
-			"tag": "c:bread"
+			"tag": "c:foods/bread"
 		}
-
 	],
 	"recipe_book_tab": "meals",
 	"result": {
-		"item": "sophies_alloys:dino_nugget",
+		"id": "sophies_alloys:dino_nugget",
 		"count": 2
 	}
 }

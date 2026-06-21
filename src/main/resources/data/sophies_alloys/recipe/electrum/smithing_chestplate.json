@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "electrum",
 	"addition": {
-		"item": "sophies_alloys:electrum_upgrade"
+		"tag": "c:plates/electrum"
 	},
 	"base": {
-		"tag": "sophies_alloys:electrum_upgradable/chestplates"
+		"tag": "sophies_alloys:upgrade_electrum/chestplates"
 	},
 	"result": {
-		"item": "sophies_alloys:electrum_chestplate"
+		"count": 1,
+		"id": "sophies_alloys:electrum_chestplate"
+	},
+	"template": {
+		"item": "sophies_alloys:electrum_upgrade"
 	}
 }

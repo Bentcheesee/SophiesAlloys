@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "foxite",
 	"addition": {
-		"item": "sophies_alloys:foxite_upgrade"
+		"tag": "c:plates/foxite"
 	},
 	"base": {
-		"tag": "sophies_alloys:iron_foxite_upgradable/boots"
+		"tag": "sophies_alloys:upgrade_iron_foxite/boots"
 	},
 	"result": {
-		"item": "sophies_alloys:foxite_boots"
+		"count": 1,
+		"id": "sophies_alloys:foxite_boots"
+	},
+	"template": {
+		"item": "sophies_alloys:foxite_upgrade"
 	}
 }

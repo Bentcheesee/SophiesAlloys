@@ -24,6 +24,10 @@
 	"painting.sophies_alloys.splotch.title": "Splotch",
 	"painting.sophies_alloys.splotch.author": "Sophie",
 
+	"tag.block.sophies_alloys.oreberry_survive_on": "Oreberry Survive On",
+	"tag.item.sophies_alloys.leaded_quartz_glass": "Leaded Quartz Glass Blocks",
+	"tag.item.sophies_alloys.leaded_quartz_glass_panes": "Leaded Quartz Glass Panes",
+
 	
 //Dusts
 	"item.sophies_alloys.amethyst_dust": "Amethyst Dust",
@@ -360,12 +364,15 @@
 	"block.sophies_alloys.dusty_silver_lamp.desc": "Strongly Powered",
 	"block.sophies_alloys.dusty_steel_lamp": "Dusty Steel Lamp",
 	"block.sophies_alloys.dusty_steel_lamp.desc": "Moderately Powered",
+	"block.sophies_alloys.dusty_tritonium_lamp": "Dusty Tritonium Lamp",
+	"block.sophies_alloys.dusty_tritonium_lamp.desc": "Very Strongly Powered",
 	"block.sophies_alloys.dusty_tungsten_lamp": "Dusty Tungsten Lamp",
 	"block.sophies_alloys.dusty_tungsten_lamp.desc": "Strongly Powered",
 	
 	"block.sophies_alloys.foxite_bars": "Foxite Bars",
 	"block.sophies_alloys.lead_bars": "Lead Bars",
 	"block.sophies_alloys.silver_bars": "Silver Bars",
+	"block.sophies_alloys.tritonium_bars": "Tritonium Bars",
 	
 	"block.sophies_alloys.leaded_quartz_sand": "Leaded Quartz Enriched sand",
 
@@ -561,13 +568,14 @@
 	"item.sophies_alloys.chocolate_glazed_quingum": "Chocolate Glazed Quingum",
 	"item.sophies_alloys.chocolate_glazed_quingum.desc": "Haste (1:30)",
 	
-	"item.sophies_alloys.crushed_tungsten": "Crushed Tungsten",
-	"item.sophies_alloys.crushed_electrum": "Crushed Electrum",
-	"item.sophies_alloys.crushed_mithril": "Crushed Mithril",
-	"item.sophies_alloys.crushed_foxite": "Crushed Foxite",
-	"item.sophies_alloys.crushed_tritonium": "Crushed Tritonium",
-	"item.sophies_alloys.crushed_lagomite": "Crushed Lagomite",
-	"item.sophies_alloys.crushed_silver": "Crushed Silver",
+	"item.sophies_alloys.crushed_tungsten": "Crushed Raw Tungsten",
+	"item.sophies_alloys.crushed_electrum": "Crushed Raw Electrum",
+	"item.sophies_alloys.crushed_mithril": "Crushed Raw Mithril",
+	"item.sophies_alloys.crushed_foxite": "Crushed Raw Foxite",
+	"item.sophies_alloys.crushed_tritonium": "Crushed Raw Tritonium",
+	"item.sophies_alloys.crushed_lagomite": "Crushed Raw Lagomite",
+	"item.sophies_alloys.crushed_silver": "Crushed Raw Silver",
+	"item.sophies_alloys.crushed_lead": "Crushed Raw Lead",
 	"item.sophies_alloys.crushed_end_stone": "Crushed End Stone",
 	
 	"item.sophies_alloys.growing_emerald": "Growing Emerald",

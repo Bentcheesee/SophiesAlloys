@@ -8,7 +8,7 @@
 	],
 	"ingredients": [
 		{
-			"tag": "sophies_alloys:dusty_lamps/all_dusty_lamps"
+			"tag": "sophies_alloys:dusty_lamps/all"
 		},
 		{
 			"item": "create:brass_dust"

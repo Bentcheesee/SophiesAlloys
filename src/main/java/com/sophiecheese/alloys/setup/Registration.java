@@ -47,6 +47,7 @@ public class Registration {
 						output.accept(ItemInit.CRUSHED_ELECTRUM);
 						output.accept(ItemInit.CRUSHED_FOXITE);
 						output.accept(ItemInit.CRUSHED_LAGOMITE);
+						output.accept(ItemInit.CRUSHED_LEAD);
 						output.accept(ItemInit.CRUSHED_MITHRIL);
 						output.accept(ItemInit.CRUSHED_SILVER);
 						output.accept(ItemInit.CRUSHED_TUNGSTEN);

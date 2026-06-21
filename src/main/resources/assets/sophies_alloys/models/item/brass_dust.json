@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/brass_dust"
+		"layer0": "sophies_alloys:item/create_materials/brass_dust"
 	}
 }

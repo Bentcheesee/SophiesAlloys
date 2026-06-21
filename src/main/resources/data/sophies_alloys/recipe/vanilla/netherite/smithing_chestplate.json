@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "netherite",
 	"addition": {
-		"item": "minecraft:netherite_upgrade_smithing_template"
+		"tag": "c:plates/netherite"
 	},
 	"base": {
-		"tag": "sophies_alloys:netherite_upgradable/chestplates"
+		"tag": "sophies_alloys:upgrade_netherite/chestplates"
 	},
 	"result": {
-		"item": "minecraft:netherite_chestplate"
+		"count": 1,
+		"id": "minecraft:netherite_chestplate"
+	},
+	"template": {
+		"item": "minecraft:netherite_upgrade_smithing_template"
 	}
 }

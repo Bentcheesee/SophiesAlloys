@@ -1,0 +1,27 @@
+{
+  "feature": "sophies_alloys:foxite_heavy_overworld_ore_cf",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "above_bottom": 60
+        },
+        "min_inclusive": {
+          "absolute": -20
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -8,12 +8,12 @@
 	],
 	"ingredients": [
 		{
-			"tag": "c:cobblestone"
+			"tag": "c:cobblestones"
 		}
 	],
 	"results": [
 		{
-			"item": "sophies_alloys:soul_cobblestone"
+			"id": "sophies_alloys:soul_cobblestone"
 		}
 	]
 }

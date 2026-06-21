@@ -1,0 +1,45 @@
+{
+	"type": "create:compacting",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/copper"
+		},
+		{
+			"tag": "c:nuggets/copper"
+		},
+		{
+			"tag": "c:nuggets/copper"
+		},
+		{
+			"tag": "c:nuggets/copper"
+		},
+		{
+			"tag": "c:nuggets/copper"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:asurine_chunk"
+		},
+		{
+			"item": "sophies_alloys:asurine_chunk"
+		},
+		{
+			"item": "sophies_alloys:deep_gravel"
+		},
+		{
+			"type": "neoforge:single",
+			"amount": 500,
+			"fluid": "minecraft:water"
+		}
+	],
+	"results": [
+		{
+			"id": "create:veridium"
+		}
+	]
+}

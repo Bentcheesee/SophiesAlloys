@@ -1,0 +1,23 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:asurine_chunk"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:crimsite_chunk",
+			"chance": 0.875
+		},
+		{
+			"id": "sophies_alloys:lapis_shard",
+			"chance": 0.25
+		},
+		{
+			"id": "sophies_alloys:lapis_shard",
+			"chance": 0.125,
+			"count": 2
+		}
+	]
+}

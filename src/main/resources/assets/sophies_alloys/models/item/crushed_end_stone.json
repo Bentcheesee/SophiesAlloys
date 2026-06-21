@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/crushed_end_stone"
+		"layer0": "sophies_alloys:item/crushed_end_stone"
 	}
 }

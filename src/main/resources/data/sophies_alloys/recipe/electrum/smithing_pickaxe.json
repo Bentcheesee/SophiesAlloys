@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "electrum",
 	"addition": {
-		"item": "sophies_alloys:electrum_upgrade"
+		"tag": "c:plates/electrum"
 	},
 	"base": {
-		"item": "minecraft:golden_pickaxe"
+		"tag": "sophies_alloys:upgrade_electrum/pickaxes"
 	},
 	"result": {
-		"item": "sophies_alloys:electrum_pickaxe"
+		"count": 1,
+		"id": "sophies_alloys:electrum_pickaxe"
+	},
+	"template": {
+		"item": "sophies_alloys:electrum_upgrade"
 	}
 }

@@ -41,10 +41,16 @@ A very poorly made mod designed to revamp Minecraft's tool progression and expan
     ordering="NONE"
     side="BOTH"
 
-# Here's another dependency
 [[dependencies.sophies_alloys]]
-    modId="minecraft"
-    type="required"
-    versionRange="${minecraft_version_range}"
-    ordering="NONE"
-    side="BOTH"
+	modId="minecraft"
+	type="required"
+	versionRange="${minecraft_version_range}"
+	ordering="AFTER"
+	side="BOTH"
+
+[[dependencies.sophies_alloys]]
+	modId="create"
+	type="required"
+	versionRange="${minecraft_version_range}"
+	ordering="AFTER"
+	side="BOTH"

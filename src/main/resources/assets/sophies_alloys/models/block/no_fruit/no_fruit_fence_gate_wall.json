@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_fence_gate_wall",
-  "textures": {
-    "texture": "sophies_alloys:block/no_fruit/no_fruit_planks"
-  }
-}

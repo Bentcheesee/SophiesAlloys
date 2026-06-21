@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "#minecraft:is_end",
-	"features": "sophies_alloys:lagomite_heavy_placed",
-	"step": "top_layer_modification"
-}

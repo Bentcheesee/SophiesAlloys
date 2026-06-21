@@ -23,7 +23,7 @@
 					"item": "sophies_alloys:unprocessed_netherite_sheet"
 				},
 				{
-					"item": "sophies_alloys:tiny_diamond_dust"
+					"tag": "c:dusts/diamond"
 				}
 			],
 			"results": [
@@ -46,7 +46,7 @@
 			]
 		}
 	],
-	"transitionalItem": {
+	"transitional_item": {
 		"id": "sophies_alloys:unprocessed_netherite_sheet"
 	}
 }

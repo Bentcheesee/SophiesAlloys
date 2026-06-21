@@ -1,0 +1,9 @@
+{
+  "values": [
+    "sophies_alloys:slate_sheet",
+    {
+      "id": "sophies_alloys:shale_sheet",
+      "required": false
+    }
+  ]
+}

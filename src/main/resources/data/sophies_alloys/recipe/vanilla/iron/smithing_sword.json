@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "iron",
 	"addition": {
-		"item": "sophies_alloys:iron_upgrade"
+		"tag": "c:plates/iron"
 	},
 	"base": {
-		"tag": "sophies_alloys:iron_foxite_upgradable/swords"
+		"tag": "sophies_alloys:upgrade_iron_foxite/swords"
 	},
 	"result": {
-		"item": "minecraft:iron_sword"
+		"count": 1,
+		"id": "minecraft:iron_sword"
+	},
+	"template": {
+		"item": "sophies_alloys:iron_upgrade"
 	}
 }

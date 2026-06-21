@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "tritonium",
 	"addition": {
-		"item": "sophies_alloys:tritonium_nugget"
+		"tag": "c:nuggets/tritonium"
 	},
 	"base": {
 		"item": "minecraft:lantern"
 	},
 	"result": {
-		"item": "sophies_alloys:tritonium_lantern"
+		"count": 1,
+		"id": "sophies_alloys:tritonium_lantern"
+	},
+	"template": {
+		"item": "minecraft:air"
 	}
 }

@@ -62,7 +62,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.LYCALITE_SWORD.get())
 			.add(ItemInit.SILVER_SWORD.get())
 			.add(ItemInit.STEEL_SWORD.get());
-		tag(ItemTags.SWORDS)
+		tag(ItemTags.HOES)
 			.add(ItemInit.ELECTRUM_HOE.get())
 			.add(ItemInit.FOXITE_HOE.get())
 			.add(ItemInit.LYCALITE_HOE.get())
@@ -296,10 +296,8 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_ORES_MITHRIL_ITEM)
 			.add(BlockInit.BASALT_MITHRIL_ORE.asItem())
 			.add(BlockInit.BLACKSTONE_MITHRIL_ORE.asItem())
-			.add(BlockInit.DEEPSLATE_MEAT_ORE.asItem())
 			.add(BlockInit.NETHER_MITHRIL_ORE.asItem())
-			.add(BlockInit.SOUL_MITHRIL_ORE.asItem())
-			.add(BlockInit.END_MEAT_ORE.asItem());
+			.add(BlockInit.SOUL_MITHRIL_ORE.asItem());
 		tag(AlloysTags.Items.C_ORES_QUINGUM_ITEM)
 			.add(BlockInit.QUINGUM_ORE.asItem())
 			.add(BlockInit.DEEPSLATE_QUINGUM_ORE.asItem());
@@ -471,69 +469,58 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addTag(AlloysTags.Items.C_DUST_BRASS_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_COAL_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_COPPER_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_CRIMSON_COAL_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_DIAMOND_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_ELECTRUM_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_EMERALD_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_END_STONE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_FLINT_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_FOXITE_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_IRON_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_GOLD_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_JADE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_LAGOMITE_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_LAPIS_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_LEAD_ITEM)
 			.add(ItemInit.LEADED_QUARTZ_DUST.get())
 			.addTag(AlloysTags.Items.C_DUST_LYCALITE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_MITHRIL_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_NETHERITE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_OBERITE_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_QUINGUM_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_SILVER_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_STEEL_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_TRITONIUM_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_TUNGSTEN_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_ZINC_ITEM);
-		tag(AlloysTags.Items.C_DUST_AMETHYST_ITEM)
-			.add(ItemInit.AMETHYST_DUST.get());
-		tag(AlloysTags.Items.C_DUST_BABULYMN_ITEM)
-			.add(ItemInit.BABULYMN_DUST.get());
-		tag(AlloysTags.Items.C_DUST_BRASS_ITEM)
-			.add(ItemInit.BRASS_DUST.get());
-		tag(AlloysTags.Items.C_DUST_COAL_ITEM)
-			.add(ItemInit.COAL_DUST.get());
-		tag(AlloysTags.Items.C_DUST_COPPER_ITEM)
-			.add(ItemInit.COPPER_DUST.get());
-		tag(AlloysTags.Items.C_DUST_DIAMOND_ITEM)
-			.add(ItemInit.DIAMOND_DUST.get())
-			.add(ItemInit.TINY_DIAMOND_DUST.get());
-		tag(AlloysTags.Items.C_DUST_ELECTRUM_ITEM)
-			.add(ItemInit.ELECTRUM_DUST.get());
-		tag(AlloysTags.Items.C_DUST_EMERALD_ITEM)
-			.add(ItemInit.EMERALD_DUST.get());
-		tag(AlloysTags.Items.C_DUST_END_STONE_ITEM)
-			.add(ItemInit.ENDSTONE_DUST.get());
-		tag(AlloysTags.Items.C_DUST_FLINT_ITEM)
-			.add(ItemInit.FLINT_DUST.get());
-		tag(AlloysTags.Items.C_DUST_FOXITE_ITEM)
-			.add(ItemInit.FOXITE_DUST.get());
-		tag(AlloysTags.Items.C_DUST_LAGOMITE_ITEM)
-			.add(ItemInit.LAGOMITE_DUST.get());
-		tag(AlloysTags.Items.C_DUST_LEAD_ITEM)
-			.add(ItemInit.LEAD_DUST.get());
-		tag(AlloysTags.Items.C_DUST_LYCALITE_ITEM)
-			.add(ItemInit.LYCALITE_DUST.get());
-		tag(AlloysTags.Items.C_DUST_MITHRIL_ITEM)
-			.add(ItemInit.MITHRIL_DUST.get());
-		tag(AlloysTags.Items.C_DUST_NETHERITE_ITEM)
-			.add(ItemInit.NETHERITE_DUST.get());
-		tag(AlloysTags.Items.C_DUST_OBERITE_ITEM)
-			.add(ItemInit.OBERITE_DUST.get());
-		tag(AlloysTags.Items.C_DUST_SILVER_ITEM)
-			.add(ItemInit.SILVER_DUST.get());
-		tag(AlloysTags.Items.C_DUST_STEEL_ITEM)
-			.add(ItemInit.STEEL_DUST.get());
-		tag(AlloysTags.Items.C_DUST_TRITONIUM_ITEM)
-			.add(ItemInit.TRITONIUM_DUST.get());
-		tag(AlloysTags.Items.C_DUST_TUNGSTEN_ITEM)
-			.add(ItemInit.TUNGSTEN_DUST.get());
-		tag(AlloysTags.Items.C_DUST_ZINC_ITEM)
-			.add(ItemInit.ZINC_DUST.get());
+		tag(AlloysTags.Items.C_DUST_AMETHYST_ITEM).add(ItemInit.AMETHYST_DUST.get());
+		tag(AlloysTags.Items.C_DUST_BABULYMN_ITEM).add(ItemInit.BABULYMN_DUST.get());
+		tag(AlloysTags.Items.C_DUST_BRASS_ITEM).add(ItemInit.BRASS_DUST.get());
+		tag(AlloysTags.Items.C_DUST_COAL_ITEM).add(ItemInit.COAL_DUST.get());
+		tag(AlloysTags.Items.C_DUST_CRIMSON_COAL_ITEM).add(ItemInit.CRIMSON_COAL_DUST.get());
+		tag(AlloysTags.Items.C_DUST_COPPER_ITEM).add(ItemInit.COPPER_DUST.get());
+		tag(AlloysTags.Items.C_DUST_DIAMOND_ITEM).add(ItemInit.DIAMOND_DUST.get()).add(ItemInit.TINY_DIAMOND_DUST.get());
+		tag(AlloysTags.Items.C_DUST_ELECTRUM_ITEM).add(ItemInit.ELECTRUM_DUST.get());
+		tag(AlloysTags.Items.C_DUST_EMERALD_ITEM).add(ItemInit.EMERALD_DUST.get());
+		tag(AlloysTags.Items.C_DUST_END_STONE_ITEM).add(ItemInit.ENDSTONE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_FLINT_ITEM).add(ItemInit.FLINT_DUST.get());
+		tag(AlloysTags.Items.C_DUST_FOXITE_ITEM).add(ItemInit.FOXITE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_GOLD_ITEM).add(ItemInit.GOLD_DUST.get());
+		tag(AlloysTags.Items.C_DUST_IRON_ITEM).add(ItemInit.IRON_DUST.get());
+		tag(AlloysTags.Items.C_DUST_JADE_ITEM).add(ItemInit.JADE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_LAGOMITE_ITEM).add(ItemInit.LAGOMITE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_LAPIS_ITEM).add(ItemInit.LAPIS_DUST.get());
+		tag(AlloysTags.Items.C_DUST_LEAD_ITEM).add(ItemInit.LEAD_DUST.get());
+		tag(AlloysTags.Items.C_DUST_LYCALITE_ITEM).add(ItemInit.LYCALITE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_MITHRIL_ITEM).add(ItemInit.MITHRIL_DUST.get());
+		tag(AlloysTags.Items.C_DUST_NETHERITE_ITEM).add(ItemInit.NETHERITE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_OBERITE_ITEM).add(ItemInit.OBERITE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_QUINGUM_ITEM).add(ItemInit.QUINGUM_DUST.get());
+		tag(AlloysTags.Items.C_DUST_SILVER_ITEM).add(ItemInit.SILVER_DUST.get());
+		tag(AlloysTags.Items.C_DUST_STEEL_ITEM).add(ItemInit.STEEL_DUST.get());
+		tag(AlloysTags.Items.C_DUST_TRITONIUM_ITEM).add(ItemInit.TRITONIUM_DUST.get());
+		tag(AlloysTags.Items.C_DUST_TUNGSTEN_ITEM).add(ItemInit.TUNGSTEN_DUST.get());
+		tag(AlloysTags.Items.C_DUST_ZINC_ITEM).add(ItemInit.ZINC_DUST.get());
 
 		tag(Tags.Items.INGOTS)
 			.add(ItemInit.SILVER_INGOT.get())
@@ -572,6 +559,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.NETHERITE_PLATE.get())
 			.add(ItemInit.OBERITE_PLATE.get())
 			.add(ItemInit.SILVER_PLATE.get())
+			.add(ItemInit.SLATE_SHEET.get())
 			.add(ItemInit.STEEL_PLATE.get())
 			.add(ItemInit.TUNGSTEN_PLATE.get());
 		tag(AlloysTags.Items.C_PLATE_BABULYMN_ITEM).add(ItemInit.BABULYMN_PLATE.get());
@@ -584,6 +572,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_PLATE_NETHERITE_ITEM).add(ItemInit.NETHERITE_PLATE.get());
 		tag(AlloysTags.Items.C_PLATE_OBERITE_ITEM).add(ItemInit.OBERITE_PLATE.get());
 		tag(AlloysTags.Items.C_PLATE_SILVER_ITEM).add(ItemInit.SILVER_PLATE.get());
+		tag(AlloysTags.Items.C_PLATE_SLATE_ITEM).add(ItemInit.SLATE_SHEET.get()).addOptional(internal("shale_sheet"));
 		tag(AlloysTags.Items.C_PLATE_STEEL_ITEM).add(ItemInit.STEEL_PLATE.get());
 		tag(AlloysTags.Items.C_PLATE_TUNGSTEN_ITEM).add(ItemInit.TUNGSTEN_PLATE.get());
 
@@ -637,11 +626,11 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_SHARD_AMETHYST_ITEM).add(Items.AMETHYST_SHARD);
 		tag(AlloysTags.Items.C_SHARD_DIAMOND_ITEM)
 			.add(ItemInit.DIAMOND_SHARD.get())
-			.addOptional(dreams("diamond_shard"));
+			.addOptional(external("dndesires", "diamond_shard"));
 		tag(AlloysTags.Items.C_SHARD_EMERALD_ITEM).add(ItemInit.EMERALD_SHARD.get());
 		tag(AlloysTags.Items.C_SHARD_JADE_ITEM).add(ItemInit.JADE_SHARD.get());
 		tag(AlloysTags.Items.C_SHARD_LAPIS_ITEM).add(ItemInit.LAPIS_SHARD.get())
-			.addOptional(dreams("lapis_lazuli_shard"));
+			.addOptional(external("dndesires", "lapis_lazuli_shard"));
 		tag(AlloysTags.Items.C_SHARD_QUINGUM_ITEM).add(ItemInit.QUINGUM_SHARD.get());
 
 
@@ -956,7 +945,8 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(BlockInit.WHITE_LEADED_GLASS.asItem())
 			.add(BlockInit.LIGHT_GRAY_LEADED_GLASS.asItem())
 			.add(BlockInit.GRAY_LEADED_GLASS.asItem())
-			.add(BlockInit.BLACK_LEADED_GLASS.asItem());
+			.add(BlockInit.BLACK_LEADED_GLASS.asItem())
+			.add(BlockInit.BROWN_LEADED_GLASS.asItem());
 
 		tag(AlloysTags.Items.LEADED_QUARTZ_GLASS_PANES_ITEM)
 			.add(BlockInit.LEADED_GLASS_PANE.asItem())
@@ -976,7 +966,8 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(BlockInit.WHITE_LEADED_GLASS_PANE.asItem())
 			.add(BlockInit.LIGHT_GRAY_LEADED_GLASS_PANE.asItem())
 			.add(BlockInit.GRAY_LEADED_GLASS_PANE.asItem())
-			.add(BlockInit.BLACK_LEADED_GLASS_PANE.asItem());
+			.add(BlockInit.BLACK_LEADED_GLASS_PANE.asItem())
+			.add(BlockInit.BROWN_LEADED_GLASS_PANE.asItem());
 
 		
 		tag(AlloysTags.Items.DUSTY_LAMPS_ITEM)
@@ -1102,6 +1093,20 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.DIORITE_CHUNK.get())
 			.add(ItemInit.GRANITE_CHUNK.get())
 			.addOptional(internal("jasper_chunk"));
+		tag(AlloysTags.Items.CHUNKS_CONVERT_END_ITEM)
+			.add(ItemInit.ANDESITE_CHUNK.get())
+			.add(ItemInit.ASURINE_CHUNK.get())
+			.add(ItemInit.CALCITE_CHUNK.get())
+			.add(ItemInit.COBBLESTONE_CHUNK.get())
+			.add(ItemInit.CRIMSITE_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.DIORITE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.add(ItemInit.LIMESTONE_CHUNK.get())
+			.add(ItemInit.TUFF_CHUNK.get())
+			.add(ItemInit.VERIDIUM_CHUNK.get())
+			.addOptional(internal("quarky_limestone_chunk"))
+			.addOptional(internal("jasper_chunk"));
 		tag(AlloysTags.Items.CHUNKS_CONVERT_NETHERRACK_ITEM)
 			.add(ItemInit.BASALT_CHUNK.get())
 			.add(ItemInit.DEEPSLATE_CHUNK.get())
@@ -1118,7 +1123,6 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addOptional(internal("quarky_limestone_chunk"));
 		tag(AlloysTags.Items.CHUNKS_CONVERT_BLACKSTONE_ITEM)
 			.add(ItemInit.BASALT_CHUNK.get())
-			.add(ItemInit.DEEPSLATE_CHUNK.get())
 			.add(ItemInit.NETHERRACK_CHUNK.get())
 			.add(ItemInit.SCORCHIA_CHUNK.get());
 
@@ -1333,6 +1337,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.CRUSHED_ELECTRUM.get())
 			.add(ItemInit.CRUSHED_FOXITE.get())
 			.add(ItemInit.CRUSHED_LAGOMITE.get())
+			.add(ItemInit.CRUSHED_LEAD.get())
 			.add(ItemInit.CRUSHED_MITHRIL.get())
 			.add(ItemInit.CRUSHED_SILVER.get())
 			.add(ItemInit.CRUSHED_TRITONIUM.get())
@@ -1355,9 +1360,6 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 	}
 	private static ResourceLocation create(String path) {
 		return ResourceLocation.fromNamespaceAndPath("create", path);
-	}
-	private static ResourceLocation dreams(String path) {
-		return ResourceLocation.fromNamespaceAndPath("dndesires", path);
 	}
 
 }

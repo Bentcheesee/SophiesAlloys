@@ -1,19 +1,16 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"pattern": [
-		" n ",
-		"ntn",
-		" n "
-	],
-	"key": {
-		"n": {
-			"item": "minecraft:iron_nugget"
+	"type": "minecraft:crafting_shapeless",
+	"group": "lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/iron"
 		},
-		"t": {
+		{
 			"item": "minecraft:torch"
 		}
-	},
+	],
 	"result": {
-		"id": "minecraft:lantern"
+		"id": "minecraft:lantern",
+		"count": 1
 	}
 }

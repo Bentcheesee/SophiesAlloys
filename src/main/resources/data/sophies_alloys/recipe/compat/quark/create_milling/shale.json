@@ -19,14 +19,14 @@
 	"results": [
 		{
 			"chance": 0.4,
-			"item": "minecraft:gravel"
+			"id": "minecraft:gravel"
 		},
 		{
 			"chance": 0.4,
-			"item": "sophies_alloys:shale_sheet"
+			"id": "sophies_alloys:shale_sheet"
 		},
 		{
-			"item": "sophies_alloys:shale_sheet",
+			"id": "sophies_alloys:shale_sheet",
 			"count": 2
 		}
 	]

@@ -26,9 +26,9 @@
 			"item": "sophies_alloys:slate_sheet"
 		},
 		{
+			"type": "neoforge:single",
 			"amount": 100,
-			"fluid": "minecraft:lava",
-			"nbt": {}
+			"fluid": "minecraft:lava"
 		}
 	],
 	"results": [

@@ -1,0 +1,27 @@
+{
+  "feature": "sophies_alloys:slate_hard_cf",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 7
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": 35
+        },
+        "min_inclusive": {
+          "absolute": -35
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

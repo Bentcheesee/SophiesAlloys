@@ -8,16 +8,16 @@
 	],
 	"ingredients": [
 		{
-			"tag": "sophies_alloys:chunks/convert/freeze"
+			"tag": "sophies_alloys:chunks/convert_freeze"
 		},
 		{
-			"tag": "sophies_alloys:chunks/convert/freeze"
+			"tag": "sophies_alloys:chunks/convert_freeze"
 		},
 		{
-			"tag": "sophies_alloys:chunks/convert/freeze"
+			"tag": "sophies_alloys:chunks/convert_freeze"
 		},
 		{
-			"tag": "sophies_alloys:chunks/convert/freeze"
+			"tag": "sophies_alloys:chunks/convert_freeze"
 		},
 		{
 			"item": "minecraft:packed_ice"

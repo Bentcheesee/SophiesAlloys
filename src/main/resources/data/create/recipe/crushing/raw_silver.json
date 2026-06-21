@@ -1,0 +1,18 @@
+{
+	"type": "create:crushing",
+    "processsingTime": 250,
+	"ingredients": [
+		{
+			"item": "sophies_alloys:raw_silver"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:crushed_silver"
+		},
+		{
+			"chance": 0.75,
+			"id": "create:experience_nugget"
+		}
+	]
+}

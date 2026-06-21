@@ -1,12 +1,5 @@
 {
 	"type": "create:crushing",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
-		}
-	],
-    "processsingTime": 250,
 	"ingredients": [
 		{
 			"item": "sophies_alloys:mithril_basalt_ore"
@@ -27,8 +20,9 @@
 			"count": 2
 		},
 		{
+			"id": "sophies_alloys:basalt_chunk",
 			"chance": 0.125,
-			"id": "minecraft:basalt"
+			"count": 3
 		}
 	]
 }

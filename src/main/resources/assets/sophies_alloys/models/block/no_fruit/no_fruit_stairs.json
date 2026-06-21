@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "sophies_alloys:block/no_fruit/no_fruit_planks",
-    "side": "sophies_alloys:block/no_fruit/no_fruit_planks",
-    "top": "sophies_alloys:block/no_fruit/no_fruit_planks"
-  }
-}

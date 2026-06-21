@@ -1,8 +1,9 @@
 {
 	"type": "minecraft:stonecutting",
 	"ingredient": {
-		"tag": "sophies_alloys:slate/full_slates"
+		"tag": "sophies_alloys:slate/full"
 	},
-	"result": "sophies_alloys:slate_tiles",
-	"count": 1
+	"result": {
+		"id": "sophies_alloys:slate_tiles"
+	}
 }

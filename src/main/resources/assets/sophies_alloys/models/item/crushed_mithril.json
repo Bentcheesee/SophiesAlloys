@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/crushed_mithril"
+		"layer0": "sophies_alloys:item/mithril/crushed_mithril"
 	}
 }

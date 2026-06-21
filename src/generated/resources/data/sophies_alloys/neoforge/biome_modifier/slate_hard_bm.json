@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "sophies_alloys:slate_hard_pf",
+  "step": "vegetal_decoration"
+}

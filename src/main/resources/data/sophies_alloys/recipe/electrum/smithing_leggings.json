@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "electrum",
 	"addition": {
-		"item": "sophies_alloys:electrum_upgrade"
+		"tag": "c:plates/electrum"
 	},
 	"base": {
-		"tag": "sophies_alloys:electrum_upgradable/leggings"
+		"tag": "sophies_alloys:upgrade_electrum/leggings"
 	},
 	"result": {
-		"item": "sophies_alloys:electrum_leggings"
+		"count": 1,
+		"id": "sophies_alloys:electrum_leggings"
+	},
+	"template": {
+		"item": "sophies_alloys:electrum_upgrade"
 	}
 }

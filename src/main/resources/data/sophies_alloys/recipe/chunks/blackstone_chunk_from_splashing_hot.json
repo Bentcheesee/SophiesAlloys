@@ -1,0 +1,13 @@
+{
+	"type": "create:splashing",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:hot_chunk"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:blackstone_chunk"
+		}
+	]
+}

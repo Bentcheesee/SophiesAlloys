@@ -6,7 +6,6 @@
 			"modid": "farmersdelight"
 		}
 	],
-	"cookingtime": 200,
 	"experience": 1.2,
 	"ingredients": [
 		{
@@ -18,9 +17,6 @@
 			},
 			{
 				"item": "sophies_alloys:seared_quingum"
-			},
-			{
-				"item": "sophies_alloys:quingum_mixture"
 			}
 		],
 		{
@@ -35,9 +31,9 @@
 	],
 	"recipe_book_tab": "meals",
 	"result":{
-		"item": "sophies_alloys:fancy_soup"
+		"id": "sophies_alloys:fancy_soup"
 	},
 	"container": {
-		"item": "minecraft:bowl"
+		"id": "minecraft:bowl"
 	}
 }

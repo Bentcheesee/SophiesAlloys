@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:smelting",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 0.7,
+	"group": "scorchia_chunk",
+	"ingredient": {
+		"item": "sophies_alloys:scoria_chunk"
+	},
+	"result": {
+		"id": "sophies_alloys:scorchia_chunk"
+	}
+}

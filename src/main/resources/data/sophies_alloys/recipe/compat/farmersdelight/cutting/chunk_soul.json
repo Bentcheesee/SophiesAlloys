@@ -1,29 +1,34 @@
 {
-	"type": "farmersdelight:cutting",
 	"neoforge:conditions": [
 		{
 			"type": "neoforge:mod_loaded",
 			"modid": "farmersdelight"
 		}
 	],
+	"type": "farmersdelight:cutting",
 	"ingredients": [
-		[
-			{
-				"item": "sophies_alloys:soul_stone"
-			},
-			{
-				"item": "sophies_alloys:soul_cobblestone"
-			}
-		]
+		{
+			"item": "sophies_alloys:soul_stone"
+		},
+		{
+			"item": "sophies_alloys:soul_cobblestone"
+		}
+	],
+	"tool": [
+		{
+			"type": "farmersdelight:item_ability",
+			"action": "pickaxe_dig"
+		},
+		{
+			"tag": "minecraft:pickaxes"
+		}
 	],
 	"result": [
 		{
-			"item": "sophies_alloys:soul_chunk",
-			"count": 4
+			"item": {
+				"count": 4,
+				"id": "sophies_alloys:soul_chunk"
+			}
 		}
-	],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "pickaxe_dig"
-	}
+	]
 }

@@ -14,14 +14,13 @@
 								{
 									"condition": "minecraft:match_tool",
 									"predicate": {
-										"enchantments": [
-											{
-												"enchantment": "minecraft:silk_touch",
-												"levels": {
-													"min": 1
+										"predicates": {
+											"minecraft:enchantments": [
+												{
+													"enchantments": "minecraft:silk_touch"
 												}
-											}
-										]
+											]
+										}
 									}
 								}
 							],
@@ -36,8 +35,8 @@
 										{
 											"chances": [
 												0.1,
-												0.14285715,
-												0.25,
+												0.15,
+												0.3,
 												1
 											],
 											"condition": "minecraft:table_bonus",

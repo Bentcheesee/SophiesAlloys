@@ -9,13 +9,6 @@
 	"ingredient": {
 		"tag": "c:plates/lycalite"
 	},
-	"loops": 2,
-	"results": [
-		{
-			"id": "sophies_alloys:abnormal_object",
-			"count": 2
-		}
-	],
 	"sequence": [
 		{
 			"type": "create:deploying",
@@ -87,7 +80,14 @@
 			]
 		}
 	],
-	"transitionalItem": {
+	"transitional_item": {
 		"id": "sophies_alloys:unprocessed_object"
-	}
+	},
+	"loops": 2,
+	"results": [
+		{
+			"id": "sophies_alloys:abnormal_object",
+			"count": 2
+		}
+	]
 }

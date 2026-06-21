@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "steel",
 	"addition": {
-		"item": "sophies_alloys:steel_upgrade"
+		"tag": "c:plates/steel"
 	},
 	"base": {
-		"tag": "sophies_alloys:steel_upgradable/pickaxes"
+		"tag": "sophies_alloys:upgrade_steel/pickaxes"
 	},
 	"result": {
-		"item": "sophies_alloys:steel_pickaxe"
+		"count": 1,
+		"id": "sophies_alloys:steel_pickaxe"
+	},
+	"template": {
+		"item": "sophies_alloys:steel_upgrade"
 	}
 }

@@ -1,14 +1,8 @@
 {
 	"type": "create:splashing",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
-		}
-	],
 	"ingredients": [
 		{
-			"tag": "c:leaded_quartz_stained_glass_panes"
+			"tag": "sophies_alloys:leaded_quartz_glass_stained_panes"
 		}
 	],
 	"results": [

@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "#minecraft:is_overworld",
-	"features": "sophies_alloys:silver_uniform_placed",
-	"step": "underground_ores"
-}

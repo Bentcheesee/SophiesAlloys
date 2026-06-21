@@ -1,0 +1,54 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:meadow",
+		"minecraft:plains",
+		"minecraft:badlands",
+		"minecraft:eroded_badlands",
+		"minecraft:wooded_badlands",
+		"minecraft:windswept_gravelly_hills",
+		"minecraft:old_growth_birch_forest",
+		"minecraft:dripstone_caves",
+		"minecraft:lush_caves",
+		{
+			"id": "terralith:savanna_badlands",
+			"required": false
+		},
+		{
+			"id": "terralith:cave/andesite_caves",
+			"required": false
+		},
+		{
+			"id": "terralith:cave/deep_caves",
+			"required": false
+		},
+		{
+			"id": "terralith:cave/diorite_caves",
+			"required": false
+		},
+		{
+			"id": "terralith:cave/granite_caves",
+			"required": false
+		},
+		{
+			"id": "terralith:cave/infested_caves",
+			"required": false
+		},
+		{
+			"id": "terralith:cave/tuff_caves",
+			"required": false
+		},
+		{
+			"id": "biomeswevegone:rugged_badlands",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:spider_nest",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:wasteland",
+			"required": false
+		}
+	]
+}

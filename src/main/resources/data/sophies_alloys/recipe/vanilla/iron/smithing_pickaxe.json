@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "iron",
 	"addition": {
-		"item": "sophies_alloys:iron_upgrade"
+		"tag": "c:plates/iron"
 	},
 	"base": {
-		"tag": "sophies_alloys:iron_foxite_upgradable/pickaxes"
+		"tag": "sophies_alloys:upgrade_iron_foxite/pickaxes"
 	},
 	"result": {
-		"item": "minecraft:iron_pickaxe"
+		"count": 1,
+		"id": "minecraft:iron_pickaxe"
+	},
+	"template": {
+		"item": "sophies_alloys:iron_upgrade"
 	}
 }

@@ -6,14 +6,9 @@
 		"l"
 	],
 	"key": {
-		"s": [
-			{
-				"tag": "c:shards/diamond"
-			},
-			{
-				"tag": "c:shards/emerald"
-			}
-		],
+		"s": {
+			"tag": "c:shards"
+		},
 		"l": {
 			"tag": "c:plates/lapis"
 		}

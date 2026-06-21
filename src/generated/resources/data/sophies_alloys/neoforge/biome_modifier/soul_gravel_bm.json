@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sophies_alloys:is_corrupt",
+  "features": "sophies_alloys:soul_gravel_pf",
+  "step": "underground_ores"
+}

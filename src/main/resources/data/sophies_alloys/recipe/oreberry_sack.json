@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "oreberry_crate",
+	"pattern": [
+		"fff",
+		"fff",
+		"fff"
+	],
+	"key": {
+		"f": {
+			"item": "sophies_alloys:oreberries"
+		}
+	},
+	"result": {
+		"id": "sophies_alloys:oreberry_crate"
+	}
+}

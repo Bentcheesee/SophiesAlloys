@@ -1,12 +1,5 @@
 {
 	"type": "create:crushing",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
-		}
-	],
-    "processsingTime": 250,
 	"ingredients": [
 		{
 			"item": "sophies_alloys:meat_ore"

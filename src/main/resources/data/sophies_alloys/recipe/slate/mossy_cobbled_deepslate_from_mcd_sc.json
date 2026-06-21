@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:stonecutting",
 	"ingredient": {
-		"tag": "sophies_alloys:full_mossy_cobbled_deepslates"
+		"tag": "sophies_alloys:mossy_deepslate/full"
 	},
 	"result": {
 		"id": "sophies_alloys:mossy_cobbled_deepslate"

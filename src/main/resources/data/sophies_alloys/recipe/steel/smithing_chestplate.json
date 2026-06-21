@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "steel",
 	"addition": {
-		"item": "sophies_alloys:steel_upgrade"
+		"tag": "c:plates/steel"
 	},
 	"base": {
-		"tag": "sophies_alloys:steel_upgradable/chestplates"
+		"tag": "sophies_alloys:upgrade_steel/chestplates"
 	},
 	"result": {
-		"item": "sophies_alloys:steel_chestplate"
+		"count": 1,
+		"id": "sophies_alloys:steel_chestplate"
+	},
+	"template": {
+		"item": "sophies_alloys:steel_upgrade"
 	}
 }

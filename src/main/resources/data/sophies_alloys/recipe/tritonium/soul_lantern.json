@@ -1,19 +1,16 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"pattern": [
-		" n ",
-		"ntn",
-		" n "
-	],
-	"key": {
-		"n": {
-			"item": "sophies_alloys:tritonium_nugget"
+	"type": "minecraft:crafting_shapeless",
+	"group": "tritonium_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/tritonium"
 		},
-		"t": {
+		{
 			"item": "minecraft:soul_torch"
 		}
-	},
+	],
 	"result": {
-		"id": "sophies_alloys:tritonium_soul_lantern"
+		"id": "sophies_alloys:tritonium_soul_lantern",
+		"count": 1
 	}
 }

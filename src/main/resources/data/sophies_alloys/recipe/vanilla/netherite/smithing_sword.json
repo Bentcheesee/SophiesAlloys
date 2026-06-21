@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "netherite",
 	"addition": {
-		"item": "minecraft:netherite_upgrade_smithing_template"
+		"tag": "c:plates/netherite"
 	},
 	"base": {
-		"tag": "sophies_alloys:netherite_upgradable/swords"
+		"tag": "sophies_alloys:upgrade_netherite/swords"
 	},
 	"result": {
-		"item": "minecraft:netherite_sword"
+		"count": 1,
+		"id": "minecraft:netherite_sword"
+	},
+	"template": {
+		"item": "minecraft:netherite_upgrade_smithing_template"
 	}
 }

@@ -1,0 +1,153 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:black_gravel",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"predicates": {
+									"minecraft:enchantments": [
+										{
+											"enchantments": "minecraft:silk_touch"
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:gold_nugget",
+							"conditions": [
+								{
+									"chances": [
+										0,
+										0.1,
+										0.25,
+										0.4
+									],
+									"condition": "minecraft:table_bonus",
+									"enchantment": "minecraft:fortune"
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"type": "minecraft:uniform",
+										"min": 1,
+										"max": 2
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"type": "minecraft:item",
+									"name": "minecraft:flint",
+									"weight": 3,
+									"conditions": [
+										{
+											"condition": "minecraft:random_chance",
+											"chance": 0.65
+										}
+									],
+									"functions": [
+										{
+											"function": "minecraft:set_count",
+											"count": {
+												"type": "minecraft:uniform",
+												"min": 1,
+												"max": 2
+											}
+										}
+									]
+								},
+								{
+									"type": "minecraft:item",
+									"name": "sophies_alloys:blackstone_chunk",
+									"weight": 4,
+									"functions": [
+										{
+											"function": "minecraft:set_count",
+											"count": {
+												"type": "minecraft:constant",
+												"value": 1
+											}
+										}
+									]
+								}
+							],
+							"conditions": [
+								{
+									"chances": [
+										0.15,
+										0.25,
+										0.35,
+										0.45
+									],
+									"condition": "minecraft:table_bonus",
+									"enchantment": "minecraft:fortune"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:flint",
+							"conditions": [],
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"type": "minecraft:constant",
+										"value": 1
+									}
+								}
+							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:survives_explosion"
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"predicates": {
+								"minecraft:enchantments": [
+									{
+										"enchantments": "minecraft:silk_touch"
+									}
+								]
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}

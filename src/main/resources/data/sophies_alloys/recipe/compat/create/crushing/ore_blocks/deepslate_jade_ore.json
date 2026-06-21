@@ -1,0 +1,26 @@
+{
+	"type": "create:crushing",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:jade_deepslate_ore"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:jade_gem",
+			"count": 2
+		},
+		{
+			"chance": 0.75,
+			"id": "sophies_alloys:jade_gem"
+		},
+		{
+			"chance": 0.75,
+			"id": "create:experience_nugget"
+		},
+		{
+			"chance": 0.125,
+			"id": "minecraft:cobbled_deepslate"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"type": "farmersdelight:cutting",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		}
+	],
+	"ingredients": [
+		{
+			"item": "minecraft:mossy_cobblestone"
+		}
+	],
+	"tool": [
+		{
+			"type": "farmersdelight:item_ability",
+			"action": "pickaxe_dig"
+		},
+		{
+			"tag": "minecraft:pickaxes"
+		}
+	],
+	"result": [
+		{
+			"item": {
+				"count": 4,
+				"id": "sophies_alloys:cobblestone_chunk"
+			}
+		},
+		{
+			"chance": 0.5,
+			"item": {
+				"id": "minecraft:vines"
+			}
+		}
+	]
+}

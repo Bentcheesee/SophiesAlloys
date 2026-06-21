@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/asurine_chunk"
+		"layer0": "sophies_alloys:item/create_materials/asurine_chunk"
 	}
 }

@@ -7,23 +7,28 @@
 		}
 	],
 	"ingredients": [
-		[
-			{
-				"item": "minecraft:diorite"
-			},
-			{
-				"item": "sophies_alloys:cobbled_diorite"
-			}
-		]
+		{
+			"item": "minecraft:diorite"
+		},
+		{
+			"item": "sophies_alloys:cobbled_diorite"
+		}
+	],
+	"tool": [
+		{
+			"type": "farmersdelight:item_ability",
+			"action": "pickaxe_dig"
+		},
+		{
+			"tag": "minecraft:pickaxes"
+		}
 	],
 	"result": [
 		{
-			"item": "sophies_alloys:diorite_chunk",
-			"count": 4
+			"item": {
+				"count": 4,
+				"id": "sophies_alloys:diorite_chunk"
+			}
 		}
-	],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "pickaxe_dig"
-	}
+	]
 }

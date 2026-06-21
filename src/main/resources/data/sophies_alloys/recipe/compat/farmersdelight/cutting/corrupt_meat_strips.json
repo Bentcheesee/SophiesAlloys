@@ -11,25 +11,38 @@
 			"item": "sophies_alloys:unknown_corrupt_meat"
 		}
 	],
-	"result": [
+	"tool": [
 		{
-			"item": "sophies_alloys:raw_meat_strip",
-			"count": 1
+			"type": "farmersdelight:item_ability",
+			"action": "knife_dig"
 		},
 		{
-			"item": "farmersdelight:chicken_cuts",
-			"chance": 0.2
-		},
-		{
-			"item": "minecraft:carrot",
-			"chance": 0.3
-		},
-		{
-			"item": "farmersdelight:salmon_slice",
-			"chance": 0.2
+			"tag": "c:tools/knife"
 		}
 	],
-	"tool": {
-		"tag": "c:tools/knives"
-	}
+	"result": [
+		{
+			"item": {
+				"id": "sophies_alloys:raw_meat_strip"
+			}
+		},
+		{
+			"chance": 0.2,
+			"item": {
+				"id": "farmersdelight:chicken_cuts"
+			}
+		},
+		{
+			"chance": 0.3,
+			"item": {
+				"id": "minecraft:carrot"
+			}
+		},
+		{
+			"chance": 0.2,
+			"item": {
+				"id": "farmersdelight:salmon_slice"
+			}
+		}
+	]
 }

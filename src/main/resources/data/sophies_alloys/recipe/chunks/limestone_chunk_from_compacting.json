@@ -1,0 +1,26 @@
+{
+	"type": "create:compacting",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:calcite_chunk"
+		},
+		{
+			"item": "sophies_alloys:cobblestone_chunk"
+		},
+		{
+			"item": "minecraft:bone_meal"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:limestone_chunk",
+			"count": 3
+		}
+	]
+}

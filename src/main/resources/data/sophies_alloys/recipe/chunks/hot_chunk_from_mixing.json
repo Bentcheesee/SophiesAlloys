@@ -1,0 +1,26 @@
+{
+	"type": "create:mixing",
+	"heat_requirement": "heated",
+	"ingredients": [
+		{
+			"tag": "sophies_alloys:chunks/convert_netherrack"
+		},
+		{
+			"item": "sophies_alloys:flint_dust"
+		},
+		{
+			"item": "sophies_alloys:flint_dust"
+		},
+		{
+			"type": "neoforge:single",
+			"amount": 200,
+			"fluid": "minecraft:lava"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:hot_chunk",
+			"count": 1
+		}
+	]
+}

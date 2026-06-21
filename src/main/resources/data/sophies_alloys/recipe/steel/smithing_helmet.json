@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "steel",
 	"addition": {
-		"item": "sophies_alloys:steel_upgrade"
+		"tag": "c:plates/steel"
 	},
 	"base": {
-		"tag": "sophies_alloys:steel_upgradable/helmets"
+		"tag": "sophies_alloys:upgrade_steel/helmets"
 	},
 	"result": {
-		"item": "sophies_alloys:steel_helmet"
+		"count": 1,
+		"id": "sophies_alloys:steel_helmet"
+	},
+	"template": {
+		"item": "sophies_alloys:steel_upgrade"
 	}
 }

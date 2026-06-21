@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sophies_alloys:item/create_compat/gabbro_chunk"
+		"layer0": "sophies_alloys:item/create_materials/gabbro_chunk"
 	}
 }

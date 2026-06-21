@@ -1,14 +1,8 @@
 {
 	"type": "create:splashing",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
-		}
-	],
 	"ingredients": [
 		{
-			"item": "create:crushed_raw_lead"
+			"item": "sophies_alloys:crushed_lead"
 		}
 	],
 	"results": [

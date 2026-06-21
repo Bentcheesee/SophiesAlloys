@@ -18,12 +18,12 @@
 	"processingTime": 200,
 	"results": [
 		{
-			"item": "sophies_alloys:frost_chunk",
+			"id": "sophies_alloys:frost_chunk",
 			"count": 2,
 			"chance": 0.75
 		},
 		{
-			"item": "sophies_alloys:frost_chunk",
+			"id": "sophies_alloys:frost_chunk",
 			"count": 1,
 			"chance": 0.4
 		}

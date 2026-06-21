@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "sophies_alloys:block/no_fruit/stripped_no_fruit_log",
-    "side": "sophies_alloys:block/no_fruit/stripped_no_fruit_log"
-  }
-}

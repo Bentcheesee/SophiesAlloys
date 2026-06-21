@@ -2,7 +2,7 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"tag": "sophies_alloys:dusty_lamps/all_dusty_lamps"
+			"tag": "sophies_alloys:dusty_lamps/all"
 		},
 		{
 			"item": "sophies_alloys:leaded_quartz_dust"

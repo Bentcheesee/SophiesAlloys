@@ -39,7 +39,7 @@ public class ItemInit {
 
 	public static final DeferredItem<Item> ENDSTONE_DUST = ITEMS.register("end_stone_dust",
 		() -> new Item(standardItem()));
-	public static final DeferredItem<Item> CRUSHED_ENDSTONE = ITEMS.register("crushed_endstone",
+	public static final DeferredItem<Item> CRUSHED_ENDSTONE = ITEMS.register("crushed_end_stone",
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> FLINT_DUST = ITEMS.register("flint_dust",
 		() -> new Item(standardItem()));
@@ -77,7 +77,7 @@ public class ItemInit {
 	public static final DeferredItem<Item> RAW_TUNGSTEN = ITEMS.register("raw_tungsten",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> CRUSHED_TUNGSTEN = ITEMS.register("crushed_tungsten",
-		() -> new Item(standardItem()));
+		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_DUST = ITEMS.register("tungsten_dust",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_INGOT = ITEMS.register("tungsten_ingot",
@@ -98,6 +98,8 @@ public class ItemInit {
 
 	public static final DeferredItem<Item> RAW_LEAD = ITEMS.register("raw_lead",
 		() -> new Item(standardItem()));
+	public static final DeferredItem<Item> CRUSHED_LEAD = ITEMS.register("crushed_lead",
+		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> LEAD_DUST = ITEMS.register("lead_dust",
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
@@ -108,7 +110,7 @@ public class ItemInit {
 	public static final DeferredItem<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> CRUSHED_MITHRIL = ITEMS.register("crushed_mithril",
-		() -> new Item(standardItem()));
+		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_DUST = ITEMS.register("mithril_dust",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
@@ -154,7 +156,7 @@ public class ItemInit {
 	public static final DeferredItem<Item> RAW_LAGOMITE = ITEMS.register("raw_lagomite",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> CRUSHED_LAGOMITE = ITEMS.register("crushed_lagomite",
-		() -> new Item(standardItem()));
+		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_DUST = ITEMS.register("lagomite_dust",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_INGOT = ITEMS.register("lagomite_ingot",
@@ -226,7 +228,7 @@ public class ItemInit {
 	public static final DeferredItem<Item> STEEL_PLATE = ITEMS.register("steel_sheet",
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> LAGOMITE_PLATE = ITEMS.register("lagomite_sheet",
-		() -> new Item(standardItem()));
+		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> OBERITE_PLATE = ITEMS.register("oberite_sheet",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> LYCALITE_PLATE = ITEMS.register("lycalite_sheet",
@@ -337,15 +339,15 @@ public class ItemInit {
 	public static final DeferredItem<Item> QUINGUM_MIXTURE = ITEMS.register("quingum_mixture",
 		() -> new QuingumBottleItem(true, quingumBottleItem().food(FoodItemProperties.PLAIN_MIXTURE)));
 	public static final DeferredItem<Item> OREBERRY_MIXTURE = ITEMS.register("oreberry_quingum_mixture",
-		() -> new OreberryQuingumBottleItem(true, standardItem().food(FoodItemProperties.OREBERRY_MIXTURE)));
+		() -> new OreberryQuingumBottleItem(true, quingumBottleItem().food(FoodItemProperties.OREBERRY_MIXTURE)));
 	public static final DeferredItem<Item> FRUIT_MIXTURE = ITEMS.register("fruit_quingum_mixture",
-		() -> new OreberryQuingumBottleItem(true, standardItem().food(FoodItemProperties.FRUIT_MIXTURE)));
+		() -> new OreberryQuingumBottleItem(true, quingumBottleItem().food(FoodItemProperties.FRUIT_MIXTURE)));
 	public static final DeferredItem<Item> GLOWBERRY_MIXTURE = ITEMS.register("glowberry_quingum_mixture",
-		() -> new OreberryQuingumBottleItem(true, standardItem().food(FoodItemProperties.GLOW_MIXTURE)));
+		() -> new OreberryQuingumBottleItem(true, quingumBottleItem().food(FoodItemProperties.GLOW_MIXTURE)));
 	public static final DeferredItem<Item> FUNKY_MIXTURE = ITEMS.register("funky_quingum_mixture",
-		() -> new OreberryQuingumBottleItem(true, standardItem().food(FoodItemProperties.FUNKY_MIXTURE)));
+		() -> new OreberryQuingumBottleItem(true, quingumBottleItem().food(FoodItemProperties.FUNKY_MIXTURE)));
 	public static final DeferredItem<Item> CORRUPT_MIXTURE = ITEMS.register("corrupt_quingum_mixture",
-		() -> new OreberryQuingumBottleItem(true, standardItem().food(FoodItemProperties.CORRUPT_MIXTURE)));
+		() -> new OreberryQuingumBottleItem(true, quingumBottleItem().food(FoodItemProperties.CORRUPT_MIXTURE)));
 
 	public static final DeferredItem<Item> QUINGUMMIES = ITEMS.register("plain_quingummies",
 		() -> new QuingummyItem(true, quingumBottleItem().food(FoodItemProperties.PLAIN_QUINGUMMIES)));
@@ -369,9 +371,9 @@ public class ItemInit {
 	public static final DeferredItem<Item> UNPROCESSED_LYCALITE_PLATE = ITEMS.register("unprocessed_lycalite_sheet",
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> UNPROCESSED_LAGOMITE_PLATE = ITEMS.register("unprocessed_lagomite_sheet",
-		() -> new Item(standardItem()));
+		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> UNPROCESSED_NETHERITE_PLATE = ITEMS.register("unprocessed_netherite_sheet",
-		() -> new Item(standardItem()));
+		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> UNPROCESSED_THING = ITEMS.register("unprocessed_thing",
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> UNPROCESSED_OBJECT = ITEMS.register("unprocessed_object",
@@ -419,19 +421,19 @@ public class ItemInit {
 		() -> new ArmorItem(SophieArmourMaterials.FOXITE, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(16))));
 
 	public static final DeferredItem<Item> LAGOMITE_PICKAXE = ITEMS.register("lagomite_pickaxe",
-		() -> new PickaxeItem(SophieToolTier.LAGOMITE, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LAGOMITE, 1F, -3.0F))));
+		() -> new PickaxeItem(SophieToolTier.LAGOMITE, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LAGOMITE, 1F, -3.0F)).fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_AXE = ITEMS.register("lagomite_axe",
-		() -> new AxeItem(SophieToolTier.LAGOMITE, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LAGOMITE, 6F, -3.1F))));
+		() -> new AxeItem(SophieToolTier.LAGOMITE, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LAGOMITE, 6F, -3.1F)).fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_SHOVEL = ITEMS.register("lagomite_shovel",
-		() -> new ShovelItem(SophieToolTier.LAGOMITE, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LAGOMITE, 1.5F, -3.0F))));
+		() -> new ShovelItem(SophieToolTier.LAGOMITE, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LAGOMITE, 1.5F, -3.0F)).fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_HELMET = ITEMS.register("lagomite_helmet",
-		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35))));
+		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35)).fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_CHESTPLATE = ITEMS.register("lagomite_chestplate",
-		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(35))));
+		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(35)).fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_LEGGINGS = ITEMS.register("lagomite_leggings",
-		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(35))));
+		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(35)).fireResistant()));
 	public static final DeferredItem<Item> LAGOMITE_BOOTS = ITEMS.register("lagomite_boots",
-		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(35))));
+		() -> new ArmorItem(SophieArmourMaterials.LAGOMITE, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(35)).fireResistant()));
 
 	public static final DeferredItem<Item> LEAD_PICKAXE = ITEMS.register("lead_pickaxe",
 		() -> new PickaxeItem(SophieToolTier.LEAD, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.LEAD, 1F, -3.0F))));
@@ -462,19 +464,19 @@ public class ItemInit {
 		() -> new ArmorItem(SophieArmourMaterials.LYCALITE, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(26))));
 
 	public static final DeferredItem<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
-		() -> new PickaxeItem(SophieToolTier.MITHRIL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.MITHRIL, 1F, -3.0F))));
+		() -> new PickaxeItem(SophieToolTier.MITHRIL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.MITHRIL, 1F, -3.0F)).fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",
-		() -> new AxeItem(SophieToolTier.MITHRIL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.MITHRIL, 6F, -3.1F))));
+		() -> new AxeItem(SophieToolTier.MITHRIL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.MITHRIL, 6F, -3.1F)).fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
-		() -> new HoeItem(SophieToolTier.MITHRIL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.MITHRIL, -2.0F, -1.0F))));
+		() -> new HoeItem(SophieToolTier.MITHRIL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.MITHRIL, -2.0F, -1.0F)).fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
-		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30))));
+		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30)).fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate",
-		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(30))));
+		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(30)).fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings",
-		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(30))));
+		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(30)).fireResistant()));
 	public static final DeferredItem<Item> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
-		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30))));
+		() -> new ArmorItem(SophieArmourMaterials.MITHRIL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30)).fireResistant()));
 
 	public static final DeferredItem<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
 		() -> new PickaxeItem(SophieToolTier.STEEL, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.STEEL, 1F, -3.0F))));
@@ -509,26 +511,26 @@ public class ItemInit {
 		() -> new ArmorItem(SophieArmourMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
 
 	public static final DeferredItem<Item> TUNGSTEN_PICKAXE = ITEMS.register("tungsten_pickaxe",
-		() -> new PickaxeItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, 1F, -3.0F))));
+		() -> new PickaxeItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, 1F, -3.0F)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_AXE = ITEMS.register("tungsten_axe",
-		() -> new AxeItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, 6F, -3.1F))));
+		() -> new AxeItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, 6F, -3.1F)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_SHOVEL = ITEMS.register("tungsten_shovel",
-		() -> new ShovelItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, 1.5F, -3.0F))));
+		() -> new ShovelItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, 1.5F, -3.0F)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_HOE = ITEMS.register("tungsten_hoe",
-		() -> new HoeItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, -2.0F, -1.0F))));
+		() -> new HoeItem(SophieToolTier.TUNGSTEN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.TUNGSTEN, -2.0F, -1.0F)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_HELMET = ITEMS.register("tungsten_helmet",
-		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(32))));
+		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(32)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_CHESTPLATE = ITEMS.register("tungsten_chestplate",
-		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(32))));
+		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(32)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_LEGGINGS = ITEMS.register("tungsten_leggings",
-		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(32))));
+		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(32)).fireResistant()));
 	public static final DeferredItem<Item> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots",
-		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(32))));
+		() -> new ArmorItem(SophieArmourMaterials.TUNGSTEN, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(32)).fireResistant()));
 
 	public static final DeferredItem<Item> BABULYMN_SHOVEL = ITEMS.register("babulymn_shovel",
-		() -> new ShovelItem(SophieToolTier.BABULYMN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.BABULYMN, 1.5F, -3.0F))));
+		() -> new ShovelItem(SophieToolTier.BABULYMN, new Item.Properties().attributes(ShovelItem.createAttributes(SophieToolTier.BABULYMN, 1.5F, -3.0F)).fireResistant()));
 	public static final DeferredItem<Item> BABULYMN_HELMET = ITEMS.register("babulymn_helmet",
-		() -> new ArmorItem(SophieArmourMaterials.BABULYMN, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+		() -> new ArmorItem(SophieArmourMaterials.BABULYMN, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16)).fireResistant()));
 
 
 
@@ -536,7 +538,7 @@ public class ItemInit {
 		return new Item.Properties();
 	}
 	public static Item.Properties quingumBottleItem() {
-		return new Item.Properties().craftRemainder(Items.GLASS_BOTTLE);
+		return new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(16);
 	}
 
     public static void register(IEventBus eventBus) {

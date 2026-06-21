@@ -7,10 +7,6 @@
 				"type": "neoforge:mod_loaded",
 				"modid": "exnihilosequentia"
 			}
-		},
-		{
-			"type": "neoforge:mod_loaded",
-			"modid": "create"
 		}
 	],
     "processsingTime": 250,
@@ -24,7 +20,7 @@
 			"item": "create:cinder_flour"
 		},
 		{
-			"chance": 0.5,
+			"chance": 0.25,
 			"item": "create:cinder_flour"
 		},
 		{

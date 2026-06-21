@@ -1,7 +1,6 @@
 package com.sophiecheese.alloys.setup;
 
 import com.sophiecheese.alloys.SophiesAlloys;
-import com.sophiecheese.alloys.datagen.AlloysItemTagProvider;
 import com.sophiecheese.alloys.init.FarmerCompat;
 import com.sophiecheese.alloys.init.QuarkCompat;
 import net.neoforged.fml.ModList;

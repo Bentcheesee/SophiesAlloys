@@ -1,0 +1,37 @@
+{
+	"type": "create:mixing",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:limestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:limestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:limestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:limestone_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "minecraft:yellow_dye"
+		},
+		{
+			"type": "neoforge:single",
+			"amount": 250,
+			"fluid": "minecraft:lava"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:ochrum_chunk",
+			"count": 6
+		}
+	]
+}

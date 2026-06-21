@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"cookingtime": 100,
+	"experience": 0.7,
+	"group": "scoria_chunk",
+	"ingredient": {
+		"item": "sophies_alloys:scoria_chunk"
+	},
+	"result": {
+		"id": "sophies_alloys:scorchia_chunk"
+	}
+}

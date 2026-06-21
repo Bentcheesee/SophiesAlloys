@@ -8,7 +8,7 @@
 	],
 	"ingredients": [
 		{
-			"tag": "c:bread"
+			"tag": "c:foods/bread"
 		},
 		{
 			"item": "sophies_alloys:oreberries"

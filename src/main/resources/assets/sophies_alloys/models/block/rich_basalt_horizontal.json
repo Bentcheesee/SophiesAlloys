@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "sophies_alloys:block/rich_basalt_top",
-    "side": "sophies_alloys:block/rich_basalt"
-  }
+	"parent": "minecraft:block/cube_column_horizontal",
+	"textures": {
+		"end": "sophies_alloys:block/rich_basalt_top",
+		"side": "sophies_alloys:block/rich_basalt"
+	}
 }

@@ -1,5 +1,4 @@
 {
-	"type": "farmersdelight:cutting",
 	"neoforge:conditions": [
 		{
 			"type": "neoforge:mod_loaded",
@@ -10,23 +9,33 @@
 			"modid": "quark"
 		}
 	],
+	"type": "farmersdelight:cutting",
 	"ingredients": [
 		{
 			"item": "quark:shale"
 		}
 	],
-	"result": [
+	"tool": [
 		{
-			"item": "sophies_alloys:shale_sheet",
-			"count": 3
+			"type": "farmersdelight:item_ability",
+			"action": "pickaxe_dig"
 		},
 		{
-			"item": "sophies_alloys:shale_sheet",
-			"chance": 0.5
+			"tag": "minecraft:pickaxes"
 		}
 	],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "pickaxe_dig"
-	}
+	"result": [
+		{
+			"item": {
+				"count": 3,
+				"id": "sophies_alloys:shale_sheet"
+			}
+		},
+		{
+			"chance": 0.5,
+			"item": {
+				"id": "sophies_alloys:shale_sheet"
+			}
+		}
+	]
 }

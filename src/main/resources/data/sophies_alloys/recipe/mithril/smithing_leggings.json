@@ -1,12 +1,17 @@
 {
-	"type": "minecraft:smithing",
+	"type": "minecraft:smithing_transform",
+	"group": "mithril",
 	"addition": {
-		"item": "sophies_alloys:mithril_upgrade"
+		"tag": "c:plates/mithril"
 	},
 	"base": {
-		"tag": "sophies_alloys:mithril_upgradable/leggings"
+		"tag": "sophies_alloys:upgrade_mithril/leggings"
 	},
 	"result": {
-		"item": "sophies_alloys:mithril_leggings"
+		"count": 1,
+		"id": "sophies_alloys:mithril_leggings"
+	},
+	"template": {
+		"item": "sophies_alloys:mithril_upgrade"
 	}
 }

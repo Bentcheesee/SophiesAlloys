@@ -4,10 +4,13 @@
 	"ingredients": [
 		{
 			"item": "minecraft:lapis_lazuli"
+		},
+		{
+			"item": "minecraft:lapis_lazuli"
 		}
 	],
 	"result": {
 		"id": "sophies_alloys:lapis_shard",
-		"count": 4
+		"count": 8
 	}
 }

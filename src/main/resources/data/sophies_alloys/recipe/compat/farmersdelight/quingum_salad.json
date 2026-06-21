@@ -8,7 +8,7 @@
 	],
 	"ingredients": [
 		{
-			"tag": "c:salad_ingredients"
+			"tag": "c:foods/leafy_green"
 		},
 		{
 			"item": "minecraft:carrot"

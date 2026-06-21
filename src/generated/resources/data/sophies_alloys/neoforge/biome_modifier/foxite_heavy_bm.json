@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "sophies_alloys:foxite_heavy_pf",
+  "step": "underground_ores"
+}

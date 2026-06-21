@@ -1,0 +1,48 @@
+{
+	"type": "create:mixing",
+	"heat_requirement": "heated",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/zinc"
+		},
+		{
+			"tag": "c:nuggets/zinc"
+		},
+		{
+			"tag": "c:nuggets/zinc"
+		},
+		{
+			"tag": "c:nuggets/zinc"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:tuff_chunk"
+		},
+		{
+			"item": "sophies_alloys:andesite_chunk"
+		},
+		{
+			"item": "sophies_alloys:andesite_chunk"
+		},
+		{
+			"item": "sophies_alloys:deep_gravel"
+		},
+		{
+			"item": "minecraft:lapis_lazuli"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:asurine_chunk",
+			"count": 6
+		}
+	]
+}

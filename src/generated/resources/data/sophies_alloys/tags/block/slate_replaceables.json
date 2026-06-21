@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:stone",
+    "minecraft:cobblestone",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:andesite",
+    "minecraft:dripstone_block",
+    "minecraft:gravel",
+    "sophies_alloys:deep_gravel"
+  ]
+}

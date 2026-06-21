@@ -1,0 +1,22 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "terralith:caves/mantle_caves",
+			"required": false
+		},
+		{
+			"id": "incendium:withered_forest",
+			"required": false
+		},
+		{
+			"id": "incendium:weeping_valley",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:withered_abyss",
+			"required": false
+		},
+		"minecraft:basalt_deltas"
+	]
+}
