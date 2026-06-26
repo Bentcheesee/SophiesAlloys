@@ -1,5 +1,6 @@
 {
 	"type": "create:crushing",
+	"processing_time": 200,
 	"ingredients": [
 		{
 			"tag": "sophies_alloys:blackstone/blocks"

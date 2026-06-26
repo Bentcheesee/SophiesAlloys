@@ -1,6 +1,6 @@
 {
 	"type": "create:crushing",
-    "processsingTime": 250,
+    "processsing_time": 250,
 	"ingredients": [
 		{
 			"item": "sophies_alloys:raw_silver"

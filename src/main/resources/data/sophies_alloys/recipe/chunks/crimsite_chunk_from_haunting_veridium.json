@@ -16,9 +16,9 @@
 			"count": 2
 		},
 		{
-			"id": "sophies_alloys:silver_nugget",
-			"chance": 0.225,
-			"count": 3
+			"id": "sophies_alloys:emerald_shard",
+			"chance": 0.725,
+			"count": 2
 		}
 	]
 }

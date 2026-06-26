@@ -1,0 +1,30 @@
+{
+	"type": "farmersdelight:cooking",
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "farmersdelight"
+		},
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "biomesoplenty"
+		}
+	],
+	"experience": 0.8,
+	"ingredients": [
+		{
+			"tag": "c:foods/strange_raw_meat"
+		},
+		{
+			"tag": "c:foods/dough"
+		},
+		{
+			"item": "biomesoplenty:blood_bucket"
+		}
+	],
+	"recipe_book_tab": "meals",
+	"result": {
+		"id": "sophies_alloys:dino_nugget_ketchup",
+		"count": 2
+	}
+}

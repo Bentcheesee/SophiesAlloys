@@ -487,6 +487,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addTag(AlloysTags.Items.C_DUST_MITHRIL_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_NETHERITE_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_OBERITE_ITEM)
+			.addTag(AlloysTags.Items.C_DUST_QUARTZ_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_QUINGUM_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_SILVER_ITEM)
 			.addTag(AlloysTags.Items.C_DUST_STEEL_ITEM)
@@ -515,6 +516,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_DUST_MITHRIL_ITEM).add(ItemInit.MITHRIL_DUST.get());
 		tag(AlloysTags.Items.C_DUST_NETHERITE_ITEM).add(ItemInit.NETHERITE_DUST.get());
 		tag(AlloysTags.Items.C_DUST_OBERITE_ITEM).add(ItemInit.OBERITE_DUST.get());
+		tag(AlloysTags.Items.C_DUST_QUARTZ_ITEM).add(ItemInit.QUARTZ_DUST.get());
 		tag(AlloysTags.Items.C_DUST_QUINGUM_ITEM).add(ItemInit.QUINGUM_DUST.get());
 		tag(AlloysTags.Items.C_DUST_SILVER_ITEM).add(ItemInit.SILVER_DUST.get());
 		tag(AlloysTags.Items.C_DUST_STEEL_ITEM).add(ItemInit.STEEL_DUST.get());
@@ -547,6 +549,12 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_INGOT_STEEL_ITEM).add(ItemInit.STEEL_INGOT.get());
 		tag(AlloysTags.Items.C_INGOT_TRITONIUM_ITEM).add(ItemInit.TRITONIUM_INGOT.get());
 		tag(AlloysTags.Items.C_INGOT_TUNGSTEN_ITEM).add(ItemInit.TUNGSTEN_INGOT.get());
+
+		tag(AlloysTags.Items.C_RODS_ITEM)
+			.add(ItemInit.FOXITE_HANDLE.get())
+			.add(ItemInit.OBERITE_HANDLE.get());
+		tag(AlloysTags.Items.C_ROD_FOXITE_ITEM).add(ItemInit.FOXITE_HANDLE.get());
+		tag(AlloysTags.Items.C_ROD_OBERITE_ITEM).add(ItemInit.OBERITE_HANDLE.get());
 
 		tag(AlloysTags.Items.C_PLATES_ITEM)
 			.add(ItemInit.BABULYMN_PLATE.get())
@@ -682,10 +690,8 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.FUNKY_QUINGUMMIES.get())
 			.add(ItemInit.CORRUPT_QUINGUMMIES.get())
 			.add(ItemInit.FLESHY_QUINGUMMIES.get());
-		if (CompatCheck.farmersPresent) {
-			tag(Tags.Items.FOODS_SOUP)
-				.addOptional(internal("fancy_soup"));
-		}
+		tag(Tags.Items.FOODS_SOUP)
+			.addOptional(internal("fancy_soup"));
 
 
 		tag(Tags.Items.DRINKS)
@@ -701,6 +707,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_LANTERNS_ITEM)
 			.add(Blocks.LANTERN.asItem())
 			.add(BlockInit.FOXITE_LANTERN.asItem())
+			.add(BlockInit.GOLD_LANTERN.asItem())
 			.add(BlockInit.NETHERITE_LANTERN.asItem())
 			.add(BlockInit.SILVER_LANTERN.asItem())
 			.add(BlockInit.TRITONIUM_LANTERN.asItem())
@@ -708,6 +715,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(AlloysTags.Items.C_SOUL_LANTERNS_ITEM)
 			.add(Blocks.SOUL_LANTERN.asItem())
 			.add(BlockInit.FOXITE_SOUL_LANTERN.asItem())
+			.add(BlockInit.GOLD_SOUL_LANTERN.asItem())
 			.add(BlockInit.NETHERITE_SOUL_LANTERN.asItem())
 			.add(BlockInit.SILVER_SOUL_LANTERN.asItem())
 			.add(BlockInit.TRITONIUM_SOUL_LANTERN.asItem())
@@ -721,6 +729,7 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(Tags.Items.CHAINS)
 			.add(Blocks.CHAIN.asItem())
 			.add(BlockInit.FOXITE_CHAIN.asItem())
+			.add(BlockInit.GOLD_CHAIN.asItem())
 			.add(BlockInit.NETHERITE_CHAIN.asItem())
 			.add(BlockInit.SILVER_CHAIN.asItem())
 			.add(BlockInit.TRITONIUM_CHAIN.asItem())

@@ -1,5 +1,6 @@
 {
 	"type": "create:crushing",
+	"processing_time": 200,
 	"ingredients": [
 		{
 			"item": "minecraft:cobbled_deepslate"
@@ -11,7 +12,7 @@
 		},
 		{
 			"id": "sophies_alloys:deepslate_chunk",
-			"chance": 0.2
+			"chance": 0.1
 		}
 	]
 }

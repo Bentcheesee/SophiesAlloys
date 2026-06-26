@@ -6,6 +6,10 @@
 			"modid": "farmersdelight"
 		}
 	],
+	"container": {
+		"count": 1,
+		"id": "minecraft:bowl"
+	},
 	"experience": 1.2,
 	"ingredients": [
 		{
@@ -31,9 +35,7 @@
 	],
 	"recipe_book_tab": "meals",
 	"result":{
+		"count": 1,
 		"id": "sophies_alloys:fancy_soup"
-	},
-	"container": {
-		"id": "minecraft:bowl"
 	}
 }

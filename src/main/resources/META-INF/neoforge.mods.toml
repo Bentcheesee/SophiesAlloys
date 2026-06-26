@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/Bentcheesee/BetterTables/issues"
 [[mods]] #mandatory
 
 modId="sophies_alloys"
-version="2.0.0"
+version="2.0.0 Beta 2"
 displayName="Sophie's Alloys"
 
 logoFile= "../sophiesalloys.png"

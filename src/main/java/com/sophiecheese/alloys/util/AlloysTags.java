@@ -327,6 +327,10 @@ public class AlloysTags {
 		public static final TagKey<Item> C_INGOT_TRITONIUM_ITEM = createCommonItemTag("ingots/tritonium");
 		public static final TagKey<Item> C_INGOT_TUNGSTEN_ITEM = createCommonItemTag("ingots/tungsten");
 
+		public static final TagKey<Item> C_RODS_ITEM = createCommonItemTag("rods");
+		public static final TagKey<Item> C_ROD_FOXITE_ITEM = createCommonItemTag("rods/foxite");
+		public static final TagKey<Item> C_ROD_OBERITE_ITEM = createCommonItemTag("rods/oberite");
+
 		public static final TagKey<Item> C_PLATES_ITEM = createCommonItemTag("plates");
 
 		public static final TagKey<Item> C_PLATE_BABULYMN_ITEM = createCommonItemTag("plates/babulymn");
@@ -365,6 +369,7 @@ public class AlloysTags {
 		public static final TagKey<Item> C_DUST_MITHRIL_ITEM = createCommonItemTag("dusts/mithril");
 		public static final TagKey<Item> C_DUST_NETHERITE_ITEM = createCommonItemTag("dusts/netherite");
 		public static final TagKey<Item> C_DUST_OBERITE_ITEM = createCommonItemTag("dusts/oberite");
+		public static final TagKey<Item> C_DUST_QUARTZ_ITEM = createCommonItemTag("dusts/quartz");
 		public static final TagKey<Item> C_DUST_QUINGUM_ITEM = createCommonItemTag("dusts/quingum");
 		public static final TagKey<Item> C_DUST_SILVER_ITEM = createCommonItemTag("dusts/silver");
 		public static final TagKey<Item> C_DUST_STEEL_ITEM = createCommonItemTag("dusts/steel");

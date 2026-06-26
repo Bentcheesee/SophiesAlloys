@@ -9,7 +9,7 @@
 			}
 		}
 	],
-    "processsingTime": 250,
+    "processsing_time": 250,
 	"ingredients": [
 		{
 			"item": "minecraft:netherrack"

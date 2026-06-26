@@ -1,5 +1,6 @@
 {
 	"type": "create:crushing",
+	"processing_time": 200,
 	"ingredients": [
 		{
 			"item": "sophies_alloys:meat_deepslate_ore"

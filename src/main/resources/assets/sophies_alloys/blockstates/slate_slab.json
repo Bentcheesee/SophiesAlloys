@@ -4,7 +4,7 @@
 			"model": "sophies_alloys:block/slate/slate_slab"
 		},
 		"type=double": {
-			"model": "sophies_alloys:block/slate/compressed_slate"
+			"model": "sophies_alloys:block/slate/slate"
 		},
 		"type=top": {
 			"model": "sophies_alloys:block/slate/slate_slab_top"

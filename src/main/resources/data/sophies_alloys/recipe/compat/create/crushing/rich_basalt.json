@@ -1,5 +1,6 @@
 {
 	"type": "create:crushing",
+	"processing_time": 300,
 	"ingredients": [
 		{
 			"item": "sophies_alloys:rich_basalt"

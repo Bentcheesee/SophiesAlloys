@@ -1,9 +1,14 @@
 {
 	"type": "create:haunting",
 	"ingredients": [
-		{
-			"item": "minecraft:moss_block"
-		}
+		[
+			{
+				"item": "minecraft:moss_block"
+			},
+			{
+				"tag": "sophies_alloys:moss_mush"
+			}
+		]
 	],
 	"results": [
 		{
