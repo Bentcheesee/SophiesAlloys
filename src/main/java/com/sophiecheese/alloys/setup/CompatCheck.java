@@ -1,6 +1,7 @@
 package com.sophiecheese.alloys.setup;
 
 import com.sophiecheese.alloys.SophiesAlloys;
+import com.sophiecheese.alloys.init.DecorCompat;
 import com.sophiecheese.alloys.init.FarmerCompat;
 import com.sophiecheese.alloys.init.QuarkCompat;
 import net.neoforged.fml.ModList;
@@ -8,6 +9,7 @@ import net.neoforged.fml.ModList;
 public class CompatCheck {
 	public static boolean farmersPresent = false;
 	public static boolean quarkPresent = false;
+	public static boolean decorPresent = false;
 	public static boolean saltPresent = false;
 
 	public static void setupModCompatPreInit() {
@@ -19,6 +21,9 @@ public class CompatCheck {
 
 			mod_id = "quark";
 			ModCompat(mod_id, QuarkCompat::setupCompat);
+
+			mod_id = "dndecor";
+			ModCompat(mod_id, DecorCompat::setupCompat);
 		}
 		catch (Throwable tossed) {
 			printErrorToLogs("classloading with " + mod_id + " broke something, idk");

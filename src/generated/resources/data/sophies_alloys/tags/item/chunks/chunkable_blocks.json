@@ -58,6 +58,14 @@
     {
       "id": "quark:myalite",
       "required": false
+    },
+    {
+      "id": "dndecor:gabbro",
+      "required": false
+    },
+    {
+      "id": "dndecor:dolomite",
+      "required": false
     }
   ]
 }

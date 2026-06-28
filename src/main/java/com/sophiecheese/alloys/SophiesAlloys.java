@@ -37,6 +37,9 @@ public class SophiesAlloys {
 		if(CompatCheck.quarkPresent){
 			QuarkCompat.register(modEventBus);
 		}
+		if(CompatCheck.decorPresent){
+			DecorCompat.register(modEventBus);
+		}
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

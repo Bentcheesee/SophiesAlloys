@@ -180,6 +180,10 @@ public class Registration {
 							output.accept(QuarkCompat.MYALITE_CHUNK);
 							output.accept(QuarkCompat.SHALE_SHEET);
 						}
+						if (CompatCheck.decorPresent) {
+							output.accept(DecorCompat.DOLOMITE_CHUNK);
+							output.accept(DecorCompat.GABBRO_CHUNK);
+						}
 
 						output.accept(ItemInit.UNPROCESSED_BABULYMN_PLATE);
 						output.accept(ItemInit.UNPROCESSED_LYCALITE_PLATE);

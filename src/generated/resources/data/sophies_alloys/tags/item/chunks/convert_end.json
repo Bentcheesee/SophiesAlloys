@@ -18,6 +18,14 @@
     {
       "id": "sophies_alloys:jasper_chunk",
       "required": false
+    },
+    {
+      "id": "sophies_alloys:gabbro_chunk",
+      "required": false
+    },
+    {
+      "id": "sophies_alloys:dolomite_chunk",
+      "required": false
     }
   ]
 }

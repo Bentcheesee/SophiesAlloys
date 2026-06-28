@@ -1039,7 +1039,9 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addOptional(internal("quarky_limestone_chunk"))
 			.addOptional(internal("jasper_chunk"))
 			.addOptional(internal("frost_chunk"))
-			.addOptional(internal("myalite_chunk"));
+			.addOptional(internal("myalite_chunk"))
+			.addOptional(internal("gabbro_chunk"))
+			.addOptional(internal("dolomite_chunk"));
 		tag(AlloysTags.Items.CHUNKABLES_ITEM)
 			.add(Blocks.ANDESITE.asItem())
 			.add(Blocks.COBBLESTONE.asItem())
@@ -1066,7 +1068,9 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addOptional(quark("limestone"))
 			.addOptional(quark("jasper"))
 			.addOptional(quark("perma_frost"))
-			.addOptional(quark("myalite"));
+			.addOptional(quark("myalite"))
+			.addOptional(external("dndecor", "gabbro"))
+			.addOptional(external("dndecor", "dolomite"));
 		tag(AlloysTags.Items.CHUNKS_END_ITEM)
 			.add(ItemInit.ERROR_CHUNK.get())
 			.addOptional(internal("myalite_chunk"));
@@ -1115,7 +1119,9 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.TUFF_CHUNK.get())
 			.add(ItemInit.VERIDIUM_CHUNK.get())
 			.addOptional(internal("quarky_limestone_chunk"))
-			.addOptional(internal("jasper_chunk"));
+			.addOptional(internal("jasper_chunk"))
+			.addOptional(internal("gabbro_chunk"))
+			.addOptional(internal("dolomite_chunk"));
 		tag(AlloysTags.Items.CHUNKS_CONVERT_NETHERRACK_ITEM)
 			.add(ItemInit.BASALT_CHUNK.get())
 			.add(ItemInit.DEEPSLATE_CHUNK.get())
@@ -1125,11 +1131,10 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.ANDESITE_CHUNK.get())
 			.add(ItemInit.CALCITE_CHUNK.get())
 			.add(ItemInit.COBBLESTONE_CHUNK.get())
-			.add(ItemInit.DEEPSLATE_CHUNK.get())
 			.add(ItemInit.DIORITE_CHUNK.get())
-			.add(ItemInit.GRANITE_CHUNK.get())
 			.add(ItemInit.LIMESTONE_CHUNK.get())
-			.addOptional(internal("quarky_limestone_chunk"));
+			.addOptional(internal("quarky_limestone_chunk"))
+			.addOptional(internal("dolomite_chunk"));
 		tag(AlloysTags.Items.CHUNKS_CONVERT_BLACKSTONE_ITEM)
 			.add(ItemInit.BASALT_CHUNK.get())
 			.add(ItemInit.NETHERRACK_CHUNK.get())

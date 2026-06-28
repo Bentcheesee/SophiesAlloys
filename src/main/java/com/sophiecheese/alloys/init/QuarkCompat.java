@@ -2,8 +2,6 @@ package com.sophiecheese.alloys.init;
 
 import com.mojang.logging.LogUtils;
 import com.sophiecheese.alloys.SophiesAlloys;
-import com.sophiecheese.alloys.item.BowlDescItem;
-import com.sophiecheese.alloys.item.FoodItemProperties;
 import com.sophiecheese.alloys.setup.CompatCheck;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
