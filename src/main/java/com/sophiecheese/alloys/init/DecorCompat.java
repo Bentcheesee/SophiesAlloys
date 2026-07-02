@@ -14,7 +14,7 @@ public class DecorCompat {
 	public static final DeferredRegister.Items DECOR_ITEMS = DeferredRegister.createItems(SophiesAlloys.MOD_ID);
 
 	public static void setupCompat() {
-		LOGGER.info("[Sophie's Alloys] Starting Compatibility for Design n Decor");
+		LOGGER.info("[Sophie's Alloys] Starting Compatibility for Design n' Decor");
 		CompatCheck.decorPresent = true;
 	}
 

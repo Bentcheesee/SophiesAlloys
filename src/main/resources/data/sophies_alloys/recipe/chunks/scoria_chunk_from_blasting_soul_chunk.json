@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:blasting",
 	"category": "misc",
-	"cookingtime": 100,
+	"cookingtime": 25,
 	"experience": 0.7,
 	"group": "scoria_chunk",
 	"ingredient": {

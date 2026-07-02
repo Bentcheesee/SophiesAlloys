@@ -20,6 +20,18 @@
 			"item": "minecraft:gravel"
 		},
 		{
+			"id": "sophies_alloys:flint_dust"
+		},
+		{
+			"id": "sophies_alloys:flint_dust"
+		},
+		{
+			"id": "sophies_alloys:flint_dust"
+		},
+		{
+			"id": "sophies_alloys:flint_dust"
+		},
+		{
 			"item": "minecraft:clay"
 		},
 		{
@@ -39,7 +51,7 @@
 		},
 		{
 			"type": "neoforge:single",
-			"amount": 100,
+			"amount": 150,
 			"fluid": "minecraft:lava"
 		}
 	],
