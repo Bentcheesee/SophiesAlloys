@@ -1,0 +1,132 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 6,
+				"max": 8
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tropical_fish",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cod",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:salmon",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:rotten_flesh",
+					"weight": 29,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": {
+					"type": "minecraft:uniform",
+					"min": 1,
+					"max": 2
+				}
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "string",
+					"weight": 4,
+					"conditions": [],
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "leather_boots",
+					"weight": 3,
+					"conditions": [],
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.05,
+								"max": 0.15
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bucket"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:fishing_rod",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.7,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

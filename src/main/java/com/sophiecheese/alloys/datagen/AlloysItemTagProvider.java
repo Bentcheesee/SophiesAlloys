@@ -586,6 +586,8 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 
 		tag(AlloysTags.Items.C_CRIMSON_COAL).add(ItemInit.CRIMSON_COAL.get());
 
+		tag(AlloysTags.Items.C_FLINT).add(ItemInit.STRANGE_FLINT.get()).add(Items.FLINT);
+
 		tag(Tags.Items.GEMS)
 			.add(ItemInit.QUINGUM_GEM.get())
 			.add(ItemInit.JADE_GEM.get());
@@ -1098,6 +1100,33 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.addOptional(internal("quarky_limestone_chunk"))
 			.addOptional(internal("jasper_chunk"))
 			.addOptional(internal("frost_chunk"));
+
+		tag(AlloysTags.Items.CHUNKS_OVERWORLD_ARCH_LOOT_ITEM)
+			.add(ItemInit.ANDESITE_CHUNK.get())
+			.add(ItemInit.ASURINE_CHUNK.get())
+			.add(ItemInit.COBBLESTONE_CHUNK.get())
+			.add(ItemInit.DEEPSLATE_CHUNK.get())
+			.add(ItemInit.DIORITE_CHUNK.get())
+			.add(ItemInit.GRANITE_CHUNK.get())
+			.add(ItemInit.LIMESTONE_CHUNK.get())
+			.add(ItemInit.TUFF_CHUNK.get())
+			.add(ItemInit.VERIDIUM_CHUNK.get())
+			.addOptional(internal("quarky_limestone_chunk"));
+		tag(AlloysTags.Items.CHUNKS_NETHER_ARCH_LOOT_ITEM)
+			.add(ItemInit.BASALT_CHUNK.get())
+			.add(ItemInit.BLACKSTONE_CHUNK.get())
+			.add(ItemInit.CRIMSITE_CHUNK.get())
+			.add(ItemInit.HOT_CHUNK.get())
+			.add(ItemInit.NETHERRACK_CHUNK.get())
+			.add(ItemInit.SCORCHIA_CHUNK.get())
+			.add(ItemInit.SCORIA_CHUNK.get())
+			.add(ItemInit.SOUL_CHUNK.get());
+		tag(AlloysTags.Items.CHUNKS_END_ARCH_LOOT_ITEM)
+			.add(ItemInit.ASURINE_CHUNK.get())
+			.add(ItemInit.ENDSTONE_CHUNK.get())
+			.add(ItemInit.ERROR_CHUNK.get())
+			.addOptional(internal("myalite_chunk"));
+
 		tag(AlloysTags.Items.CHUNKS_CONVERT_SOUL_ITEM)
 			.add(ItemInit.ANDESITE_CHUNK.get())
 			.add(ItemInit.CALCITE_CHUNK.get())

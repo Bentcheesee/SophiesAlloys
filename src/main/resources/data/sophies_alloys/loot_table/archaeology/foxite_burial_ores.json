@@ -1,0 +1,93 @@
+{
+	"type": "minecraft:archaeology",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coal",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 4
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:lead_ingot",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_ingot",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_ingot",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:crushed_foxite",
+					"weight": 8,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 2
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:crushed_lead",
+					"weight": 7,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 3
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:crushed_raw_iron",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 2
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:crushed_silver",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 3
+						}
+					]
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "sophies_alloys:chunks/overworld_archaeology_loot",
+					"expand": true,
+					"weight": 16,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 3
+						}
+					]
+				}
+			]
+		}
+	],
+	"random_sequence": "sophies_alloys:archaeology/foxite_burial_rich"
+}

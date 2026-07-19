@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "foxite_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/foxite"
+		},
+		{
+			"item": "minecraft:redstone_torch"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:foxite_powered_lantern",
+		"count": 1
+	}
+}

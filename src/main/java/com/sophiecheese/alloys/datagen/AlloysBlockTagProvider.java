@@ -699,6 +699,14 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.SILVER_SOUL_LANTERN.get())
 			.add(BlockInit.TRITONIUM_SOUL_LANTERN.get())
 			.add(BlockInit.TUNGSTEN_SOUL_LANTERN.get());
+		tag(AlloysTags.Blocks.C_POWERED_LANTERNS_BLOCK)
+			.add(BlockInit.FOXITE_POWERED_LANTERN.get())
+			.add(BlockInit.GOLD_POWERED_LANTERN.get())
+			.add(BlockInit.IRON_POWERED_LANTERN.get())
+			.add(BlockInit.NETHERITE_POWERED_LANTERN.get())
+			.add(BlockInit.SILVER_POWERED_LANTERN.get())
+			.add(BlockInit.TRITONIUM_POWERED_LANTERN.get())
+			.add(BlockInit.TUNGSTEN_POWERED_LANTERN.get());
 		tag(AlloysTags.Blocks.C_BARS_BLOCK)
 			.add(Blocks.IRON_BARS)
 			.add(BlockInit.FOXITE_BARS.get())
@@ -723,13 +731,15 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 		tag(AlloysTags.Blocks.CREATE_WRENCH_PICKUP)
 			.addTag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
 			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK)
+			.addTag(AlloysTags.Blocks.C_POWERED_LANTERNS_BLOCK)
 			.addTag(AlloysTags.Blocks.DUSTY_LAMPS_BLOCK)
 			.addTag(Tags.Blocks.CHAINS);
 		tag(AlloysTags.Blocks.CREATE_FAN_TRANSPARENT)
 			.addTag(Tags.Blocks.CHAINS)
 			.addTag(AlloysTags.Blocks.C_BARS_BLOCK)
 			.addTag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
-			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK);
+			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK)
+			.addTag(AlloysTags.Blocks.C_POWERED_LANTERNS_BLOCK);
 		tag(AlloysTags.Blocks.CREATE_HAUNTING_CATALYST)
 			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK);
 

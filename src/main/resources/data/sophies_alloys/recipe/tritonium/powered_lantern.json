@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "tritonium_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/tritonium"
+		},
+		{
+			"item": "minecraft:redstone_torch"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:tritonium_powered_lantern",
+		"count": 1
+	}
+}

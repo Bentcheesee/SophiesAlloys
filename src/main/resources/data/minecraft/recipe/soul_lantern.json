@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:crafting_shapeless",
-	"group": "lanterns",
+	"group": "iron_lanterns",
 	"ingredients": [
 		{
 			"tag": "c:nuggets/iron"

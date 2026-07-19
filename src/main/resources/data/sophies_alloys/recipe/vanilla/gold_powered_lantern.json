@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "gold_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/gold"
+		},
+		{
+			"item": "minecraft:redstone_torch"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:gold_powered_lantern",
+		"count": 1
+	}
+}

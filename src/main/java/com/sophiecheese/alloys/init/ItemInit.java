@@ -299,6 +299,8 @@ public class ItemInit {
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> FOXITE_HANDLE = ITEMS.register("foxite_handle",
 		() -> new Item(standardItem()));
+	public static final DeferredItem<Item> STRANGE_FLINT = ITEMS.register("strange_flint",
+		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> PENCIL = ITEMS.register("lead_pencil",
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> STIFFENED_LEAD = ITEMS.register("stiffened_lead",

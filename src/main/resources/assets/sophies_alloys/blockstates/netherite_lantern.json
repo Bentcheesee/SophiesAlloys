@@ -1,10 +1,10 @@
 {
 	"variants": {
 		"hanging=false": {
-			"model": "sophies_alloys:block/netherite_lantern"
+			"model": "sophies_alloys:block/lanterns/netherite_lantern"
 		},
 		"hanging=true": {
-			"model": "sophies_alloys:block/netherite_lantern_hanging"
+			"model": "sophies_alloys:block/lanterns/netherite_lantern_hanging"
 		}
 	}
 }

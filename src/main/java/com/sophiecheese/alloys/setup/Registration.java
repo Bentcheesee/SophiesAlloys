@@ -144,6 +144,7 @@ public class Registration {
 						output.accept(ItemInit.CRIMSON_COAL);
 						output.accept(ItemInit.LEADED_QUARTZ);
 						output.accept(ItemInit.PENCIL);
+						output.accept(ItemInit.STRANGE_FLINT);
 						output.accept(ItemInit.STIFFENED_LEAD);
 						output.accept(ItemInit.NUGGET_HUNK);
 						output.accept(ItemInit.NUGGET_CONGLOMERATE);
@@ -256,10 +257,18 @@ public class Registration {
 						output.accept(BlockInit.LYCALITE_BLOCK);
 						output.accept(BlockInit.OBERITE_BLOCK);
 
-						output.accept(BlockInit.DEEP_SAND);
-						output.accept(BlockInit.DEEP_GRAVEL);
-						output.accept(BlockInit.BLACK_SAND);
 						output.accept(BlockInit.BLACK_GRAVEL);
+						output.accept(BlockInit.BLACK_SAND);
+						output.accept(BlockInit.DEEP_GRAVEL);
+						output.accept(BlockInit.DEEP_SAND);
+						output.accept(BlockInit.SOUL_GRAVEL);
+						output.accept(BlockInit.SUSPICIOUS_BLACK_GRAVEL);
+						output.accept(BlockInit.SUSPICIOUS_BLACK_SAND);
+						output.accept(BlockInit.SUSPICIOUS_DEEP_GRAVEL);
+						output.accept(BlockInit.SUSPICIOUS_DEEP_SAND);
+						output.accept(BlockInit.SUSPICIOUS_SOUL_GRAVEL);
+						output.accept(BlockInit.SUSPICIOUS_SOUL_SOIL);
+						output.accept(BlockInit.SUSPICIOUS_SLATE);
 
 						output.accept(ItemInit.ELECTRUM_PICKAXE);
 						output.accept(ItemInit.ELECTRUM_AXE);
@@ -355,6 +364,8 @@ public class Registration {
 		() -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockInit.SLATE.get()))
 			.title(Component.translatable("creativetab.sophies_alloys.alloys_palettes"))
 			.displayItems((itemDisplayParameters, output) -> {
+
+
 				output.accept(BlockInit.SOUL_STONE);
 				output.accept(BlockInit.SOUL_STONE_SLAB);
 				output.accept(BlockInit.SOUL_STONE_STAIRS);
@@ -394,10 +405,7 @@ public class Registration {
 				output.accept(BlockInit.COBBLED_DIORITE_STAIRS);
 				output.accept(BlockInit.COBBLED_DIORITE_WALL);
 
-				output.accept(BlockInit.SOUL_GRAVEL);
-
 				output.accept(BlockInit.ROUGH_SLATE);
-			//	output.accept(BlockInit.SUSPICIOUS_SLATE);
 				output.accept(BlockInit.SLATE);
 				output.accept(BlockInit.SLATE_SLAB);
 				output.accept(BlockInit.SLATE_STAIRS);
@@ -427,23 +435,28 @@ public class Registration {
 				output.accept(BlockInit.FOXITE_CHAIN);
 				output.accept(BlockInit.FOXITE_LANTERN);
 				output.accept(BlockInit.FOXITE_SOUL_LANTERN);
+				output.accept(BlockInit.FOXITE_POWERED_LANTERN);
 				output.accept(BlockInit.GOLD_CHAIN);
 				output.accept(BlockInit.GOLD_LANTERN);
 				output.accept(BlockInit.GOLD_SOUL_LANTERN);
+				output.accept(BlockInit.GOLD_POWERED_LANTERN);
+				output.accept(BlockInit.IRON_POWERED_LANTERN);
 				output.accept(BlockInit.NETHERITE_CHAIN);
 				output.accept(BlockInit.NETHERITE_LANTERN);
 				output.accept(BlockInit.NETHERITE_SOUL_LANTERN);
+				output.accept(BlockInit.NETHERITE_POWERED_LANTERN);
 				output.accept(BlockInit.SILVER_CHAIN);
 				output.accept(BlockInit.SILVER_LANTERN);
 				output.accept(BlockInit.SILVER_SOUL_LANTERN);
+				output.accept(BlockInit.SILVER_POWERED_LANTERN);
 				output.accept(BlockInit.TRITONIUM_CHAIN);
 				output.accept(BlockInit.TRITONIUM_LANTERN);
 				output.accept(BlockInit.TRITONIUM_SOUL_LANTERN);
-				output.accept(BlockInit.TUNGSTEN_LANTERN);
-				output.accept(BlockInit.TUNGSTEN_SOUL_LANTERN);
+				output.accept(BlockInit.TRITONIUM_POWERED_LANTERN);
 				output.accept(BlockInit.TUNGSTEN_CHAIN);
 				output.accept(BlockInit.TUNGSTEN_LANTERN);
 				output.accept(BlockInit.TUNGSTEN_SOUL_LANTERN);
+				output.accept(BlockInit.TUNGSTEN_POWERED_LANTERN);
 
 
 				output.accept(BlockInit.LEAD_BARS);

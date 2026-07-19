@@ -1,10 +1,7 @@
 package com.sophiecheese.alloys.init;
 
 import com.sophiecheese.alloys.SophiesAlloys;
-import com.sophiecheese.alloys.block.DropExperiencePillarBlock;
-import com.sophiecheese.alloys.block.DustyLampBlock;
-import com.sophiecheese.alloys.block.OreberryBushBlock;
-import com.sophiecheese.alloys.block.WeakLeverBlock;
+import com.sophiecheese.alloys.block.*;
 import com.sophiecheese.alloys.block.quartzglass.LeadedQuartzGlassBlock;
 import com.sophiecheese.alloys.block.quartzglass.LeadedQuartzGlassPaneBlock;
 import com.sophiecheese.alloys.block.quartzglass.StainedLeadedQuartzGlassBlock;
@@ -23,6 +20,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -78,8 +76,21 @@ public class BlockInit {
 
 	private static final BlockBehaviour.Properties LAMPS = BlockBehaviour.Properties.of().mapColor(MapColor.NONE)
 		.strength(1.2f).sound(SoundType.GLASS).emissiveRendering(BlockInit::always);
+	private static final BlockBehaviour.Properties LANTERNS = BlockBehaviour.Properties.of()
+		.mapColor(MapColor.METAL).forceSolidOn().pushReaction(PushReaction.DESTROY)
+		.strength(3.5F).requiresCorrectToolForDrops()
+		.sound(SoundType.LANTERN)
+		.noOcclusion();
+	private static final BlockBehaviour.Properties CHAINS = BlockBehaviour.Properties.of()
+		.forceSolidOn()
+		.strength(5.0F, 6.0F).requiresCorrectToolForDrops()
+		.sound(SoundType.CHAIN)
+		.noOcclusion().isViewBlocking(BlockInit::never);
+
 	private static final BlockBehaviour.Properties LQ_GLASS = BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(MapColor.NONE)
-		.strength(0.5f).sound(SoundType.GLASS).noOcclusion().isRedstoneConductor(BlockInit::always).isSuffocating(BlockInit::never).isViewBlocking(BlockInit::never);
+		.strength(0.5f)
+		.sound(SoundType.GLASS)
+		.noOcclusion().isRedstoneConductor(BlockInit::always).isSuffocating(BlockInit::never).isViewBlocking(BlockInit::never);
 
 	private static final UniformInt DEB_0_1 = UniformInt.of(0,1);
 	private static final UniformInt DEB_0_2 = UniformInt.of(0,2);
@@ -328,11 +339,6 @@ public class BlockInit {
 public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slate", () -> new ColoredFallingBlock(new ColorRGBA(5072466), BlockBehaviour.Properties.of().mapColor(MapColor.CLAY)
 	.strength(1.2f, 0.75f).requiresCorrectToolForDrops()
 	.sound(SoundType.DRIPSTONE_BLOCK)));
-//	public static final DeferredBlock<Block> SUSPICIOUS_SLATE = registerBlock("suspicious_slate", () -> new BrushableBlock(ROUGH_SLATE.get(),
-//		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED,
-//		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_GRAVEL).mapColor(MapColor.CLAY)
-//		.strength(1.3f, 0.1f)
-//		.sound(SoundType.DRIPSTONE_BLOCK)));
 	public static final DeferredBlock<Block> SLATE = registerBlock("slate", () -> new Block(SLATES));
 	public static final DeferredBlock<Block> SLATE_STAIRS = registerBlock("slate_stairs", () -> new StairBlock(SLATE.get().defaultBlockState(), SLATES));
 	public static final DeferredBlock<Block> SLATE_SLAB = registerBlock("slate_slab", () -> new SlabBlock(SLATES));
@@ -395,26 +401,71 @@ public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slat
 		.strength(0.6f, 0.3f).mapColor(MapColor.COLOR_BLACK)
 		.sound(SoundType.SAND).instrument(NoteBlockInstrument.SNARE)));
 
+	public static final DeferredBlock<Block> SUSPICIOUS_SLATE = registerBlock("suspicious_slate", () -> new SuspiciousBlock(ROUGH_SLATE.get(),
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_GRAVEL).mapColor(MapColor.CLAY)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_SAND)));
+	public static final DeferredBlock<Block> SUSPICIOUS_DEEP_GRAVEL = registerBlock("suspicious_deep_gravel", () -> new SuspiciousBlock(DEEP_GRAVEL.get(),
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_GRAVEL_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_GRAVEL).mapColor(MapColor.DEEPSLATE)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_GRAVEL)));
+	public static final DeferredBlock<Block> SUSPICIOUS_DEEP_SAND = registerBlock("suspicious_deep_sand", () -> new SuspiciousBlock(DEEP_SAND.get(),
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_SAND).mapColor(MapColor.DEEPSLATE)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_SAND)));
+	public static final DeferredBlock<Block> SUSPICIOUS_SOUL_GRAVEL = registerBlock("suspicious_soul_gravel", () -> new SuspiciousBlock(SOUL_GRAVEL.get(),
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_GRAVEL_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_GRAVEL).mapColor(MapColor.COLOR_BROWN)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_GRAVEL)));
+	public static final DeferredBlock<Block> SUSPICIOUS_SOUL_SOIL = registerBlock("suspicious_soul_soil", () -> new SuspiciousBlock(Blocks.SOUL_SOIL,
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_SAND).mapColor(MapColor.COLOR_BROWN)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_SAND)));
+	public static final DeferredBlock<Block> SUSPICIOUS_BLACK_GRAVEL = registerBlock("suspicious_black_gravel", () -> new SuspiciousBlock(BLACK_GRAVEL.get(),
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_GRAVEL_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_GRAVEL).mapColor(MapColor.COLOR_BLACK)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_GRAVEL)));
+	public static final DeferredBlock<Block> SUSPICIOUS_BLACK_SAND = registerBlock("suspicious_black_sand", () -> new SuspiciousBlock(BLACK_SAND.get(),
+		SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED,
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_SAND).mapColor(MapColor.COLOR_BLACK)
+			.strength(1.3f, 0.1f)
+			.sound(SoundType.SUSPICIOUS_SAND)));
+
 
 	// Chains and Lanterns
-	public static final DeferredBlock<Block> FOXITE_CHAIN = registerBlock("foxite_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-	public static final DeferredBlock<Block> FOXITE_LANTERN = registerBlock("foxite_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
-	public static final DeferredBlock<Block> FOXITE_SOUL_LANTERN = registerBlock("foxite_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_LANTERN)));
-	public static final DeferredBlock<Block> GOLD_CHAIN = registerBlock("gold_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-	public static final DeferredBlock<Block> GOLD_LANTERN = registerBlock("gold_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
-	public static final DeferredBlock<Block> GOLD_SOUL_LANTERN = registerBlock("gold_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_LANTERN)));
-	public static final DeferredBlock<Block> NETHERITE_CHAIN = registerBlock("netherite_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-	public static final DeferredBlock<Block> NETHERITE_LANTERN = registerBlock("netherite_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
-	public static final DeferredBlock<Block> NETHERITE_SOUL_LANTERN = registerBlock("netherite_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_LANTERN)));
-	public static final DeferredBlock<Block> SILVER_CHAIN = registerBlock("silver_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-	public static final DeferredBlock<Block> SILVER_LANTERN = registerBlock("silver_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
-	public static final DeferredBlock<Block> SILVER_SOUL_LANTERN = registerBlock("silver_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_LANTERN)));
-	public static final DeferredBlock<Block> TRITONIUM_CHAIN = registerBlock("tritonium_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-	public static final DeferredBlock<Block> TRITONIUM_LANTERN = registerBlock("tritonium_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
-	public static final DeferredBlock<Block> TRITONIUM_SOUL_LANTERN = registerBlock("tritonium_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_LANTERN)));
-	public static final DeferredBlock<Block> TUNGSTEN_CHAIN = registerBlock("tungsten_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
-	public static final DeferredBlock<Block> TUNGSTEN_LANTERN = registerBlock("tungsten_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
-	public static final DeferredBlock<Block> TUNGSTEN_SOUL_LANTERN = registerBlock("tungsten_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_LANTERN)));
+	public static ToIntFunction<BlockState> lanternLight() {
+		return (state) -> {return state.getValue(PoweredLanternBlock.LIT) ? 7 : 0;};}
+	public static final DeferredBlock<Block> FOXITE_CHAIN = registerBlock("foxite_chain", () -> new ChainBlock(CHAINS));
+	public static final DeferredBlock<Block> FOXITE_LANTERN = registerBlock("foxite_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> FOXITE_SOUL_LANTERN = registerBlock("foxite_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));
+	public static final DeferredBlock<Block> FOXITE_POWERED_LANTERN = registerBlock("foxite_powered_lantern", () -> new PoweredLanternBlock(LANTERNS.lightLevel(lanternLight())));
+	public static final DeferredBlock<Block> GOLD_CHAIN = registerBlock("gold_chain", () -> new ChainBlock(CHAINS));
+	public static final DeferredBlock<Block> GOLD_LANTERN = registerBlock("gold_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> GOLD_SOUL_LANTERN = registerBlock("gold_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));
+	public static final DeferredBlock<Block> GOLD_POWERED_LANTERN = registerBlock("gold_powered_lantern", () -> new PoweredLanternBlock(LANTERNS));
+	public static final DeferredBlock<Block> IRON_POWERED_LANTERN = registerBlock("iron_powered_lantern", () -> new PoweredLanternBlock(LANTERNS));
+	public static final DeferredBlock<Block> NETHERITE_CHAIN = registerBlock("netherite_chain", () -> new ChainBlock(CHAINS));
+	public static final DeferredBlock<Block> NETHERITE_LANTERN = registerBlock("netherite_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> NETHERITE_SOUL_LANTERN = registerBlock("netherite_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));
+	public static final DeferredBlock<Block> NETHERITE_POWERED_LANTERN = registerBlock("netherite_powered_lantern", () -> new PoweredLanternBlock(LANTERNS));
+	public static final DeferredBlock<Block> SILVER_CHAIN = registerBlock("silver_chain", () -> new ChainBlock(CHAINS));
+	public static final DeferredBlock<Block> SILVER_LANTERN = registerBlock("silver_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> SILVER_SOUL_LANTERN = registerBlock("silver_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));
+	public static final DeferredBlock<Block> SILVER_POWERED_LANTERN = registerBlock("silver_powered_lantern", () -> new PoweredLanternBlock(LANTERNS));
+	public static final DeferredBlock<Block> TRITONIUM_CHAIN = registerBlock("tritonium_chain", () -> new ChainBlock(CHAINS));
+	public static final DeferredBlock<Block> TRITONIUM_LANTERN = registerBlock("tritonium_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> TRITONIUM_SOUL_LANTERN = registerBlock("tritonium_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));
+	public static final DeferredBlock<Block> TRITONIUM_POWERED_LANTERN = registerBlock("tritonium_powered_lantern", () -> new PoweredLanternBlock(LANTERNS));
+	public static final DeferredBlock<Block> TUNGSTEN_CHAIN = registerBlock("tungsten_chain", () -> new ChainBlock(CHAINS));
+	public static final DeferredBlock<Block> TUNGSTEN_LANTERN = registerBlock("tungsten_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
+	public static final DeferredBlock<Block> TUNGSTEN_SOUL_LANTERN = registerBlock("tungsten_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));
+	public static final DeferredBlock<Block> TUNGSTEN_POWERED_LANTERN = registerBlock("tungsten_powered_lantern", () -> new PoweredLanternBlock(LANTERNS));
 // Bars
 	public static final DeferredBlock<Block> LEAD_BARS = registerBlock("lead_bars", () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS)));
 	public static final DeferredBlock<Block> FOXITE_BARS = registerBlock("foxite_bars", () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS)));

@@ -1,10 +1,10 @@
 {
 	"variants": {
 		"hanging=false": {
-			"model": "sophies_alloys:block/tritonium_lantern"
+			"model": "sophies_alloys:block/lanterns/tritonium_lantern"
 		},
 		"hanging=true": {
-			"model": "sophies_alloys:block/tritonium_lantern_hanging"
+			"model": "sophies_alloys:block/lanterns/tritonium_lantern_hanging"
 		}
 	}
 }

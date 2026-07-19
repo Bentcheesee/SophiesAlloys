@@ -19,7 +19,6 @@ public class SophieAlloysClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
         SophiesAlloys.LOGGER.info("I'm inside your walls {}.", Minecraft.getInstance().getUser().getName());
     }
 }

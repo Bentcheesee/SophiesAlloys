@@ -5,7 +5,7 @@
 			"tag": "sophies_alloys:chunks/all"
 		},
 		{
-			"item": "minecraft:flint"
+			"tag": "c:flints"
 		}
 	],
 	"result": {

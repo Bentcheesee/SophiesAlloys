@@ -8,6 +8,10 @@
 	"results": [
 		{
 			"id": "minecraft:soul_sand"
+		},
+		{
+			"id": "sophies_alloys:strange_flint",
+			"chance": 0.65
 		}
 	]
 }

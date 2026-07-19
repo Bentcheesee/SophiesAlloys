@@ -1,8 +1,13 @@
 package com.sophiecheese.alloys;
 
+import com.sophiecheese.alloys.entity.SuspiciousBlockBlockEntityRenderer;
 import com.sophiecheese.alloys.init.*;
 import com.sophiecheese.alloys.setup.CompatCheck;
 import com.sophiecheese.alloys.setup.Registration;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -30,6 +35,7 @@ public class SophiesAlloys {
         ItemInit.register(modEventBus);
 		BlockInit.register(modEventBus);
 
+		EntityInit.register(modEventBus);
 
 		if(CompatCheck.farmersPresent){
 			FarmerCompat.register(modEventBus);
@@ -49,4 +55,16 @@ public class SophiesAlloys {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
+
+	@EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
+	public static class ClientEvents {
+		@SubscribeEvent
+		public static void onClientSetup(FMLClientSetupEvent event) {
+		}
+
+		@SubscribeEvent
+		public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+			event.registerBlockEntityRenderer(EntityInit.SUSPICIOUS_BLOCK_ENTITY.get(), SuspiciousBlockBlockEntityRenderer::new);
+		}
+	}
 }

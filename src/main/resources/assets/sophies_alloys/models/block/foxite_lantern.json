@@ -1,8 +1,0 @@
-{
-	"parent": "block/template_lantern",
-	"textures": {
-		"lantern": "sophies_alloys:block/foxite/lantern",
-		"particle": "sophies_alloys:block/foxite/lantern",
-		"chain": "sophies_alloys:block/foxite/chain"
-	}
-}

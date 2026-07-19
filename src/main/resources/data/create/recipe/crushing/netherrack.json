@@ -1,14 +1,5 @@
 {
 	"type": "create:crushing",
-	"neoforge:conditions": [
-		{
-			"type": "neoforge:not",
-			"value": {
-				"type": "neoforge:mod_loaded",
-				"modid": "exnihilosequentia"
-			}
-		}
-	],
     "processsing_time": 250,
 	"ingredients": [
 		{

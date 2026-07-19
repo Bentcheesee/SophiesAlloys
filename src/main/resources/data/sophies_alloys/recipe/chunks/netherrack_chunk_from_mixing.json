@@ -15,6 +15,9 @@
 			"tag": "sophies_alloys:chunks/convert_netherrack"
 		},
 		{
+			"item": "sophies_alloys:strange_flint"
+		},
+		{
 			"item": "create:cinder_flour"
 		},
 		{

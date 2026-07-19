@@ -58,6 +58,7 @@ public class AlloysTags {
 		public static final TagKey<Block> C_BARS_BLOCK = createCommonBlockTag("bars");
 		public static final TagKey<Block> C_LANTERNS_BLOCK = createCommonBlockTag("lanterns");
 		public static final TagKey<Block> C_SOUL_LANTERNS_BLOCK = createCommonBlockTag("soul_lanterns");
+		public static final TagKey<Block> C_POWERED_LANTERNS_BLOCK = createCommonBlockTag("powered_lanterns");
 
 		public static final TagKey<Block> C_ORES_CRIMSON_COAL_BLOCK = createCommonBlockTag("ores/crimson_coal");
 		public static final TagKey<Block> C_ORES_ELECTRUM_BLOCK = createCommonBlockTag("ores/electrum");
@@ -176,6 +177,11 @@ public class AlloysTags {
 		public static final TagKey<Item> CHUNKS_END_ITEM = createItemTag("chunks/end");
 		public static final TagKey<Item> CHUNKS_NETHER_ITEM = createItemTag("chunks/nether");
 		public static final TagKey<Item> CHUNKS_OVERWORLD_ITEM = createItemTag("chunks/overworld");
+
+		public static final TagKey<Item> CHUNKS_OVERWORLD_ARCH_LOOT_ITEM = createItemTag("chunks/overworld_archaeology_loot");
+		public static final TagKey<Item> CHUNKS_NETHER_ARCH_LOOT_ITEM = createItemTag("chunks/nether_archaeology_loot");
+		public static final TagKey<Item> CHUNKS_END_ARCH_LOOT_ITEM = createItemTag("chunks/end_archaeology_loot");
+
 		public static final TagKey<Item> CHUNKS_CONVERT_END_ITEM = createItemTag("chunks/convert_end");
 		public static final TagKey<Item> CHUNKS_CONVERT_SOUL_ITEM = createItemTag("chunks/convert_soul");
 		public static final TagKey<Item> CHUNKS_CONVERT_NETHERRACK_ITEM = createItemTag("chunks/convert_netherrack");
@@ -301,6 +307,7 @@ public class AlloysTags {
 		public static final TagKey<Item> C_STORAGE_TUNGSTEN_RAW_ITEM = createCommonItemTag("storage_blocks/raw_tungsten");
 
 		public static final TagKey<Item> C_CRIMSON_COAL = createCommonItemTag("crimson_coals");
+		public static final TagKey<Item> C_FLINT = createCommonItemTag("flints");
 
 		public static final TagKey<Item> C_GEMS_JADE = createCommonItemTag("gems/jade");
 		public static final TagKey<Item> C_GEMS_QUINGUM = createCommonItemTag("gems/quingum");

@@ -1,10 +1,10 @@
 {
 	"variants": {
 		"hanging=false": {
-			"model": "sophies_alloys:block/foxite_lantern"
+			"model": "sophies_alloys:block/lanterns/foxite_lantern"
 		},
 		"hanging=true": {
-			"model": "sophies_alloys:block/foxite_lantern_hanging"
+			"model": "sophies_alloys:block/lanterns/foxite_lantern_hanging"
 		}
 	}
 }

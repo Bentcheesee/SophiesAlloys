@@ -12,7 +12,11 @@
 		},
 		{
 			"id": "sophies_alloys:soul_chunk",
-			"chance": 0.25
+			"chance": 0.2
+		},
+		{
+			"id": "sophies_alloys:strange_flint",
+			"chance": 0.35
 		}
 	]
 }

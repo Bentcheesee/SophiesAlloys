@@ -1,0 +1,16 @@
+{
+	"type": "create:milling",
+	"ingredients": [
+		[
+			{
+				"tag": "c:flints"
+			}
+		]
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:flint_dust",
+			"count": 2
+		}
+	]
+}

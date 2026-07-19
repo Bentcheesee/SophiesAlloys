@@ -4,148 +4,321 @@
 		{
 			"rolls": {
 				"type": "minecraft:constant",
-                "value": 1
+				"value": 1
 			},
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_apple",
+					"weight": 11,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 2,
 								"min": 1
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 6
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:enchanted_golden_apple",
-					"weight": 2
+					"weight": 4
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:music_disc_otherside",
-					"weight": 7
+					"weight": 4
 				},
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:music_disc_creator_music_box",
+					"weight": 4
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:book",
+					"weight": 8,
 					"functions": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"function": "minecraft:enchant_with_levels",
+							"levels": 15
 						}
-					],
-					"name": "minecraft:book",
-					"weight": 7
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_boots",
+					"weight": 8,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 18,
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.7
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.5,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_leggings",
+					"weight": 7,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 18,
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.6
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.6,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_helmet",
+					"weight": 9,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 18,
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.5,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_boots",
+					"weight": 8,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 18,
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.7
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.5,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_chestplate",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 18,
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.4
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.7,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_helmet",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 18,
+							"conditions": []
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.3,
+								"max": 0.5
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_pickaxe",
+					"weight": 9,
+					"functions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_pickaxe",
+					"weight": 8,
+					"functions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_upgrade",
+					"weight": 4,
+					"functions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:iron_upgrade"
 				}
 			]
 		},
 		{
 			"rolls": {
 				"type": "minecraft:constant",
-                "value": 5
+				"value": 5
 			},
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:moss_block",
+					"weight": 14,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 2
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 14
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:vine",
+					"weight": 10,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 2
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 10
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:glow_berries",
+					"weight": 10,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 4,
 								"min": 2
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 10
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:glow_lichen",
+					"weight": 10,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 6,
 								"min": 3
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 10
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:cobblestone",
+					"weight": 4,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 5,
 								"min": 2
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 4
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:mossy_cobblestone",
+					"weight": 3,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 2,
 								"min": 1
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 3
+					]
 				}
 			]
 		},
@@ -158,115 +331,115 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
 					"name": "minecraft:raw_iron",
-					"weight": 8
-				},
-				{
-					"type": "minecraft:item",
+					"weight": 8,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 2
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"name": "sophies_alloys:raw_foxite",
-					"weight": 8
+					]
 				},
 				{
 					"type": "minecraft:item",
+					"name": "sophies_alloys:raw_foxite",
+					"weight": 8,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coal",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 4,
 								"min": 1
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"name": "minecraft:coal",
-					"weight": 10
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bread",
+					"weight": 12,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 1
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 12
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "sophies_alloys:seared_quingum",
+					"weight": 12,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 4,
 								"min": 2
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"weight": 12
+					]
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
 					"name": "minecraft:moss_block",
-					"weight": 20
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
+					"name": "sophies_alloys:oreberries",
+					"weight": 22,
 					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 6,
 								"min": 3
-							},
-							"function": "minecraft:set_count"
+							}
 						}
-					],
-					"name": "sophies_alloys:oreberries",
-					"weight": 22
+					]
 				}
 			]
 		}

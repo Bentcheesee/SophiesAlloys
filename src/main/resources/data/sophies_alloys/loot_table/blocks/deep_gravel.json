@@ -3,13 +3,13 @@
 	"pools": [
 		{
 			"rolls": 1,
-			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:alternatives",
 					"children": [
 						{
 							"type": "minecraft:item",
+							"name": "sophies_alloys:deep_gravel",
 							"conditions": [
 								{
 									"condition": "minecraft:match_tool",
@@ -23,27 +23,26 @@
 										}
 									}
 								}
-							],
-							"name": "sophies_alloys:deep_gravel"
+							]
 						},
 						{
 							"type": "minecraft:alternatives",
 							"children": [
 								{
 									"type": "minecraft:item",
+									"name": "minecraft:flint",
 									"conditions": [
 										{
+											"condition": "minecraft:table_bonus",
+											"enchantment": "minecraft:fortune",
 											"chances": [
 												0.1,
 												0.15,
 												0.3,
 												1
-											],
-											"condition": "minecraft:table_bonus",
-											"enchantment": "minecraft:fortune"
+											]
 										}
 									],
-									"name": "minecraft:flint",
 									"functions": [
 										{
 											"function": "minecraft:set_count",

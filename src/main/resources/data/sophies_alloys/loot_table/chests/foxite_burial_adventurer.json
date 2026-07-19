@@ -1,0 +1,350 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:slate_sheet",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 4,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:rough_slate",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 4,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:slate",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 3,
+								"max": 5
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:constant",
+				"value": 3
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:moss_block",
+					"weight": 7,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cobblestone",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:mossy_cobblestone",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:mossy_cobblestone",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:rough_slate",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cobbled_deepslate",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:mossy_cobbled_deepslate",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 4,
+				"min": 2
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:lead_dust",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:map",
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 8,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 12,
+								"min": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bread",
+					"weight": 12,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:seared_quingum",
+					"weight": 12,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:torch",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 8,
+								"max": 16
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:mushroom_stew",
+							"weight": 2,
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:suspicious_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_stew_effect",
+									"effects": [
+										{
+											"type": "minecraft:weakness",
+											"duration": {
+												"type": "minecraft:uniform",
+												"min": 20,
+												"max": 40
+											}
+										},
+										{
+											"type": "minecraft:absorption",
+											"duration": {
+												"type": "minecraft:uniform",
+												"min": 30,
+												"max": 45
+											}
+										},
+										{
+											"type": "minecraft:nausea",
+											"duration": {
+												"type": "minecraft:uniform",
+												"min": 10,
+												"max": 19
+											}
+										},
+										{
+											"type": "minecraft:bad_omen",
+											"duration": {
+												"type": "minecraft:uniform",
+												"min": 15,
+												"max": 29
+											}
+										},
+										{
+											"type": "minecraft:infested",
+											"duration": {
+												"type": "minecraft:constant",
+												"value": 120
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": -2,
+				"max": 1
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:brown_mushroom"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:red_mushroom"
+				}
+			]
+		}
+	]
+}

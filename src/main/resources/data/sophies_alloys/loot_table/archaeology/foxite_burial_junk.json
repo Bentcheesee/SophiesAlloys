@@ -1,0 +1,63 @@
+{
+	"type": "minecraft:archaeology",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:tag",
+					"name": "sophies_alloys:chunks/overworld_archaeology_loot",
+					"expand": true,
+					"weight": 16,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 3
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:slate_sheet",
+					"weight": 14
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:string",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coal",
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:chain",
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:foxite_chain",
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:lapis_shard",
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sophies_alloys:lead_bars",
+					"weight": 6
+				}
+			]
+		}
+	],
+	"random_sequence": "sophies_alloys:archaeology/foxite_burial_junk"
+}

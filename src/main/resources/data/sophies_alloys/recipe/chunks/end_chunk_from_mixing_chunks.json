@@ -1,0 +1,39 @@
+{
+	"type": "create:mixing",
+	"heat_requirement": "superheated",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/tritonium"
+		},
+		{
+			"tag": "c:nuggets/tritonium"
+		},
+		{
+			"tag": "c:nuggets/tritonium"
+		},
+		{
+			"item": "sophies_alloys:strange_flint"
+		},
+		{
+			"item": "sophies_alloys:strange_flint"
+		},
+		{
+			"item": "sophies_alloys:strange_flint"
+		},
+		{
+			"item": "sophies_alloys:veridium_chunk"
+		},
+		{
+			"item": "sophies_alloys:veridium_chunk"
+		},
+		{
+			"item": "sophies_alloys:veridium_chunk"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:end_stone_chunk",
+			"count": 2
+		}
+	]
+}

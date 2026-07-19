@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"hanging=false,lit=true": {
+			"model": "sophies_alloys:block/lanterns/foxite_powered_lantern"
+		},
+		"hanging=true,lit=true": {
+			"model": "sophies_alloys:block/lanterns/foxite_powered_lantern_hanging"
+		},
+		"hanging=false,lit=false": {
+			"model": "sophies_alloys:block/lanterns/foxite_unpowered_lantern"
+		},
+		"hanging=true,lit=false": {
+			"model": "sophies_alloys:block/lanterns/foxite_unpowered_lantern_hanging"
+		}
+	}
+}

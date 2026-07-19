@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "iron_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/iron"
+		},
+		{
+			"item": "minecraft:redstone_torch"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:iron_powered_lantern",
+		"count": 1
+	}
+}

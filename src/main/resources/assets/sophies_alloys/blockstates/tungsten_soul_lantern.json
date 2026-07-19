@@ -1,10 +1,10 @@
 {
 	"variants": {
 		"hanging=false": {
-			"model": "sophies_alloys:block/tungsten_soul_lantern"
+			"model": "sophies_alloys:block/lanterns/tungsten_soul_lantern"
 		},
 		"hanging=true": {
-			"model": "sophies_alloys:block/tungsten_soul_lantern_hanging"
+			"model": "sophies_alloys:block/lanterns/tungsten_soul_lantern_hanging"
 		}
 	}
 }

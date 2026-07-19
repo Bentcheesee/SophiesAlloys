@@ -8,7 +8,7 @@
 	"type": "farmersdelight:cutting",
 	"ingredients": [
 		{
-			"item": "minecraft:flint"
+			"tag": "c:flints"
 		}
 	],
 	"tool": [
