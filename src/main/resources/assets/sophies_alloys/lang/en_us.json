@@ -27,7 +27,9 @@
 	"tag.block.sophies_alloys.oreberry_survive_on": "Oreberry Survive On",
 	"tag.item.sophies_alloys.leaded_quartz_glass": "Leaded Quartz Glass Blocks",
 	"tag.item.sophies_alloys.leaded_quartz_glass_panes": "Leaded Quartz Glass Panes",
-
+	
+	"tooltip.sophies_alloys.powered_lanterns": "§8Hold §7Shift §8for Summary.",
+	"tooltip.sophies_alloys.powered_lanterns.alternate": "§8Hold §bShift §8for Summary.\n\n§fPowered Lanterns §7have §etwo §7modes that can\n§7be toggled directly by the player.\n\n§7While §bstanding§7, a player can directly toggle\n§7if the §fPowered Lantern §7is §eon §7or §eoff§7.\n§7While §bSneaking§7, a player can toggle the\n§eLocked §7state, which prevents any interations\n§7§ofrom §r§cRedstone §7components.",
 	
 //Dusts
 	"item.sophies_alloys.amethyst_dust": "Amethyst Dust",
@@ -245,7 +247,6 @@
 	"block.sophies_alloys.meat_block": "Meat",
 	"block.sophies_alloys.meat_block.desc": "Compacted into a perfect cubic meter for your pleasure!",
 	
-	"block.sophies_alloys.powered_lantern": "Powered Lantern",
 	"block.sophies_alloys.foxite_chain": "Foxite Chain",
 	"block.sophies_alloys.foxite_lantern": "Foxite Lantern",
 	"block.sophies_alloys.foxite_soul_lantern": "Foxite Soul Lantern",
@@ -254,6 +255,7 @@
 	"block.sophies_alloys.gold_lantern": "Gold Lantern",
 	"block.sophies_alloys.gold_soul_lantern": "Gold Soul Lantern",
 	"block.sophies_alloys.gold_powered_lantern": "Powered Gold Lantern",
+	"block.sophies_alloys.iron_powered_lantern": "Powered Lantern",
 	"block.sophies_alloys.netherite_chain": "Netherite Chain",
 	"block.sophies_alloys.netherite_lantern": "Netherite Lantern",
 	"block.sophies_alloys.netherite_soul_lantern": "Netherite Soul Lantern",

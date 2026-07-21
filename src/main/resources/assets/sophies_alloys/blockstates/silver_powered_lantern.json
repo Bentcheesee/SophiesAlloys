@@ -1,16 +1,28 @@
 {
 	"variants": {
-		"hanging=false,lit=true": {
+		"hanging=false,lit=true,enabled=true": {
 			"model": "sophies_alloys:block/lanterns/silver_powered_lantern"
 		},
-		"hanging=true,lit=true": {
+		"hanging=true,lit=true,enabled=true": {
 			"model": "sophies_alloys:block/lanterns/silver_powered_lantern_hanging"
 		},
-		"hanging=false,lit=false": {
+		"hanging=false,lit=false,enabled=true": {
 			"model": "sophies_alloys:block/lanterns/silver_unpowered_lantern"
 		},
-		"hanging=true,lit=false": {
+		"hanging=true,lit=false,enabled=true": {
 			"model": "sophies_alloys:block/lanterns/silver_unpowered_lantern_hanging"
+		},
+		"hanging=false,lit=true,enabled=false": {
+			"model": "sophies_alloys:block/lanterns/silver_locked_powered_lantern"
+		},
+		"hanging=true,lit=true,enabled=false": {
+			"model": "sophies_alloys:block/lanterns/silver_locked_powered_lantern_hanging"
+		},
+		"hanging=false,lit=false,enabled=false": {
+			"model": "sophies_alloys:block/lanterns/silver_locked_unpowered_lantern"
+		},
+		"hanging=true,lit=false,enabled=false": {
+			"model": "sophies_alloys:block/lanterns/silver_locked_unpowered_lantern_hanging"
 		}
 	}
 }

@@ -729,6 +729,7 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.DUSTY_JADE_LAMP.get());
 
 		tag(AlloysTags.Blocks.CREATE_WRENCH_PICKUP)
+			.addTag(AlloysTags.Blocks.C_BARS_BLOCK)
 			.addTag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
 			.addTag(AlloysTags.Blocks.C_SOUL_LANTERNS_BLOCK)
 			.addTag(AlloysTags.Blocks.C_POWERED_LANTERNS_BLOCK)
