@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "netherite_lanterns",
+	"ingredients": [
+		{
+			"tag": "c:nuggets/netherite"
+		},
+		{
+			"item": "minecraft:redstone_torch"
+		}
+	],
+	"result": {
+		"id": "sophies_alloys:netherite_powered_lantern",
+		"count": 1
+	}
+}

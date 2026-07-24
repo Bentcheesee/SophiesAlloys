@@ -1,5 +1,10 @@
 {
   "values": [
+    "sophies_alloys:suspicious_black_gravel",
+    "sophies_alloys:suspicious_black_sand",
+    "sophies_alloys:suspicious_deep_gravel",
+    "sophies_alloys:suspicious_deep_sand",
+    "sophies_alloys:suspicious_slate",
     "#minecraft:dirt",
     "#minecraft:sand",
     "#minecraft:base_stone_overworld",

@@ -442,6 +442,11 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.DEEP_GRAVEL.get());
 
 		tag(AlloysTags.Blocks.OREBERRY_SURVIVE)
+			.add(BlockInit.SUSPICIOUS_BLACK_GRAVEL.get())
+			.add(BlockInit.SUSPICIOUS_BLACK_SAND.get())
+			.add(BlockInit.SUSPICIOUS_DEEP_GRAVEL.get())
+			.add(BlockInit.SUSPICIOUS_DEEP_SAND.get())
+			.add(BlockInit.SUSPICIOUS_SLATE.get())
 			.addTag(BlockTags.DIRT)
 			.addTag(BlockTags.SAND)
 			.addTag(BlockTags.BASE_STONE_OVERWORLD)

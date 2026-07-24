@@ -23,13 +23,19 @@
 	"painting.sophies_alloys.missing.author": "Sophie",
 	"painting.sophies_alloys.splotch.title": "Splotch",
 	"painting.sophies_alloys.splotch.author": "Sophie",
+	
+	"subtitles.block.sophies_alloys.powered_lantern.turn_on": "Powered Lantern Turns On",
+	"subtitles.block.sophies_alloys.powered_lantern.turn_off": "Powered Lantern Turns Off",
+	"subtitles.block.sophies_alloys.powered_lantern.lock": "Powered Lantern Locks",
+	"subtitles.block.sophies_alloys.powered_lantern.unlock": "Powered Lantern Unlocks",
+	"subtitles.block.sophies_alloys.dusty_lamp.toggle": "Dusty Lamp Toggles",
 
 	"tag.block.sophies_alloys.oreberry_survive_on": "Oreberry Survive On",
 	"tag.item.sophies_alloys.leaded_quartz_glass": "Leaded Quartz Glass Blocks",
 	"tag.item.sophies_alloys.leaded_quartz_glass_panes": "Leaded Quartz Glass Panes",
 	
 	"tooltip.sophies_alloys.powered_lanterns": "§8Hold §7Shift §8for Summary.",
-	"tooltip.sophies_alloys.powered_lanterns.alternate": "§8Hold §bShift §8for Summary.\n\n§fPowered Lanterns §7have §etwo §7modes that can\n§7be toggled directly by the player.\n\n§7While §bstanding§7, a player can directly toggle\n§7if the §fPowered Lantern §7is §eon §7or §eoff§7.\n§7While §bSneaking§7, a player can toggle the\n§eLocked §7state, which prevents any interations\n§7§ofrom §r§cRedstone §7components.",
+	"tooltip.sophies_alloys.powered_lanterns.alternate": "§8Hold §bShift §8for Summary.\n\n§fPowered Lanterns §7have §etwo §7modes that can\n§7be toggled directly by the player.\n\n§7While §bStanding§7, a player can directly toggle\n§7if the §fPowered Lantern §7is §eon §7or §eoff§7.\n§7While §bSneaking§7, a player can toggle the\n§eLocked §7state, which prevents any interations\n§7§ofrom §r§cRedstone §7components.",
 	
 //Dusts
 	"item.sophies_alloys.amethyst_dust": "Amethyst Dust",

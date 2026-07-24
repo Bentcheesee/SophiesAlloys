@@ -4,6 +4,8 @@ import com.sophiecheese.alloys.entity.SuspiciousBlockBlockEntityRenderer;
 import com.sophiecheese.alloys.init.*;
 import com.sophiecheese.alloys.setup.CompatCheck;
 import com.sophiecheese.alloys.setup.Registration;
+import com.sophiecheese.alloys.util.AlloysSoundEvents;
+import net.minecraft.sounds.SoundEvents;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -36,6 +38,8 @@ public class SophiesAlloys {
 		BlockInit.register(modEventBus);
 
 		EntityInit.register(modEventBus);
+		AlloysSoundEvents.register(modEventBus);
+
 
 		if(CompatCheck.farmersPresent){
 			FarmerCompat.register(modEventBus);

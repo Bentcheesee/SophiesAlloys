@@ -3,12 +3,12 @@
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 2,
+			"weight": 3,
 			"element": {
 				"element_type": "minecraft:legacy_single_pool_element",
 				"projection": "rigid",
 				"processors": "minecraft:empty",
-				"location": "sophies_alloys:abandoned_cobble_respite1"
+				"location": "sophies_alloys:respite/deepslate_front1"
 			}
 		},
 		{
@@ -17,16 +17,7 @@
 				"element_type": "minecraft:legacy_single_pool_element",
 				"projection": "rigid",
 				"processors": "minecraft:empty",
-				"location": "sophies_alloys:abandoned_cobble_respite2"
-			}
-		},
-		{
-			"weight": 1,
-			"element": {
-				"element_type": "minecraft:legacy_single_pool_element",
-				"projection": "rigid",
-				"processors": "minecraft:empty",
-				"location": "sophies_alloys:abandoned_cobble_respite3"
+				"location": "sophies_alloys:respite/deepslate_front2"
 			}
 		}
 	]

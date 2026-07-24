@@ -1,0 +1,14 @@
+{
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 79898,
+		"separation": 9,
+		"spacing": 22
+	},
+	"structures": [
+		{
+			"structure": "sophies_alloys:burial_grounds/slate_top_structure",
+			"weight": 1
+		}
+	]
+}

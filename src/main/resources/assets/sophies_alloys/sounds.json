@@ -1,0 +1,40 @@
+{
+	"block.powered_lantern.turn_on": {
+		"subtitle": "subtitles.block.sophies_alloys.powered_lantern.turn_on",
+		"sounds": [
+			"sophies_alloys:powered_lantern_toggle1",
+			"sophies_alloys:powered_lantern_toggle2",
+			"sophies_alloys:powered_lantern_toggle3",
+			"sophies_alloys:powered_lantern_toggle4",
+			"sophies_alloys:powered_lantern_toggle5"
+		]
+	},
+	"block.powered_lantern.turn_off": {
+		"subtitle": "subtitles.block.sophies_alloys.powered_lantern.turn_off",
+		"sounds": [
+			"sophies_alloys:powered_lantern_toggle1",
+			"sophies_alloys:powered_lantern_toggle2",
+			"sophies_alloys:powered_lantern_toggle3",
+			"sophies_alloys:powered_lantern_toggle4",
+			"sophies_alloys:powered_lantern_toggle5"
+		]
+	},
+	"block.powered_lantern.lock": {
+		"subtitle": "subtitles.block.sophies_alloys.powered_lantern.lock",
+		"sounds": [
+			"sophies_alloys:powered_lantern_lock1",
+			"sophies_alloys:powered_lantern_lock2",
+			"sophies_alloys:powered_lantern_lock3",
+			"sophies_alloys:powered_lantern_lock4"
+		]
+	},
+	"block.powered_lantern.unlock": {
+		"subtitle": "subtitles.block.sophies_alloys.powered_lantern.unlock",
+		"sounds": [
+			"sophies_alloys:powered_lantern_lock1",
+			"sophies_alloys:powered_lantern_lock2",
+			"sophies_alloys:powered_lantern_lock3",
+			"sophies_alloys:powered_lantern_lock4"
+		]
+	}
+}

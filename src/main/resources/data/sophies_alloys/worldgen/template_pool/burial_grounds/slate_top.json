@@ -1,0 +1,42 @@
+{
+	"name": "cobble_respite_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/slate_top1"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/slate_top2"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/slate_top3"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/slate_top4"
+			}
+		}
+	]
+}

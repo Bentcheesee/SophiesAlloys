@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:smithing_transform",
+	"group": "netherite",
+	"addition": {
+		"tag": "c:nuggets/netherite"
+	},
+	"base": {
+		"item": "sophies_alloys:iron_powered_lantern"
+	},
+	"result": {
+		"count": 1,
+		"id": "sophies_alloys:netherite_powered_lantern"
+	},
+	"template": {
+		"item": "minecraft:air"
+	}
+}

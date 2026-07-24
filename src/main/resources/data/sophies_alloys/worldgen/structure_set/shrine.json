@@ -1,0 +1,14 @@
+{
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 48975,
+		"separation": 20,
+		"spacing": 37
+	},
+	"structures": [
+		{
+			"structure": "sophies_alloys:shrine_structure",
+			"weight": 1
+		}
+	]
+}

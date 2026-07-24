@@ -1,6 +1,7 @@
 package com.sophiecheese.alloys.block;
 
 import com.mojang.serialization.MapCodec;
+import com.sophiecheese.alloys.util.AlloysSoundEvents;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
@@ -138,11 +139,19 @@ public class PoweredLanternBlock extends Block implements SimpleWaterloggedBlock
 
 	protected static void playLitSound(@Nullable Player player, LevelAccessor level, BlockPos pos, BlockState state) {
 		float f = state.getValue(LIT) ? 0.4F : 0.6F;
-		level.playSound(player, pos, SoundEvents.CANDLE_PLACE, SoundSource.BLOCKS, 0.5F, f);
+		if (state.getValue(LIT)) {
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_OFF.get(), SoundSource.BLOCKS, 0.5F, f);
+		} else {
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_ON.get(), SoundSource.BLOCKS, 0.5F, f);
+		}
 	}
 	protected static void playLockSound(@Nullable Player player, LevelAccessor level, BlockPos pos, BlockState state) {
 		float f = state.getValue(ENABLED) ? 0.4F : 0.6F;
-		level.playSound(player, pos, SoundEvents.COPPER_BULB_PLACE, SoundSource.BLOCKS, 0.7F, f);
+		if (state.getValue(ENABLED)) {
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_UNLOCKED.get(), SoundSource.BLOCKS, 0.5F, f);
+		} else {
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_LOCKED.get(), SoundSource.BLOCKS, 0.5F, f);
+		}
 	}
 
 	@Override

@@ -73,18 +73,6 @@
 							"count": 3
 						}
 					]
-				},
-				{
-					"type": "minecraft:tag",
-					"name": "sophies_alloys:chunks/overworld_archaeology_loot",
-					"expand": true,
-					"weight": 16,
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": 3
-						}
-					]
 				}
 			]
 		}
