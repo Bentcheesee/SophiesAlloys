@@ -1,0 +1,5 @@
+/item replace entity @n[type=minecraft:mannequin] armor.legs from entity @n[type=player] armor.legs
+
+block_entity_data={id:"brushable_block",item:{id:"minecraft:fern",count:1},LootTable:"sophies_alloys:archaeology/foxite_burial_junk"},custom_name='[{"text":"Foxite Burial Gems","italic":false}]',lore=['[{"text":"sophies_alloys:archaeology/foxite_burial_gems","italic":false}]']
+block_entity_data={id:"brushable_block",item:{id:"minecraft:fern",count:1},LootTable:"sophies_alloys:archaeology/foxite_burial_junk"},custom_name='[{"text":"Foxite Burial Junk","italic":false}]',lore=['[{"text":"sophies_alloys:archaeology/foxite_burial_junk","italic":false}]']
+block_entity_data={id:"brushable_block",item:{id:"minecraft:fern",count:1},LootTable:"sophies_alloys:archaeology/foxite_burial_junk"},custom_name='[{"text":"Foxite Burial Ores","italic":false}]',lore=['[{"text":"sophies_alloys:archaeology/foxite_burial_ores","italic":false}]']

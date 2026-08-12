@@ -99,6 +99,8 @@ public class AlloysTags {
 		public static final TagKey<Block> C_STORAGE_TRITONIUM_RAW_BLOCK = createCommonBlockTag("storage_blocks/raw_tritonium");
 		public static final TagKey<Block> C_STORAGE_TUNGSTEN_RAW_BLOCK = createCommonBlockTag("storage_blocks/raw_tungsten");
 
+		public static final TagKey<Block> C_CRUMBLING_BLOCKS = createCommonBlockTag("crumbling");
+		public static final TagKey<Block> C_CRACKED_BLOCKS = createCommonBlockTag("cracked");
 
 	//Special Tags
 		public static final TagKey<Block> FARMERS_COMPOST_ACTIVATOR = createSpecialBlockTag("farmersdelight", "compost_activators");
@@ -409,6 +411,10 @@ public class AlloysTags {
 		public static final TagKey<Item> C_BARS_ITEM = createCommonItemTag("bars");
 		public static final TagKey<Item> C_LANTERNS_ITEM = createCommonItemTag("lanterns");
 		public static final TagKey<Item> C_SOUL_LANTERNS_ITEM = createCommonItemTag("soul_lanterns");
+		public static final TagKey<Item> C_POWERED_LANTERNS_ITEM = createCommonItemTag("soul_lanterns");
+
+		public static final TagKey<Item> C_CRUMBLING_BLOCKS = createCommonItemTag("crumbling");
+		public static final TagKey<Item> C_CRACKED_BLOCKS = createCommonItemTag("cracked");
 
 		public static final TagKey<Item> C_FOODS_STRANGE_MEAT = createCommonItemTag("foods/strange_meat");
 		public static final TagKey<Item> C_FOODS_STRANGE_RAW_MEAT = createCommonItemTag("foods/strange_raw_meat");
@@ -420,7 +426,6 @@ public class AlloysTags {
 		public static final TagKey<Item> SALT_CAN_BE_SALTED = createSpecialItemTag("salt", "can_be_salted");
 
 		public static final TagKey<Item> CREATE_CRUSHED_RAW_MATERIALS = createSpecialItemTag("create", "crushed_raw_materials");
-		public static final TagKey<Item> CREATE_UPRIGHT_ON_BELT = createSpecialItemTag("create", "upright_on_belt");
 
 		private static TagKey<Item> createItemTag(String name) {
 			return ItemTags.create(ResourceLocation.fromNamespaceAndPath(SophiesAlloys.MOD_ID, name));

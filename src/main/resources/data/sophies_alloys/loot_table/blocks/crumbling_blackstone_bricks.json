@@ -1,0 +1,47 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "sophies_alloys:crumbling_blackstone_bricks",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"predicates": {
+											"minecraft:enchantments": [
+												{
+													"enchantments": "minecraft:silk_touch"
+												}
+											]
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "sophies_alloys:blackstone_chunk",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"type": "minecraft:uniform",
+										"min": 2,
+										"max": 4
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

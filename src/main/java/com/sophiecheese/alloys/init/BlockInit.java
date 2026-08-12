@@ -73,6 +73,8 @@ public class BlockInit {
 
 	private static final BlockBehaviour.Properties DEEPSLATES = BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE)
 		.strength(3.5f, 6.0f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE);
+	private static final BlockBehaviour.Properties CRUMBLES = BlockBehaviour.Properties.of()
+		.strength(0.75f).sound(SoundType.DEEPSLATE);
 
 	private static final BlockBehaviour.Properties LAMPS = BlockBehaviour.Properties.of().mapColor(MapColor.NONE)
 		.strength(1.2f).sound(SoundType.GLASS).emissiveRendering(BlockInit::always);
@@ -158,7 +160,7 @@ public class BlockInit {
 	public static final DeferredBlock<Block> END_MEAT_ORE = registerBlock("meat_end_ore",
 		() -> new DropExperienceBlock(DEB_2_3, END_ORES));
 	public static final DeferredBlock<Block> MEAT_BLOCK = registerBlock("meat_block",
-		() -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER)
+		() -> new MeatBlock(new ColorRGBA(10826530), BlockBehaviour.Properties.of().mapColor(MapColor.NETHER)
 			.strength(3.0f)
 			.sound(SoundType.WART_BLOCK)));
 
@@ -336,7 +338,7 @@ public class BlockInit {
 		.sound(SoundType.GRAVEL).instrument(NoteBlockInstrument.COW_BELL)));
 
 //Slates
-public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slate", () -> new ColoredFallingBlock(new ColorRGBA(5072466), BlockBehaviour.Properties.of().mapColor(MapColor.CLAY)
+public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slate", () -> new RoughSlateBlock(new ColorRGBA(5072466), BlockBehaviour.Properties.of().mapColor(MapColor.CLAY)
 	.strength(1.2f, 0.75f).requiresCorrectToolForDrops()
 	.sound(SoundType.DRIPSTONE_BLOCK)));
 	public static final DeferredBlock<Block> SLATE = registerBlock("slate", () -> new Block(SLATES));
@@ -386,6 +388,25 @@ public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slat
 	public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlock("mossy_deepslate_brick_stairs", () -> new StairBlock(MOSSY_DEEPSLATE_BRICKS.get().defaultBlockState(), DEEPSLATES));
 	public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab", () -> new SlabBlock(DEEPSLATES));
 	public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofLegacyCopy(MOSSY_DEEPSLATE_BRICKS.get()).forceSolidOn()));
+
+	public static final DeferredBlock<Block> CRUMBLING_BLACKSTONE_BRICKS = registerBlock("crumbling_blackstone_bricks",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.TERRACOTTA_BLACK)));
+	public static final DeferredBlock<Block> CRUMBLING_DEEPSLATE_BRICKS = registerBlock("crumbling_deepslate_bricks",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.DEEPSLATE)));
+	public static final DeferredBlock<Block> CRUMBLING_DEEPSLATE_TILES = registerBlock("crumbling_deepslate_tiles",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.DEEPSLATE)));
+	public static final DeferredBlock<Block> CRUMBLING_NETHER_BRICKS = registerBlock("crumbling_nether_bricks",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.NETHER)));
+	public static final DeferredBlock<Block> CRUMBLING_SLATE_BRICKS = registerBlock("crumbling_slate_bricks",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.CLAY)));
+	public static final DeferredBlock<Block> CRUMBLING_SLATE_TILES = registerBlock("crumbling_slate_tiles",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.CLAY)));
+	public static final DeferredBlock<Block> CRUMBLING_SOUL_STONE_BRICKS = registerBlock("crumbling_soul_stone_bricks",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.COLOR_BROWN)));
+	public static final DeferredBlock<Block> CRUMBLING_SOUL_STONE_TILES = registerBlock("crumbling_soul_stone_tiles",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.COLOR_BROWN)));
+	public static final DeferredBlock<Block> CRUMBLING_STONE_BRICKS = registerBlock("crumbling_stone_bricks",
+		() -> new CrumblingBlock(CRUMBLES.mapColor(MapColor.STONE)));
 
 	public static final DeferredBlock<Block> DEEP_GRAVEL = registerBlock("deep_gravel", () -> new ColoredFallingBlock(new ColorRGBA(2700344), BlockBehaviour.Properties.of()
 		.strength(0.8f).mapColor(MapColor.DEEPSLATE)
@@ -440,7 +461,7 @@ public static final DeferredBlock<Block> ROUGH_SLATE = registerBlock("rough_slat
 
 	// Chains and Lanterns
 	public static ToIntFunction<BlockState> lanternLight() {
-		return (state) -> {return state.getValue(PoweredLanternBlock.LIT) ? 7 : 0;};}
+		return (state) -> {return state.getValue(PoweredLanternBlock.LIT) ? 5 : 0;};}
 	public static final DeferredBlock<Block> FOXITE_CHAIN = registerBlock("foxite_chain", () -> new ChainBlock(CHAINS));
 	public static final DeferredBlock<Block> FOXITE_LANTERN = registerBlock("foxite_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 15)));
 	public static final DeferredBlock<Block> FOXITE_SOUL_LANTERN = registerBlock("foxite_soul_lantern", () -> new LanternBlock(LANTERNS.lightLevel(state -> 10)));

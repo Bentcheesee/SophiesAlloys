@@ -1,0 +1,13 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tritonium_lantern"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:tritonium_soul_lantern"
+		}
+	]
+}

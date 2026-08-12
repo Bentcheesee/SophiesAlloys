@@ -706,6 +706,27 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 		tag(Tags.Items.FOODS_BERRY)
 			.add(ItemInit.OREBERRIES_ITEM.get());
 
+		tag(AlloysTags.Items.C_CRUMBLING_BLOCKS)
+			.add(BlockInit.CRUMBLING_BLACKSTONE_BRICKS.asItem())
+			.add(BlockInit.CRUMBLING_DEEPSLATE_BRICKS.asItem())
+			.add(BlockInit.CRUMBLING_DEEPSLATE_TILES.asItem())
+			.add(BlockInit.CRUMBLING_NETHER_BRICKS.asItem())
+			.add(BlockInit.CRUMBLING_SLATE_BRICKS.asItem())
+			.add(BlockInit.CRUMBLING_SLATE_TILES.asItem())
+			.add(BlockInit.CRUMBLING_SOUL_STONE_BRICKS.asItem())
+			.add(BlockInit.CRUMBLING_SOUL_STONE_TILES.asItem())
+			.add(BlockInit.CRUMBLING_STONE_BRICKS.asItem());
+		tag(AlloysTags.Items.C_CRACKED_BLOCKS)
+			.add(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.asItem())
+			.add(Blocks.CRACKED_DEEPSLATE_BRICKS.asItem())
+			.add(Blocks.CRACKED_DEEPSLATE_TILES.asItem())
+			.add(Blocks.CRACKED_NETHER_BRICKS.asItem())
+			.add(Blocks.CRACKED_STONE_BRICKS.asItem())
+			.add(BlockInit.SOUL_STONE_BRICK_CRACKED.asItem())
+			.add(BlockInit.SOUL_STONE_TILES_CRACKED.asItem())
+			.add(BlockInit.SLATE_BRICKS_CRACKED.asItem())
+			.add(BlockInit.SLATE_TILES_CRACKED.asItem());
+
 		tag(AlloysTags.Items.C_LANTERNS_ITEM)
 			.add(Blocks.LANTERN.asItem())
 			.add(BlockInit.FOXITE_LANTERN.asItem())
@@ -722,6 +743,14 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(BlockInit.SILVER_SOUL_LANTERN.asItem())
 			.add(BlockInit.TRITONIUM_SOUL_LANTERN.asItem())
 			.add(BlockInit.TUNGSTEN_SOUL_LANTERN.asItem());
+		tag(AlloysTags.Items.C_POWERED_LANTERNS_ITEM)
+			.add(BlockInit.IRON_POWERED_LANTERN.asItem())
+			.add(BlockInit.FOXITE_POWERED_LANTERN.asItem())
+			.add(BlockInit.GOLD_POWERED_LANTERN.asItem())
+			.add(BlockInit.NETHERITE_POWERED_LANTERN.asItem())
+			.add(BlockInit.SILVER_POWERED_LANTERN.asItem())
+			.add(BlockInit.TRITONIUM_POWERED_LANTERN.asItem())
+			.add(BlockInit.TUNGSTEN_POWERED_LANTERN.asItem());
 		tag(AlloysTags.Items.C_BARS_ITEM)
 			.add(Blocks.IRON_BARS.asItem())
 			.add(BlockInit.FOXITE_BARS.asItem())
@@ -1385,11 +1414,6 @@ public class AlloysItemTagProvider extends ItemTagsProvider {
 			.add(ItemInit.CRUSHED_SILVER.get())
 			.add(ItemInit.CRUSHED_TRITONIUM.get())
 			.add(ItemInit.CRUSHED_TUNGSTEN.get());
-		tag(AlloysTags.Items.CREATE_UPRIGHT_ON_BELT)
-			.add(ItemInit.FUNKY_THING.get())
-			.add(ItemInit.ABNORMAL_THING.get())
-			.add(ItemInit.UNPROCESSED_THING.get())
-			.add(ItemInit.UNPROCESSED_OBJECT.get());
 
 	}
 	private static ResourceLocation internal(String path) {

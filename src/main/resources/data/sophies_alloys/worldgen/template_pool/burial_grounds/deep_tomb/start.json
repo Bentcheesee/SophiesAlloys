@@ -1,0 +1,15 @@
+{
+	"name": "start",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/entry_hall"
+			}
+		}
+	]
+}

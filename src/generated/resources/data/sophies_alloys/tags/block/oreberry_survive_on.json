@@ -10,6 +10,8 @@
     "#minecraft:base_stone_overworld",
     "#c:cobblestones",
     "#c:cobblestones/deepslate",
-    "#c:stones"
+    "#c:stones",
+    "#c:cracked",
+    "#c:crumbling"
   ]
 }

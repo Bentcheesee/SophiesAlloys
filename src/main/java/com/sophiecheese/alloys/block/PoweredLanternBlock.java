@@ -2,13 +2,11 @@ package com.sophiecheese.alloys.block;
 
 import com.mojang.serialization.MapCodec;
 import com.sophiecheese.alloys.util.AlloysSoundEvents;
-import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
@@ -140,17 +138,17 @@ public class PoweredLanternBlock extends Block implements SimpleWaterloggedBlock
 	protected static void playLitSound(@Nullable Player player, LevelAccessor level, BlockPos pos, BlockState state) {
 		float f = state.getValue(LIT) ? 0.4F : 0.6F;
 		if (state.getValue(LIT)) {
-			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_OFF.get(), SoundSource.BLOCKS, 0.5F, f);
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_ON.get(), SoundSource.BLOCKS, 0.4F, f);
 		} else {
-			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_ON.get(), SoundSource.BLOCKS, 0.5F, f);
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_OFF.get(), SoundSource.BLOCKS, 0.4F, f);
 		}
 	}
 	protected static void playLockSound(@Nullable Player player, LevelAccessor level, BlockPos pos, BlockState state) {
 		float f = state.getValue(ENABLED) ? 0.4F : 0.6F;
 		if (state.getValue(ENABLED)) {
-			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_UNLOCKED.get(), SoundSource.BLOCKS, 0.5F, f);
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_UNLOCKED.get(), SoundSource.BLOCKS, 0.4F, f);
 		} else {
-			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_LOCKED.get(), SoundSource.BLOCKS, 0.5F, f);
+			level.playSound(player, pos, AlloysSoundEvents.POWERED_LANTERN_LOCKED.get(), SoundSource.BLOCKS, 0.4F, f);
 		}
 	}
 
@@ -164,7 +162,7 @@ public class PoweredLanternBlock extends Block implements SimpleWaterloggedBlock
 		if (!level.isClientSide) {
 			if (state.getValue(ENABLED)) {
 				if (state.getValue(LIT) != this.hasNeighborSignal(level,pos,state)) {
-					level.setBlock(pos, state.cycle(LIT), 3);
+					level.setBlock(pos, state.cycle(LIT), 2);
 					this.updateNeighbours(state, level, pos);
 				}
 			}
@@ -189,6 +187,11 @@ public class PoweredLanternBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public int getSignal(BlockState state, BlockGetter getter, BlockPos pos, Direction direction) {
 		return state.getValue(LIT) ? 14 : 0;
+	}
+
+	@Override
+	protected boolean isSignalSource(BlockState state) {
+		return true;
 	}
 
 

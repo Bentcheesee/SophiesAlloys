@@ -291,10 +291,6 @@ public class ItemInit {
 
 	public static final DeferredItem<Item> LEADED_QUARTZ = ITEMS.register("leaded_quartz",
 		() -> new Item(standardItem()));
-	public static final DeferredItem<Item> NUGGET_HUNK = ITEMS.register("nugget_hunk",
-		() -> new Item(standardItem()));
-	public static final DeferredItem<Item> NUGGET_CONGLOMERATE = ITEMS.register("nugget_conglomerate",
-		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> OBERITE_HANDLE = ITEMS.register("oberite_handle",
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> FOXITE_HANDLE = ITEMS.register("foxite_handle",
@@ -305,10 +301,6 @@ public class ItemInit {
 		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> STIFFENED_LEAD = ITEMS.register("stiffened_lead",
 		() -> new Item(standardItem()));
-	public static final DeferredItem<Item> FUNKY_THING = ITEMS.register("funky_thingamabob",
-		() -> new DescItem(false, standardItem()));
-	public static final DeferredItem<Item> ABNORMAL_THING = ITEMS.register("abnormal_object",
-		() -> new DescItem(false, standardItem()));
 
 // Various Foods
 	public static final DeferredItem<Item> OREBERRIES_ITEM = ITEMS.register("oreberries",
@@ -376,10 +368,6 @@ public class ItemInit {
 		() -> new Item(standardItem().fireResistant()));
 	public static final DeferredItem<Item> UNPROCESSED_NETHERITE_PLATE = ITEMS.register("unprocessed_netherite_sheet",
 		() -> new Item(standardItem().fireResistant()));
-	public static final DeferredItem<Item> UNPROCESSED_THING = ITEMS.register("unprocessed_thing",
-		() -> new Item(standardItem()));
-	public static final DeferredItem<Item> UNPROCESSED_OBJECT = ITEMS.register("unprocessed_object",
-		() -> new Item(standardItem()));
 	public static final DeferredItem<Item> GROWING_EMERALD = ITEMS.register("growing_emerald",
 		() -> new Item(standardItem()));
 

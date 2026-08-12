@@ -1,0 +1,204 @@
+{
+	"name": "common_rooms",
+	"fallback": "sophies_alloys:burial_grounds/deep_tomb/fallback",
+	"elements": [
+		{
+			"weight": 16,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/library"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/caved_in"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/caved_in_2"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/hallway_carpeted"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/hallway_long"
+			}
+		},
+		{
+			"weight": 8,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/flooded_turn"
+			}
+		},
+		{
+			"weight": 8,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/walled_off"
+			}
+		},
+		{
+			"weight": 15,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/two_more_dudes"
+			}
+		},
+		{
+			"weight": 15,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/one_guy_all_alone_in_the_center_of_the_room"
+			}
+		},
+		{
+			"weight": 12,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/mini_gravel_pit"
+			}
+		},
+		{
+			"weight": 8,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/boiler"
+			}
+		},
+		{
+			"weight": 12,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/cramped_tunnel_gay"
+			}
+		},
+		{
+			"weight": 12,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/cramped_tunnel_straight"
+			}
+		},
+		{
+			"weight": 25,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/dry_storage"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/fallen_pipe"
+			}
+		},
+		{
+			"weight": 12,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/tunnel_straight"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/mining_pit"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/pistons"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/stairs_pipes"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/stairs_twisty"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/tolens_cell"
+			}
+		},
+		{
+			"weight": 24,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/two_dudes"
+			}
+		}
+	]
+}

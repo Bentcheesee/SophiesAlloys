@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -210,6 +211,9 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 		tag(BlockTags.IMPERMEABLE)
 			.addTag(AlloysTags.Blocks.LEADED_QUARTZ_GLASS_BLOCK)
 			.addTag(AlloysTags.Blocks.STAINED_LEADED_QUARTZ_GLASS_BLOCK);
+
+		tag(BlockTags.CLIMBABLE)
+			.addTag(Tags.Blocks.CHAINS);
 
 	//Common Tags
 		tag(Tags.Blocks.GRAVELS)
@@ -419,6 +423,7 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.RAW_TUNGSTEN_BLOCK.get());
 
 
+
 	//Alloys Tags
 		tag(AlloysTags.Blocks.SOUL_ORE_REPLACEABLES)
 			.add(BlockInit.SOUL_COBBLESTONE.get())
@@ -452,7 +457,9 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.addTag(BlockTags.BASE_STONE_OVERWORLD)
 			.addTag(Tags.Blocks.COBBLESTONES)
 			.addTag(Tags.Blocks.COBBLESTONES_DEEPSLATE)
-			.addTag(Tags.Blocks.STONES);
+			.addTag(Tags.Blocks.STONES)
+			.addTag(AlloysTags.Blocks.C_CRACKED_BLOCKS)
+			.addTag(AlloysTags.Blocks.C_CRUMBLING_BLOCKS);
 
 
 
@@ -687,6 +694,27 @@ public class AlloysBlockTagProvider extends BlockTagsProvider {
 			.add(BlockInit.GRAY_LEADED_GLASS_PANE.get())
 			.add(BlockInit.BLACK_LEADED_GLASS_PANE.get())
 			.add(BlockInit.BROWN_LEADED_GLASS_PANE.get());
+
+		tag(AlloysTags.Blocks.C_CRUMBLING_BLOCKS)
+			.add(BlockInit.CRUMBLING_BLACKSTONE_BRICKS.get())
+			.add(BlockInit.CRUMBLING_DEEPSLATE_BRICKS.get())
+			.add(BlockInit.CRUMBLING_DEEPSLATE_TILES.get())
+			.add(BlockInit.CRUMBLING_NETHER_BRICKS.get())
+			.add(BlockInit.CRUMBLING_SLATE_BRICKS.get())
+			.add(BlockInit.CRUMBLING_SLATE_TILES.get())
+			.add(BlockInit.CRUMBLING_SOUL_STONE_BRICKS.get())
+			.add(BlockInit.CRUMBLING_SOUL_STONE_TILES.get())
+			.add(BlockInit.CRUMBLING_STONE_BRICKS.get());
+		tag(AlloysTags.Blocks.C_CRACKED_BLOCKS)
+			.add(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
+			.add(Blocks.CRACKED_DEEPSLATE_BRICKS)
+			.add(Blocks.CRACKED_DEEPSLATE_TILES)
+			.add(Blocks.CRACKED_NETHER_BRICKS)
+			.add(Blocks.CRACKED_STONE_BRICKS)
+			.add(BlockInit.SOUL_STONE_BRICK_CRACKED.get())
+			.add(BlockInit.SOUL_STONE_TILES_CRACKED.get())
+			.add(BlockInit.SLATE_BRICKS_CRACKED.get())
+			.add(BlockInit.SLATE_TILES_CRACKED.get());
 
 		tag(AlloysTags.Blocks.C_LANTERNS_BLOCK)
 			.add(Blocks.LANTERN)

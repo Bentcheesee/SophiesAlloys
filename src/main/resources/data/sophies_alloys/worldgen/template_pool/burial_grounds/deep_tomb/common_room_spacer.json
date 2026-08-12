@@ -1,0 +1,51 @@
+{
+	"name": "common_room_spacer",
+	"fallback": "sophies_alloys:burial_grounds/deep_tomb/fallback",
+	"elements": [
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/spacer_normal"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/spacer_cramped"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/spacer_crumbling"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/spacer_very_crumbling"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"projection": "rigid",
+				"processors": "minecraft:empty",
+				"location": "sophies_alloys:burial_grounds/deep_tomb/spacer_entry"
+			}
+		}
+	]
+}

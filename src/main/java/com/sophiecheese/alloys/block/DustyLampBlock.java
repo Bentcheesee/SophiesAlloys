@@ -48,7 +48,7 @@ public class DustyLampBlock extends Block {
 
 	public void toggle(BlockState state, Level level, BlockPos pos, @Nullable Player player) {
 		state = state.cycle(LIT);
-		level.setBlock(pos, state, 3);
+		level.setBlock(pos, state, 1);
 		this.updateNeighbours(state, level, pos);
 		playSound(player, level, pos, state);
 		level.gameEvent(player, state.getValue(LIT) ? GameEvent.BLOCK_ACTIVATE : GameEvent.BLOCK_DEACTIVATE, pos);
@@ -78,5 +78,10 @@ public class DustyLampBlock extends Block {
 	public void appendHoverText(ItemStack itemStack, Item.TooltipContext context, List<Component> component, TooltipFlag flag) {
 		component.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
 		super.appendHoverText(itemStack, context, component, flag);
+	}
+
+	@Override
+	protected boolean isSignalSource(BlockState state) {
+		return true;
 	}
 }

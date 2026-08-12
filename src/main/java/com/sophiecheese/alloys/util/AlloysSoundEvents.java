@@ -1,7 +1,6 @@
 package com.sophiecheese.alloys.util;
 
 import com.sophiecheese.alloys.SophiesAlloys;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -18,6 +17,8 @@ public class AlloysSoundEvents {
 	public static final Supplier<SoundEvent> POWERED_LANTERN_OFF = registerSoundEvent("block.powered_lantern.turn_off");
 	public static final Supplier<SoundEvent> POWERED_LANTERN_LOCKED = registerSoundEvent("block.powered_lantern.lock");
 	public static final Supplier<SoundEvent> POWERED_LANTERN_UNLOCKED = registerSoundEvent("block.powered_lantern.unlock");
+
+	public static final Supplier<SoundEvent> HEART_BEAT = registerSoundEvent("block.meat_block.heartbeat");
 
 	//public static final Supplier<SoundEvent> DUSTY_LAMP_TOGGLE = registerSoundEvent("block.dusty_lamp.toggles");
 

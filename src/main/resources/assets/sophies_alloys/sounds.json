@@ -36,5 +36,14 @@
 			"sophies_alloys:powered_lantern_lock3",
 			"sophies_alloys:powered_lantern_lock4"
 		]
+	},
+	"block.meat_block.heartbeat": {
+		"subtitle": "subtitles.block.sophies_alloys.meat_block.heartbeat",
+		"sounds": [
+			"sophies_alloys:meat_heartbeat1",
+			"sophies_alloys:meat_heartbeat2",
+			"sophies_alloys:meat_heartbeat3",
+			"sophies_alloys:meat_heartbeat4"
+		]
 	}
 }

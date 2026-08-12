@@ -1,0 +1,13 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:foxite_lantern"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:foxite_soul_lantern"
+		}
+	]
+}

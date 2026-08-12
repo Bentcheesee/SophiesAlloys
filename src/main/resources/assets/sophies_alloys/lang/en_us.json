@@ -29,6 +29,7 @@
 	"subtitles.block.sophies_alloys.powered_lantern.lock": "Powered Lantern Locks",
 	"subtitles.block.sophies_alloys.powered_lantern.unlock": "Powered Lantern Unlocks",
 	"subtitles.block.sophies_alloys.dusty_lamp.toggle": "Dusty Lamp Toggles",
+	"subtitles.block.sophies_alloys.meat_block.heartbeat": "Heart Beats",
 
 	"tag.block.sophies_alloys.oreberry_survive_on": "Oreberry Survive On",
 	"tag.item.sophies_alloys.leaded_quartz_glass": "Leaded Quartz Glass Blocks",
@@ -37,7 +38,6 @@
 	"tooltip.sophies_alloys.powered_lanterns": "§8Hold §7Shift §8for Summary.",
 	"tooltip.sophies_alloys.powered_lanterns.alternate": "§8Hold §bShift §8for Summary.\n\n§fPowered Lanterns §7have §etwo §7modes that can\n§7be toggled directly by the player.\n\n§7While §bStanding§7, a player can directly toggle\n§7if the §fPowered Lantern §7is §eon §7or §eoff§7.\n§7While §bSneaking§7, a player can toggle the\n§eLocked §7state, which prevents any interations\n§7§ofrom §r§cRedstone §7components.",
 	
-//Dusts
 	"item.sophies_alloys.amethyst_dust": "Amethyst Dust",
 	"item.sophies_alloys.copper_dust": "Copper Dust",
 	"item.sophies_alloys.coal_dust": "Coal Dust",
@@ -73,7 +73,6 @@
 	"item.sophies_alloys.tungsten_dust": "Tungsten Dust",
 	"item.sophies_alloys.zinc_dust": "Zinc Dust",
 	
-//Nuggets
 	"item.sophies_alloys.netherite_nugget": "Netherite Nugget",
 	"item.sophies_alloys.diamond_shard": "Diamond Shard",
 	"item.sophies_alloys.emerald_shard": "Emerald Shard",
@@ -92,7 +91,6 @@
 	"item.sophies_alloys.lycalite_nugget": "Lycalite Nugget",
 	"item.sophies_alloys.babulymn_nugget": "Babulymn Nugget",
 	
-//Ingots
 	"item.sophies_alloys.silver_ingot": "Silver Ingot",
 	"item.sophies_alloys.tungsten_ingot": "Tungsten Ingot",
 	"item.sophies_alloys.electrum_ingot": "Electrum Ingot",
@@ -111,7 +109,6 @@
 	"item.sophies_alloys.mithril_scrap.desc": "Currently Unused",
 	"item.sophies_alloys.tritonium_scrap": "Tritonium Scrap",
 	
-//Raw Ores n Gems
 	"item.sophies_alloys.raw_silver": "Raw Silver",
 	"item.sophies_alloys.raw_tungsten": "Raw Tungsten",
 	"item.sophies_alloys.raw_electrum": "Raw Electrum",
@@ -127,7 +124,6 @@
 	"item.sophies_alloys.quingum_gem": "Quingum Crystal",
 	"item.sophies_alloys.quingum_gem.desc": "Haste (0:20)",
 	
-//Ore and Alloy Blocks
 	"block.sophies_alloys.silver_block": "Silver Block",
 	"block.sophies_alloys.tungsten_block": "Tungsten Block",
 	"block.sophies_alloys.electrum_block": "Electrum Block",
@@ -144,7 +140,6 @@
 	"block.sophies_alloys.babulymn_block": "Babulymn Block",
 	"block.sophies_alloys.crimson_coal_block": "Crimson Coal Block",
 	
-//Raw Blocks
 	"block.sophies_alloys.raw_silver_block": "Raw Silver Block",
 	"block.sophies_alloys.raw_tungsten_block": "Raw Tungsten Block",
 	"block.sophies_alloys.raw_electrum_block": "Raw Electrum Block",
@@ -154,7 +149,6 @@
 	"block.sophies_alloys.raw_tritonium_block": "Raw Tritonium Block",
 	"block.sophies_alloys.raw_lagomite_block": "Raw Lagomite Block",
 	
-//Overworld Ores
 	"block.sophies_alloys.silver_ore": "Silver Ore",
 	"block.sophies_alloys.tungsten_ore": "Tungsten Ore",
 	"block.sophies_alloys.electrum_ore": "Electrum Ore",
@@ -176,7 +170,6 @@
 	"block.sophies_alloys.quingum_deepslate_ore": "Deepslate Quingum Ore",
 	"block.sophies_alloys.meat_deepslate_ore": "Deepslate Meat Ore",
 	
-//Nether Ores
 	"block.sophies_alloys.crimson_coal_nether_ore": "Netherrack Crimson Coal Ore",
 	"block.sophies_alloys.foxite_nether_ore": "Netherrack Foxite Ore",
 	"block.sophies_alloys.foxite_soul_ore": "Soul Stone Foxite Ore",
@@ -188,13 +181,11 @@
 	"block.sophies_alloys.meat_soul_ore": "Soul Stone Meat Ore",
 	"block.sophies_alloys.rich_basalt": "Rich Basalt",
 	
-//End Ores
 	"block.sophies_alloys.lagomite_end_ore": "End Stone Lagomite Ore",
 	"block.sophies_alloys.lagomite_obsidian_ore": "Obsidian Lagomite Ore",
 	"block.sophies_alloys.tungsten_end_ore": "End Stone Tungsten Ore",
 	"block.sophies_alloys.meat_end_ore": "End Stone Meat Ore",
 	
-//Foods
 	"item.sophies_alloys.smushroom": "Smushrooms",
 	"item.sophies_alloys.mossy_mush": "Mossy Mush",
 	"item.sophies_alloys.mossy_mush.desc": "A fantastic replacement for vegemite!",
@@ -247,7 +238,6 @@
 	"item.sophies_alloys.chocolate_glazed_quingum": "Chocolate Glazed Quingum",
 	"item.sophies_alloys.chocolate_glazed_quingum.desc": "Haste (1:30)",
 	
-//Blocks
 	"block.sophies_alloys.oreberry_bush": "Oreberry Bush",
 	"block.sophies_alloys.oreberry_crate": "Oreberry Sack",
 	"block.sophies_alloys.meat_block": "Meat",
@@ -256,28 +246,28 @@
 	"block.sophies_alloys.foxite_chain": "Foxite Chain",
 	"block.sophies_alloys.foxite_lantern": "Foxite Lantern",
 	"block.sophies_alloys.foxite_soul_lantern": "Foxite Soul Lantern",
-	"block.sophies_alloys.foxite_powered_lantern": "Powered Foxite Lantern",
+	"block.sophies_alloys.foxite_powered_lantern": "Foxite Powered Lantern",
 	"block.sophies_alloys.gold_chain": "Gold Chain",
 	"block.sophies_alloys.gold_lantern": "Gold Lantern",
 	"block.sophies_alloys.gold_soul_lantern": "Gold Soul Lantern",
-	"block.sophies_alloys.gold_powered_lantern": "Powered Gold Lantern",
-	"block.sophies_alloys.iron_powered_lantern": "Powered Lantern",
+	"block.sophies_alloys.gold_powered_lantern": "Gold Powered Lantern",
+	"block.sophies_alloys.iron_powered_lantern": "Iron Powered Lantern",
 	"block.sophies_alloys.netherite_chain": "Netherite Chain",
 	"block.sophies_alloys.netherite_lantern": "Netherite Lantern",
 	"block.sophies_alloys.netherite_soul_lantern": "Netherite Soul Lantern",
-	"block.sophies_alloys.netherite_powered_lantern": "Powered Netherite Lantern",
+	"block.sophies_alloys.netherite_powered_lantern": "Netherite Powered Lantern",
 	"block.sophies_alloys.silver_chain": "Silver Chain",
 	"block.sophies_alloys.silver_lantern": "Silver Lantern",
 	"block.sophies_alloys.silver_soul_lantern": "Silver Soul Lantern",
-	"block.sophies_alloys.silver_powered_lantern": "Powered Silver Lantern",
+	"block.sophies_alloys.silver_powered_lantern": "Silver Powered Lantern",
 	"block.sophies_alloys.tritonium_chain": "Tritonium Chain",
 	"block.sophies_alloys.tritonium_lantern": "Tritonium Lantern",
 	"block.sophies_alloys.tritonium_soul_lantern": "Tritonium Soul Lantern",
-	"block.sophies_alloys.tritonium_powered_lantern": "Powered Tritonium Lantern",
+	"block.sophies_alloys.tritonium_powered_lantern": "Tritonium Powered Lantern",
 	"block.sophies_alloys.tungsten_chain": "Tungsten Chain",
 	"block.sophies_alloys.tungsten_lantern": "Tungsten Lantern",
 	"block.sophies_alloys.tungsten_soul_lantern": "Tungsten Soul Lantern",
-	"block.sophies_alloys.tungsten_powered_lantern": "Powered Tungsten Lantern",
+	"block.sophies_alloys.tungsten_powered_lantern": "Tungsten Powered Lantern",
 	
 	"block.sophies_alloys.soul_gravel": "Soul Gravel",
 	"block.sophies_alloys.soul_stone": "Soul Stone",
@@ -325,14 +315,24 @@
 	"block.sophies_alloys.slate_tile_stairs": "Slate Tiled Stairs",
 	"block.sophies_alloys.slate_tiles_cracked": "Cracked Slate Tiles",
 	"block.sophies_alloys.slate_pillar": "Slate Pillar",
-	"block.sophies_alloys.mossy_cobbled_deepslate": "Mossy Cobbled Deeplate",
-	"block.sophies_alloys.mossy_cobbled_deepslate_slab": "Mossy Cobbled Deeplate Slab",
-	"block.sophies_alloys.mossy_cobbled_deepslate_wall": "Mossy Cobbled Deeplate Wall",
-	"block.sophies_alloys.mossy_cobbled_deepslate_stairs": "Mossy Cobbled Deeplate Stairs",
+	"block.sophies_alloys.mossy_cobbled_deepslate": "Mossy Cobbled Deepslate",
+	"block.sophies_alloys.mossy_cobbled_deepslate_slab": "Mossy Cobbled Deepslate Slab",
+	"block.sophies_alloys.mossy_cobbled_deepslate_wall": "Mossy Cobbled Deepslate Wall",
+	"block.sophies_alloys.mossy_cobbled_deepslate_stairs": "Mossy Cobbled Deepslate Stairs",
 	"block.sophies_alloys.mossy_deepslate_bricks": "Mossy Deepslate Bricks",
 	"block.sophies_alloys.mossy_deepslate_brick_slab": "Mossy Deepslate Brick Slab",
 	"block.sophies_alloys.mossy_deepslate_brick_wall": "Mossy Deepslate Brick Wall",
 	"block.sophies_alloys.mossy_deepslate_brick_stairs": "Mossy Deepslate Brick Stairs",
+	
+	"block.sophies_alloys.crumbling_blackstone_bricks": "Crumbling Blackstone Bricks",
+	"block.sophies_alloys.crumbling_deepslate_bricks": "Crumbling Deepslate Bricks",
+	"block.sophies_alloys.crumbling_deepslate_tiles": "Crumbling Deepslate Tiles",
+	"block.sophies_alloys.crumbling_nether_bricks": "Crumbling Nether Bricks",
+	"block.sophies_alloys.crumbling_slate_bricks": "Crumbling Slate Bricks",
+	"block.sophies_alloys.crumbling_slate_tiles": "Crumbling Slate Tiles",
+	"block.sophies_alloys.crumbling_soul_stone_bricks": "Crumbling Soul Stone Bricks",
+	"block.sophies_alloys.crumbling_soul_stone_tiles": "Crumbling Soul Stone Tiles",
+	"block.sophies_alloys.crumbling_stone_bricks": "Crumbling Stone Bricks",
 
 	"block.sophies_alloys.deep_gravel": "Deep Gravel",
 	"block.sophies_alloys.deep_sand": "Deep Sand",
@@ -450,19 +450,12 @@
 	"block.sophies_alloys.black_leaded_quartz_glass_pane": "Black Stained Leaded Quartz Glass Pane",
 	"block.sophies_alloys.red_leaded_quartz_glass_pane": "Red Stained Leaded Quartz Glass Pane",
 	
-//Items
 	"item.sophies_alloys.crimson_coal": "Crimson Coal",
 	"item.sophies_alloys.stiffened_lead": "Hardened Lead",
 	"item.sophies_alloys.lead_pencil": "Classic Number 2 Pencil",
 	"item.sophies_alloys.oberite_handle": "Oberite Handle",
 	"item.sophies_alloys.foxite_handle": "Foxite Handle",
 	"item.sophies_alloys.leaded_quartz": "Leaded Quartz",
-	"item.sophies_alloys.funky_thingamabob": "Funky Thingamabob",
-	"item.sophies_alloys.funky_thingamabob.desc": "\"I wonder what this does?\"",
-	"item.sophies_alloys.abnormal_object": "Really Abnormal Object",
-	"item.sophies_alloys.abnormal_object.desc": "What is this thing??",
-	"item.sophies_alloys.nugget_hunk": "Hunk o' Nuggets",
-	"item.sophies_alloys.nugget_conglomerate": "Nugget Conglomerate",
 	"item.sophies_alloys.strange_flint": "Strange Flint",
 	
 	"item.sophies_alloys.andesite_chunk": "Andesite Chunk",
@@ -530,7 +523,6 @@
 	"item.sophies_alloys.tungsten_upgrade": "Tungsten Upgrade",
 	"item.sophies_alloys.lagomite_upgrade": "Lagomite Upgrade",
 	
-//Tools
 	"item.sophies_alloys.foxite_pickaxe": "Foxite Pickaxe",
 	"item.sophies_alloys.foxite_axe": "Foxite Axe",
 	"item.sophies_alloys.foxite_shovel": "Foxite Shovel",
@@ -569,7 +561,6 @@
 	"item.sophies_alloys.silver_axe": "Silver Axe",
 	"item.sophies_alloys.babulymn_shovel": "Babulymn Shovel",
 	
-//Armors
 	"item.sophies_alloys.babulymn_helmet": "Babulymn Helmet",
 	"item.sophies_alloys.electrum_helmet": "Electrum Helmet",
 	"item.sophies_alloys.electrum_chestplate": "Electrum Chestplate",
@@ -605,8 +596,6 @@
 	"item.sophies_alloys.tungsten_boots": "Tungsten Boots",
 	
 	
-//Create Types
-	
 	"item.sophies_alloys.crushed_tungsten": "Crushed Raw Tungsten",
 	"item.sophies_alloys.crushed_electrum": "Crushed Raw Electrum",
 	"item.sophies_alloys.crushed_mithril": "Crushed Raw Mithril",
@@ -622,17 +611,13 @@
 	"item.sophies_alloys.unprocessed_lycalite_sheet": "Unprocessed Lycalite Sheet",
 	"item.sophies_alloys.unprocessed_lagomite_sheet": "Unprocessed Lagomite Sheet",
 	"item.sophies_alloys.unprocessed_netherite_sheet": "Unprocessed Netherite Sheet",
-	"item.sophies_alloys.unprocessed_thing": "Unprocessed Funky Thingamabob",
-	"item.sophies_alloys.unprocessed_object": "Unprocessed Abnormal Object",
 	
 	"block.sophies_alloys.lycalite_casing": "Lycalite Casing",
 	
-//Create Decor Compat
 	"item.sophies_alloys.dolomite_chunk": "Dolomite Chunk",
 	"item.sophies_alloys.gabbro_chunk": "Gabbro Chunk",
 
 	
-//Farmer's Compat
 	"item.sophies_alloys.oreberry_burger": "Oreberry Burger",
 	"item.sophies_alloys.oreberry_burger.desc": "Resistance (0:45)",
 	"item.sophies_alloys.oreberry_salad": "Oreberry Salad",
@@ -651,14 +636,12 @@
 	"item.sophies_alloys.dino_nugget_ketchup.desc": "blood.. blood.. blood.. blood.. blood. blood!",
 	"item.sophies_alloys.dino_nugget_ketchup.desc_bonus": "Blood! BLOOD! BLOOD! BLOOD! BLOOD! BLOOD!",
 	
-//Quark Compat
 	"item.sophies_alloys.quarky_limestone_chunk": "Quarky Limestone Chunk",
 	"item.sophies_alloys.jasper_chunk": "Jasper Chunk",
 	"item.sophies_alloys.frost_chunk": "Frosty Chunk",
 	"item.sophies_alloys.myalite_chunk": "Myalite Chunk",
 	"item.sophies_alloys.shale_sheet": "Shale Sheet",
-
-//Unused Compat
+	
 	"item.sophies_alloys.rose_gold_dust": "Rose Gold Dust",
 	"item.sophies_alloys.rose_gold_sheet": "Rose Gold Sheet",
 	"item.sophies_alloys.rough_rose_gold_sheet": "Rough Rose Gold Sheet",

@@ -146,12 +146,8 @@ public class Registration {
 						output.accept(ItemInit.PENCIL);
 						output.accept(ItemInit.STRANGE_FLINT);
 						output.accept(ItemInit.STIFFENED_LEAD);
-						output.accept(ItemInit.NUGGET_HUNK);
-						output.accept(ItemInit.NUGGET_CONGLOMERATE);
 						output.accept(ItemInit.FOXITE_HANDLE);
 						output.accept(ItemInit.OBERITE_HANDLE);
-						output.accept(ItemInit.FUNKY_THING);
-						output.accept(ItemInit.ABNORMAL_THING);
 
 						output.accept(ItemInit.ANDESITE_CHUNK);
 						output.accept(ItemInit.ASURINE_CHUNK);
@@ -190,8 +186,6 @@ public class Registration {
 						output.accept(ItemInit.UNPROCESSED_LYCALITE_PLATE);
 						output.accept(ItemInit.UNPROCESSED_LAGOMITE_PLATE);
 						output.accept(ItemInit.UNPROCESSED_NETHERITE_PLATE);
-						output.accept(ItemInit.UNPROCESSED_THING);
-						output.accept(ItemInit.UNPROCESSED_OBJECT);
 						output.accept(ItemInit.GROWING_EMERALD);
 
 						output.accept(BlockInit.FOXITE_ORE);
@@ -430,6 +424,16 @@ public class Registration {
 				output.accept(BlockInit.MOSSY_DEEPSLATE_BRICK_STAIRS);
 				output.accept(BlockInit.MOSSY_DEEPSLATE_BRICK_SLAB);
 				output.accept(BlockInit.MOSSY_DEEPSLATE_BRICK_WALL);
+
+				output.accept(BlockInit.CRUMBLING_BLACKSTONE_BRICKS);
+				output.accept(BlockInit.CRUMBLING_DEEPSLATE_BRICKS);
+				output.accept(BlockInit.CRUMBLING_DEEPSLATE_TILES);
+				output.accept(BlockInit.CRUMBLING_NETHER_BRICKS);
+				output.accept(BlockInit.CRUMBLING_SLATE_BRICKS);
+				output.accept(BlockInit.CRUMBLING_SLATE_TILES);
+				output.accept(BlockInit.CRUMBLING_SOUL_STONE_BRICKS);
+				output.accept(BlockInit.CRUMBLING_SOUL_STONE_TILES);
+				output.accept(BlockInit.CRUMBLING_STONE_BRICKS);
 
 
 				output.accept(BlockInit.FOXITE_CHAIN);

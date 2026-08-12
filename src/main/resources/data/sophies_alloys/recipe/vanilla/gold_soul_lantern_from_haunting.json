@@ -1,0 +1,13 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:gold_lantern"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:gold_soul_lantern"
+		}
+	]
+}

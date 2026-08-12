@@ -6,6 +6,13 @@
     "sophies_alloys:netherite_soul_lantern",
     "sophies_alloys:silver_soul_lantern",
     "sophies_alloys:tritonium_soul_lantern",
-    "sophies_alloys:tungsten_soul_lantern"
+    "sophies_alloys:tungsten_soul_lantern",
+    "sophies_alloys:iron_powered_lantern",
+    "sophies_alloys:foxite_powered_lantern",
+    "sophies_alloys:gold_powered_lantern",
+    "sophies_alloys:netherite_powered_lantern",
+    "sophies_alloys:silver_powered_lantern",
+    "sophies_alloys:tritonium_powered_lantern",
+    "sophies_alloys:tungsten_powered_lantern"
   ]
 }

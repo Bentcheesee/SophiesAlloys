@@ -1,0 +1,13 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+		{
+			"item": "sophies_alloys:tungsten_lantern"
+		}
+	],
+	"results": [
+		{
+			"id": "sophies_alloys:tungsten_soul_lantern"
+		}
+	]
+}

@@ -1,4 +1,6 @@
 {
 	"block.minecraft.lever": "Cobblestone Lever",
+	"block.minecraft.lantern": "Iron Lantern",
+	"block.minecraft.soul_lantern": "Iron Soul Lantern",
 	"item.minecraft.shears": "Iron Shears"
 }

@@ -58,21 +58,21 @@ public class SophieArmourMaterials {
 		map0.put(ArmorItem.Type.HELMET, 3);
 		map0.put(ArmorItem.Type.BODY, 7);
 	}), 9, SoundEvents.ARMOR_EQUIP_IRON, 1.5F, 0.2F, () -> Ingredient.of(ItemInit.LYCALITE_PLATE.get()));
-	public static final Holder<ArmorMaterial> MITHRIL = register("foxite", Util.make(new EnumMap<>(ArmorItem.Type.class), map0 -> {
+	public static final Holder<ArmorMaterial> MITHRIL = register("mithril", Util.make(new EnumMap<>(ArmorItem.Type.class), map0 -> {
 		map0.put(ArmorItem.Type.BOOTS, 4);
 		map0.put(ArmorItem.Type.LEGGINGS, 6);
 		map0.put(ArmorItem.Type.CHESTPLATE, 8);
 		map0.put(ArmorItem.Type.HELMET, 3);
 		map0.put(ArmorItem.Type.BODY, 10);
 	}), 9, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5F, 0.1F, () -> Ingredient.of(ItemInit.MITHRIL_PLATE.get()));
-	public static final Holder<ArmorMaterial> TUNGSTEN = register("foxite", Util.make(new EnumMap<>(ArmorItem.Type.class), map0 -> {
+	public static final Holder<ArmorMaterial> TUNGSTEN = register("tungsten", Util.make(new EnumMap<>(ArmorItem.Type.class), map0 -> {
 		map0.put(ArmorItem.Type.BOOTS, 3);
 		map0.put(ArmorItem.Type.LEGGINGS, 7);
 		map0.put(ArmorItem.Type.CHESTPLATE, 9);
 		map0.put(ArmorItem.Type.HELMET, 3);
 		map0.put(ArmorItem.Type.BODY, 13);
 	}), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.75F, 0.25F, () -> Ingredient.of(ItemInit.TUNGSTEN_PLATE.get()));
-	public static final Holder<ArmorMaterial> LAGOMITE = register("foxite", Util.make(new EnumMap<>(ArmorItem.Type.class), map0 -> {
+	public static final Holder<ArmorMaterial> LAGOMITE = register("lagomite", Util.make(new EnumMap<>(ArmorItem.Type.class), map0 -> {
 		map0.put(ArmorItem.Type.BOOTS, 4);
 		map0.put(ArmorItem.Type.LEGGINGS, 6);
 		map0.put(ArmorItem.Type.CHESTPLATE, 8);
